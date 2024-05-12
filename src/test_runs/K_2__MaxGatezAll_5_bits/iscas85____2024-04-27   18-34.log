@@ -1,0 +1,817 @@
+Testing files in directory: ./benchmarks/iscas85/ 
+
+
+Log file: ./test_runs/iscas85____2024-04-27   18-34.log 
+
+Executing ./current_script with file: ./benchmarks/iscas85/c1355.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c1355.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 13  11  13  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-27-2024   18:34:05 --  locked version of ./benchmarks/iscas85/c1355.bench
+INFO - Apr-27-2024   18:34:05 --  number of keys: 3
+INFO - Apr-27-2024   18:34:05 --  keys: [13, 11, 13]
+INFO - Apr-27-2024   18:34:05 --  number of bits per key (keyinputs#): 4
+INFO - Apr-27-2024   18:34:05 --  key0 = 1101
+INFO - Apr-27-2024   18:34:05 --  key1 = 1011
+INFO - Apr-27-2024   18:34:05 --  key2 = 1101
+INFO - Apr-27-2024   18:34:05 --  k (gate is locked at k bits): 2
+INFO - Apr-27-2024   18:34:05 -- Time taken to parser file= 0.009283065795898438
+
+INFO - Apr-27-2024   18:34:05 -- c1355.bench contains 41 inputs,     32 outputs,     and 546 gates
+
+INFO - Apr-27-2024   18:34:05 -- Time taken to get gates with k inputs = 0.06448149681091309
+
+INFO - Apr-27-2024   18:34:05 -- Cutting gates to encrypt to 10, from 136
+INFO - Apr-27-2024   18:34:05 -- Time taken to encrypt up to k inputs: 0.06723880767822266 seconds
+INFO - Apr-27-2024   18:34:05 --   G242gat - And(G225gat, G233gat, keyinput0, keyinput1, ~keyinput2, keyinput3)
+INFO - Apr-27-2024   18:34:05 --   G245gat - And(G233gat, G226gat, keyinput4, keyinput5, ~keyinput6, keyinput7)
+INFO - Apr-27-2024   18:34:05 --   G248gat - And(G233gat, G227gat, keyinput8, keyinput9, ~keyinput10, keyinput11)
+INFO - Apr-27-2024   18:34:05 --   G251gat - And(G233gat, G228gat, keyinput12, keyinput13, ~keyinput14, keyinput15)
+INFO - Apr-27-2024   18:34:05 --   G254gat - And(G233gat, G229gat, keyinput16, keyinput17, ~keyinput18, keyinput19)
+INFO - Apr-27-2024   18:34:05 --   G257gat - And(G233gat, G230gat, keyinput20, keyinput21, ~keyinput22, keyinput23)
+INFO - Apr-27-2024   18:34:05 --   G260gat - And(G233gat, G231gat, keyinput24, keyinput25, ~keyinput26, keyinput27)
+INFO - Apr-27-2024   18:34:05 --   G263gat - And(G233gat, G232gat, keyinput28, keyinput29, ~keyinput30, keyinput31)
+INFO - Apr-27-2024   18:34:05 --   G266gat - Or(And(~G1gat, ~G8gat, keyinput32, keyinput33, ~keyinput34, keyinput35), And(~G1gat, G8gat, keyinput32, ~keyinput33, keyinput34, keyinput35), And(G1gat, ~G8gat, keyinput32, keyinput33, ~keyinput34, keyinput35))
+INFO - Apr-27-2024   18:34:05 --   G269gat - Or(And(~G15gat, ~G22gat, keyinput36, keyinput37, ~keyinput38, keyinput39), And(~G15gat, G22gat, keyinput36, ~keyinput37, keyinput38, keyinput39), And(G15gat, ~G22gat, keyinput36, keyinput37, ~keyinput38, keyinput39))
+INFO - Apr-27-2024   18:34:05 -- Time taken to encrypt file: 0.10429930686950684 seconds
+
+-e 
+ 
+ 
+ ./../Tools/neos/bin/neos -d ex ./benchmarks/iscas85/c1355.bench ./benchmarks/iscas85/c1355_encrypted.bench 1000
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c1355.bench ./benchmarks/iscas85/c1355_encrypted.bench 1000
+args 
+iteration:    1; variables: 1303 clauses: 3621 assignments: 1  propagations: 3314
+iteration:    2; variables: 2519 clauses: 4384 assignments: 957  propagations: 18089
+iteration:    3; variables: 3735 clauses: 5682 assignments: 1729  propagations: 26378
+iteration:    4; variables: 4951 clauses: 6400 assignments: 2733  propagations: 38334
+iteration:    5; variables: 6167 clauses: 7070 assignments: 3725  propagations: 51801
+iteration:    6; variables: 7383 clauses: 8484 assignments: 4432  propagations: 64957
+iteration:    7; variables: 8599 clauses: 9546 assignments: 5276  propagations: 75243
+iteration:    8; variables: 9815 clauses: 10944 assignments: 5978  propagations: 84323
+iteration:    9; variables: 11031 clauses: 12042 assignments: 6786  propagations: 98098
+iteration:   10; variables: 12247 clauses: 12954 assignments: 7660  propagations: 111933
+iteration:   11; variables: 13463 clauses: 13608 assignments: 8636  propagations: 143255
+iteration:   12; variables: 14679 clauses: 14434 assignments: 9548  propagations: 161290
+iteration:   13; variables: 15895 clauses: 15258 assignments: 10448  propagations: 200638
+iteration:   14; variables: 17111 clauses: 15930 assignments: 11414  propagations: 241301
+no more dips.
+
+Finished! 
+iteration=14
+key=0101110110011101110111011101110110111101
+checking key 0101110110011101110111011101110110111101
+
+incorrect key
+G1324gat:0.004;  G1325gat:0.01;  G1326gat:0.012;  G1327gat:0.006;  G1328gat:0.004;  G1329gat:0.006;  G1330gat:0.01;  G1331gat:0.006;  G1332gat:0.004;  G1333gat:0.012;  G1334gat:0.006;  G1335gat:0.002;  G1336gat:0.002;  G1337gat:0.006;  G1338gat:0.002;  G1339gat:0.004;  G1340gat:0.006;  G1341gat:0.002;  G1342gat:0.01;  G1343gat:0.008;  G1344gat:0.006;  G1345gat:0.004;  G1346gat:0.004;  G1347gat:0.002;  G1348gat:0.002;  G1349gat:0.002;  G1350gat:0.006;  G1351gat:0.01;  G1352gat:0.008;  G1353gat:0;  G1354gat:0.004;  G1355gat:0.002;  
+key-err: 0.005375
+
+time: 0.182471
+0.13user 0.13system 0:00.64elapsed 41%CPU (0avgtext+0avgdata 20504maxresident)k
+6744inputs+0outputs (39major+3374minor)pagefaults 0swaps
+Running the neos solver on the encrypted file hill 
+-e Done 
+ 
+ 
+ 
+
+
+
+
+Done with ./benchmarks/iscas85/c1355.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c17.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c17.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 31  11  7  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-27-2024   18:34:06 --  locked version of ./benchmarks/iscas85/c17.bench
+INFO - Apr-27-2024   18:34:06 --  number of keys: 3
+INFO - Apr-27-2024   18:34:06 --  keys: [31, 11, 7]
+INFO - Apr-27-2024   18:34:06 --  number of bits per key (keyinputs#): 5
+INFO - Apr-27-2024   18:34:06 --  key0 = 11111
+INFO - Apr-27-2024   18:34:06 --  key1 = 01011
+INFO - Apr-27-2024   18:34:07 --  key2 = 00111
+INFO - Apr-27-2024   18:34:07 --  k (gate is locked at k bits): 2
+INFO - Apr-27-2024   18:34:07 -- Time taken to parser file= 0.0043909549713134766
+
+INFO - Apr-27-2024   18:34:07 -- c17.bench contains 5 inputs,     2 outputs,     and 6 gates
+
+INFO - Apr-27-2024   18:34:07 -- Time taken to get gates with k inputs = 0.000125885009765625
+
+INFO - Apr-27-2024   18:34:07 -- Time taken to encrypt up to k inputs: 0.0011315345764160156 seconds
+INFO - Apr-27-2024   18:34:07 --   G10gat - Or(And(~G1gat, ~G3gat, keyinput0, keyinput1, keyinput2, keyinput3, keyinput4), And(~G1gat, G3gat, ~keyinput0, keyinput1, ~keyinput2, keyinput3, keyinput4), And(G1gat, ~G3gat, ~keyinput0, ~keyinput1, keyinput2, keyinput3, keyinput4))
+INFO - Apr-27-2024   18:34:07 --   G11gat - Or(And(~G3gat, ~G6gat, keyinput5, keyinput6, keyinput7, keyinput8, keyinput9), And(G3gat, ~G6gat, ~keyinput5, keyinput6, ~keyinput7, keyinput8, keyinput9), And(~G3gat, G6gat, ~keyinput5, ~keyinput6, keyinput7, keyinput8, keyinput9))
+INFO - Apr-27-2024   18:34:07 -- Time taken to encrypt file: 0.026142120361328125 seconds
+
+-e 
+ 
+ 
+ ./../Tools/neos/bin/neos -d ex ./benchmarks/iscas85/c17.bench ./benchmarks/iscas85/c17_encrypted.bench 1000
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c17.bench ./benchmarks/iscas85/c17_encrypted.bench 1000
+args 
+iteration:    1; variables: 85 clauses: 211 assignments: 1  propagations: 85
+iteration:    2; variables: 149 clauses: 290 assignments: 37  propagations: 400
+no more dips.
+
+Finished! 
+iteration=2
+key=0101101011
+checking key 0101101011
+
+incorrect key
+G22gat:0.25;  G23gat:0.375;  
+key-err: 0.3125
+
+time: 0.035852
+0.00user 0.04system 0:00.25elapsed 16%CPU (0avgtext+0avgdata 9936maxresident)k
+6744inputs+0outputs (39major+340minor)pagefaults 0swaps
+Running the neos solver on the encrypted file hill 
+-e Done 
+ 
+ 
+ 
+
+
+
+
+Done with ./benchmarks/iscas85/c17.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c1908.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c1908.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 1  4  17  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-27-2024   18:34:07 --  locked version of ./benchmarks/iscas85/c1908.bench
+INFO - Apr-27-2024   18:34:07 --  number of keys: 3
+INFO - Apr-27-2024   18:34:07 --  keys: [1, 4, 17]
+INFO - Apr-27-2024   18:34:07 --  number of bits per key (keyinputs#): 5
+INFO - Apr-27-2024   18:34:07 --  key0 = 00001
+INFO - Apr-27-2024   18:34:07 --  key1 = 00100
+INFO - Apr-27-2024   18:34:07 --  key2 = 10001
+INFO - Apr-27-2024   18:34:07 --  k (gate is locked at k bits): 2
+INFO - Apr-27-2024   18:34:07 -- Time taken to parser file= 0.008212566375732422
+
+INFO - Apr-27-2024   18:34:07 -- c1908.bench contains 33 inputs,     25 outputs,     and 880 gates
+
+INFO - Apr-27-2024   18:34:07 -- Time taken to get gates with k inputs = 0.06866145133972168
+
+INFO - Apr-27-2024   18:34:07 -- Cutting gates to encrypt to 10, from 100
+INFO - Apr-27-2024   18:34:07 -- Time taken to encrypt up to k inputs: 0.07128739356994629 seconds
+INFO - Apr-27-2024   18:34:07 --   G231 - Or(And(~G224, ~G898, ~keyinput0, ~keyinput1, ~keyinput2, ~keyinput3, keyinput4), And(~G224, G898, ~keyinput0, ~keyinput1, keyinput2, ~keyinput3, ~keyinput4), And(G224, ~G898, keyinput0, ~keyinput1, ~keyinput2, ~keyinput3, keyinput4))
+INFO - Apr-27-2024   18:34:07 --   G233 - Or(And(~G227, ~G900, ~keyinput5, ~keyinput6, ~keyinput7, ~keyinput8, keyinput9), And(G227, ~G900, ~keyinput5, ~keyinput6, keyinput7, ~keyinput8, ~keyinput9), And(~G227, G900, keyinput5, ~keyinput6, ~keyinput7, ~keyinput8, keyinput9))
+INFO - Apr-27-2024   18:34:07 --   G50 - Or(And(~G952, ~G953, ~keyinput10, ~keyinput11, ~keyinput12, ~keyinput13, keyinput14), And(G952, ~G953, keyinput10, ~keyinput11, ~keyinput12, ~keyinput13, keyinput14), And(G952, G953, ~keyinput10, ~keyinput11, ~keyinput12, ~keyinput13, keyinput14))
+INFO - Apr-27-2024   18:34:07 --   G52 - Or(And(~G952, ~G953, ~keyinput15, ~keyinput16, ~keyinput17, ~keyinput18, keyinput19), And(G952, ~G953, keyinput15, ~keyinput16, ~keyinput17, ~keyinput18, keyinput19), And(G952, G953, ~keyinput15, ~keyinput16, ~keyinput17, ~keyinput18, keyinput19))
+INFO - Apr-27-2024   18:34:07 --   G56 - Or(And(~G952, ~G953, ~keyinput20, ~keyinput21, ~keyinput22, ~keyinput23, keyinput24), And(G952, ~G953, keyinput20, ~keyinput21, ~keyinput22, ~keyinput23, keyinput24), And(G952, G953, ~keyinput20, ~keyinput21, ~keyinput22, ~keyinput23, keyinput24))
+INFO - Apr-27-2024   18:34:07 --   G58 - Or(And(~G952, ~G953, ~keyinput25, ~keyinput26, ~keyinput27, ~keyinput28, keyinput29), And(G952, ~G953, keyinput25, ~keyinput26, ~keyinput27, ~keyinput28, keyinput29), And(G952, G953, ~keyinput25, ~keyinput26, ~keyinput27, ~keyinput28, keyinput29))
+INFO - Apr-27-2024   18:34:07 --   G62 - Or(And(~G952, ~G953, ~keyinput30, ~keyinput31, ~keyinput32, ~keyinput33, keyinput34), And(G952, ~G953, keyinput30, ~keyinput31, ~keyinput32, ~keyinput33, keyinput34), And(G952, G953, ~keyinput30, ~keyinput31, ~keyinput32, ~keyinput33, keyinput34))
+INFO - Apr-27-2024   18:34:07 --   G64 - Or(And(~G952, ~G953, ~keyinput35, ~keyinput36, ~keyinput37, ~keyinput38, keyinput39), And(G952, ~G953, keyinput35, ~keyinput36, ~keyinput37, ~keyinput38, keyinput39), And(G952, G953, ~keyinput35, ~keyinput36, ~keyinput37, ~keyinput38, keyinput39))
+INFO - Apr-27-2024   18:34:07 --   G318 - And(G224, ~G953, keyinput40, ~keyinput41, ~keyinput42, ~keyinput43, keyinput44)
+INFO - Apr-27-2024   18:34:07 --   G352 - And(G227, ~G953, ~keyinput45, ~keyinput46, keyinput47, ~keyinput48, ~keyinput49)
+INFO - Apr-27-2024   18:34:07 -- Time taken to encrypt file: 0.10872387886047363 seconds
+
+-e 
+ 
+ 
+ ./../Tools/neos/bin/neos -d ex ./benchmarks/iscas85/c1908.bench ./benchmarks/iscas85/c1908_encrypted.bench 1000
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c1908.bench ./benchmarks/iscas85/c1908_encrypted.bench 1000
+args 
+iteration:    1; variables: 2214 clauses: 5794 assignments: 1  propagations: 50733
+iteration:    2; variables: 4322 clauses: 6667 assignments: 1761  propagations: 57635
+iteration:    3; variables: 6430 clauses: 7811 assignments: 3447  propagations: 72555
+no more dips.
+constraints are not satisfiable
+Finished! 
+iteration=3
+key=11111111111000110001100011000111110000011000100100
+checking key 11111111111000110001100011000111110000011000100100
+
+incorrect key
+G3:0;  G6:0;  G9:0;  G12:0;  G30:0;  G45:0;  G48:0;  G15:0;  G18:0;  G21:0;  G24:0;  G27:0;  G33:0;  G36:0;  G39:0;  G42:0;  G75:0;  G51:0.244;  G54:0.264;  G60:0.24;  G63:0.376;  G66:0.122;  G69:0.406;  G72:0.386;  G57:0.258;  
+key-err: 0.09184
+
+time: 0.103986
+0.07user 0.02system 0:00.31elapsed 32%CPU (0avgtext+0avgdata 20820maxresident)k
+6744inputs+0outputs (39major+3518minor)pagefaults 0swaps
+Running the neos solver on the encrypted file hill 
+-e Done 
+ 
+ 
+ 
+
+
+
+
+Done with ./benchmarks/iscas85/c1908.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c2670.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c2670.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 19  29  0  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-27-2024   18:34:08 --  locked version of ./benchmarks/iscas85/c2670.bench
+INFO - Apr-27-2024   18:34:08 --  number of keys: 3
+INFO - Apr-27-2024   18:34:08 --  keys: [19, 29, 0]
+INFO - Apr-27-2024   18:34:08 --  number of bits per key (keyinputs#): 5
+INFO - Apr-27-2024   18:34:08 --  key0 = 10011
+INFO - Apr-27-2024   18:34:08 --  key1 = 11101
+INFO - Apr-27-2024   18:34:08 --  key2 = 00000
+INFO - Apr-27-2024   18:34:08 --  k (gate is locked at k bits): 2
+INFO - Apr-27-2024   18:34:08 -- Time taken to parser file= 0.010619878768920898
+
+INFO - Apr-27-2024   18:34:08 -- c2670.bench contains 233 inputs,     140 outputs,     and 1193 gates
+
+INFO - Apr-27-2024   18:34:08 -- Time taken to get gates with k inputs = 0.030140161514282227
+
+INFO - Apr-27-2024   18:34:08 -- Cutting gates to encrypt to 10, from 98
+INFO - Apr-27-2024   18:34:08 -- Time taken to encrypt up to k inputs: 0.032800912857055664 seconds
+INFO - Apr-27-2024   18:34:08 --   G546 - And(G1, G3, keyinput0, ~keyinput1, ~keyinput2, keyinput3, keyinput4)
+INFO - Apr-27-2024   18:34:08 --   G547 - Or(And(~G1, ~G3, keyinput5, ~keyinput6, ~keyinput7, keyinput8, keyinput9), And(G1, ~G3, keyinput5, keyinput6, keyinput7, ~keyinput8, keyinput9), And(~G1, G3, ~keyinput5, ~keyinput6, ~keyinput7, ~keyinput8, ~keyinput9))
+INFO - Apr-27-2024   18:34:08 --   G882 - And(G11, G868, keyinput10, ~keyinput11, ~keyinput12, keyinput13, keyinput14)
+INFO - Apr-27-2024   18:34:08 --   G1955 - And(G7, G661, keyinput15, ~keyinput16, ~keyinput17, keyinput18, keyinput19)
+INFO - Apr-27-2024   18:34:08 --   G1475 - Or(And(~G2430, ~G2427, keyinput20, ~keyinput21, ~keyinput22, keyinput23, keyinput24), And(~G2430, G2427, ~keyinput20, ~keyinput21, ~keyinput22, ~keyinput23, ~keyinput24), And(G2430, G2427, keyinput20, ~keyinput21, ~keyinput22, keyinput23, keyinput24))
+INFO - Apr-27-2024   18:34:08 --   G1476 - Or(And(~G2430, ~G2427, keyinput25, ~keyinput26, ~keyinput27, keyinput28, keyinput29), And(G2430, ~G2427, keyinput25, keyinput26, keyinput27, ~keyinput28, keyinput29), And(G2430, G2427, keyinput25, ~keyinput26, ~keyinput27, keyinput28, keyinput29))
+INFO - Apr-27-2024   18:34:08 --   G1484 - Or(And(~G2438, ~G2435, keyinput30, ~keyinput31, ~keyinput32, keyinput33, keyinput34), And(~G2438, G2435, keyinput30, keyinput31, keyinput32, ~keyinput33, keyinput34), And(G2438, G2435, keyinput30, ~keyinput31, ~keyinput32, keyinput33, keyinput34))
+INFO - Apr-27-2024   18:34:08 --   G1485 - Or(And(~G2438, ~G2435, keyinput35, ~keyinput36, ~keyinput37, keyinput38, keyinput39), And(G2438, ~G2435, ~keyinput35, ~keyinput36, ~keyinput37, ~keyinput38, ~keyinput39), And(G2438, G2435, keyinput35, ~keyinput36, ~keyinput37, keyinput38, keyinput39))
+INFO - Apr-27-2024   18:34:08 --   G1493 - Or(And(~G2446, ~G2443, keyinput40, ~keyinput41, ~keyinput42, keyinput43, keyinput44), And(~G2446, G2443, ~keyinput40, ~keyinput41, ~keyinput42, ~keyinput43, ~keyinput44), And(G2446, G2443, keyinput40, ~keyinput41, ~keyinput42, keyinput43, keyinput44))
+INFO - Apr-27-2024   18:34:08 --   G1494 - Or(And(~G2446, ~G2443, keyinput45, ~keyinput46, ~keyinput47, keyinput48, keyinput49), And(G2446, ~G2443, keyinput45, keyinput46, keyinput47, ~keyinput48, keyinput49), And(G2446, G2443, keyinput45, ~keyinput46, ~keyinput47, keyinput48, keyinput49))
+INFO - Apr-27-2024   18:34:08 -- Time taken to encrypt file: 0.06744980812072754 seconds
+
+-e 
+ 
+ 
+ ./../Tools/neos/bin/neos -d ex ./benchmarks/iscas85/c2670.bench ./benchmarks/iscas85/c2670_encrypted.bench 1000
+Running the neos solver on the encrypted file ex 
+neos: src/base/circuit.cpp:248: ckt::id ckt::circuit::add_wire(const string&, ckt::wtype, ckt::id, bool): Assertion `false' failed.
+Command terminated by signal 6
+0.00user 0.05system 0:00.25elapsed 21%CPU (0avgtext+0avgdata 7052maxresident)k
+6424inputs+0outputs (32major+297minor)pagefaults 0swaps
+Running the neos solver on the encrypted file hill 
+-e Done 
+ 
+ 
+ 
+
+
+
+
+Done with ./benchmarks/iscas85/c2670.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c3540.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c3540.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 14  10  14  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-27-2024   18:34:09 --  locked version of ./benchmarks/iscas85/c3540.bench
+INFO - Apr-27-2024   18:34:09 --  number of keys: 3
+INFO - Apr-27-2024   18:34:09 --  keys: [14, 10, 14]
+INFO - Apr-27-2024   18:34:09 --  number of bits per key (keyinputs#): 4
+INFO - Apr-27-2024   18:34:09 --  key0 = 1110
+INFO - Apr-27-2024   18:34:09 --  key1 = 1010
+INFO - Apr-27-2024   18:34:09 --  key2 = 1110
+INFO - Apr-27-2024   18:34:09 --  k (gate is locked at k bits): 2
+INFO - Apr-27-2024   18:34:09 -- Time taken to parser file= 0.013245582580566406
+
+INFO - Apr-27-2024   18:34:09 -- c3540.bench contains 50 inputs,     22 outputs,     and 1669 gates
+
+INFO - Apr-27-2024   18:34:09 -- Time taken to get gates with k inputs = 0.15398216247558594
+
+INFO - Apr-27-2024   18:34:09 -- Cutting gates to encrypt to 10, from 145
+INFO - Apr-27-2024   18:34:09 -- Time taken to encrypt up to k inputs: 0.1561279296875 seconds
+INFO - Apr-27-2024   18:34:09 --   G587 - Or(And(~G257, G264, keyinput0, ~keyinput1, keyinput2, ~keyinput3), And(G257, ~G264, keyinput0, keyinput1, keyinput2, ~keyinput3), And(G257, G264, keyinput0, keyinput1, keyinput2, ~keyinput3))
+INFO - Apr-27-2024   18:34:09 --   G731 - And(G13, G20, keyinput4, keyinput5, keyinput6, ~keyinput7)
+INFO - Apr-27-2024   18:34:09 --   G788 - And(G33, G41, keyinput8, keyinput9, keyinput10, ~keyinput11)
+INFO - Apr-27-2024   18:34:09 --   G798 - Or(And(G41, ~G45, keyinput12, ~keyinput13, keyinput14, ~keyinput15), And(~G41, G45, keyinput12, keyinput13, keyinput14, ~keyinput15), And(G41, G45, keyinput12, keyinput13, keyinput14, ~keyinput15))
+INFO - Apr-27-2024   18:34:09 --   G1049 - And(G20, G200, keyinput16, keyinput17, keyinput18, ~keyinput19)
+INFO - Apr-27-2024   18:34:09 --   G1050 - Or(And(~G20, ~G200, keyinput20, keyinput21, keyinput22, ~keyinput23), And(G20, ~G200, keyinput20, ~keyinput21, keyinput22, ~keyinput23), And(~G20, G200, keyinput20, keyinput21, keyinput22, ~keyinput23))
+INFO - Apr-27-2024   18:34:09 --   G1051 - And(G20, G179, keyinput24, keyinput25, keyinput26, ~keyinput27)
+INFO - Apr-27-2024   18:34:09 --   G1699 - Or(And(G33, ~G1698, keyinput28, ~keyinput29, keyinput30, ~keyinput31), And(~G33, G1698, keyinput28, keyinput29, keyinput30, ~keyinput31), And(G33, G1698, keyinput28, keyinput29, keyinput30, ~keyinput31))
+INFO - Apr-27-2024   18:34:09 --   G1826 - Or(And(~G13, ~G1, keyinput32, keyinput33, keyinput34, ~keyinput35), And(G13, ~G1, keyinput32, ~keyinput33, keyinput34, ~keyinput35), And(~G13, G1, keyinput32, keyinput33, keyinput34, ~keyinput35))
+INFO - Apr-27-2024   18:34:09 --   G759 - Or(And(~G20, ~G33, keyinput36, keyinput37, keyinput38, ~keyinput39), And(G20, ~G33, keyinput36, ~keyinput37, keyinput38, ~keyinput39), And(G20, G33, keyinput36, keyinput37, keyinput38, ~keyinput39))
+INFO - Apr-27-2024   18:34:09 -- Time taken to encrypt file: 0.1962568759918213 seconds
+
+-e 
+ 
+ 
+ ./../Tools/neos/bin/neos -d ex ./benchmarks/iscas85/c3540.bench ./benchmarks/iscas85/c3540_encrypted.bench 1000
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c3540.bench ./benchmarks/iscas85/c3540_encrypted.bench 1000
+args 
+iteration:    1; variables: 3618 clauses: 9803 assignments: 2  propagations: 27799
+iteration:    2; variables: 7130 clauses: 13636 assignments: 1945  propagations: 45650
+no more dips.
+constraints are not satisfiable
+Finished! 
+iteration=2
+key=0101000100010111000111110001111111101110
+checking key 0101000100010111000111110001111111101110
+
+incorrect key
+G353:0;  G355:0;  G361:0.048;  G358:0;  G351:0;  G372:0.038;  G369:0.13;  G399:0.082;  G364:0.056;  G396:0.144;  G384:0.224;  G367:0.068;  G387:0.178;  G393:0.168;  G390:0.136;  G378:0.184;  G375:0.19;  G381:0.218;  G407:0.116;  G409:0.08;  G405:0.25;  G402:0.262;  
+key-err: 0.116909
+
+time: 0.182541
+0.16user 0.02system 0:00.43elapsed 42%CPU (0avgtext+0avgdata 26836maxresident)k
+6744inputs+0outputs (39major+5994minor)pagefaults 0swaps
+Running the neos solver on the encrypted file hill 
+-e Done 
+ 
+ 
+ 
+
+
+
+
+Done with ./benchmarks/iscas85/c3540.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c432.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c432.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 5  6  13  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-27-2024   18:34:10 --  locked version of ./benchmarks/iscas85/c432.bench
+INFO - Apr-27-2024   18:34:10 --  number of keys: 3
+INFO - Apr-27-2024   18:34:10 --  keys: [5, 6, 13]
+INFO - Apr-27-2024   18:34:10 --  number of bits per key (keyinputs#): 4
+INFO - Apr-27-2024   18:34:10 --  key0 = 0101
+INFO - Apr-27-2024   18:34:10 --  key1 = 0110
+INFO - Apr-27-2024   18:34:10 --  key2 = 1101
+INFO - Apr-27-2024   18:34:10 --  k (gate is locked at k bits): 2
+INFO - Apr-27-2024   18:34:10 -- Time taken to parser file= 0.005062580108642578
+
+INFO - Apr-27-2024   18:34:10 -- c432.bench contains 36 inputs,     7 outputs,     and 160 gates
+
+INFO - Apr-27-2024   18:34:10 -- Time taken to get gates with k inputs = 0.006796360015869141
+
+INFO - Apr-27-2024   18:34:10 -- Cutting gates to encrypt to 10, from 27
+INFO - Apr-27-2024   18:34:10 -- Time taken to encrypt up to k inputs: 0.009347200393676758 seconds
+INFO - Apr-27-2024   18:34:10 --   G154gat - Or(And(~G1gat, ~G4gat, ~keyinput0, keyinput1, ~keyinput2, keyinput3), And(G1gat, ~G4gat, ~keyinput0, keyinput1, keyinput2, ~keyinput3), And(G1gat, G4gat, ~keyinput0, keyinput1, ~keyinput2, keyinput3))
+INFO - Apr-27-2024   18:34:10 --   G157gat - And(G4gat, ~G8gat, keyinput4, keyinput5, ~keyinput6, keyinput7)
+INFO - Apr-27-2024   18:34:10 --   G158gat - And(G4gat, ~G14gat, keyinput8, keyinput9, ~keyinput10, keyinput11)
+INFO - Apr-27-2024   18:34:10 --   G159gat - Or(And(~G11gat, ~G17gat, ~keyinput12, keyinput13, ~keyinput14, keyinput15), And(G11gat, ~G17gat, ~keyinput12, keyinput13, keyinput14, ~keyinput15), And(G11gat, G17gat, ~keyinput12, keyinput13, ~keyinput14, keyinput15))
+INFO - Apr-27-2024   18:34:10 --   G162gat - Or(And(~G24gat, ~G30gat, ~keyinput16, keyinput17, ~keyinput18, keyinput19), And(G24gat, ~G30gat, ~keyinput16, keyinput17, keyinput18, ~keyinput19), And(G24gat, G30gat, ~keyinput16, keyinput17, ~keyinput18, keyinput19))
+INFO - Apr-27-2024   18:34:10 --   G165gat - Or(And(~G37gat, ~G43gat, ~keyinput20, keyinput21, ~keyinput22, keyinput23), And(G37gat, ~G43gat, ~keyinput20, keyinput21, keyinput22, ~keyinput23), And(G37gat, G43gat, ~keyinput20, keyinput21, ~keyinput22, keyinput23))
+INFO - Apr-27-2024   18:34:10 --   G168gat - Or(And(~G50gat, ~G56gat, ~keyinput24, keyinput25, ~keyinput26, keyinput27), And(G50gat, ~G56gat, ~keyinput24, keyinput25, keyinput26, ~keyinput27), And(G50gat, G56gat, ~keyinput24, keyinput25, ~keyinput26, keyinput27))
+INFO - Apr-27-2024   18:34:10 --   G171gat - Or(And(~G63gat, ~G69gat, ~keyinput28, keyinput29, ~keyinput30, keyinput31), And(G63gat, ~G69gat, ~keyinput28, keyinput29, keyinput30, ~keyinput31), And(G63gat, G69gat, ~keyinput28, keyinput29, ~keyinput30, keyinput31))
+INFO - Apr-27-2024   18:34:10 --   G174gat - Or(And(~G76gat, ~G82gat, ~keyinput32, keyinput33, ~keyinput34, keyinput35), And(G76gat, ~G82gat, ~keyinput32, keyinput33, keyinput34, ~keyinput35), And(G76gat, G82gat, ~keyinput32, keyinput33, ~keyinput34, keyinput35))
+INFO - Apr-27-2024   18:34:10 --   G177gat - Or(And(~G89gat, ~G95gat, ~keyinput36, keyinput37, ~keyinput38, keyinput39), And(G89gat, ~G95gat, ~keyinput36, keyinput37, keyinput38, ~keyinput39), And(G89gat, G95gat, ~keyinput36, keyinput37, ~keyinput38, keyinput39))
+INFO - Apr-27-2024   18:34:10 -- Time taken to encrypt file: 0.0392909049987793 seconds
+
+-e 
+ 
+ 
+ ./../Tools/neos/bin/neos -d ex ./benchmarks/iscas85/c432.bench ./benchmarks/iscas85/c432_encrypted.bench 1000
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c432.bench ./benchmarks/iscas85/c432_encrypted.bench 1000
+args 
+iteration:    1; variables: 645 clauses: 1736 assignments: 1  propagations: 5025
+iteration:    2; variables: 1183 clauses: 2275 assignments: 359  propagations: 7767
+no more dips.
+
+Finished! 
+iteration=2
+key=0101110111010110011001100110011001100110
+checking key 0101110111010110011001100110011001100110
+
+incorrect key
+G223gat:0.082;  G329gat:0.146;  G370gat:0.19;  G421gat:0.288;  G430gat:0.176;  G431gat:0.182;  G432gat:0.166;  
+key-err: 0.175714
+
+time: 0.0534496
+0.01user 0.06system 0:00.28elapsed 29%CPU (0avgtext+0avgdata 14684maxresident)k
+6744inputs+0outputs (39major+1142minor)pagefaults 0swaps
+Running the neos solver on the encrypted file hill 
+-e Done 
+ 
+ 
+ 
+
+
+
+
+Done with ./benchmarks/iscas85/c432.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c499.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c499.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 15  28  28  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-27-2024   18:34:10 --  locked version of ./benchmarks/iscas85/c499.bench
+INFO - Apr-27-2024   18:34:10 --  number of keys: 3
+INFO - Apr-27-2024   18:34:10 --  keys: [15, 28, 28]
+INFO - Apr-27-2024   18:34:10 --  number of bits per key (keyinputs#): 5
+INFO - Apr-27-2024   18:34:10 --  key0 = 01111
+INFO - Apr-27-2024   18:34:10 --  key1 = 11100
+INFO - Apr-27-2024   18:34:10 --  key2 = 11100
+INFO - Apr-27-2024   18:34:10 --  k (gate is locked at k bits): 2
+INFO - Apr-27-2024   18:34:10 -- Time taken to parser file= 0.0040912628173828125
+
+INFO - Apr-27-2024   18:34:10 -- c499.bench contains 41 inputs,     32 outputs,     and 202 gates
+
+INFO - Apr-27-2024   18:34:10 -- Time taken to get gates with k inputs = 0.0073888301849365234
+
+INFO - Apr-27-2024   18:34:10 -- Cutting gates to encrypt to 10, from 40
+INFO - Apr-27-2024   18:34:10 -- Time taken to encrypt up to k inputs: 0.01031041145324707 seconds
+INFO - Apr-27-2024   18:34:10 --   Gxa0 - Or(And(Gid0, ~Gid1, keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4), And(~Gid0, Gid1, keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4))
+INFO - Apr-27-2024   18:34:10 --   Gxa1 - Or(And(~Gid2, Gid3, keyinput5, keyinput6, keyinput7, ~keyinput8, ~keyinput9), And(Gid2, ~Gid3, keyinput5, keyinput6, keyinput7, ~keyinput8, ~keyinput9))
+INFO - Apr-27-2024   18:34:10 --   Gxa2 - Or(And(~Gid4, Gid5, keyinput10, keyinput11, keyinput12, ~keyinput13, ~keyinput14), And(Gid4, ~Gid5, keyinput10, keyinput11, keyinput12, ~keyinput13, ~keyinput14))
+INFO - Apr-27-2024   18:34:10 --   Gxa3 - Or(And(~Gid6, Gid7, keyinput15, keyinput16, keyinput17, ~keyinput18, ~keyinput19), And(Gid6, ~Gid7, keyinput15, keyinput16, keyinput17, ~keyinput18, ~keyinput19))
+INFO - Apr-27-2024   18:34:10 --   Gxa4 - Or(And(~Gid8, Gid9, keyinput20, keyinput21, keyinput22, ~keyinput23, ~keyinput24), And(Gid8, ~Gid9, keyinput20, keyinput21, keyinput22, ~keyinput23, ~keyinput24))
+INFO - Apr-27-2024   18:34:10 --   Gxa5 - Or(And(Gid10, ~Gid11, keyinput25, keyinput26, keyinput27, ~keyinput28, ~keyinput29), And(~Gid10, Gid11, keyinput25, keyinput26, keyinput27, ~keyinput28, ~keyinput29))
+INFO - Apr-27-2024   18:34:10 --   Gxa6 - Or(And(Gid12, ~Gid13, keyinput30, keyinput31, keyinput32, ~keyinput33, ~keyinput34), And(~Gid12, Gid13, keyinput30, keyinput31, keyinput32, ~keyinput33, ~keyinput34))
+INFO - Apr-27-2024   18:34:10 --   Gxa7 - Or(And(~Gid14, Gid15, keyinput35, keyinput36, keyinput37, ~keyinput38, ~keyinput39), And(Gid14, ~Gid15, keyinput35, keyinput36, keyinput37, ~keyinput38, ~keyinput39))
+INFO - Apr-27-2024   18:34:10 --   Gxa8 - Or(And(Gid16, ~Gid17, keyinput40, keyinput41, keyinput42, ~keyinput43, ~keyinput44), And(~Gid16, Gid17, keyinput40, keyinput41, keyinput42, ~keyinput43, ~keyinput44))
+INFO - Apr-27-2024   18:34:10 --   Gxa9 - Or(And(~Gid18, Gid19, keyinput45, keyinput46, keyinput47, ~keyinput48, ~keyinput49), And(Gid18, ~Gid19, keyinput45, keyinput46, keyinput47, ~keyinput48, ~keyinput49))
+INFO - Apr-27-2024   18:34:10 -- Time taken to encrypt file: 0.03722548484802246 seconds
+
+-e 
+ 
+ 
+ ./../Tools/neos/bin/neos -d ex ./benchmarks/iscas85/c499.bench ./benchmarks/iscas85/c499_encrypted.bench 1000
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c499.bench ./benchmarks/iscas85/c499_encrypted.bench 1000
+args 
+iteration:    1; variables: 739 clauses: 2129 assignments: 1  propagations: 1907
+iteration:    2; variables: 1371 clauses: 2904 assignments: 497  propagations: 5154
+iteration:    3; variables: 2003 clauses: 3746 assignments: 913  propagations: 8264
+iteration:    4; variables: 2635 clauses: 4588 assignments: 1327  propagations: 15636
+iteration:    5; variables: 3267 clauses: 5554 assignments: 1621  propagations: 19614
+iteration:    6; variables: 3899 clauses: 6424 assignments: 2035  propagations: 26998
+iteration:    7; variables: 4531 clauses: 7338 assignments: 2351  propagations: 31865
+no more dips.
+
+Finished! 
+iteration=7
+key=11100111001110011100111001110011100111001110011100
+checking key 11100111001110011100111001110011100111001110011100
+
+equivalent
+
+time: 0.116016
+0.08user 0.02system 0:00.31elapsed 35%CPU (0avgtext+0avgdata 13556maxresident)k
+6744inputs+0outputs (39major+1416minor)pagefaults 0swaps
+Running the neos solver on the encrypted file hill 
+-e Done 
+ 
+ 
+ 
+
+
+
+
+Done with ./benchmarks/iscas85/c499.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c5315.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c5315.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 26  14  3  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-27-2024   18:34:11 --  locked version of ./benchmarks/iscas85/c5315.bench
+INFO - Apr-27-2024   18:34:11 --  number of keys: 3
+INFO - Apr-27-2024   18:34:11 --  keys: [26, 14, 3]
+INFO - Apr-27-2024   18:34:11 --  number of bits per key (keyinputs#): 5
+INFO - Apr-27-2024   18:34:11 --  key0 = 11010
+INFO - Apr-27-2024   18:34:11 --  key1 = 01110
+INFO - Apr-27-2024   18:34:11 --  key2 = 00011
+INFO - Apr-27-2024   18:34:11 --  k (gate is locked at k bits): 2
+INFO - Apr-27-2024   18:34:11 -- Time taken to parser file= 0.017197132110595703
+
+INFO - Apr-27-2024   18:34:11 -- c5315.bench contains 178 inputs,     123 outputs,     and 2307 gates
+
+INFO - Apr-27-2024   18:34:11 -- Time taken to get gates with k inputs = 0.0667273998260498
+
+INFO - Apr-27-2024   18:34:11 -- Cutting gates to encrypt to 10, from 190
+INFO - Apr-27-2024   18:34:11 -- Time taken to encrypt up to k inputs: 0.06952047348022461 seconds
+INFO - Apr-27-2024   18:34:11 --   G4114 - And(G135, G4115, keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4)
+INFO - Apr-27-2024   18:34:11 --   G601 - And(G552, G562, keyinput5, keyinput6, ~keyinput7, keyinput8, ~keyinput9)
+INFO - Apr-27-2024   18:34:11 --   G633 - Or(And(~G373, ~G1, keyinput10, keyinput11, ~keyinput12, keyinput13, ~keyinput14), And(G373, ~G1, ~keyinput10, keyinput11, keyinput12, keyinput13, ~keyinput14), And(~G373, G1, ~keyinput10, ~keyinput11, ~keyinput12, keyinput13, keyinput14))
+INFO - Apr-27-2024   18:34:11 --   G810 - And(G141, G145, keyinput15, keyinput16, ~keyinput17, keyinput18, ~keyinput19)
+INFO - Apr-27-2024   18:34:11 --   G816 - Or(And(~G135, ~G4115, keyinput20, keyinput21, ~keyinput22, keyinput23, ~keyinput24), And(~G135, G4115, ~keyinput20, keyinput21, keyinput22, keyinput23, ~keyinput24), And(G135, ~G4115, ~keyinput20, ~keyinput21, ~keyinput22, keyinput23, keyinput24))
+INFO - Apr-27-2024   18:34:11 --   G844 - And(~G2824, G27, ~keyinput25, ~keyinput26, ~keyinput27, keyinput28, keyinput29)
+INFO - Apr-27-2024   18:34:11 --   G846 - And(G386, G556, keyinput30, keyinput31, ~keyinput32, keyinput33, ~keyinput34)
+INFO - Apr-27-2024   18:34:11 --   G2822 - And(G27, G31, keyinput35, keyinput36, ~keyinput37, keyinput38, ~keyinput39)
+INFO - Apr-27-2024   18:34:11 --   G3176 - And(G27, G31, keyinput40, keyinput41, ~keyinput42, keyinput43, ~keyinput44)
+INFO - Apr-27-2024   18:34:11 --   G634 - And(G373, G1, keyinput45, keyinput46, ~keyinput47, keyinput48, ~keyinput49)
+INFO - Apr-27-2024   18:34:11 -- Time taken to encrypt file: 0.11110186576843262 seconds
+
+-e 
+ 
+ 
+ ./../Tools/neos/bin/neos -d ex ./benchmarks/iscas85/c5315.bench ./benchmarks/iscas85/c5315_encrypted.bench 1000
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c5315.bench ./benchmarks/iscas85/c5315_encrypted.bench 1000
+args 
+iteration:    1; variables: 5109 clauses: 14346 assignments: 2  propagations: 26308
+iteration:    2; variables: 10065 clauses: 14689 assignments: 4834  propagations: 49855
+iteration:    3; variables: 15021 clauses: 15039 assignments: 9669  propagations: 130895
+iteration:    4; variables: 19977 clauses: 15355 assignments: 14513  propagations: 151273
+iteration:    5; variables: 24933 clauses: 15677 assignments: 19355  propagations: 264911
+iteration:    6; variables: 29889 clauses: 16033 assignments: 24176  propagations: 324395
+no more dips.
+
+Finished! 
+iteration=6
+key=00101110101110111010011100001111010110101101011010
+checking key 00101110101110111010011100001111010110101101011010
+
+incorrect key
+G144:0;  G298:0;  G973:0;  G594:0;  G599:0;  G600:0;  G601:0;  G602:0;  G603:0;  G604:0;  G611:0;  G612:0;  G810:0;  G848:0;  G849:0;  G850:0;  G851:0;  G634:0;  G815:0;  G845:0;  G847:0;  G926:0;  G923:0;  G921:0;  G892:0;  G887:0;  G606:0;  G656:0;  G809:0;  G993:0;  G978:0;  G949:0;  G939:0;  G889:0;  G593:0;  G636:0;  G704:0;  G717:0;  G820:0;  G639:0;  G673:0;  G707:0;  G715:0;  G598:0;  G610:0;  G588:0;  G615:0;  G626:0;  G632:0;  G1002:0;  G1004:0;  G591:0;  G618:0;  G621:0;  G629:0;  G822:0;  G838:0;  G861:0;  G623:0;  G722:0;  G832:0;  G834:0;  G836:0;  G859:0;  G871:0;  G873:0;  G875:0;  G877:0;  G998:0;  G1000:0;  G575:0;  G585:0;  G661:0;  G693:0;  G747:0;  G752:0;  G757:0;  G762:0;  G787:0;  G792:0;  G797:0;  G802:0;  G642:0;  G664:0;  G667:0;  G670:0;  G676:0;  G696:0;  G699:0;  G702:0;  G818:0.236;  G813:0;  G824:0;  G826:0;  G828:0;  G830:0;  G854:0;  G863:0;  G865:0;  G867:0;  G869:0;  G712:0;  G727:0;  G732:0;  G737:0;  G742:0;  G772:0;  G777:0;  G782:0;  G645:0;  G648:0;  G651:0;  G654:0;  G679:0;  G682:0;  G685:0;  G688:0;  G843:0;  G882:0;  G767:0;  G807:0;  G658:0;  G690:0;  
+key-err: 0.0019187
+
+time: 0.754636
+0.64user 0.11system 0:00.96elapsed 78%CPU (0avgtext+0avgdata 41296maxresident)k
+6744inputs+0outputs (39major+8771minor)pagefaults 0swaps
+Running the neos solver on the encrypted file hill 
+-e Done 
+ 
+ 
+ 
+
+
+
+
+Done with ./benchmarks/iscas85/c5315.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c6288.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c6288.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 17  25  27  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-27-2024   18:34:12 --  locked version of ./benchmarks/iscas85/c6288.bench
+INFO - Apr-27-2024   18:34:12 --  number of keys: 3
+INFO - Apr-27-2024   18:34:12 --  keys: [17, 25, 27]
+INFO - Apr-27-2024   18:34:12 --  number of bits per key (keyinputs#): 5
+INFO - Apr-27-2024   18:34:12 --  key0 = 10001
+INFO - Apr-27-2024   18:34:12 --  key1 = 11001
+INFO - Apr-27-2024   18:34:12 --  key2 = 11011
+INFO - Apr-27-2024   18:34:12 --  k (gate is locked at k bits): 2
+INFO - Apr-27-2024   18:34:12 -- Time taken to parser file= 0.01651930809020996
+
+INFO - Apr-27-2024   18:34:12 -- c6288.bench contains 32 inputs,     32 outputs,     and 2416 gates
+
+INFO - Apr-27-2024   18:34:13 -- Time taken to get gates with k inputs = 0.5217161178588867
+
+INFO - Apr-27-2024   18:34:13 -- Cutting gates to encrypt to 10, from 316
+INFO - Apr-27-2024   18:34:13 -- Time taken to encrypt up to k inputs: 0.5267629623413086 seconds
+INFO - Apr-27-2024   18:34:13 -- all gates start with AND, increasing k to 3 
+INFO - Apr-27-2024   18:34:13 -- Time taken to get gates with k inputs = 0.511253833770752
+
+INFO - Apr-27-2024   18:34:13 -- Could not find k to encrypt keys, trying k=4
+INFO - Apr-27-2024   18:34:14 -- Time taken to get gates with k inputs = 0.5890681743621826
+
+INFO - Apr-27-2024   18:34:14 -- Cutting gates to encrypt to 10, from 79
+INFO - Apr-27-2024   18:34:14 -- Time taken to encrypt up to k inputs: 1.1102805137634277 seconds
+INFO - Apr-27-2024   18:34:14 --   G1446gat - Or(And(~G1gat, G273gat, ~G290gat, keyinput0, keyinput1, ~keyinput2, ~keyinput3, keyinput4, G18gat), And(~G1gat, G273gat, G290gat, keyinput0, keyinput1, ~keyinput2, keyinput3, keyinput4, G18gat), And(G1gat, G273gat, ~G290gat, keyinput0, keyinput1, ~keyinput2, keyinput3, keyinput4, G18gat))
+INFO - Apr-27-2024   18:34:14 --   G1450gat - Or(And(G273gat, ~G290gat, keyinput5, ~keyinput6, ~keyinput7, ~keyinput8, keyinput9, ~G18gat, G35gat), And(G273gat, G290gat, keyinput5, keyinput6, ~keyinput7, ~keyinput8, keyinput9, ~G18gat, G35gat), And(G273gat, ~G290gat, keyinput5, keyinput6, ~keyinput7, keyinput8, keyinput9, G18gat, G35gat))
+INFO - Apr-27-2024   18:34:14 --   G1454gat - Or(And(G273gat, ~G290gat, keyinput10, ~keyinput11, ~keyinput12, ~keyinput13, keyinput14, ~G35gat, G52gat), And(G273gat, G290gat, keyinput10, keyinput11, ~keyinput12, ~keyinput13, keyinput14, ~G35gat, G52gat), And(G273gat, ~G290gat, keyinput10, keyinput11, ~keyinput12, keyinput13, keyinput14, G35gat, G52gat))
+INFO - Apr-27-2024   18:34:14 --   G1458gat - Or(And(G273gat, ~G290gat, keyinput15, keyinput16, ~keyinput17, ~keyinput18, keyinput19, ~G52gat, G69gat), And(G273gat, G290gat, keyinput15, keyinput16, ~keyinput17, keyinput18, keyinput19, ~G52gat, G69gat), And(G273gat, ~G290gat, keyinput15, keyinput16, ~keyinput17, keyinput18, keyinput19, G52gat, G69gat))
+INFO - Apr-27-2024   18:34:14 --   G1462gat - Or(And(G273gat, ~G290gat, keyinput20, ~keyinput21, ~keyinput22, ~keyinput23, keyinput24, ~G69gat, G86gat), And(G273gat, G290gat, keyinput20, keyinput21, ~keyinput22, ~keyinput23, keyinput24, ~G69gat, G86gat), And(G273gat, ~G290gat, keyinput20, keyinput21, ~keyinput22, keyinput23, keyinput24, G69gat, G86gat))
+INFO - Apr-27-2024   18:34:14 --   G1466gat - Or(And(G273gat, ~G290gat, keyinput25, ~keyinput26, ~keyinput27, ~keyinput28, keyinput29, ~G86gat, G103gat), And(G273gat, G290gat, keyinput25, keyinput26, ~keyinput27, ~keyinput28, keyinput29, ~G86gat, G103gat), And(G273gat, ~G290gat, keyinput25, keyinput26, ~keyinput27, keyinput28, keyinput29, G86gat, G103gat))
+INFO - Apr-27-2024   18:34:14 --   G1470gat - Or(And(G273gat, ~G290gat, keyinput30, keyinput31, ~keyinput32, keyinput33, keyinput34, ~G103gat, G120gat), And(G273gat, G290gat, keyinput30, keyinput31, ~keyinput32, ~keyinput33, keyinput34, ~G103gat, G120gat), And(G273gat, ~G290gat, keyinput30, keyinput31, ~keyinput32, ~keyinput33, keyinput34, G103gat, G120gat))
+INFO - Apr-27-2024   18:34:14 --   G1474gat - Or(And(G273gat, ~G290gat, keyinput35, ~keyinput36, ~keyinput37, ~keyinput38, keyinput39, ~G120gat, G137gat), And(G273gat, G290gat, keyinput35, keyinput36, ~keyinput37, ~keyinput38, keyinput39, ~G120gat, G137gat), And(G273gat, ~G290gat, keyinput35, keyinput36, ~keyinput37, keyinput38, keyinput39, G120gat, G137gat))
+INFO - Apr-27-2024   18:34:14 --   G1478gat - Or(And(G273gat, ~G290gat, keyinput40, ~keyinput41, ~keyinput42, ~keyinput43, keyinput44, ~G137gat, G154gat), And(G273gat, G290gat, keyinput40, keyinput41, ~keyinput42, ~keyinput43, keyinput44, ~G137gat, G154gat), And(G273gat, ~G290gat, keyinput40, keyinput41, ~keyinput42, keyinput43, keyinput44, G137gat, G154gat))
+INFO - Apr-27-2024   18:34:14 --   G1482gat - Or(And(G273gat, ~G290gat, keyinput45, ~keyinput46, ~keyinput47, ~keyinput48, keyinput49, ~G154gat, G171gat), And(G273gat, G290gat, keyinput45, keyinput46, ~keyinput47, ~keyinput48, keyinput49, ~G154gat, G171gat), And(G273gat, ~G290gat, keyinput45, keyinput46, ~keyinput47, keyinput48, keyinput49, G154gat, G171gat))
+INFO - Apr-27-2024   18:34:14 -- Time taken to encrypt file: 1.6820242404937744 seconds
+
+-e 
+ 
+ 
+ ./../Tools/neos/bin/neos -d ex ./benchmarks/iscas85/c6288.bench ./benchmarks/iscas85/c6288_encrypted.bench 1000
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c6288.bench ./benchmarks/iscas85/c6288_encrypted.bench 1000
+args 
+iteration:    1; variables: 5248 clauses: 15593 assignments: 1  propagations: 124140
+iteration:    2; variables: 10398 clauses: 22572 assignments: 3703  propagations: 187095
+no more dips.
+constraints are not satisfiable
+Finished! 
+iteration=2
+key=11111100010010011001110111101111001011100110011111
+checking key 11111100010010011001110111101111001011100110011111
+
+incorrect key
+G545gat:0;  G1581gat:0.196;  G1901gat:0.186;  G2223gat:0.262;  G2548gat:0.192;  G2877gat:0.258;  G3211gat:0.246;  G3552gat:0.182;  G3895gat:0.208;  G4241gat:0.24;  G4591gat:0.242;  G4946gat:0.198;  G5308gat:0.12;  G5672gat:0.046;  G5971gat:0.01;  G6123gat:0.006;  G6150gat:0.004;  G6160gat:0;  G6170gat:0;  G6180gat:0;  G6190gat:0;  G6200gat:0;  G6210gat:0;  G6220gat:0;  G6230gat:0;  G6240gat:0;  G6250gat:0;  G6260gat:0;  G6270gat:0;  G6280gat:0;  G6287gat:0;  G6288gat:0;  
+key-err: 0.081125
+
+time: 0.22483
+0.20user 0.03system 0:00.44elapsed 53%CPU (0avgtext+0avgdata 36728maxresident)k
+6744inputs+0outputs (39major+9530minor)pagefaults 0swaps
+Running the neos solver on the encrypted file hill 
+-e Done 
+ 
+ 
+ 
+
+
+
+
+Done with ./benchmarks/iscas85/c6288.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c7552.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c7552.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 22  9  8  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-27-2024   18:34:15 --  locked version of ./benchmarks/iscas85/c7552.bench
+INFO - Apr-27-2024   18:34:15 --  number of keys: 3
+INFO - Apr-27-2024   18:34:15 --  keys: [22, 9, 8]
+INFO - Apr-27-2024   18:34:15 --  number of bits per key (keyinputs#): 5
+INFO - Apr-27-2024   18:34:15 --  key0 = 10110
+INFO - Apr-27-2024   18:34:15 --  key1 = 01001
+INFO - Apr-27-2024   18:34:15 --  key2 = 01000
+INFO - Apr-27-2024   18:34:15 --  k (gate is locked at k bits): 2
+INFO - Apr-27-2024   18:34:15 -- Time taken to parser file= 0.01895880699157715
+
+INFO - Apr-27-2024   18:34:15 -- c7552.bench contains 207 inputs,     107 outputs,     and 3512 gates
+
+INFO - Apr-27-2024   18:34:15 -- Time taken to get gates with k inputs = 0.15008926391601562
+
+INFO - Apr-27-2024   18:34:15 -- Cutting gates to encrypt to 10, from 265
+INFO - Apr-27-2024   18:34:15 -- Time taken to encrypt up to k inputs: 0.15260100364685059 seconds
+INFO - Apr-27-2024   18:34:15 --   G1184 - And(G134, G133, keyinput0, ~keyinput1, keyinput2, keyinput3, ~keyinput4)
+INFO - Apr-27-2024   18:34:15 --   G1206 - Or(And(~G12, ~G9, keyinput5, ~keyinput6, keyinput7, keyinput8, ~keyinput9), And(~G12, G9, ~keyinput5, keyinput6, ~keyinput7, ~keyinput8, keyinput9), And(G12, ~G9, ~keyinput5, keyinput6, ~keyinput7, ~keyinput8, ~keyinput9))
+INFO - Apr-27-2024   18:34:15 --   G1207 - Or(And(~G12, ~G9, keyinput10, ~keyinput11, keyinput12, keyinput13, ~keyinput14), And(~G12, G9, ~keyinput10, keyinput11, ~keyinput12, ~keyinput13, keyinput14), And(G12, ~G9, ~keyinput10, keyinput11, ~keyinput12, ~keyinput13, ~keyinput14))
+INFO - Apr-27-2024   18:34:15 --   G1518 - And(G4528, G1492, keyinput15, ~keyinput16, keyinput17, keyinput18, ~keyinput19)
+INFO - Apr-27-2024   18:34:15 --   G1541 - Or(And(~G4528, ~G1496, keyinput20, ~keyinput21, keyinput22, keyinput23, ~keyinput24), And(G4528, ~G1496, ~keyinput20, keyinput21, ~keyinput22, ~keyinput23, keyinput24), And(~G4528, G1496, ~keyinput20, keyinput21, ~keyinput22, ~keyinput23, ~keyinput24))
+INFO - Apr-27-2024   18:34:15 --   G402 - Or(And(~G57, G5, ~keyinput25, keyinput26, ~keyinput27, ~keyinput28, keyinput29), And(G57, ~G5, ~keyinput25, keyinput26, ~keyinput27, ~keyinput28, ~keyinput29), And(G57, G5, keyinput25, ~keyinput26, keyinput27, keyinput28, ~keyinput29))
+INFO - Apr-27-2024   18:34:15 --   G1519 - Or(And(~G4528, ~G1492, keyinput30, ~keyinput31, keyinput32, keyinput33, ~keyinput34), And(G4528, ~G1492, ~keyinput30, keyinput31, ~keyinput32, ~keyinput33, keyinput34), And(~G4528, G1492, ~keyinput30, keyinput31, ~keyinput32, ~keyinput33, ~keyinput34))
+INFO - Apr-27-2024   18:34:15 --   G2871 - And(G4528, ~G1455, ~keyinput35, keyinput36, ~keyinput37, ~keyinput38, keyinput39)
+INFO - Apr-27-2024   18:34:15 --   G2883 - Or(And(~G4528, ~G2204, keyinput40, ~keyinput41, keyinput42, keyinput43, ~keyinput44), And(~G4528, G2204, ~keyinput40, keyinput41, ~keyinput42, ~keyinput43, ~keyinput44), And(G4528, G2204, keyinput40, ~keyinput41, keyinput42, keyinput43, ~keyinput44))
+INFO - Apr-27-2024   18:34:15 --   G284 - Or(And(~G5, ~G1197, keyinput45, ~keyinput46, keyinput47, keyinput48, ~keyinput49), And(G5, ~G1197, ~keyinput45, keyinput46, ~keyinput47, ~keyinput48, keyinput49), And(G5, G1197, keyinput45, ~keyinput46, keyinput47, keyinput48, ~keyinput49))
+INFO - Apr-27-2024   18:34:15 -- Time taken to encrypt file: 0.1988968849182129 seconds
+
+-e 
+ 
+ 
+ ./../Tools/neos/bin/neos -d ex ./benchmarks/iscas85/c7552.bench ./benchmarks/iscas85/c7552_encrypted.bench 1000
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c7552.bench ./benchmarks/iscas85/c7552_encrypted.bench 1000
+args 
+iteration:    1; variables: 7666 clauses: 20598 assignments: 2  propagations: 42279
+iteration:    2; variables: 15134 clauses: 25551 assignments: 7264  propagations: 224214
+no more dips.
+constraints are not satisfiable
+Finished! 
+iteration=2
+key=01000010111111101000100111011001001001101011110110
+checking key 01000010111111101000100111011001001001101011110110
+
+incorrect key
+G2:0;  G3:0;  G450:0;  G448:0;  G444:0;  G442:0;  G440:0;  G438:0;  G496:0;  G494:0;  G492:0;  G490:0;  G488:0;  G486:0;  G484:0;  G482:0;  G480:0;  G560:0;  G542:0;  G558:0;  G556:0;  G554:0;  G552:0;  G550:0;  G548:0;  G546:0;  G544:0;  G540:0;  G538:0;  G536:0;  G534:0;  G532:0;  G530:0;  G528:0;  G526:0;  G524:0;  G279:0;  G436:0;  G478:0;  G522:0;  G402:0.468;  G404:0;  G406:0;  G408:0;  G410:0;  G432:0;  G446:0;  G284:0.248;  G286:0;  G289:0;  G292:0.106;  G341:0;  G281:0.106;  G453:0;  G278:0;  G373:0;  G246:0.506;  G258:0.198;  G264:0.198;  G270:0.506;  G388:0;  G391:0;  G394:0;  G397:0;  G376:0;  G379:0;  G382:0;  G385:0;  G412:0.174;  G414:0;  G416:0.152;  G249:0.198;  G295:0;  G324:0.198;  G252:0;  G276:0.506;  G310:0.56;  G313:0;  G316:0;  G319:0;  G327:0.194;  G330:0.174;  G333:0.194;  G336:0.2;  G418:0;  G273:0.506;  G298:0.214;  G301:0.226;  G304:0.256;  G307:0.364;  G344:0;  G422:0.356;  G469:0.356;  G419:0.5;  G471:0.5;  G359:0;  G362:0;  G365:0;  G368:0;  G347:0;  G350:0;  G353:0;  G356:0;  G321:0.412;  G338:0.408;  G370:0;  G399:0;  
+key-err: 0.0839626
+
+time: 0.573706
+0.48user 0.10system 0:00.79elapsed 73%CPU (0avgtext+0avgdata 48356maxresident)k
+6744inputs+0outputs (39major+12326minor)pagefaults 0swaps
+Running the neos solver on the encrypted file hill 
+-e Done 
+ 
+ 
+ 
+
+
+
+
+Done with ./benchmarks/iscas85/c7552.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c880.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c880.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 27  8  11  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-27-2024   18:34:16 --  locked version of ./benchmarks/iscas85/c880.bench
+INFO - Apr-27-2024   18:34:16 --  number of keys: 3
+INFO - Apr-27-2024   18:34:16 --  keys: [27, 8, 11]
+INFO - Apr-27-2024   18:34:16 --  number of bits per key (keyinputs#): 5
+INFO - Apr-27-2024   18:34:16 --  key0 = 11011
+INFO - Apr-27-2024   18:34:16 --  key1 = 01000
+INFO - Apr-27-2024   18:34:16 --  key2 = 01011
+INFO - Apr-27-2024   18:34:16 --  k (gate is locked at k bits): 2
+INFO - Apr-27-2024   18:34:16 -- Time taken to parser file= 0.005380868911743164
+
+INFO - Apr-27-2024   18:34:16 -- c880.bench contains 60 inputs,     26 outputs,     and 383 gates
+
+INFO - Apr-27-2024   18:34:16 -- Time taken to get gates with k inputs = 0.009949445724487305
+
+INFO - Apr-27-2024   18:34:16 -- Cutting gates to encrypt to 10, from 55
+INFO - Apr-27-2024   18:34:16 -- Time taken to encrypt up to k inputs: 0.012267589569091797 seconds
+INFO - Apr-27-2024   18:34:16 --   G285gat - Or(And(~G29gat, ~G68gat, keyinput0, keyinput1, ~keyinput2, keyinput3, keyinput4), And(G29gat, ~G68gat, ~keyinput0, keyinput1, ~keyinput2, ~keyinput3, ~keyinput4), And(~G29gat, G68gat, ~keyinput0, keyinput1, ~keyinput2, keyinput3, keyinput4))
+INFO - Apr-27-2024   18:34:16 --   G297gat - And(G85gat, G86gat, keyinput5, keyinput6, ~keyinput7, keyinput8, keyinput9)
+INFO - Apr-27-2024   18:34:16 --   G298gat - Or(And(~G87gat, G88gat, ~keyinput10, keyinput11, ~keyinput12, ~keyinput13, ~keyinput14), And(G87gat, ~G88gat, ~keyinput10, keyinput11, ~keyinput12, keyinput13, keyinput14), And(G87gat, G88gat, keyinput10, keyinput11, ~keyinput12, keyinput13, keyinput14))
+INFO - Apr-27-2024   18:34:16 --   G301gat - Or(And(~G91gat, ~G96gat, keyinput15, keyinput16, ~keyinput17, keyinput18, keyinput19), And(G91gat, ~G96gat, ~keyinput15, keyinput16, ~keyinput17, ~keyinput18, ~keyinput19), And(~G91gat, G96gat, ~keyinput15, keyinput16, ~keyinput17, keyinput18, keyinput19))
+INFO - Apr-27-2024   18:34:16 --   G302gat - Or(And(G91gat, ~G96gat, ~keyinput20, keyinput21, ~keyinput22, ~keyinput23, ~keyinput24), And(~G91gat, G96gat, ~keyinput20, keyinput21, ~keyinput22, keyinput23, keyinput24), And(G91gat, G96gat, keyinput20, keyinput21, ~keyinput22, keyinput23, keyinput24))
+INFO - Apr-27-2024   18:34:16 --   G303gat - Or(And(~G101gat, ~G106gat, keyinput25, keyinput26, ~keyinput27, keyinput28, keyinput29), And(G101gat, ~G106gat, ~keyinput25, keyinput26, ~keyinput27, ~keyinput28, ~keyinput29), And(~G101gat, G106gat, ~keyinput25, keyinput26, ~keyinput27, keyinput28, keyinput29))
+INFO - Apr-27-2024   18:34:16 --   G304gat - Or(And(G101gat, ~G106gat, ~keyinput30, keyinput31, ~keyinput32, ~keyinput33, ~keyinput34), And(~G101gat, G106gat, ~keyinput30, keyinput31, ~keyinput32, keyinput33, keyinput34), And(G101gat, G106gat, keyinput30, keyinput31, ~keyinput32, keyinput33, keyinput34))
+INFO - Apr-27-2024   18:34:16 --   G305gat - Or(And(~G111gat, ~G116gat, keyinput35, keyinput36, ~keyinput37, keyinput38, keyinput39), And(~G111gat, G116gat, ~keyinput35, keyinput36, ~keyinput37, ~keyinput38, ~keyinput39), And(G111gat, ~G116gat, ~keyinput35, keyinput36, ~keyinput37, keyinput38, keyinput39))
+INFO - Apr-27-2024   18:34:16 --   G306gat - Or(And(~G111gat, G116gat, ~keyinput40, keyinput41, ~keyinput42, ~keyinput43, ~keyinput44), And(G111gat, ~G116gat, ~keyinput40, keyinput41, ~keyinput42, keyinput43, keyinput44), And(G111gat, G116gat, keyinput40, keyinput41, ~keyinput42, keyinput43, keyinput44))
+INFO - Apr-27-2024   18:34:16 --   G307gat - Or(And(~G121gat, ~G126gat, keyinput45, keyinput46, ~keyinput47, keyinput48, keyinput49), And(~G121gat, G126gat, ~keyinput45, keyinput46, ~keyinput47, ~keyinput48, ~keyinput49), And(G121gat, ~G126gat, ~keyinput45, keyinput46, ~keyinput47, keyinput48, keyinput49))
+INFO - Apr-27-2024   18:34:16 -- Time taken to encrypt file: 0.04125070571899414 seconds
+
+-e 
+ 
+ 
+ ./../Tools/neos/bin/neos -d ex ./benchmarks/iscas85/c880.bench ./benchmarks/iscas85/c880_encrypted.bench 1000
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c880.bench ./benchmarks/iscas85/c880_encrypted.bench 1000
+args 
+iteration:    1; variables: 1192 clauses: 3183 assignments: 2  propagations: 2230
+iteration:    2; variables: 2252 clauses: 3722 assignments: 904  propagations: 17973
+iteration:    3; variables: 3312 clauses: 4252 assignments: 1802  propagations: 27287
+iteration:    4; variables: 4372 clauses: 4802 assignments: 2678  propagations: 31367
+iteration:    5; variables: 5432 clauses: 5352 assignments: 3554  propagations: 35858
+iteration:    6; variables: 6492 clauses: 5914 assignments: 4420  propagations: 41380
+iteration:    7; variables: 7552 clauses: 6462 assignments: 5296  propagations: 99754
+no more dips.
+
+Finished! 
+iteration=7
+key=01000110110101101000010000101101011010000100001000
+checking key 01000110110101101000010000101101011010000100001000
+
+incorrect key
+G388gat:0;  G389gat:0;  G390gat:0;  G391gat:0;  G418gat:0;  G419gat:0;  G420gat:0;  G421gat:0;  G422gat:0;  G423gat:0.27;  G446gat:0;  G447gat:0;  G448gat:0.032;  G449gat:0;  G450gat:0.254;  G767gat:0.472;  G768gat:0;  G850gat:0;  G863gat:0;  G864gat:0;  G865gat:0;  G866gat:0;  G874gat:0;  G878gat:0;  G879gat:0;  G880gat:0;  
+key-err: 0.0395385
+
+time: 0.14383
+0.10user 0.03system 0:00.34elapsed 39%CPU (0avgtext+0avgdata 15016maxresident)k
+6744inputs+0outputs (39major+1823minor)pagefaults 0swaps
+Running the neos solver on the encrypted file hill 
+-e Done 
+ 
+ 
+ 
+
+
+
+
+Done with ./benchmarks/iscas85/c880.bench 
+
+
+
+

@@ -1,0 +1,2031 @@
+Testing files in directory: ./benchmarks/iscas89/ 
+
+
+Log file: ./test_runs/iscas89____2024-04-09   19-39.log 
+
+Executing ./current_script with file: ./benchmarks/iscas89/s1196.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas89/s1196.bench ########################################## 
+ ################################################################################################### 
+2
+ ------------------ Finding key 7350  4061  6547  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-09-2024   19:39:53 --  locked version of ./benchmarks/iscas89/s1196.bench
+INFO - Apr-09-2024   19:39:53 --  number of keys: 3
+INFO - Apr-09-2024   19:39:53 --  keys: [7350, 4061, 6547]
+INFO - Apr-09-2024   19:39:53 --  number of bits per key (keyinputs#): 13
+INFO - Apr-09-2024   19:39:53 --  key0 = 1110010110110
+INFO - Apr-09-2024   19:39:53 --  key1 = 0111111011101
+INFO - Apr-09-2024   19:39:53 --  key2 = 1100110010011
+INFO - Apr-09-2024   19:39:53 --  k (gate is locked at k bits): 2
+INFO - Apr-09-2024   19:39:53 -- Time taken to parser file= 0.003992319107055664
+
+INFO - Apr-09-2024   19:39:53 -- Time taken to get gates with k inputs = 0.003913402557373047
+
+INFO - Apr-09-2024   19:39:55 -- Time taken to get the maximum number of unique gates = 1.7682299613952637
+
+INFO - Apr-09-2024   19:39:55 -- Time taken to encrypt up to k inputs: 1.7739043235778809 seconds
+INFO - Apr-09-2024   19:39:55 --   G475 - And(G0, G2, keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, ~keyinput6, keyinput7, keyinput8, ~keyinput9, keyinput10, keyinput11, ~keyinput12)
+INFO - Apr-09-2024   19:39:55 --   G59 - And(G1, G3, keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, ~keyinput6, keyinput7, keyinput8, ~keyinput9, keyinput10, keyinput11, ~keyinput12)
+INFO - Apr-09-2024   19:39:55 --   G55 - And(G4, G6, keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, ~keyinput6, keyinput7, keyinput8, ~keyinput9, keyinput10, keyinput11, ~keyinput12)
+INFO - Apr-09-2024   19:39:55 --   G72 - And(G8, G10, keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, ~keyinput6, keyinput7, keyinput8, ~keyinput9, keyinput10, keyinput11, ~keyinput12)
+INFO - Apr-09-2024   19:39:55 --   G75 - And(G9, G11, keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, ~keyinput6, keyinput7, keyinput8, ~keyinput9, keyinput10, keyinput11, ~keyinput12)
+INFO - Apr-09-2024   19:39:55 --   G501 - Or(And(~G12, ~G13, keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, ~keyinput6, keyinput7, keyinput8, ~keyinput9, keyinput10, keyinput11, ~keyinput12), And(G12, ~G13, keyinput0, keyinput1, ~keyinput2, ~keyinput3, keyinput4, keyinput5, ~keyinput6, ~keyinput7, keyinput8, ~keyinput9, ~keyinput10, keyinput11, keyinput12), And(G12, G13, keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, ~keyinput6, keyinput7, keyinput8, ~keyinput9, keyinput10, keyinput11, ~keyinput12))
+INFO - Apr-09-2024   19:39:55 --   G169 - And(~G5, ~G7, keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, ~keyinput6, keyinput7, keyinput8, ~keyinput9, keyinput10, keyinput11, ~keyinput12)
+INFO - Apr-09-2024   19:39:55 -- Time taken to encrypt file: 1.7938294410705566 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file int 
+enc-ckt has DFFs. running sequnetial attack...
+vebrosity: 0
+key-condition sweeping mode: 0
+BMC sweeping mode: 0
+Relative to kckt SAT-sweeping: 0
+with propagation limit: -1
+with mitter sweep: 0
+BDD analysis option: 0
+KC BDD size limit: 0
+BMC bound limit: 600
+frame: 0  stats -> variables: 1320 clauses: 3885 assignments: 0  propagations: 0
+adding termination links
+DIS iter: 0
+  DIP clk_0 -> 11111100011111  10000000000000
+  dis: 1  stats -> variables: 2462 clauses: 5393 assignments: 1261  propagations: 5223
+frame: 1  stats -> variables: 3719 clauses: 8882 assignments: 1355  propagations: 70469
+no trace up to bound 2
+increasing bmc bound to 3
+termination checking up to round: 1. current BMC checked bound: 1
+reached combinational termination!
+
+sat_time:  0.000000
+term_time: 0.012547
+gen_time:  0.000000
+bmc_time:  0.033539
+simp_time: 0.000000
+total_time: 0.054438
+
+dis_count: 1
+dis_maxlen: 1
+
+[1;31mkey=[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m
+checking key
+UC Berkeley, ABC 1.01 (compiled Jul  9 2021 03:52:12)
+abc 01> dsec ./tmp8053/cir1.bench  ./tmp8053/cir2.bench
+Warning: 36 registers in this network have don't-care init values.
+The don't-care are assumed to be 0. The result may not verify.
+Use command "print_latch" to see the init values of registers.
+Use command "zero" to convert or "init" to change the values.
+Networks are NOT EQUIVALENT after simulation.   Time =     0.01 sec
+abc 01> ***EOF***
+
+different
+
+done
+
+real	0m0.655s
+user	0m0.055s
+sys	0m0.075s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas89/s1196.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas89/s13207.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas89/s13207.bench ########################################## 
+ ################################################################################################### 
+2
+ ------------------ Finding key 1933829365  789941098  2062861162  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-09-2024   19:39:56 --  locked version of ./benchmarks/iscas89/s13207.bench
+INFO - Apr-09-2024   19:39:56 --  number of keys: 3
+INFO - Apr-09-2024   19:39:56 --  keys: [1933829365, 789941098, 2062861162]
+INFO - Apr-09-2024   19:39:56 --  number of bits per key (keyinputs#): 31
+INFO - Apr-09-2024   19:39:56 --  key0 = 1110011010000111110010011110101
+INFO - Apr-09-2024   19:39:56 --  key1 = 0101111000101011000101101101010
+INFO - Apr-09-2024   19:39:56 --  key2 = 1111010111101001100001101101010
+INFO - Apr-09-2024   19:39:56 --  k (gate is locked at k bits): 2
+INFO - Apr-09-2024   19:39:56 -- Time taken to parser file= 0.030091047286987305
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to get gates with k inputs = 0.034333229064941406
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to get the maximum number of unique gates = 6.961822509765625e-05
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to encrypt up to k inputs: 0.035047292709350586 seconds
+INFO - Apr-09-2024   19:39:56 -- Could not find k to encrypt keys, trying k=3
+INFO - Apr-09-2024   19:39:56 -- Time taken to get gates with k inputs = 0.028338909149169922
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to get the maximum number of unique gates = 3.4809112548828125e-05
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to encrypt up to k inputs: 0.029110431671142578 seconds
+INFO - Apr-09-2024   19:39:56 -- Could not find k to encrypt keys, trying k=4
+INFO - Apr-09-2024   19:39:56 -- Time taken to get gates with k inputs = 0.025923728942871094
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to get the maximum number of unique gates = 3.600120544433594e-05
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to encrypt up to k inputs: 0.02676701545715332 seconds
+INFO - Apr-09-2024   19:39:56 -- Could not find k to encrypt keys, trying k=5
+INFO - Apr-09-2024   19:39:56 -- Time taken to get gates with k inputs = 0.027884721755981445
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to get the maximum number of unique gates = 3.24249267578125e-05
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to encrypt up to k inputs: 0.02860546112060547 seconds
+INFO - Apr-09-2024   19:39:56 -- Could not find k to encrypt keys, trying k=6
+INFO - Apr-09-2024   19:39:56 -- Time taken to get gates with k inputs = 0.027817487716674805
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to get the maximum number of unique gates = 3.528594970703125e-05
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to encrypt up to k inputs: 0.02847909927368164 seconds
+INFO - Apr-09-2024   19:39:56 -- Could not find k to encrypt keys, trying k=7
+INFO - Apr-09-2024   19:39:56 -- Time taken to get gates with k inputs = 0.027026653289794922
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to get the maximum number of unique gates = 4.029273986816406e-05
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to encrypt up to k inputs: 0.02783203125 seconds
+INFO - Apr-09-2024   19:39:56 -- Could not find k to encrypt keys, trying k=8
+INFO - Apr-09-2024   19:39:56 -- Time taken to get gates with k inputs = 0.026758432388305664
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to get the maximum number of unique gates = 3.933906555175781e-05
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to encrypt up to k inputs: 0.027508020401000977 seconds
+INFO - Apr-09-2024   19:39:56 -- Could not find k to encrypt keys, trying k=9
+INFO - Apr-09-2024   19:39:56 -- Time taken to get gates with k inputs = 0.03191828727722168
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to get the maximum number of unique gates = 4.506111145019531e-05
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to encrypt up to k inputs: 0.03263425827026367 seconds
+INFO - Apr-09-2024   19:39:56 -- Could not find k to encrypt keys, trying k=10
+INFO - Apr-09-2024   19:39:56 -- Time taken to get gates with k inputs = 0.029765844345092773
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to get the maximum number of unique gates = 2.574920654296875e-05
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to encrypt up to k inputs: 0.03038644790649414 seconds
+INFO - Apr-09-2024   19:39:56 -- Could not find k to encrypt keys, trying k=11
+INFO - Apr-09-2024   19:39:56 -- Time taken to get gates with k inputs = 0.0308530330657959
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to get the maximum number of unique gates = 3.218650817871094e-05
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to encrypt up to k inputs: 0.03157949447631836 seconds
+INFO - Apr-09-2024   19:39:56 -- Could not find k to encrypt keys, trying k=12
+INFO - Apr-09-2024   19:39:56 -- Time taken to get gates with k inputs = 0.02978372573852539
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to get the maximum number of unique gates = 2.8133392333984375e-05
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to encrypt up to k inputs: 0.030415058135986328 seconds
+INFO - Apr-09-2024   19:39:56 -- Could not find k to encrypt keys, trying k=13
+INFO - Apr-09-2024   19:39:56 -- Time taken to get gates with k inputs = 0.03230595588684082
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to get the maximum number of unique gates = 2.4557113647460938e-05
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to encrypt up to k inputs: 0.0328984260559082 seconds
+Traceback (most recent call last):
+  File "/mnt/c/Repositories/School/Semester3/Research_EncryptionLocking/src/main.py", line 85, in <module>
+    raise ValueError(" cannot find k to encrypt keys")
+ValueError:  cannot find k to encrypt keys
+grep: ./benchmarks/iscas89/s13207_encrypted.bench: No such file or directory
+
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+
+neos_error: file ./benchmarks/iscas89/s13207_encrypted.bench cannot be opened
+
+real	0m0.174s
+user	0m0.009s
+sys	0m0.018s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas89/s13207.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas89/s1488.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas89/s1488.bench ########################################## 
+ ################################################################################################### 
+2
+ ------------------ Finding key 133  120  110  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-09-2024   19:39:56 --  locked version of ./benchmarks/iscas89/s1488.bench
+INFO - Apr-09-2024   19:39:56 --  number of keys: 3
+INFO - Apr-09-2024   19:39:56 --  keys: [133, 120, 110]
+INFO - Apr-09-2024   19:39:56 --  number of bits per key (keyinputs#): 8
+INFO - Apr-09-2024   19:39:56 --  key0 = 10000101
+INFO - Apr-09-2024   19:39:56 --  key1 = 01111000
+INFO - Apr-09-2024   19:39:56 --  key2 = 01101110
+INFO - Apr-09-2024   19:39:56 --  k (gate is locked at k bits): 2
+INFO - Apr-09-2024   19:39:56 -- Time taken to parser file= 0.004996061325073242
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to get gates with k inputs = 0.002382516860961914
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to get the maximum number of unique gates = 0.00026869773864746094
+
+INFO - Apr-09-2024   19:39:56 -- Time taken to encrypt up to k inputs: 0.004017353057861328 seconds
+INFO - Apr-09-2024   19:39:56 --   C208DE - And(~v5, ~v4, keyinput0, ~keyinput1, ~keyinput2, ~keyinput3, ~keyinput4, keyinput5, ~keyinput6, keyinput7)
+INFO - Apr-09-2024   19:39:56 --   C166DE - And(v3, v6, keyinput0, ~keyinput1, ~keyinput2, ~keyinput3, ~keyinput4, keyinput5, ~keyinput6, keyinput7)
+INFO - Apr-09-2024   19:39:56 -- Time taken to encrypt file: 0.02249002456665039 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file int 
+enc-ckt has DFFs. running sequnetial attack...
+vebrosity: 0
+key-condition sweeping mode: 0
+BMC sweeping mode: 0
+Relative to kckt SAT-sweeping: 0
+with propagation limit: -1
+with mitter sweep: 0
+BDD analysis option: 0
+KC BDD size limit: 0
+BMC bound limit: 600
+frame: 0  stats -> variables: 1452 clauses: 4494 assignments: 0  propagations: 0
+adding termination links
+DIS iter: 0
+  DIP clk_0 -> 00001011  0000000010000110000
+  dis: 1  stats -> variables: 2746 clauses: 5508 assignments: 1329  propagations: 5834
+frame: 1  stats -> variables: 4169 clauses: 9938 assignments: 1349  propagations: 9306
+no trace up to bound 2
+increasing bmc bound to 3
+termination checking up to round: 1. current BMC checked bound: 1
+reached combinational termination!
+
+sat_time:  0.000000
+term_time: 0.021477
+gen_time:  0.000000
+bmc_time:  0.005895
+simp_time: 0.000000
+total_time: 0.035746
+
+dis_count: 1
+dis_maxlen: 1
+
+[1;31mkey=[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m
+checking key
+UC Berkeley, ABC 1.01 (compiled Jul  9 2021 03:52:12)
+abc 01> dsec ./tmp8099/cir1.bench  ./tmp8099/cir2.bench
+Warning: 12 registers in this network have don't-care init values.
+The don't-care are assumed to be 0. The result may not verify.
+Use command "print_latch" to see the init values of registers.
+Use command "zero" to convert or "init" to change the values.
+Networks are equivalent.  Time =     0.01 sec
+
+equivalent
+
+done
+
+real	0m0.955s
+user	0m0.072s
+sys	0m0.040s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas89/s1488.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas89/s15850.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas89/s15850.bench ########################################## 
+ ################################################################################################### 
+2
+ ------------------ Finding key 13875  14168  13580  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-09-2024   19:39:58 --  locked version of ./benchmarks/iscas89/s15850.bench
+INFO - Apr-09-2024   19:39:58 --  number of keys: 3
+INFO - Apr-09-2024   19:39:58 --  keys: [13875, 14168, 13580]
+INFO - Apr-09-2024   19:39:58 --  number of bits per key (keyinputs#): 14
+INFO - Apr-09-2024   19:39:58 --  key0 = 11011000110011
+INFO - Apr-09-2024   19:39:58 --  key1 = 11011101011000
+INFO - Apr-09-2024   19:39:58 --  key2 = 11010100001100
+INFO - Apr-09-2024   19:39:58 --  k (gate is locked at k bits): 2
+INFO - Apr-09-2024   19:39:58 -- Time taken to parser file= 0.034076690673828125
+
+INFO - Apr-09-2024   19:39:58 -- Time taken to get gates with k inputs = 0.035576820373535156
+
+INFO - Apr-09-2024   19:39:58 -- Time taken to get the maximum number of unique gates = 0.0002734661102294922
+
+INFO - Apr-09-2024   19:39:58 -- Time taken to encrypt up to k inputs: 0.03738832473754883 seconds
+INFO - Apr-09-2024   19:39:58 --   I9539 - And(~g109, keyinput0, keyinput1, ~keyinput2, keyinput3, keyinput4, ~keyinput5, ~keyinput6, ~keyinput7, keyinput8, keyinput9, ~keyinput10, ~keyinput11, keyinput12, keyinput13)
+INFO - Apr-09-2024   19:39:58 --   g2379 - And(g744, g743, keyinput0, keyinput1, ~keyinput2, keyinput3, keyinput4, ~keyinput5, ~keyinput6, ~keyinput7, keyinput8, keyinput9, ~keyinput10, ~keyinput11, keyinput12, keyinput13)
+INFO - Apr-09-2024   19:39:58 --   g2561 - And(g742, g741, keyinput0, keyinput1, ~keyinput2, keyinput3, keyinput4, ~keyinput5, ~keyinput6, ~keyinput7, keyinput8, keyinput9, ~keyinput10, ~keyinput11, keyinput12, keyinput13)
+INFO - Apr-09-2024   19:39:58 -- Time taken to encrypt file: 0.0933837890625 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file int 
+enc-ckt has DFFs. running sequnetial attack...
+vebrosity: 0
+key-condition sweeping mode: 0
+BMC sweeping mode: 0
+Relative to kckt SAT-sweeping: 0
+with propagation limit: -1
+with mitter sweep: 0
+BDD analysis option: 0
+KC BDD size limit: 0
+BMC bound limit: 600
+frame: 0  stats -> variables: 21767 clauses: 52481 assignments: 0  propagations: 0
+adding termination links
+DIS iter: 0
+  DIP clk_0 -> 10111001000010  100000000000000000000000000011010100000001010000000000000000000000000000001111111111110
+  dis: 1  stats -> variables: 41177 clauses: 74741 assignments: 19476  propagations: 149141
+frame: 1  stats -> variables: 61721 clauses: 125908 assignments: 19516  propagations: 262073
+no trace up to bound 2
+increasing bmc bound to 3
+termination checking up to round: 1. current BMC checked bound: 1
+reached combinational termination!
+
+sat_time:  0.000000
+term_time: 11.207187
+gen_time:  0.000000
+bmc_time:  0.119805
+simp_time: 0.000000
+total_time: 12.490298
+
+dis_count: 1
+dis_maxlen: 1
+
+[1;31mkey=[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m
+checking key
+UC Berkeley, ABC 1.01 (compiled Jul  9 2021 03:52:12)
+abc 01> dsec ./tmp8128/cir1.bench  ./tmp8128/cir2.bench
+Warning: 1183 registers in this network have don't-care init values.
+The don't-care are assumed to be 0. The result may not verify.
+Use command "print_latch" to see the init values of registers.
+Use command "zero" to convert or "init" to change the values.
+Networks are equivalent.  Time =     0.02 sec
+
+equivalent
+
+done
+
+real	0m13.267s
+user	0m12.672s
+sys	0m0.085s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas89/s15850.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas89/s298.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas89/s298.bench ########################################## 
+ ################################################################################################### 
+2
+ ------------------ Finding key 4  2  1  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-09-2024   19:40:11 --  locked version of ./benchmarks/iscas89/s298.bench
+INFO - Apr-09-2024   19:40:11 --  number of keys: 3
+INFO - Apr-09-2024   19:40:11 --  keys: [4, 2, 1]
+INFO - Apr-09-2024   19:40:11 --  number of bits per key (keyinputs#): 3
+INFO - Apr-09-2024   19:40:11 --  key0 = 100
+INFO - Apr-09-2024   19:40:11 --  key1 = 010
+INFO - Apr-09-2024   19:40:11 --  key2 = 001
+INFO - Apr-09-2024   19:40:11 --  k (gate is locked at k bits): 2
+INFO - Apr-09-2024   19:40:11 -- Time taken to parser file= 0.004243373870849609
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to get gates with k inputs = 0.0003376007080078125
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to get the maximum number of unique gates = 4.673004150390625e-05
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to encrypt up to k inputs: 0.0008592605590820312 seconds
+INFO - Apr-09-2024   19:40:11 -- Could not find k to encrypt keys, trying k=3
+INFO - Apr-09-2024   19:40:11 -- Time taken to get gates with k inputs = 0.0009663105010986328
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to get the maximum number of unique gates = 2.574920654296875e-05
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to encrypt up to k inputs: 0.0016055107116699219 seconds
+INFO - Apr-09-2024   19:40:11 -- Could not find k to encrypt keys, trying k=4
+INFO - Apr-09-2024   19:40:11 -- Time taken to get gates with k inputs = 0.00037670135498046875
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to get the maximum number of unique gates = 3.075599670410156e-05
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to encrypt up to k inputs: 0.0009698867797851562 seconds
+INFO - Apr-09-2024   19:40:11 -- Could not find k to encrypt keys, trying k=5
+INFO - Apr-09-2024   19:40:11 -- Time taken to get gates with k inputs = 0.0002880096435546875
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to get the maximum number of unique gates = 3.743171691894531e-05
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to encrypt up to k inputs: 0.0008637905120849609 seconds
+INFO - Apr-09-2024   19:40:11 -- Could not find k to encrypt keys, trying k=6
+INFO - Apr-09-2024   19:40:11 -- Time taken to get gates with k inputs = 0.00032067298889160156
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to get the maximum number of unique gates = 2.8371810913085938e-05
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to encrypt up to k inputs: 0.0008561611175537109 seconds
+INFO - Apr-09-2024   19:40:11 -- Could not find k to encrypt keys, trying k=7
+INFO - Apr-09-2024   19:40:11 -- Time taken to get gates with k inputs = 0.0003600120544433594
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to get the maximum number of unique gates = 3.3855438232421875e-05
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to encrypt up to k inputs: 0.0009751319885253906 seconds
+INFO - Apr-09-2024   19:40:11 -- Could not find k to encrypt keys, trying k=8
+INFO - Apr-09-2024   19:40:11 -- Time taken to get gates with k inputs = 0.00031304359436035156
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to get the maximum number of unique gates = 4.506111145019531e-05
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to encrypt up to k inputs: 0.0010216236114501953 seconds
+INFO - Apr-09-2024   19:40:11 -- Could not find k to encrypt keys, trying k=9
+INFO - Apr-09-2024   19:40:11 -- Time taken to get gates with k inputs = 0.0002429485321044922
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to get the maximum number of unique gates = 3.910064697265625e-05
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to encrypt up to k inputs: 0.0008599758148193359 seconds
+INFO - Apr-09-2024   19:40:11 -- Could not find k to encrypt keys, trying k=10
+INFO - Apr-09-2024   19:40:11 -- Time taken to get gates with k inputs = 0.0003693103790283203
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to get the maximum number of unique gates = 3.0279159545898438e-05
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to encrypt up to k inputs: 0.0010590553283691406 seconds
+INFO - Apr-09-2024   19:40:11 -- Could not find k to encrypt keys, trying k=11
+INFO - Apr-09-2024   19:40:11 -- Time taken to get gates with k inputs = 0.00033664703369140625
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to get the maximum number of unique gates = 2.765655517578125e-05
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to encrypt up to k inputs: 0.0008547306060791016 seconds
+INFO - Apr-09-2024   19:40:11 -- Could not find k to encrypt keys, trying k=12
+INFO - Apr-09-2024   19:40:11 -- Time taken to get gates with k inputs = 0.00033164024353027344
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to get the maximum number of unique gates = 1.6927719116210938e-05
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to encrypt up to k inputs: 0.0007913112640380859 seconds
+INFO - Apr-09-2024   19:40:11 -- Could not find k to encrypt keys, trying k=13
+INFO - Apr-09-2024   19:40:11 -- Time taken to get gates with k inputs = 0.0002117156982421875
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to get the maximum number of unique gates = 1.7642974853515625e-05
+
+INFO - Apr-09-2024   19:40:11 -- Time taken to encrypt up to k inputs: 0.0006618499755859375 seconds
+Traceback (most recent call last):
+  File "/mnt/c/Repositories/School/Semester3/Research_EncryptionLocking/src/main.py", line 85, in <module>
+    raise ValueError(" cannot find k to encrypt keys")
+ValueError:  cannot find k to encrypt keys
+grep: ./benchmarks/iscas89/s298_encrypted.bench: No such file or directory
+
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+
+neos_error: file ./benchmarks/iscas89/s298_encrypted.bench cannot be opened
+
+real	0m0.140s
+user	0m0.000s
+sys	0m0.010s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas89/s298.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas89/s349.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas89/s349.bench ########################################## 
+ ################################################################################################### 
+2
+ ------------------ Finding key 270  397  329  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-09-2024   19:40:12 --  locked version of ./benchmarks/iscas89/s349.bench
+INFO - Apr-09-2024   19:40:12 --  number of keys: 3
+INFO - Apr-09-2024   19:40:12 --  keys: [270, 397, 329]
+INFO - Apr-09-2024   19:40:12 --  number of bits per key (keyinputs#): 9
+INFO - Apr-09-2024   19:40:12 --  key0 = 100001110
+INFO - Apr-09-2024   19:40:12 --  key1 = 110001101
+INFO - Apr-09-2024   19:40:12 --  key2 = 101001001
+INFO - Apr-09-2024   19:40:12 --  k (gate is locked at k bits): 2
+INFO - Apr-09-2024   19:40:12 -- Time taken to parser file= 0.0044291019439697266
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to get gates with k inputs = 0.0021829605102539062
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to get the maximum number of unique gates = 6.890296936035156e-05
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to encrypt up to k inputs: 0.003000497817993164 seconds
+INFO - Apr-09-2024   19:40:12 -- Could not find k to encrypt keys, trying k=3
+INFO - Apr-09-2024   19:40:12 -- Time taken to get gates with k inputs = 0.0004229545593261719
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to get the maximum number of unique gates = 2.1696090698242188e-05
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to encrypt up to k inputs: 0.000865936279296875 seconds
+INFO - Apr-09-2024   19:40:12 -- Could not find k to encrypt keys, trying k=4
+INFO - Apr-09-2024   19:40:12 -- Time taken to get gates with k inputs = 0.0006575584411621094
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to get the maximum number of unique gates = 2.8371810913085938e-05
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to encrypt up to k inputs: 0.0013251304626464844 seconds
+INFO - Apr-09-2024   19:40:12 -- Could not find k to encrypt keys, trying k=5
+INFO - Apr-09-2024   19:40:12 -- Time taken to get gates with k inputs = 0.0005495548248291016
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to get the maximum number of unique gates = 5.1021575927734375e-05
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to encrypt up to k inputs: 0.0013537406921386719 seconds
+INFO - Apr-09-2024   19:40:12 -- Could not find k to encrypt keys, trying k=6
+INFO - Apr-09-2024   19:40:12 -- Time taken to get gates with k inputs = 0.00048351287841796875
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to get the maximum number of unique gates = 2.574920654296875e-05
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to encrypt up to k inputs: 0.000985860824584961 seconds
+INFO - Apr-09-2024   19:40:12 -- Could not find k to encrypt keys, trying k=7
+INFO - Apr-09-2024   19:40:12 -- Time taken to get gates with k inputs = 0.0005414485931396484
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to get the maximum number of unique gates = 2.9325485229492188e-05
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to encrypt up to k inputs: 0.0011386871337890625 seconds
+INFO - Apr-09-2024   19:40:12 -- Could not find k to encrypt keys, trying k=8
+INFO - Apr-09-2024   19:40:12 -- Time taken to get gates with k inputs = 0.0005431175231933594
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to get the maximum number of unique gates = 5.0067901611328125e-05
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to encrypt up to k inputs: 0.0013766288757324219 seconds
+INFO - Apr-09-2024   19:40:12 -- Could not find k to encrypt keys, trying k=9
+INFO - Apr-09-2024   19:40:12 -- Time taken to get gates with k inputs = 0.0006685256958007812
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to get the maximum number of unique gates = 6.67572021484375e-05
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to encrypt up to k inputs: 0.0015881061553955078 seconds
+INFO - Apr-09-2024   19:40:12 -- Could not find k to encrypt keys, trying k=10
+INFO - Apr-09-2024   19:40:12 -- Time taken to get gates with k inputs = 0.0006716251373291016
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to get the maximum number of unique gates = 3.719329833984375e-05
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to encrypt up to k inputs: 0.0013341903686523438 seconds
+INFO - Apr-09-2024   19:40:12 -- Could not find k to encrypt keys, trying k=11
+INFO - Apr-09-2024   19:40:12 -- Time taken to get gates with k inputs = 0.0007112026214599609
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to get the maximum number of unique gates = 3.528594970703125e-05
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to encrypt up to k inputs: 0.0013880729675292969 seconds
+INFO - Apr-09-2024   19:40:12 -- Could not find k to encrypt keys, trying k=12
+INFO - Apr-09-2024   19:40:12 -- Time taken to get gates with k inputs = 0.0006301403045654297
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to get the maximum number of unique gates = 3.457069396972656e-05
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to encrypt up to k inputs: 0.0014698505401611328 seconds
+INFO - Apr-09-2024   19:40:12 -- Could not find k to encrypt keys, trying k=13
+INFO - Apr-09-2024   19:40:12 -- Time taken to get gates with k inputs = 0.0006825923919677734
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to get the maximum number of unique gates = 4.00543212890625e-05
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to encrypt up to k inputs: 0.0015995502471923828 seconds
+Traceback (most recent call last):
+  File "/mnt/c/Repositories/School/Semester3/Research_EncryptionLocking/src/main.py", line 85, in <module>
+    raise ValueError(" cannot find k to encrypt keys")
+ValueError:  cannot find k to encrypt keys
+grep: ./benchmarks/iscas89/s349_encrypted.bench: No such file or directory
+
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+
+neos_error: file ./benchmarks/iscas89/s349_encrypted.bench cannot be opened
+
+real	0m0.154s
+user	0m0.012s
+sys	0m0.000s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas89/s349.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas89/s35932.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas89/s35932.bench ########################################## 
+ ################################################################################################### 
+2
+ ------------------ Finding key 13410321017  21544865873  32446478862  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-09-2024   19:40:12 --  locked version of ./benchmarks/iscas89/s35932.bench
+INFO - Apr-09-2024   19:40:12 --  number of keys: 3
+INFO - Apr-09-2024   19:40:12 --  keys: [13410321017, 21544865873, 32446478862]
+INFO - Apr-09-2024   19:40:12 --  number of bits per key (keyinputs#): 35
+INFO - Apr-09-2024   19:40:12 --  key0 = 01100011111010100010100001001111001
+INFO - Apr-09-2024   19:40:12 --  key1 = 10100000100001011001001000001010001
+INFO - Apr-09-2024   19:40:12 --  key2 = 11110001101111101011111101000001110
+INFO - Apr-09-2024   19:40:12 --  k (gate is locked at k bits): 2
+INFO - Apr-09-2024   19:40:12 -- Time taken to parser file= 0.05769038200378418
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to get gates with k inputs = 0.07663393020629883
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to get the maximum number of unique gates = 0.0002963542938232422
+
+INFO - Apr-09-2024   19:40:12 -- Time taken to encrypt up to k inputs: 0.07802748680114746 seconds
+INFO - Apr-09-2024   19:40:12 --   WX10384 - And(DATA_0_31, ~TM0, keyinput0, keyinput1, keyinput2, keyinput3, ~keyinput4, ~keyinput5, ~keyinput6, keyinput7, keyinput8, ~keyinput9, keyinput10, keyinput11, keyinput12, keyinput13, keyinput14, ~keyinput15, keyinput16, ~keyinput17, keyinput18, keyinput19, keyinput20, keyinput21, keyinput22, keyinput23, ~keyinput24, keyinput25, ~keyinput26, ~keyinput27, ~keyinput28, ~keyinput29, ~keyinput30, keyinput31, keyinput32, keyinput33, ~keyinput34)
+INFO - Apr-09-2024   19:40:12 -- Time taken to encrypt file: 0.16550016403198242 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file int 
+enc-ckt has DFFs. running sequnetial attack...
+vebrosity: 0
+key-condition sweeping mode: 0
+BMC sweeping mode: 0
+Relative to kckt SAT-sweeping: 0
+with propagation limit: -1
+with mitter sweep: 0
+BDD analysis option: 0
+KC BDD size limit: 0
+BMC bound limit: 600
+frame: 0  stats -> variables: 38731 clauses: 105693 assignments: 0  propagations: 0
+no trace up to bound 1
+adding termination links
+frame: 1  stats -> variables: 73936 clauses: 211386 assignments: 0  propagations: 111827
+no trace up to bound 2
+increasing bmc bound to 3
+termination checking up to round: 1. current BMC checked bound: 1
+frame: 2  stats -> variables: 109140 clauses: 313623 assignments: 0  propagations: 55055018
+no trace up to bound 3
+increasing bmc bound to 4
+termination checking up to round: 2. current BMC checked bound: 2
+frame: 3  stats -> variables: 144344 clauses: 415860 assignments: 0  propagations: 65868827
+no trace up to bound 4
+increasing bmc bound to 5
+termination checking up to round: 3. current BMC checked bound: 3
+frame: 4  stats -> variables: 179548 clauses: 518097 assignments: 0  propagations: 78321520
+no trace up to bound 5
+increasing bmc bound to 6
+termination checking up to round: 3. current BMC checked bound: 4
+frame: 5  stats -> variables: 214752 clauses: 620334 assignments: 0  propagations: 126961065
+DIS iter: 0
+  DIP clk_0 -> 10000011111010001000010000001100100  00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  DIP clk_1 -> 11011111111111100001100000000011101  00000000000000001111111111111110111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+  DIP clk_2 -> 10000100011100101100001110100111100  11111111111111111111111111111111000010000001000010000000000000000000100000010000100000000000000000001000000100001000000000000000000010000001000010000000000000000000100000010000100000000000000000001000000100001000000000000000000010000001000010000000000000000000100000010000100000000000000000001000000100001000000000000000
+  DIP clk_3 -> 10000000000000010000100100010000111  11111111111111111111111111111000111110111111011110111111111111111111101111110111101111111111111111111011111101111011111111111111111110111111011110111111111111111111101111110111101111111111111111111011111101111011111111111111111110111111011110111111111111111111101111110111101111111111111111111011111101111011111111111111
+  DIP clk_4 -> 00010111011011011000000000001011111  11111111111111111111111111110111000010100001010010100000000000000000101000010100101000000000000000001010000101001010000000000000000010100001010010100000000000000000101000010100101000000000000000001010000101001010000000000000000010100001010010100000000000000000101000010100101000000000000000001010000101001010000000000000
+  DIP clk_5 -> 00001000000010000000010000000000000  00000000000000000000000000001000111110101111010110101111111111111111101011110101101011111111111111111010111101011010111111111111111110101111010110101111111111111111101011110101101011111111111111111010111101011010111111111111111110101111010110101111111111111111101011110101101011111111111111001010110101001011100000111110
+  dis: 1  stats -> variables: 407317 clauses: 758376 assignments: 192791  propagations: 134728035
+termination checking up to round: 3. current BMC checked bound: 4
+c
+c Try to adapt solver strategies
+c 
+c Nothing extreme in this problem, continue with glucose default strategies.
+c
+
+interrupted
+trying to extract last key
+last key: 11110001101111101011111101000001110
+checking key
+UC Berkeley, ABC 1.01 (compiled Jul  9 2021 03:52:12)
+abc 01> dsec ./tmp8247/cir1.bench  ./tmp8247/cir2.bench
+Warning: 3456 registers in this network have don't-care init values.
+The don't-care are assumed to be 0. The result may not verify.
+Use command "print_latch" to see the init values of registers.
+Use command "zero" to convert or "init" to change the values.
+Networks are equivalent.  Time =     0.19 sec
+
+equivalent
+
+real	3m36.805s
+user	3m36.067s
+sys	0m0.180s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas89/s35932.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas89/s444.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas89/s444.bench ########################################## 
+ ################################################################################################### 
+2
+ ------------------ Finding key 1  4  4  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-09-2024   19:43:49 --  locked version of ./benchmarks/iscas89/s444.bench
+INFO - Apr-09-2024   19:43:49 --  number of keys: 3
+INFO - Apr-09-2024   19:43:49 --  keys: [1, 4, 4]
+INFO - Apr-09-2024   19:43:49 --  number of bits per key (keyinputs#): 3
+INFO - Apr-09-2024   19:43:49 --  key0 = 001
+INFO - Apr-09-2024   19:43:49 --  key1 = 100
+INFO - Apr-09-2024   19:43:49 --  key2 = 100
+INFO - Apr-09-2024   19:43:49 --  k (gate is locked at k bits): 2
+INFO - Apr-09-2024   19:43:49 -- Time taken to parser file= 0.003437519073486328
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to get gates with k inputs = 0.0010058879852294922
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to get the maximum number of unique gates = 5.555152893066406e-05
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to encrypt up to k inputs: 0.0016133785247802734 seconds
+INFO - Apr-09-2024   19:43:49 -- Could not find k to encrypt keys, trying k=3
+INFO - Apr-09-2024   19:43:49 -- Time taken to get gates with k inputs = 0.0004837512969970703
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to get the maximum number of unique gates = 2.6226043701171875e-05
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to encrypt up to k inputs: 0.0009319782257080078 seconds
+INFO - Apr-09-2024   19:43:49 -- Could not find k to encrypt keys, trying k=4
+INFO - Apr-09-2024   19:43:49 -- Time taken to get gates with k inputs = 0.0003535747528076172
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to get the maximum number of unique gates = 1.6689300537109375e-05
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to encrypt up to k inputs: 0.0007302761077880859 seconds
+INFO - Apr-09-2024   19:43:49 -- Could not find k to encrypt keys, trying k=5
+INFO - Apr-09-2024   19:43:49 -- Time taken to get gates with k inputs = 0.0004394054412841797
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to get the maximum number of unique gates = 1.9073486328125e-05
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to encrypt up to k inputs: 0.00090789794921875 seconds
+INFO - Apr-09-2024   19:43:49 -- Could not find k to encrypt keys, trying k=6
+INFO - Apr-09-2024   19:43:49 -- Time taken to get gates with k inputs = 0.0006482601165771484
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to get the maximum number of unique gates = 2.765655517578125e-05
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to encrypt up to k inputs: 0.0012810230255126953 seconds
+INFO - Apr-09-2024   19:43:49 -- Could not find k to encrypt keys, trying k=7
+INFO - Apr-09-2024   19:43:49 -- Time taken to get gates with k inputs = 0.0003845691680908203
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to get the maximum number of unique gates = 1.8358230590820312e-05
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to encrypt up to k inputs: 0.00075531005859375 seconds
+INFO - Apr-09-2024   19:43:49 -- Could not find k to encrypt keys, trying k=8
+INFO - Apr-09-2024   19:43:49 -- Time taken to get gates with k inputs = 0.000392913818359375
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to get the maximum number of unique gates = 1.4781951904296875e-05
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to encrypt up to k inputs: 0.0007665157318115234 seconds
+INFO - Apr-09-2024   19:43:49 -- Could not find k to encrypt keys, trying k=9
+INFO - Apr-09-2024   19:43:49 -- Time taken to get gates with k inputs = 0.0003495216369628906
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to get the maximum number of unique gates = 1.9788742065429688e-05
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to encrypt up to k inputs: 0.000728607177734375 seconds
+INFO - Apr-09-2024   19:43:49 -- Could not find k to encrypt keys, trying k=10
+INFO - Apr-09-2024   19:43:49 -- Time taken to get gates with k inputs = 0.0003113746643066406
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to get the maximum number of unique gates = 1.0728836059570312e-05
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to encrypt up to k inputs: 0.0006799697875976562 seconds
+INFO - Apr-09-2024   19:43:49 -- Could not find k to encrypt keys, trying k=11
+INFO - Apr-09-2024   19:43:49 -- Time taken to get gates with k inputs = 0.00051116943359375
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to get the maximum number of unique gates = 1.0967254638671875e-05
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to encrypt up to k inputs: 0.0009350776672363281 seconds
+INFO - Apr-09-2024   19:43:49 -- Could not find k to encrypt keys, trying k=12
+INFO - Apr-09-2024   19:43:49 -- Time taken to get gates with k inputs = 0.0005347728729248047
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to get the maximum number of unique gates = 1.621246337890625e-05
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to encrypt up to k inputs: 0.0010833740234375 seconds
+INFO - Apr-09-2024   19:43:49 -- Could not find k to encrypt keys, trying k=13
+INFO - Apr-09-2024   19:43:49 -- Time taken to get gates with k inputs = 0.00040984153747558594
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to get the maximum number of unique gates = 1.430511474609375e-05
+
+INFO - Apr-09-2024   19:43:49 -- Time taken to encrypt up to k inputs: 0.0008127689361572266 seconds
+Traceback (most recent call last):
+  File "/mnt/c/Repositories/School/Semester3/Research_EncryptionLocking/src/main.py", line 85, in <module>
+    raise ValueError(" cannot find k to encrypt keys")
+ValueError:  cannot find k to encrypt keys
+grep: ./benchmarks/iscas89/s444_encrypted.bench: No such file or directory
+
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+
+neos_error: file ./benchmarks/iscas89/s444_encrypted.bench cannot be opened
+
+real	0m0.140s
+user	0m0.000s
+sys	0m0.010s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas89/s444.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas89/s510.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas89/s510.bench ########################################## 
+ ################################################################################################### 
+2
+ ------------------ Finding key 179538  165810  446044  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-09-2024   19:43:50 --  locked version of ./benchmarks/iscas89/s510.bench
+INFO - Apr-09-2024   19:43:50 --  number of keys: 3
+INFO - Apr-09-2024   19:43:50 --  keys: [179538, 165810, 446044]
+INFO - Apr-09-2024   19:43:50 --  number of bits per key (keyinputs#): 19
+INFO - Apr-09-2024   19:43:50 --  key0 = 0101011110101010010
+INFO - Apr-09-2024   19:43:50 --  key1 = 0101000011110110010
+INFO - Apr-09-2024   19:43:50 --  key2 = 1101100111001011100
+INFO - Apr-09-2024   19:43:50 --  k (gate is locked at k bits): 2
+INFO - Apr-09-2024   19:43:50 -- Time taken to parser file= 0.003924369812011719
+
+INFO - Apr-09-2024   19:43:50 -- Time taken to get gates with k inputs = 0.0014047622680664062
+
+INFO - Apr-09-2024   19:43:50 -- Time taken to get the maximum number of unique gates = 0.0001537799835205078
+
+INFO - Apr-09-2024   19:43:50 -- Time taken to encrypt up to k inputs: 0.0028166770935058594 seconds
+INFO - Apr-09-2024   19:43:50 --   I1044_1 - And(~pcnt17, cnt284, ~keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4, ~keyinput5, ~keyinput6, ~keyinput7, keyinput8, keyinput9, keyinput10, keyinput11, ~keyinput12, keyinput13, keyinput14, ~keyinput15, ~keyinput16, keyinput17, ~keyinput18)
+INFO - Apr-09-2024   19:43:50 --   I985_1 - Or(And(~pcnt27, ~cnt567, ~keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4, keyinput5, keyinput6, keyinput7, keyinput8, ~keyinput9, keyinput10, ~keyinput11, keyinput12, ~keyinput13, keyinput14, ~keyinput15, ~keyinput16, keyinput17, ~keyinput18), And(pcnt27, ~cnt567, ~keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4, ~keyinput5, ~keyinput6, ~keyinput7, keyinput8, keyinput9, keyinput10, keyinput11, ~keyinput12, keyinput13, keyinput14, ~keyinput15, ~keyinput16, keyinput17, ~keyinput18), And(pcnt27, cnt567, ~keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4, keyinput5, keyinput6, keyinput7, keyinput8, ~keyinput9, keyinput10, ~keyinput11, keyinput12, ~keyinput13, keyinput14, ~keyinput15, ~keyinput16, keyinput17, ~keyinput18))
+INFO - Apr-09-2024   19:43:50 --   I618 - Or(And(~pcnt12, ~cnt44, ~keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4, keyinput5, keyinput6, keyinput7, keyinput8, ~keyinput9, keyinput10, ~keyinput11, keyinput12, ~keyinput13, keyinput14, ~keyinput15, ~keyinput16, keyinput17, ~keyinput18), And(pcnt12, ~cnt44, keyinput0, keyinput1, ~keyinput2, keyinput3, keyinput4, ~keyinput5, ~keyinput6, keyinput7, keyinput8, keyinput9, ~keyinput10, ~keyinput11, keyinput12, ~keyinput13, keyinput14, keyinput15, keyinput16, ~keyinput17, ~keyinput18), And(pcnt12, cnt44, ~keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4, keyinput5, keyinput6, keyinput7, keyinput8, ~keyinput9, keyinput10, ~keyinput11, keyinput12, ~keyinput13, keyinput14, ~keyinput15, ~keyinput16, keyinput17, ~keyinput18))
+INFO - Apr-09-2024   19:43:50 --   I627 - And(~pcnt241, cnt511, ~keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4, ~keyinput5, ~keyinput6, ~keyinput7, keyinput8, keyinput9, keyinput10, keyinput11, ~keyinput12, keyinput13, keyinput14, ~keyinput15, ~keyinput16, keyinput17, ~keyinput18)
+INFO - Apr-09-2024   19:43:50 -- Time taken to encrypt file: 0.022816181182861328 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file int 
+enc-ckt has DFFs. running sequnetial attack...
+vebrosity: 0
+key-condition sweeping mode: 0
+BMC sweeping mode: 0
+Relative to kckt SAT-sweeping: 0
+with propagation limit: -1
+with mitter sweep: 0
+BDD analysis option: 0
+KC BDD size limit: 0
+BMC bound limit: 600
+frame: 0  stats -> variables: 705 clauses: 2092 assignments: 0  propagations: 0
+no trace up to bound 1
+adding termination links
+frame: 1  stats -> variables: 1360 clauses: 4184 assignments: 0  propagations: 1953
+no trace up to bound 2
+increasing bmc bound to 3
+termination checking up to round: 1. current BMC checked bound: 1
+frame: 2  stats -> variables: 2014 clauses: 6264 assignments: 0  propagations: 8446
+no trace up to bound 3
+increasing bmc bound to 4
+termination checking up to round: 2. current BMC checked bound: 2
+frame: 3  stats -> variables: 2668 clauses: 8344 assignments: 0  propagations: 28257
+no trace up to bound 4
+increasing bmc bound to 5
+termination checking up to round: 3. current BMC checked bound: 3
+frame: 4  stats -> variables: 3322 clauses: 10424 assignments: 0  propagations: 50754
+no trace up to bound 5
+increasing bmc bound to 6
+termination checking up to round: 3. current BMC checked bound: 4
+frame: 5  stats -> variables: 3976 clauses: 12504 assignments: 0  propagations: 75151
+no trace up to bound 6
+increasing bmc bound to 7
+termination checking up to round: 3. current BMC checked bound: 5
+frame: 6  stats -> variables: 4630 clauses: 14584 assignments: 0  propagations: 168290
+no trace up to bound 7
+increasing bmc bound to 8
+termination checking up to round: 3. current BMC checked bound: 6
+frame: 7  stats -> variables: 5284 clauses: 16664 assignments: 0  propagations: 248775
+no trace up to bound 8
+increasing bmc bound to 9
+termination checking up to round: 3. current BMC checked bound: 7
+frame: 8  stats -> variables: 5938 clauses: 18744 assignments: 0  propagations: 302109
+DIS iter: 0
+  DIP clk_0 -> 0101010110100010000  0011100
+  DIP clk_1 -> 0111000100000000110  0000100
+  DIP clk_2 -> 0001010100010000000  0001101
+  DIP clk_3 -> 0001110110001000111  0000101
+  DIP clk_4 -> 0101000000011000110  0011000
+  DIP clk_5 -> 0111111100000010110  0000000
+  DIP clk_6 -> 0001010110011100100  0001001
+  DIP clk_7 -> 0110110011001000110  0000001
+  DIP clk_8 -> 0000011100011000110  0000001
+  dis: 1  stats -> variables: 11195 clauses: 26328 assignments: 6699  propagations: 349145
+termination checking up to round: 3. current BMC checked bound: 7
+reached combinational termination!
+
+sat_time:  0.000000
+term_time: 0.079633
+gen_time:  0.000000
+bmc_time:  0.045232
+simp_time: 0.000000
+total_time: 0.131867
+
+dis_count: 1
+dis_maxlen: 9
+
+[1;31mkey=[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m
+checking key
+UC Berkeley, ABC 1.01 (compiled Jul  9 2021 03:52:12)
+abc 01> dsec ./tmp9185/cir1.bench  ./tmp9185/cir2.bench
+Warning: 12 registers in this network have don't-care init values.
+The don't-care are assumed to be 0. The result may not verify.
+Use command "print_latch" to see the init values of registers.
+Use command "zero" to convert or "init" to change the values.
+Networks are NOT EQUIVALENT after simulation.   Time =     0.02 sec
+abc 01> ***EOF***
+
+different
+
+done
+
+real	0m0.736s
+user	0m0.164s
+sys	0m0.049s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas89/s510.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas89/s5378.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas89/s5378.bench ########################################## 
+ ################################################################################################### 
+2
+ ------------------ Finding key 6685095103  13619601184  33741312488  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-09-2024   19:43:51 --  locked version of ./benchmarks/iscas89/s5378.bench
+INFO - Apr-09-2024   19:43:51 --  number of keys: 3
+INFO - Apr-09-2024   19:43:51 --  keys: [6685095103, 13619601184, 33741312488]
+INFO - Apr-09-2024   19:43:51 --  number of bits per key (keyinputs#): 35
+INFO - Apr-09-2024   19:43:51 --  key0 = 00110001110011101100111010010111111
+INFO - Apr-09-2024   19:43:51 --  key1 = 01100101011110010101001111100100000
+INFO - Apr-09-2024   19:43:51 --  key2 = 11111011011001000111001000111101000
+INFO - Apr-09-2024   19:43:51 --  k (gate is locked at k bits): 2
+INFO - Apr-09-2024   19:43:51 -- Time taken to parser file= 0.01810312271118164
+
+INFO - Apr-09-2024   19:43:51 -- Time taken to get gates with k inputs = 0.013502120971679688
+
+INFO - Apr-09-2024   19:43:51 -- Time taken to get the maximum number of unique gates = 0.3376808166503906
+
+INFO - Apr-09-2024   19:43:51 -- Time taken to encrypt up to k inputs: 0.35362863540649414 seconds
+INFO - Apr-09-2024   19:43:51 --   n296gat - Or(And(~n3088gat, ~n3087gat, ~keyinput0, ~keyinput1, keyinput2, keyinput3, ~keyinput4, ~keyinput5, ~keyinput6, keyinput7, keyinput8, keyinput9, ~keyinput10, ~keyinput11, keyinput12, keyinput13, keyinput14, ~keyinput15, keyinput16, keyinput17, ~keyinput18, ~keyinput19, keyinput20, keyinput21, keyinput22, ~keyinput23, keyinput24, ~keyinput25, ~keyinput26, keyinput27, ~keyinput28, keyinput29, keyinput30, keyinput31, keyinput32, keyinput33, keyinput34), And(~n3088gat, n3087gat, ~keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, ~keyinput6, keyinput7, ~keyinput8, keyinput9, keyinput10, keyinput11, keyinput12, ~keyinput13, ~keyinput14, keyinput15, ~keyinput16, keyinput17, ~keyinput18, keyinput19, ~keyinput20, ~keyinput21, keyinput22, keyinput23, keyinput24, keyinput25, keyinput26, ~keyinput27, ~keyinput28, keyinput29, ~keyinput30, ~keyinput31, ~keyinput32, ~keyinput33, ~keyinput34), And(n3088gat, ~n3087gat, keyinput0, keyinput1, keyinput2, keyinput3, keyinput4, ~keyinput5, keyinput6, keyinput7, ~keyinput8, keyinput9, keyinput10, ~keyinput11, ~keyinput12, keyinput13, ~keyinput14, ~keyinput15, ~keyinput16, keyinput17, keyinput18, keyinput19, ~keyinput20, ~keyinput21, keyinput22, ~keyinput23, ~keyinput24, ~keyinput25, keyinput26, keyinput27, keyinput28, keyinput29, ~keyinput30, keyinput31, ~keyinput32, ~keyinput33, ~keyinput34))
+INFO - Apr-09-2024   19:43:51 --   I583 - And(~n3091gat, ~n3092gat, ~keyinput0, ~keyinput1, keyinput2, keyinput3, ~keyinput4, ~keyinput5, ~keyinput6, keyinput7, keyinput8, keyinput9, ~keyinput10, ~keyinput11, keyinput12, keyinput13, keyinput14, ~keyinput15, keyinput16, keyinput17, ~keyinput18, ~keyinput19, keyinput20, keyinput21, keyinput22, ~keyinput23, keyinput24, ~keyinput25, ~keyinput26, keyinput27, ~keyinput28, keyinput29, keyinput30, keyinput31, keyinput32, keyinput33, keyinput34)
+INFO - Apr-09-2024   19:43:51 --   n293gat - Or(And(~n3085gat, ~n3086gat, ~keyinput0, ~keyinput1, keyinput2, keyinput3, ~keyinput4, ~keyinput5, ~keyinput6, keyinput7, keyinput8, keyinput9, ~keyinput10, ~keyinput11, keyinput12, keyinput13, keyinput14, ~keyinput15, keyinput16, keyinput17, ~keyinput18, ~keyinput19, keyinput20, keyinput21, keyinput22, ~keyinput23, keyinput24, ~keyinput25, ~keyinput26, keyinput27, ~keyinput28, keyinput29, keyinput30, keyinput31, keyinput32, keyinput33, keyinput34), And(~n3085gat, n3086gat, ~keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, ~keyinput6, keyinput7, ~keyinput8, keyinput9, keyinput10, keyinput11, keyinput12, ~keyinput13, ~keyinput14, keyinput15, ~keyinput16, keyinput17, ~keyinput18, keyinput19, ~keyinput20, ~keyinput21, keyinput22, keyinput23, keyinput24, keyinput25, keyinput26, ~keyinput27, ~keyinput28, keyinput29, ~keyinput30, ~keyinput31, ~keyinput32, ~keyinput33, ~keyinput34), And(n3085gat, ~n3086gat, keyinput0, keyinput1, keyinput2, keyinput3, keyinput4, ~keyinput5, keyinput6, keyinput7, ~keyinput8, keyinput9, keyinput10, ~keyinput11, ~keyinput12, keyinput13, ~keyinput14, ~keyinput15, ~keyinput16, keyinput17, keyinput18, keyinput19, ~keyinput20, ~keyinput21, keyinput22, ~keyinput23, ~keyinput24, ~keyinput25, keyinput26, keyinput27, keyinput28, keyinput29, ~keyinput30, keyinput31, ~keyinput32, ~keyinput33, ~keyinput34))
+INFO - Apr-09-2024   19:43:51 --   n648gat - And(n3093gat, n3072gat, ~keyinput0, ~keyinput1, keyinput2, keyinput3, ~keyinput4, ~keyinput5, ~keyinput6, keyinput7, keyinput8, keyinput9, ~keyinput10, ~keyinput11, keyinput12, keyinput13, keyinput14, ~keyinput15, keyinput16, keyinput17, ~keyinput18, ~keyinput19, keyinput20, keyinput21, keyinput22, ~keyinput23, keyinput24, ~keyinput25, ~keyinput26, keyinput27, ~keyinput28, keyinput29, keyinput30, keyinput31, keyinput32, keyinput33, keyinput34)
+INFO - Apr-09-2024   19:43:51 --   n442gat - And(n3081gat, n3095gat, ~keyinput0, ~keyinput1, keyinput2, keyinput3, ~keyinput4, ~keyinput5, ~keyinput6, keyinput7, keyinput8, keyinput9, ~keyinput10, ~keyinput11, keyinput12, keyinput13, keyinput14, ~keyinput15, keyinput16, keyinput17, ~keyinput18, ~keyinput19, keyinput20, keyinput21, keyinput22, ~keyinput23, keyinput24, ~keyinput25, ~keyinput26, keyinput27, ~keyinput28, keyinput29, keyinput30, keyinput31, keyinput32, keyinput33, keyinput34)
+INFO - Apr-09-2024   19:43:51 -- Time taken to encrypt file: 0.3962702751159668 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file int 
+enc-ckt has DFFs. running sequnetial attack...
+vebrosity: 0
+key-condition sweeping mode: 0
+BMC sweeping mode: 0
+Relative to kckt SAT-sweeping: 0
+with propagation limit: -1
+with mitter sweep: 0
+BDD analysis option: 0
+KC BDD size limit: 0
+BMC bound limit: 600
+frame: 0  stats -> variables: 6708 clauses: 17241 assignments: 0  propagations: 0
+no trace up to bound 1
+adding termination links
+frame: 1  stats -> variables: 12988 clauses: 34482 assignments: 0  propagations: 60456
+DIS iter: 0
+  DIP clk_0 -> 01011111001111011000110010111100100  0010111111111111111110111111111111000111110111111
+  DIP clk_1 -> 00100100010101100000010001000111100  0010111111111111100111111000000000000111110001001
+  dis: 1  stats -> variables: 24525 clauses: 43472 assignments: 12175  propagations: 91965
+no trace up to bound 2
+increasing bmc bound to 3
+termination checking up to round: 1. current BMC checked bound: 1
+reached combinational termination!
+
+sat_time:  0.000000
+term_time: 0.327245
+gen_time:  0.000000
+bmc_time:  0.163785
+simp_time: 0.000000
+total_time: 0.537874
+
+dis_count: 1
+dis_maxlen: 2
+
+[1;31mkey=[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m
+checking key
+UC Berkeley, ABC 1.01 (compiled Jul  9 2021 03:52:12)
+abc 01> dsec ./tmp9213/cir1.bench  ./tmp9213/cir2.bench
+Warning: 358 registers in this network have don't-care init values.
+The don't-care are assumed to be 0. The result may not verify.
+Use command "print_latch" to see the init values of registers.
+Use command "zero" to convert or "init" to change the values.
+Networks are NOT EQUIVALENT after simulation.   Time =     0.14 sec
+abc 01> ***EOF***
+
+different
+
+done
+
+real	0m1.354s
+user	0m0.762s
+sys	0m0.033s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas89/s5378.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas89/s641.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas89/s641.bench ########################################## 
+ ################################################################################################### 
+2
+ ------------------ Finding key 24403540413  16907433096  15074261916  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-09-2024   19:43:53 --  locked version of ./benchmarks/iscas89/s641.bench
+INFO - Apr-09-2024   19:43:53 --  number of keys: 3
+INFO - Apr-09-2024   19:43:53 --  keys: [24403540413, 16907433096, 15074261916]
+INFO - Apr-09-2024   19:43:53 --  number of bits per key (keyinputs#): 35
+INFO - Apr-09-2024   19:43:53 --  key0 = 10110101110100100000111100110111101
+INFO - Apr-09-2024   19:43:53 --  key1 = 01111101111110000101111010010001000
+INFO - Apr-09-2024   19:43:53 --  key2 = 01110000010011111101111101110011100
+INFO - Apr-09-2024   19:43:53 --  k (gate is locked at k bits): 2
+INFO - Apr-09-2024   19:43:53 -- Time taken to parser file= 0.004164218902587891
+
+INFO - Apr-09-2024   19:43:53 -- Time taken to get gates with k inputs = 0.0038688182830810547
+
+INFO - Apr-09-2024   19:43:53 -- Time taken to get the maximum number of unique gates = 0.0001163482666015625
+
+INFO - Apr-09-2024   19:43:53 -- Time taken to encrypt up to k inputs: 0.004907369613647461 seconds
+INFO - Apr-09-2024   19:43:53 --   G231 - And(~G3, ~G11, keyinput0, ~keyinput1, keyinput2, keyinput3, ~keyinput4, keyinput5, ~keyinput6, keyinput7, keyinput8, keyinput9, ~keyinput10, keyinput11, ~keyinput12, ~keyinput13, keyinput14, ~keyinput15, ~keyinput16, ~keyinput17, ~keyinput18, ~keyinput19, keyinput20, keyinput21, keyinput22, keyinput23, ~keyinput24, ~keyinput25, keyinput26, keyinput27, ~keyinput28, keyinput29, keyinput30, keyinput31, keyinput32, ~keyinput33, keyinput34)
+INFO - Apr-09-2024   19:43:53 -- Time taken to encrypt file: 0.02461409568786621 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file int 
+enc-ckt has DFFs. running sequnetial attack...
+vebrosity: 0
+key-condition sweeping mode: 0
+BMC sweeping mode: 0
+Relative to kckt SAT-sweeping: 0
+with propagation limit: -1
+with mitter sweep: 0
+BDD analysis option: 0
+KC BDD size limit: 0
+BMC bound limit: 600
+frame: 0  stats -> variables: 1054 clauses: 2470 assignments: 0  propagations: 0
+adding termination links
+DIS iter: 0
+  DIP clk_0 -> 00010011001100000000100110100000000  000000111011111111111111
+  dis: 1  stats -> variables: 1800 clauses: 3224 assignments: 847  propagations: 7770
+frame: 1  stats -> variables: 2745 clauses: 5556 assignments: 877  propagations: 9924
+no trace up to bound 2
+increasing bmc bound to 3
+termination checking up to round: 1. current BMC checked bound: 1
+reached combinational termination!
+
+sat_time:  0.000000
+term_time: 0.034288
+gen_time:  0.000000
+bmc_time:  0.003588
+simp_time: 0.000000
+total_time: 0.044210
+
+dis_count: 1
+dis_maxlen: 1
+
+[1;31mkey=[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m0[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m
+checking key
+UC Berkeley, ABC 1.01 (compiled Jul  9 2021 03:52:12)
+abc 01> dsec ./tmp9243/cir1.bench  ./tmp9243/cir2.bench
+Warning: 38 registers in this network have don't-care init values.
+The don't-care are assumed to be 0. The result may not verify.
+Use command "print_latch" to see the init values of registers.
+Use command "zero" to convert or "init" to change the values.
+Networks are equivalent.  Time =     0.01 sec
+
+equivalent
+
+done
+
+real	0m0.646s
+user	0m0.092s
+sys	0m0.022s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas89/s641.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas89/s713.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas89/s713.bench ########################################## 
+ ################################################################################################### 
+2
+ ------------------ Finding key 1775787579  10946091241  22125709103  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-09-2024   19:43:54 --  locked version of ./benchmarks/iscas89/s713.bench
+INFO - Apr-09-2024   19:43:54 --  number of keys: 3
+INFO - Apr-09-2024   19:43:54 --  keys: [1775787579, 10946091241, 22125709103]
+INFO - Apr-09-2024   19:43:54 --  number of bits per key (keyinputs#): 35
+INFO - Apr-09-2024   19:43:54 --  key0 = 00001101001110110000101111000111011
+INFO - Apr-09-2024   19:43:54 --  key1 = 01010001100011100000001100011101001
+INFO - Apr-09-2024   19:43:54 --  key2 = 10100100110110010111000011100101111
+INFO - Apr-09-2024   19:43:54 --  k (gate is locked at k bits): 2
+INFO - Apr-09-2024   19:43:54 -- Time taken to parser file= 0.004895210266113281
+
+INFO - Apr-09-2024   19:43:54 -- Time taken to get gates with k inputs = 0.004359722137451172
+
+INFO - Apr-09-2024   19:43:54 -- Time taken to get the maximum number of unique gates = 0.0001385211944580078
+
+INFO - Apr-09-2024   19:43:54 -- Time taken to encrypt up to k inputs: 0.005599260330200195 seconds
+INFO - Apr-09-2024   19:43:54 --   G231 - And(~G3, ~G11, ~keyinput0, ~keyinput1, ~keyinput2, ~keyinput3, keyinput4, keyinput5, ~keyinput6, keyinput7, ~keyinput8, ~keyinput9, keyinput10, keyinput11, keyinput12, ~keyinput13, keyinput14, keyinput15, ~keyinput16, ~keyinput17, ~keyinput18, ~keyinput19, keyinput20, ~keyinput21, keyinput22, keyinput23, keyinput24, keyinput25, ~keyinput26, ~keyinput27, ~keyinput28, keyinput29, keyinput30, keyinput31, ~keyinput32, keyinput33, keyinput34)
+INFO - Apr-09-2024   19:43:54 -- Time taken to encrypt file: 0.026327848434448242 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file int 
+enc-ckt has DFFs. running sequnetial attack...
+vebrosity: 0
+key-condition sweeping mode: 0
+BMC sweeping mode: 0
+Relative to kckt SAT-sweeping: 0
+with propagation limit: -1
+with mitter sweep: 0
+BDD analysis option: 0
+KC BDD size limit: 0
+BMC bound limit: 600
+frame: 0  stats -> variables: 1082 clauses: 2595 assignments: 0  propagations: 0
+adding termination links
+DIS iter: 0
+  DIP clk_0 -> 01010011001000000000100011010000000  11110000111111011111111
+  dis: 1  stats -> variables: 1862 clauses: 3291 assignments: 886  propagations: 6886
+frame: 1  stats -> variables: 2835 clauses: 5744 assignments: 920  propagations: 11123
+no trace up to bound 2
+increasing bmc bound to 3
+termination checking up to round: 1. current BMC checked bound: 1
+reached combinational termination!
+
+sat_time:  0.000000
+term_time: 0.028411
+gen_time:  0.000000
+bmc_time:  0.005049
+simp_time: 0.000000
+total_time: 0.039303
+
+dis_count: 1
+dis_maxlen: 1
+
+[1;31mkey=[0m[1;31m0[0m[1;31m0[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m
+checking key
+UC Berkeley, ABC 1.01 (compiled Jul  9 2021 03:52:12)
+abc 01> dsec ./tmp9270/cir1.bench  ./tmp9270/cir2.bench
+Warning: 38 registers in this network have don't-care init values.
+The don't-care are assumed to be 0. The result may not verify.
+Use command "print_latch" to see the init values of registers.
+Use command "zero" to convert or "init" to change the values.
+Networks are equivalent.  Time =     0.01 sec
+
+equivalent
+
+done
+
+real	0m0.635s
+user	0m0.067s
+sys	0m0.043s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas89/s713.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas89/s832.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas89/s832.bench ########################################## 
+ ################################################################################################### 
+2
+ ------------------ Finding key 184234  145400  212075  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-09-2024   19:43:55 --  locked version of ./benchmarks/iscas89/s832.bench
+INFO - Apr-09-2024   19:43:55 --  number of keys: 3
+INFO - Apr-09-2024   19:43:55 --  keys: [184234, 145400, 212075]
+INFO - Apr-09-2024   19:43:55 --  number of bits per key (keyinputs#): 18
+INFO - Apr-09-2024   19:43:55 --  key0 = 101100111110101010
+INFO - Apr-09-2024   19:43:55 --  key1 = 100011011111111000
+INFO - Apr-09-2024   19:43:55 --  key2 = 110011110001101011
+INFO - Apr-09-2024   19:43:55 --  k (gate is locked at k bits): 2
+INFO - Apr-09-2024   19:43:55 -- Time taken to parser file= 0.00518798828125
+
+INFO - Apr-09-2024   19:43:55 -- Time taken to get gates with k inputs = 0.0018467903137207031
+
+INFO - Apr-09-2024   19:43:55 -- Time taken to get the maximum number of unique gates = 0.0001556873321533203
+
+INFO - Apr-09-2024   19:43:55 -- Time taken to encrypt up to k inputs: 0.0032415390014648438 seconds
+INFO - Apr-09-2024   19:43:55 --   G169 - And(~G11, ~G12, keyinput0, ~keyinput1, keyinput2, keyinput3, ~keyinput4, ~keyinput5, keyinput6, keyinput7, keyinput8, keyinput9, keyinput10, ~keyinput11, keyinput12, ~keyinput13, keyinput14, ~keyinput15, keyinput16, ~keyinput17)
+INFO - Apr-09-2024   19:43:55 --   G136 - Or(And(~G4, ~G16, keyinput0, ~keyinput1, keyinput2, keyinput3, ~keyinput4, ~keyinput5, keyinput6, keyinput7, keyinput8, keyinput9, keyinput10, ~keyinput11, keyinput12, ~keyinput13, keyinput14, ~keyinput15, keyinput16, ~keyinput17), And(G4, ~G16, keyinput0, keyinput1, ~keyinput2, ~keyinput3, keyinput4, keyinput5, keyinput6, keyinput7, ~keyinput8, ~keyinput9, ~keyinput10, keyinput11, keyinput12, ~keyinput13, keyinput14, ~keyinput15, keyinput16, keyinput17), And(G4, G16, keyinput0, ~keyinput1, keyinput2, keyinput3, ~keyinput4, ~keyinput5, keyinput6, keyinput7, keyinput8, keyinput9, keyinput10, ~keyinput11, keyinput12, ~keyinput13, keyinput14, ~keyinput15, keyinput16, ~keyinput17))
+INFO - Apr-09-2024   19:43:55 --   G204 - Or(And(~G9, ~G8, keyinput0, ~keyinput1, keyinput2, keyinput3, ~keyinput4, ~keyinput5, keyinput6, keyinput7, keyinput8, keyinput9, keyinput10, ~keyinput11, keyinput12, ~keyinput13, keyinput14, ~keyinput15, keyinput16, ~keyinput17), And(G9, ~G8, keyinput0, ~keyinput1, ~keyinput2, ~keyinput3, keyinput4, keyinput5, ~keyinput6, keyinput7, keyinput8, keyinput9, keyinput10, keyinput11, keyinput12, keyinput13, keyinput14, ~keyinput15, ~keyinput16, ~keyinput17), And(~G9, G8, keyinput0, keyinput1, ~keyinput2, ~keyinput3, keyinput4, keyinput5, keyinput6, keyinput7, ~keyinput8, ~keyinput9, ~keyinput10, keyinput11, keyinput12, ~keyinput13, keyinput14, ~keyinput15, keyinput16, keyinput17))
+INFO - Apr-09-2024   19:43:55 -- Time taken to encrypt file: 0.025159835815429688 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file int 
+enc-ckt has DFFs. running sequnetial attack...
+vebrosity: 0
+key-condition sweeping mode: 0
+BMC sweeping mode: 0
+Relative to kckt SAT-sweeping: 0
+with propagation limit: -1
+with mitter sweep: 0
+BDD analysis option: 0
+KC BDD size limit: 0
+BMC bound limit: 600
+frame: 0  stats -> variables: 851 clauses: 2959 assignments: 0  propagations: 0
+no trace up to bound 1
+adding termination links
+frame: 1  stats -> variables: 1656 clauses: 5918 assignments: 0  propagations: 2097
+no trace up to bound 2
+increasing bmc bound to 3
+termination checking up to round: 1. current BMC checked bound: 1
+frame: 2  stats -> variables: 2460 clauses: 8867 assignments: 0  propagations: 104196
+no trace up to bound 3
+increasing bmc bound to 4
+termination checking up to round: 2. current BMC checked bound: 2
+frame: 3  stats -> variables: 3264 clauses: 11816 assignments: 0  propagations: 287264
+no trace up to bound 4
+increasing bmc bound to 5
+termination checking up to round: 3. current BMC checked bound: 3
+frame: 4  stats -> variables: 4068 clauses: 14765 assignments: 0  propagations: 394094
+DIS iter: 0
+  DIP clk_0 -> 001000111110001100  0000000000000010000
+  DIP clk_1 -> 101000111110011000  0000000001000000000
+  DIP clk_2 -> 001000110100101000  0000000000000010000
+  DIP clk_3 -> 001001101100001110  0000001000001000100
+  DIP clk_4 -> 001111111011101111  0000000100000000001
+  dis: 1  stats -> variables: 7389 clauses: 17095 assignments: 3877  propagations: 447146
+termination checking up to round: 3. current BMC checked bound: 3
+reached combinational termination!
+
+sat_time:  0.000000
+term_time: 0.080192
+gen_time:  0.000000
+bmc_time:  0.024977
+simp_time: 0.000000
+total_time: 0.112066
+
+dis_count: 1
+dis_maxlen: 5
+
+[1;31mkey=[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m
+checking key
+UC Berkeley, ABC 1.01 (compiled Jul  9 2021 03:52:12)
+abc 01> dsec ./tmp9296/cir1.bench  ./tmp9296/cir2.bench
+Warning: 10 registers in this network have don't-care init values.
+The don't-care are assumed to be 0. The result may not verify.
+Use command "print_latch" to see the init values of registers.
+Use command "zero" to convert or "init" to change the values.
+Networks are NOT EQUIVALENT after simulation.   Time =     0.04 sec
+abc 01> ***EOF***
+
+different
+
+done
+
+real	0m0.730s
+user	0m0.163s
+sys	0m0.048s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas89/s832.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas89/s9234.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas89/s9234.bench ########################################## 
+ ################################################################################################### 
+2
+ ------------------ Finding key 435391  117551  268312  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-09-2024   19:43:56 --  locked version of ./benchmarks/iscas89/s9234.bench
+INFO - Apr-09-2024   19:43:56 --  number of keys: 3
+INFO - Apr-09-2024   19:43:56 --  keys: [435391, 117551, 268312]
+INFO - Apr-09-2024   19:43:56 --  number of bits per key (keyinputs#): 19
+INFO - Apr-09-2024   19:43:56 --  key0 = 1101010010010111111
+INFO - Apr-09-2024   19:43:56 --  key1 = 0011100101100101111
+INFO - Apr-09-2024   19:43:56 --  key2 = 1000001100000011000
+INFO - Apr-09-2024   19:43:56 --  k (gate is locked at k bits): 2
+INFO - Apr-09-2024   19:43:56 -- Time taken to parser file= 0.022313356399536133
+
+INFO - Apr-09-2024   19:43:56 -- Time taken to get gates with k inputs = 0.020676136016845703
+
+INFO - Apr-09-2024   19:43:56 -- Time taken to get the maximum number of unique gates = 0.002034902572631836
+
+INFO - Apr-09-2024   19:43:56 -- Time taken to encrypt up to k inputs: 0.024185895919799805 seconds
+INFO - Apr-09-2024   19:43:56 --   g1890 - And(~g314, g306, ~keyinput0, ~keyinput1, keyinput2, keyinput3, keyinput4, ~keyinput5, ~keyinput6, keyinput7, ~keyinput8, keyinput9, keyinput10, ~keyinput11, ~keyinput12, keyinput13, ~keyinput14, keyinput15, keyinput16, keyinput17, keyinput18)
+INFO - Apr-09-2024   19:43:56 --   g2306 - And(~g102, g94, ~keyinput0, ~keyinput1, keyinput2, keyinput3, keyinput4, ~keyinput5, ~keyinput6, keyinput7, ~keyinput8, keyinput9, keyinput10, ~keyinput11, ~keyinput12, keyinput13, ~keyinput14, keyinput15, keyinput16, keyinput17, keyinput18)
+INFO - Apr-09-2024   19:43:56 --   g1620 - And(~g89, ~g98, keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4, keyinput5, ~keyinput6, ~keyinput7, keyinput8, ~keyinput9, ~keyinput10, keyinput11, ~keyinput12, keyinput13, keyinput14, keyinput15, keyinput16, keyinput17, keyinput18)
+INFO - Apr-09-2024   19:43:56 --   g1784 - And(~g301, ~g310, keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4, keyinput5, ~keyinput6, ~keyinput7, keyinput8, ~keyinput9, ~keyinput10, keyinput11, ~keyinput12, keyinput13, keyinput14, keyinput15, keyinput16, keyinput17, keyinput18)
+INFO - Apr-09-2024   19:43:56 -- Time taken to encrypt file: 0.06735563278198242 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file int 
+enc-ckt has DFFs. running sequnetial attack...
+vebrosity: 0
+key-condition sweeping mode: 0
+BMC sweeping mode: 0
+Relative to kckt SAT-sweeping: 0
+with propagation limit: -1
+with mitter sweep: 0
+BDD analysis option: 0
+KC BDD size limit: 0
+BMC bound limit: 600
+frame: 0  stats -> variables: 12099 clauses: 29365 assignments: 0  propagations: 0
+no trace up to bound 1
+adding termination links
+frame: 1  stats -> variables: 23704 clauses: 58730 assignments: 3  propagations: 58299
+no trace up to bound 2
+increasing bmc bound to 3
+termination checking up to round: 1. current BMC checked bound: 1
+frame: 2  stats -> variables: 35308 clauses: 87639 assignments: 6  propagations: 370475
+no trace up to bound 3
+increasing bmc bound to 4
+termination checking up to round: 2. current BMC checked bound: 2
+frame: 3  stats -> variables: 46912 clauses: 116548 assignments: 9  propagations: 577347
+no trace up to bound 4
+increasing bmc bound to 5
+termination checking up to round: 3. current BMC checked bound: 3
+frame: 4  stats -> variables: 58516 clauses: 145457 assignments: 12  propagations: 842658
+no trace up to bound 5
+increasing bmc bound to 6
+termination checking up to round: 3. current BMC checked bound: 4
+frame: 5  stats -> variables: 70120 clauses: 174366 assignments: 15  propagations: 1182107
+no trace up to bound 6
+increasing bmc bound to 7
+termination checking up to round: 3. current BMC checked bound: 5
+frame: 6  stats -> variables: 81724 clauses: 203275 assignments: 18  propagations: 1588602
+no trace up to bound 7
+increasing bmc bound to 8
+termination checking up to round: 3. current BMC checked bound: 6
+frame: 7  stats -> variables: 93328 clauses: 232184 assignments: 21  propagations: 2061435
+no trace up to bound 8
+increasing bmc bound to 9
+termination checking up to round: 3. current BMC checked bound: 7
+frame: 8  stats -> variables: 104932 clauses: 261093 assignments: 24  propagations: 2695254
+no trace up to bound 9
+increasing bmc bound to 10
+termination checking up to round: 3. current BMC checked bound: 8
+frame: 9  stats -> variables: 116536 clauses: 290002 assignments: 27  propagations: 3321616
+no trace up to bound 10
+increasing bmc bound to 11
+termination checking up to round: 3. current BMC checked bound: 9
+frame: 10  stats -> variables: 128140 clauses: 318911 assignments: 30  propagations: 4002705
+no trace up to bound 11
+increasing bmc bound to 12
+termination checking up to round: 3. current BMC checked bound: 10
+frame: 11  stats -> variables: 139744 clauses: 347820 assignments: 33  propagations: 4719109
+no trace up to bound 12
+increasing bmc bound to 13
+termination checking up to round: 3. current BMC checked bound: 11
+frame: 12  stats -> variables: 151348 clauses: 376729 assignments: 36  propagations: 5539173
+no trace up to bound 13
+increasing bmc bound to 14
+termination checking up to round: 3. current BMC checked bound: 12
+frame: 13  stats -> variables: 162952 clauses: 405638 assignments: 39  propagations: 6417566
+no trace up to bound 14
+increasing bmc bound to 15
+termination checking up to round: 3. current BMC checked bound: 13
+frame: 14  stats -> variables: 174556 clauses: 434547 assignments: 42  propagations: 7337785
+no trace up to bound 15
+increasing bmc bound to 16
+termination checking up to round: 3. current BMC checked bound: 14
+frame: 15  stats -> variables: 186160 clauses: 463456 assignments: 45  propagations: 12681930
+no trace up to bound 16
+increasing bmc bound to 17
+termination checking up to round: 3. current BMC checked bound: 15
+frame: 16  stats -> variables: 197764 clauses: 492365 assignments: 48  propagations: 13756915
+no trace up to bound 17
+increasing bmc bound to 18
+termination checking up to round: 3. current BMC checked bound: 16
+frame: 17  stats -> variables: 209368 clauses: 521274 assignments: 51  propagations: 14897218
+no trace up to bound 18
+increasing bmc bound to 19
+termination checking up to round: 3. current BMC checked bound: 17
+frame: 18  stats -> variables: 220972 clauses: 550183 assignments: 54  propagations: 16103615
+no trace up to bound 19
+increasing bmc bound to 20
+termination checking up to round: 3. current BMC checked bound: 18
+frame: 19  stats -> variables: 232576 clauses: 579092 assignments: 57  propagations: 17378387
+no trace up to bound 20
+increasing bmc bound to 21
+termination checking up to round: 3. current BMC checked bound: 19
+frame: 20  stats -> variables: 244180 clauses: 608001 assignments: 60  propagations: 18854488
+no trace up to bound 21
+increasing bmc bound to 22
+termination checking up to round: 3. current BMC checked bound: 20
+frame: 21  stats -> variables: 255784 clauses: 636910 assignments: 63  propagations: 20258452
+no trace up to bound 22
+increasing bmc bound to 23
+termination checking up to round: 3. current BMC checked bound: 21
+frame: 22  stats -> variables: 267388 clauses: 665819 assignments: 66  propagations: 21903282
+no trace up to bound 23
+increasing bmc bound to 24
+termination checking up to round: 3. current BMC checked bound: 22
+frame: 23  stats -> variables: 278992 clauses: 694728 assignments: 69  propagations: 23705628
+no trace up to bound 24
+increasing bmc bound to 25
+termination checking up to round: 3. current BMC checked bound: 23
+frame: 24  stats -> variables: 290596 clauses: 723637 assignments: 72  propagations: 25255466
+no trace up to bound 25
+increasing bmc bound to 26
+termination checking up to round: 3. current BMC checked bound: 24
+frame: 25  stats -> variables: 302200 clauses: 752546 assignments: 75  propagations: 26925458
+no trace up to bound 26
+increasing bmc bound to 27
+termination checking up to round: 3. current BMC checked bound: 25
+frame: 26  stats -> variables: 313804 clauses: 781455 assignments: 78  propagations: 28666954
+no trace up to bound 27
+increasing bmc bound to 28
+termination checking up to round: 3. current BMC checked bound: 26
+frame: 27  stats -> variables: 325408 clauses: 810364 assignments: 81  propagations: 30411608
+no trace up to bound 28
+increasing bmc bound to 29
+termination checking up to round: 3. current BMC checked bound: 27
+frame: 28  stats -> variables: 337012 clauses: 839273 assignments: 84  propagations: 32302423
+no trace up to bound 29
+increasing bmc bound to 30
+termination checking up to round: 3. current BMC checked bound: 28
+frame: 29  stats -> variables: 348616 clauses: 868182 assignments: 87  propagations: 34230777
+no trace up to bound 30
+increasing bmc bound to 31
+termination checking up to round: 3. current BMC checked bound: 29
+frame: 30  stats -> variables: 360220 clauses: 897091 assignments: 90  propagations: 36239989
+no trace up to bound 31
+increasing bmc bound to 32
+termination checking up to round: 3. current BMC checked bound: 30
+frame: 31  stats -> variables: 371824 clauses: 926000 assignments: 93  propagations: 38319372
+no trace up to bound 32
+increasing bmc bound to 33
+termination checking up to round: 3. current BMC checked bound: 31
+frame: 32  stats -> variables: 383428 clauses: 954909 assignments: 96  propagations: 40391297
+no trace up to bound 33
+increasing bmc bound to 34
+termination checking up to round: 3. current BMC checked bound: 32
+frame: 33  stats -> variables: 395032 clauses: 983818 assignments: 99  propagations: 42519117
+no trace up to bound 34
+increasing bmc bound to 35
+termination checking up to round: 3. current BMC checked bound: 33
+frame: 34  stats -> variables: 406636 clauses: 1012727 assignments: 102  propagations: 44782700
+no trace up to bound 35
+increasing bmc bound to 36
+termination checking up to round: 3. current BMC checked bound: 34
+frame: 35  stats -> variables: 418240 clauses: 1041636 assignments: 105  propagations: 46796557
+no trace up to bound 36
+increasing bmc bound to 37
+termination checking up to round: 3. current BMC checked bound: 35
+frame: 36  stats -> variables: 429844 clauses: 1070545 assignments: 108  propagations: 49286951
+no trace up to bound 37
+increasing bmc bound to 38
+termination checking up to round: 3. current BMC checked bound: 36
+frame: 37  stats -> variables: 441448 clauses: 1099454 assignments: 111  propagations: 51669588
+no trace up to bound 38
+increasing bmc bound to 39
+termination checking up to round: 3. current BMC checked bound: 37
+frame: 38  stats -> variables: 453052 clauses: 1128363 assignments: 114  propagations: 54212672
+no trace up to bound 39
+increasing bmc bound to 40
+termination checking up to round: 3. current BMC checked bound: 38
+frame: 39  stats -> variables: 464656 clauses: 1157272 assignments: 117  propagations: 56878295
+no trace up to bound 40
+increasing bmc bound to 41
+termination checking up to round: 3. current BMC checked bound: 39
+frame: 40  stats -> variables: 476260 clauses: 1186181 assignments: 120  propagations: 91884968
+no trace up to bound 41
+increasing bmc bound to 42
+termination checking up to round: 3. current BMC checked bound: 40
+frame: 41  stats -> variables: 487864 clauses: 1215090 assignments: 123  propagations: 102458209
+no trace up to bound 42
+increasing bmc bound to 43
+termination checking up to round: 3. current BMC checked bound: 41
+frame: 42  stats -> variables: 499468 clauses: 1243999 assignments: 136  propagations: 113455330
+no trace up to bound 43
+increasing bmc bound to 44
+termination checking up to round: 3. current BMC checked bound: 42
+frame: 43  stats -> variables: 511072 clauses: 1272908 assignments: 139  propagations: 132085086
+no trace up to bound 44
+increasing bmc bound to 45
+termination checking up to round: 3. current BMC checked bound: 43
+frame: 44  stats -> variables: 522676 clauses: 1301817 assignments: 142  propagations: 138629949
+no trace up to bound 45
+increasing bmc bound to 46
+termination checking up to round: 3. current BMC checked bound: 44
+frame: 45  stats -> variables: 534280 clauses: 1330726 assignments: 173  propagations: 176851961
+no trace up to bound 46
+increasing bmc bound to 47
+termination checking up to round: 3. current BMC checked bound: 45
+frame: 46  stats -> variables: 545884 clauses: 1359635 assignments: 176  propagations: 189029538
+no trace up to bound 47
+increasing bmc bound to 48
+termination checking up to round: 3. current BMC checked bound: 46
+frame: 47  stats -> variables: 557488 clauses: 1388544 assignments: 180  propagations: 213540556
+no trace up to bound 48
+increasing bmc bound to 49
+termination checking up to round: 3. current BMC checked bound: 47
+frame: 48  stats -> variables: 569092 clauses: 1417453 assignments: 183  propagations: 238970618
+no trace up to bound 49
+increasing bmc bound to 50
+termination checking up to round: 3. current BMC checked bound: 48
+frame: 49  stats -> variables: 580696 clauses: 1446362 assignments: 240  propagations: 248647863
+no trace up to bound 50
+increasing bmc bound to 51
+termination checking up to round: 3. current BMC checked bound: 49
+frame: 50  stats -> variables: 592300 clauses: 1475271 assignments: 243  propagations: 279219440
+no trace up to bound 51
+increasing bmc bound to 52
+termination checking up to round: 3. current BMC checked bound: 50
+frame: 51  stats -> variables: 603904 clauses: 1504180 assignments: 246  propagations: 328509132
+no trace up to bound 52
+increasing bmc bound to 53
+termination checking up to round: 3. current BMC checked bound: 51
+frame: 52  stats -> variables: 615508 clauses: 1533089 assignments: 249  propagations: 332896467
+no trace up to bound 53
+increasing bmc bound to 54
+termination checking up to round: 3. current BMC checked bound: 52
+frame: 53  stats -> variables: 627112 clauses: 1561998 assignments: 252  propagations: 343314921
+no trace up to bound 54
+increasing bmc bound to 55
+termination checking up to round: 3. current BMC checked bound: 53
+frame: 54  stats -> variables: 638716 clauses: 1590907 assignments: 255  propagations: 347769677
+no trace up to bound 55
+increasing bmc bound to 56
+termination checking up to round: 3. current BMC checked bound: 54
+frame: 55  stats -> variables: 650320 clauses: 1619816 assignments: 258  propagations: 354675857
+no trace up to bound 56
+increasing bmc bound to 57
+termination checking up to round: 3. current BMC checked bound: 55
+frame: 56  stats -> variables: 661924 clauses: 1648725 assignments: 262  propagations: 375176025
+no trace up to bound 57
+increasing bmc bound to 58
+termination checking up to round: 3. current BMC checked bound: 56
+frame: 57  stats -> variables: 673528 clauses: 1677634 assignments: 275  propagations: 388862934
+no trace up to bound 58
+increasing bmc bound to 59
+termination checking up to round: 3. current BMC checked bound: 57
+frame: 58  stats -> variables: 685132 clauses: 1706543 assignments: 278  propagations: 393777417
+no trace up to bound 59
+increasing bmc bound to 60
+termination checking up to round: 3. current BMC checked bound: 58
+frame: 59  stats -> variables: 696736 clauses: 1735452 assignments: 281  propagations: 397780410
+no trace up to bound 60
+increasing bmc bound to 61
+termination checking up to round: 3. current BMC checked bound: 59
+frame: 60  stats -> variables: 708340 clauses: 1764361 assignments: 284  propagations: 404274156
+no trace up to bound 61
+increasing bmc bound to 62
+termination checking up to round: 3. current BMC checked bound: 60
+frame: 61  stats -> variables: 719944 clauses: 1793270 assignments: 287  propagations: 408738969
+no trace up to bound 62
+increasing bmc bound to 63
+termination checking up to round: 3. current BMC checked bound: 61
+frame: 62  stats -> variables: 731548 clauses: 1822179 assignments: 290  propagations: 428569952
+no trace up to bound 63
+increasing bmc bound to 64
+termination checking up to round: 3. current BMC checked bound: 62
+frame: 63  stats -> variables: 743152 clauses: 1851088 assignments: 293  propagations: 433858937
+no trace up to bound 64
+increasing bmc bound to 65
+termination checking up to round: 3. current BMC checked bound: 63
+frame: 64  stats -> variables: 754756 clauses: 1879997 assignments: 296  propagations: 448123640
+no trace up to bound 65
+increasing bmc bound to 66
+termination checking up to round: 3. current BMC checked bound: 64
+frame: 65  stats -> variables: 766360 clauses: 1908906 assignments: 300  propagations: 460489985
+no trace up to bound 66
+increasing bmc bound to 67
+termination checking up to round: 3. current BMC checked bound: 65
+frame: 66  stats -> variables: 777964 clauses: 1937815 assignments: 303  propagations: 468830734
+no trace up to bound 67
+increasing bmc bound to 68
+termination checking up to round: 3. current BMC checked bound: 66
+frame: 67  stats -> variables: 789568 clauses: 1966724 assignments: 306  propagations: 473445080
+no trace up to bound 68
+increasing bmc bound to 69
+termination checking up to round: 3. current BMC checked bound: 67
+frame: 68  stats -> variables: 801172 clauses: 1995633 assignments: 309  propagations: 482214109
+no trace up to bound 69
+increasing bmc bound to 70
+termination checking up to round: 3. current BMC checked bound: 68
+frame: 69  stats -> variables: 812776 clauses: 2024542 assignments: 357  propagations: 506300638
+no trace up to bound 70
+increasing bmc bound to 71
+termination checking up to round: 3. current BMC checked bound: 69
+frame: 70  stats -> variables: 824380 clauses: 2053451 assignments: 360  propagations: 525941953
+no trace up to bound 71
+increasing bmc bound to 72
+termination checking up to round: 3. current BMC checked bound: 70
+frame: 71  stats -> variables: 835984 clauses: 2082360 assignments: 363  propagations: 553326660
+no trace up to bound 72
+increasing bmc bound to 73
+termination checking up to round: 3. current BMC checked bound: 71
+frame: 72  stats -> variables: 847588 clauses: 2111269 assignments: 366  propagations: 566414018
+no trace up to bound 73
+increasing bmc bound to 74
+termination checking up to round: 3. current BMC checked bound: 72
+frame: 73  stats -> variables: 859192 clauses: 2140178 assignments: 369  propagations: 571479522
+no trace up to bound 74
+increasing bmc bound to 75
+termination checking up to round: 3. current BMC checked bound: 73
+frame: 74  stats -> variables: 870796 clauses: 2169087 assignments: 372  propagations: 587719595
+no trace up to bound 75
+increasing bmc bound to 76
+termination checking up to round: 3. current BMC checked bound: 74
+frame: 75  stats -> variables: 882400 clauses: 2197996 assignments: 390  propagations: 630573172
+no trace up to bound 76
+increasing bmc bound to 77
+termination checking up to round: 3. current BMC checked bound: 75
+frame: 76  stats -> variables: 894004 clauses: 2226905 assignments: 393  propagations: 638027456
+no trace up to bound 77
+increasing bmc bound to 78
+termination checking up to round: 3. current BMC checked bound: 76
+frame: 77  stats -> variables: 905608 clauses: 2255814 assignments: 396  propagations: 651046722
+no trace up to bound 78
+increasing bmc bound to 79
+termination checking up to round: 3. current BMC checked bound: 77
+frame: 78  stats -> variables: 917212 clauses: 2284723 assignments: 399  propagations: 657487577
+no trace up to bound 79
+increasing bmc bound to 80
+termination checking up to round: 3. current BMC checked bound: 78
+frame: 79  stats -> variables: 928816 clauses: 2313632 assignments: 402  propagations: 666508879
+no trace up to bound 80
+increasing bmc bound to 81
+termination checking up to round: 3. current BMC checked bound: 79
+frame: 80  stats -> variables: 940420 clauses: 2342541 assignments: 405  propagations: 696733829
+no trace up to bound 81
+increasing bmc bound to 82
+termination checking up to round: 3. current BMC checked bound: 80
+frame: 81  stats -> variables: 952024 clauses: 2371450 assignments: 408  propagations: 745950023
+no trace up to bound 82
+increasing bmc bound to 83
+termination checking up to round: 3. current BMC checked bound: 81
+frame: 82  stats -> variables: 963628 clauses: 2400359 assignments: 433  propagations: 815860310
+no trace up to bound 83
+increasing bmc bound to 84
+termination checking up to round: 3. current BMC checked bound: 82
+frame: 83  stats -> variables: 975232 clauses: 2429268 assignments: 474  propagations: 865883489
+no trace up to bound 84
+increasing bmc bound to 85
+termination checking up to round: 3. current BMC checked bound: 83
+frame: 84  stats -> variables: 986836 clauses: 2458177 assignments: 508  propagations: 890120144
+no trace up to bound 85
+increasing bmc bound to 86
+termination checking up to round: 3. current BMC checked bound: 84
+frame: 85  stats -> variables: 998440 clauses: 2487086 assignments: 511  propagations: 897546780
+no trace up to bound 86
+increasing bmc bound to 87
+termination checking up to round: 3. current BMC checked bound: 85
+frame: 86  stats -> variables: 1010044 clauses: 2515995 assignments: 514  propagations: 945066258
+no trace up to bound 87
+increasing bmc bound to 88
+termination checking up to round: 3. current BMC checked bound: 86
+frame: 87  stats -> variables: 1021648 clauses: 2544904 assignments: 517  propagations: 979364470
+no trace up to bound 88
+increasing bmc bound to 89
+termination checking up to round: 3. current BMC checked bound: 87
+frame: 88  stats -> variables: 1033252 clauses: 2573813 assignments: 520  propagations: 986623748
+no trace up to bound 89
+increasing bmc bound to 90
+termination checking up to round: 3. current BMC checked bound: 88
+frame: 89  stats -> variables: 1044856 clauses: 2602722 assignments: 523  propagations: 992805858
+no trace up to bound 90
+increasing bmc bound to 91
+termination checking up to round: 3. current BMC checked bound: 89
+frame: 90  stats -> variables: 1056460 clauses: 2631631 assignments: 526  propagations: 998845192
+no trace up to bound 91
+increasing bmc bound to 92
+termination checking up to round: 3. current BMC checked bound: 90
+frame: 91  stats -> variables: 1068064 clauses: 2660540 assignments: 529  propagations: 1004842344
+no trace up to bound 92
+increasing bmc bound to 93
+termination checking up to round: 3. current BMC checked bound: 91
+frame: 92  stats -> variables: 1079668 clauses: 2689449 assignments: 532  propagations: 1013793034
+no trace up to bound 93
+increasing bmc bound to 94
+termination checking up to round: 3. current BMC checked bound: 92
+frame: 93  stats -> variables: 1091272 clauses: 2718358 assignments: 535  propagations: 1019058071
+no trace up to bound 94
+increasing bmc bound to 95
+termination checking up to round: 3. current BMC checked bound: 93
+frame: 94  stats -> variables: 1102876 clauses: 2747267 assignments: 538  propagations: 1025248086
+no trace up to bound 95
+increasing bmc bound to 96
+termination checking up to round: 3. current BMC checked bound: 94
+frame: 95  stats -> variables: 1114480 clauses: 2776176 assignments: 541  propagations: 1031684780
+no trace up to bound 96
+increasing bmc bound to 97
+termination checking up to round: 3. current BMC checked bound: 95
+frame: 96  stats -> variables: 1126084 clauses: 2805085 assignments: 544  propagations: 1057437547
+no trace up to bound 97
+increasing bmc bound to 98
+termination checking up to round: 3. current BMC checked bound: 96
+frame: 97  stats -> variables: 1137688 clauses: 2833994 assignments: 547  propagations: 1089403424
+no trace up to bound 98
+increasing bmc bound to 99
+termination checking up to round: 3. current BMC checked bound: 97
+frame: 98  stats -> variables: 1149292 clauses: 2862903 assignments: 550  propagations: 1105360278
+no trace up to bound 99
+increasing bmc bound to 100
+termination checking up to round: 3. current BMC checked bound: 98
+frame: 99  stats -> variables: 1160896 clauses: 2891812 assignments: 553  propagations: 1112850201
+no trace up to bound 100
+increasing bmc bound to 101
+termination checking up to round: 3. current BMC checked bound: 99
+frame: 100  stats -> variables: 1172500 clauses: 2920721 assignments: 557  propagations: 1160276533
+no trace up to bound 101
+increasing bmc bound to 102
+termination checking up to round: 3. current BMC checked bound: 100
+frame: 101  stats -> variables: 1184104 clauses: 2949630 assignments: 560  propagations: 1175366939
+no trace up to bound 102
+increasing bmc bound to 103
+termination checking up to round: 3. current BMC checked bound: 101
+frame: 102  stats -> variables: 1195708 clauses: 2978539 assignments: 563  propagations: 1186454371
+no trace up to bound 103
+increasing bmc bound to 104
+termination checking up to round: 3. current BMC checked bound: 102
+frame: 103  stats -> variables: 1207312 clauses: 3007448 assignments: 566  propagations: 1205183192
+no trace up to bound 104
+increasing bmc bound to 105
+termination checking up to round: 3. current BMC checked bound: 103
+frame: 104  stats -> variables: 1218916 clauses: 3036357 assignments: 577  propagations: 1253722659
+no trace up to bound 105
+increasing bmc bound to 106
+termination checking up to round: 3. current BMC checked bound: 104
+frame: 105  stats -> variables: 1230520 clauses: 3065266 assignments: 581  propagations: 1317478149
+no trace up to bound 106
+increasing bmc bound to 107
+termination checking up to round: 3. current BMC checked bound: 105
+frame: 106  stats -> variables: 1242124 clauses: 3094175 assignments: 584  propagations: 1342821186
+no trace up to bound 107
+increasing bmc bound to 108
+termination checking up to round: 3. current BMC checked bound: 106
+frame: 107  stats -> variables: 1253728 clauses: 3123084 assignments: 587  propagations: 1352864547
+no trace up to bound 108
+increasing bmc bound to 109
+termination checking up to round: 3. current BMC checked bound: 107
+frame: 108  stats -> variables: 1265332 clauses: 3151993 assignments: 590  propagations: 1376329648
+no trace up to bound 109
+increasing bmc bound to 110
+termination checking up to round: 3. current BMC checked bound: 108
+frame: 109  stats -> variables: 1276936 clauses: 3180902 assignments: 593  propagations: 1408917657
+no trace up to bound 110
+increasing bmc bound to 111
+termination checking up to round: 3. current BMC checked bound: 109
+frame: 110  stats -> variables: 1288540 clauses: 3209811 assignments: 596  propagations: 1417499899
+no trace up to bound 111
+increasing bmc bound to 112
+termination checking up to round: 3. current BMC checked bound: 110
+frame: 111  stats -> variables: 1300144 clauses: 3238720 assignments: 599  propagations: 1424783488
+no trace up to bound 112
+increasing bmc bound to 113
+termination checking up to round: 3. current BMC checked bound: 111
+frame: 112  stats -> variables: 1311748 clauses: 3267629 assignments: 602  propagations: 1432140456
+no trace up to bound 113
+increasing bmc bound to 114
+termination checking up to round: 3. current BMC checked bound: 112
+frame: 113  stats -> variables: 1323352 clauses: 3296538 assignments: 605  propagations: 1472559317
+no trace up to bound 114
+increasing bmc bound to 115
+termination checking up to round: 3. current BMC checked bound: 113
+frame: 114  stats -> variables: 1334956 clauses: 3325447 assignments: 608  propagations: 1543524647
+no trace up to bound 115
+increasing bmc bound to 116
+termination checking up to round: 3. current BMC checked bound: 114
+frame: 115  stats -> variables: 1346560 clauses: 3354356 assignments: 611  propagations: 1556836895
+no trace up to bound 116
+increasing bmc bound to 117
+termination checking up to round: 3. current BMC checked bound: 115
+frame: 116  stats -> variables: 1358164 clauses: 3383265 assignments: 614  propagations: 1569065196
+no trace up to bound 117
+increasing bmc bound to 118
+termination checking up to round: 3. current BMC checked bound: 116
+frame: 117  stats -> variables: 1369768 clauses: 3412174 assignments: 617  propagations: 1581320365
+no trace up to bound 118
+increasing bmc bound to 119
+termination checking up to round: 3. current BMC checked bound: 117
+frame: 118  stats -> variables: 1381372 clauses: 3441083 assignments: 620  propagations: 1589774833
+no trace up to bound 119
+increasing bmc bound to 120
+termination checking up to round: 3. current BMC checked bound: 118
+frame: 119  stats -> variables: 1392976 clauses: 3469992 assignments: 623  propagations: 1597575919
+no trace up to bound 120
+increasing bmc bound to 121
+termination checking up to round: 3. current BMC checked bound: 119
+frame: 120  stats -> variables: 1404580 clauses: 3498901 assignments: 626  propagations: 1605691547
+no trace up to bound 121
+increasing bmc bound to 122
+termination checking up to round: 3. current BMC checked bound: 120
+frame: 121  stats -> variables: 1416184 clauses: 3527810 assignments: 629  propagations: 1613996726
+no trace up to bound 122
+increasing bmc bound to 123
+termination checking up to round: 3. current BMC checked bound: 121
+frame: 122  stats -> variables: 1427788 clauses: 3556719 assignments: 632  propagations: 1622413152
+no trace up to bound 123
+increasing bmc bound to 124
+termination checking up to round: 3. current BMC checked bound: 122
+frame: 123  stats -> variables: 1439392 clauses: 3585628 assignments: 635  propagations: 1630560092
+no trace up to bound 124
+increasing bmc bound to 125
+termination checking up to round: 3. current BMC checked bound: 123
+frame: 124  stats -> variables: 1450996 clauses: 3614537 assignments: 638  propagations: 1713077309
+no trace up to bound 125
+increasing bmc bound to 126
+termination checking up to round: 3. current BMC checked bound: 124
+frame: 125  stats -> variables: 1462600 clauses: 3643446 assignments: 741  propagations: 1809925509
+no trace up to bound 126
+increasing bmc bound to 127
+termination checking up to round: 3. current BMC checked bound: 125
+frame: 126  stats -> variables: 1474204 clauses: 3672355 assignments: 744  propagations: 1848045741
+c
+c Try to adapt solver strategies
+c 
+c Nothing extreme in this problem, continue with glucose default strategies.
+c
+no trace up to bound 127
+increasing bmc bound to 128
+termination checking up to round: 3. current BMC checked bound: 126
+frame: 127  stats -> variables: 1485808 clauses: 3701264 assignments: 748  propagations: 1916518850
+no trace up to bound 128
+increasing bmc bound to 129
+termination checking up to round: 3. current BMC checked bound: 127
+frame: 128  stats -> variables: 1497412 clauses: 3730173 assignments: 751  propagations: 1926932003
+no trace up to bound 129
+increasing bmc bound to 130
+termination checking up to round: 3. current BMC checked bound: 128
+
+interrupted
+trying to extract last key
+last key: 0100001100101001111
+checking key
+UC Berkeley, ABC 1.01 (compiled Jul  9 2021 03:52:12)
+abc 01> dsec ./tmp9323/cir1.bench  ./tmp9323/cir2.bench
+Warning: 388 registers in this network have don't-care init values.
+The don't-care are assumed to be 0. The result may not verify.
+Use command "print_latch" to see the init values of registers.
+Use command "zero" to convert or "init" to change the values.
+Networks are equivalent.  Time =     0.00 sec
+
+equivalent
+
+real	4m55.285s
+user	4m54.256s
+sys	0m0.484s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas89/s9234.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas89/s953.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas89/s953.bench ########################################## 
+ ################################################################################################### 
+2
+ ------------------ Finding key 45043  58891  56114  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-09-2024   19:48:51 --  locked version of ./benchmarks/iscas89/s953.bench
+INFO - Apr-09-2024   19:48:51 --  number of keys: 3
+INFO - Apr-09-2024   19:48:51 --  keys: [45043, 58891, 56114]
+INFO - Apr-09-2024   19:48:51 --  number of bits per key (keyinputs#): 16
+INFO - Apr-09-2024   19:48:51 --  key0 = 1010111111110011
+INFO - Apr-09-2024   19:48:51 --  key1 = 1110011000001011
+INFO - Apr-09-2024   19:48:51 --  key2 = 1101101100110010
+INFO - Apr-09-2024   19:48:51 --  k (gate is locked at k bits): 2
+INFO - Apr-09-2024   19:48:51 -- Time taken to parser file= 0.005402803421020508
+
+INFO - Apr-09-2024   19:48:51 -- Time taken to get gates with k inputs = 0.0023741722106933594
+
+INFO - Apr-09-2024   19:48:51 -- Time taken to get the maximum number of unique gates = 0.0055119991302490234
+
+INFO - Apr-09-2024   19:48:51 -- Time taken to encrypt up to k inputs: 0.009842634201049805 seconds
+INFO - Apr-09-2024   19:48:51 --   I344 - And(Rdy1RtHS1, Rdy2RtHS1, keyinput0, ~keyinput1, keyinput2, ~keyinput3, keyinput4, keyinput5, keyinput6, keyinput7, keyinput8, keyinput9, keyinput10, keyinput11, ~keyinput12, ~keyinput13, keyinput14, keyinput15)
+INFO - Apr-09-2024   19:48:51 --   I327 - Or(And(FullOHS1, ~FullIHS1, keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, keyinput6, ~keyinput7, ~keyinput8, ~keyinput9, ~keyinput10, ~keyinput11, keyinput12, ~keyinput13, keyinput14, keyinput15), And(~FullOHS1, FullIHS1, keyinput0, keyinput1, ~keyinput2, keyinput3, keyinput4, ~keyinput5, keyinput6, keyinput7, ~keyinput8, ~keyinput9, keyinput10, keyinput11, ~keyinput12, ~keyinput13, keyinput14, ~keyinput15), And(FullOHS1, FullIHS1, keyinput0, ~keyinput1, keyinput2, ~keyinput3, keyinput4, keyinput5, keyinput6, keyinput7, keyinput8, keyinput9, keyinput10, keyinput11, ~keyinput12, ~keyinput13, keyinput14, keyinput15))
+INFO - Apr-09-2024   19:48:51 --   I840_2 - And(Prog_1, Prog_0, keyinput0, ~keyinput1, keyinput2, ~keyinput3, keyinput4, keyinput5, keyinput6, keyinput7, keyinput8, keyinput9, keyinput10, keyinput11, ~keyinput12, ~keyinput13, keyinput14, keyinput15)
+INFO - Apr-09-2024   19:48:51 --   I881_1 - Or(And(InDoneHS1, ~Prog_2, keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, keyinput6, ~keyinput7, ~keyinput8, ~keyinput9, ~keyinput10, ~keyinput11, keyinput12, ~keyinput13, keyinput14, keyinput15), And(~InDoneHS1, Prog_2, keyinput0, keyinput1, ~keyinput2, keyinput3, keyinput4, ~keyinput5, keyinput6, keyinput7, ~keyinput8, ~keyinput9, keyinput10, keyinput11, ~keyinput12, ~keyinput13, keyinput14, ~keyinput15), And(InDoneHS1, Prog_2, keyinput0, ~keyinput1, keyinput2, ~keyinput3, keyinput4, keyinput5, keyinput6, keyinput7, keyinput8, keyinput9, keyinput10, keyinput11, ~keyinput12, ~keyinput13, keyinput14, keyinput15))
+INFO - Apr-09-2024   19:48:51 --   I357 - Or(And(~Rdy1BmHS1, ~Rdy2BmHS1, keyinput0, ~keyinput1, keyinput2, ~keyinput3, keyinput4, keyinput5, keyinput6, keyinput7, keyinput8, keyinput9, keyinput10, keyinput11, ~keyinput12, ~keyinput13, keyinput14, keyinput15), And(Rdy1BmHS1, ~Rdy2BmHS1, keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, keyinput6, ~keyinput7, ~keyinput8, ~keyinput9, ~keyinput10, ~keyinput11, keyinput12, ~keyinput13, keyinput14, keyinput15), And(~Rdy1BmHS1, Rdy2BmHS1, keyinput0, keyinput1, ~keyinput2, keyinput3, keyinput4, ~keyinput5, keyinput6, keyinput7, ~keyinput8, ~keyinput9, keyinput10, keyinput11, ~keyinput12, ~keyinput13, keyinput14, ~keyinput15))
+INFO - Apr-09-2024   19:48:51 -- Time taken to encrypt file: 0.03543281555175781 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file int 
+enc-ckt has DFFs. running sequnetial attack...
+vebrosity: 0
+key-condition sweeping mode: 0
+BMC sweeping mode: 0
+Relative to kckt SAT-sweeping: 0
+with propagation limit: -1
+with mitter sweep: 0
+BDD analysis option: 0
+KC BDD size limit: 0
+BMC bound limit: 600
+frame: 0  stats -> variables: 1185 clauses: 3535 assignments: 0  propagations: 0
+no trace up to bound 1
+adding termination links
+frame: 1  stats -> variables: 2280 clauses: 7070 assignments: 0  propagations: 1290
+DIS iter: 0
+  DIP clk_0 -> 0100111000110000  00000000000000000000000
+  DIP clk_1 -> 1111101000100010  00000000000011000000000
+  dis: 1  stats -> variables: 4189 clauses: 9620 assignments: 1604  propagations: 7403
+DIS iter: 1
+  DIP clk_0 -> 0101011000110000  00000000000000000000000
+  DIP clk_1 -> 1111101000100110  00000000000011000000000
+  dis: 2  stats -> variables: 6097 clauses: 12089 assignments: 3283  propagations: 16908
+no trace up to bound 2
+increasing bmc bound to 3
+termination checking up to round: 1. current BMC checked bound: 1
+reached combinational termination!
+
+sat_time:  0.000000
+term_time: 0.026436
+gen_time:  0.000000
+bmc_time:  0.006080
+simp_time: 0.000000
+total_time: 0.042689
+
+dis_count: 2
+dis_maxlen: 2
+
+[1;31mkey=[0m[1;31m1[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m[1;31m0[0m[1;31m0[0m[1;31m0[0m[1;31m0[0m[1;31m0[0m[1;31m1[0m[1;31m0[0m[1;31m1[0m[1;31m1[0m
+checking key
+UC Berkeley, ABC 1.01 (compiled Jul  9 2021 03:52:12)
+abc 01> dsec ./tmp10557/cir1.bench  ./tmp10557/cir2.bench
+Warning: 58 registers in this network have don't-care init values.
+The don't-care are assumed to be 0. The result may not verify.
+Use command "print_latch" to see the init values of registers.
+Use command "zero" to convert or "init" to change the values.
+Networks are NOT EQUIVALENT after simulation.   Time =     0.03 sec
+abc 01> ***EOF***
+
+different
+
+done
+
+real	0m0.714s
+user	0m0.084s
+sys	0m0.057s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas89/s953.bench 
+
+
+
+

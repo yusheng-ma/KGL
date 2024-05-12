@@ -1,0 +1,54 @@
+# locked version of ./benchmarks/iscas85/c17.bench
+# number of keys: 3
+# keys: [6, 4, 7]
+# number of bits per key (keyinputs#): 3
+# key0 = 110
+# key1 = 100
+# key2 = 111
+# k (gate is locked at k bits): 2
+#  G10gat - Or(And(~G1gat, ~G3gat, keyinput0, keyinput1, ~keyinput2), And(G1gat, ~G3gat, keyinput0, ~keyinput1, ~keyinput2), And(~G1gat, G3gat, keyinput0, keyinput1, keyinput2))
+#  G11gat - Or(And(~G3gat, ~G6gat, keyinput3, keyinput4, ~keyinput5), And(~G3gat, G6gat, keyinput3, ~keyinput4, ~keyinput5), And(G3gat, ~G6gat, keyinput3, keyinput4, keyinput5))
+
+INPUT( G1gat )
+INPUT( G2gat )
+INPUT( G3gat )
+INPUT( G6gat )
+INPUT( G7gat )
+INPUT( keyinput0 )
+INPUT( keyinput1 )
+INPUT( keyinput2 )
+INPUT( keyinput3 )
+INPUT( keyinput4 )
+INPUT( keyinput5 )
+
+OUTPUT( G22gat )
+OUTPUT( G23gat )
+
+
+G10gat = or( and_3, and_7, and_9 )
+G11gat = or( and_14, and_18, and_20 )
+G16gat = nand( G2gat, G11gat )
+G19gat = nand( G11gat, G7gat )
+G22gat = nand( G10gat, G16gat )
+G23gat = nand( G16gat, G19gat )
+not_0 = not( G1gat )
+not_1 = not( G3gat )
+not_2 = not( keyinput2 )
+and_3 = and( not_0, not_1, keyinput0, keyinput1, not_2 )
+not_4 = not( G3gat )
+not_5 = not( keyinput1 )
+not_6 = not( keyinput2 )
+and_7 = and( G1gat, not_4, keyinput0, not_5, not_6 )
+not_8 = not( G1gat )
+and_9 = and( not_8, G3gat, keyinput0, keyinput1, keyinput2 )
+not_11 = not( G3gat )
+not_12 = not( G6gat )
+not_13 = not( keyinput5 )
+and_14 = and( not_11, not_12, keyinput3, keyinput4, not_13 )
+not_15 = not( G3gat )
+not_16 = not( keyinput4 )
+not_17 = not( keyinput5 )
+and_18 = and( not_15, G6gat, keyinput3, not_16, not_17 )
+not_19 = not( G6gat )
+and_20 = and( G3gat, not_19, keyinput3, keyinput4, keyinput5 )
+

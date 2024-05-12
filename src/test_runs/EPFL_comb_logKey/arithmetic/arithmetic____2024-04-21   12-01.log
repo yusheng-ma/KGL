@@ -1,0 +1,564 @@
+Testing files in directory: ./benchmarks/EPFL_Combinational/bench/arithmetic/ 
+
+
+Log file: ./test_runs/arithmetic____2024-04-21   12-01.log 
+
+Executing ./current_script with file: ./benchmarks/EPFL_Combinational/bench/arithmetic/adder.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/EPFL_Combinational/bench/arithmetic/adder.bench ########################################## 
+ ################################################################################################### 
+ n = 15, log2(n) = 4, k = 4
+ ------------------ Finding key 24  56  3  17  53  56  0  10  63  9  24  3  31  51  29  ------------------ 
+ ------------------ Using k=4  ------------------ 
+INFO - Apr-21-2024   12:01:59 --  locked version of ./benchmarks/EPFL_Combinational/bench/arithmetic/adder.bench
+INFO - Apr-21-2024   12:01:59 --  number of keys: 15
+INFO - Apr-21-2024   12:01:59 --  keys: [24, 56, 3, 17, 53, 56, 0, 10, 63, 9, 24, 3, 31, 51, 29]
+INFO - Apr-21-2024   12:01:59 --  number of bits per key (keyinputs#): 6
+INFO - Apr-21-2024   12:01:59 --  key0 = 011000
+INFO - Apr-21-2024   12:01:59 --  key1 = 111000
+INFO - Apr-21-2024   12:01:59 --  key2 = 000011
+INFO - Apr-21-2024   12:01:59 --  key3 = 010001
+INFO - Apr-21-2024   12:01:59 --  key4 = 110101
+INFO - Apr-21-2024   12:01:59 --  key5 = 111000
+INFO - Apr-21-2024   12:01:59 --  key6 = 000000
+INFO - Apr-21-2024   12:01:59 --  key7 = 001010
+INFO - Apr-21-2024   12:01:59 --  key8 = 111111
+INFO - Apr-21-2024   12:01:59 --  key9 = 001001
+INFO - Apr-21-2024   12:01:59 --  key10 = 011000
+INFO - Apr-21-2024   12:01:59 --  key11 = 000011
+INFO - Apr-21-2024   12:01:59 --  key12 = 011111
+INFO - Apr-21-2024   12:01:59 --  key13 = 110011
+INFO - Apr-21-2024   12:01:59 --  key14 = 011101
+INFO - Apr-21-2024   12:01:59 --  k (gate is locked at k bits): 4
+INFO - Apr-21-2024   12:01:59 -- Time taken to parser file= 0.02055072784423828
+
+INFO - Apr-21-2024   12:01:59 -- adder.bench contains 256 inputs,     129 outputs,     and 2170 gates
+
+INFO - Apr-21-2024   12:02:00 -- Time taken to get gates with k inputs = 0.7172009944915771
+
+INFO - Apr-21-2024   12:02:00 -- Time taken to encrypt up to k inputs: 0.7242529392242432 seconds
+INFO - Apr-21-2024   12:02:00 --   new_n656 - Or(And(a_0_, b_0_, ~a_1_, ~b_1_, ~keyinput0, ~keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5), And(a_0_, b_0_, a_1_, b_1_, ~keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, ~keyinput5))
+INFO - Apr-21-2024   12:02:00 --   new_n657 - Or(And(~a_0_, ~b_0_, ~a_1_, ~b_1_, ~keyinput6, keyinput7, keyinput8, ~keyinput9, ~keyinput10, ~keyinput11), And(a_0_, ~b_0_, ~a_1_, ~b_1_, keyinput6, keyinput7, keyinput8, ~keyinput9, ~keyinput10, ~keyinput11), And(~a_0_, ~b_0_, a_1_, ~b_1_, ~keyinput6, ~keyinput7, ~keyinput8, ~keyinput9, keyinput10, keyinput11), And(a_0_, ~b_0_, a_1_, ~b_1_, ~keyinput6, keyinput7, ~keyinput8, ~keyinput9, ~keyinput10, keyinput11), And(~a_0_, ~b_0_, ~a_1_, b_1_, keyinput6, keyinput7, ~keyinput8, keyinput9, ~keyinput10, keyinput11), And(a_0_, ~b_0_, ~a_1_, b_1_, keyinput6, keyinput7, keyinput8, ~keyinput9, ~keyinput10, ~keyinput11), And(~a_0_, ~b_0_, a_1_, b_1_, ~keyinput6, ~keyinput7, ~keyinput8, ~keyinput9, ~keyinput10, ~keyinput11), And(a_0_, ~b_0_, a_1_, b_1_, ~keyinput6, ~keyinput7, keyinput8, ~keyinput9, keyinput10, ~keyinput11), And(~a_0_, b_0_, ~a_1_, ~b_1_, keyinput6, keyinput7, keyinput8, keyinput9, keyinput10, keyinput11), And(~a_0_, b_0_, a_1_, ~b_1_, ~keyinput6, keyinput7, keyinput8, ~keyinput9, ~keyinput10, ~keyinput11), And(a_0_, b_0_, a_1_, ~b_1_, ~keyinput6, ~keyinput7, ~keyinput8, ~keyinput9, keyinput10, keyinput11), And(~a_0_, b_0_, ~a_1_, b_1_, ~keyinput6, keyinput7, keyinput8, keyinput9, keyinput10, keyinput11), And(a_0_, b_0_, ~a_1_, b_1_, keyinput6, keyinput7, ~keyinput8, ~keyinput9, keyinput10, keyinput11), And(~a_0_, b_0_, a_1_, b_1_, ~keyinput6, keyinput7, keyinput8, keyinput9, ~keyinput10, keyinput11))
+INFO - Apr-21-2024   12:02:00 --   new_n658 - Or(And(~a_0_, ~b_0_, a_1_, ~b_1_, ~keyinput12, ~keyinput13, ~keyinput14, ~keyinput15, keyinput16, keyinput17), And(a_0_, ~b_0_, a_1_, ~b_1_, ~keyinput12, keyinput13, ~keyinput14, ~keyinput15, ~keyinput16, keyinput17), And(~a_0_, ~b_0_, ~a_1_, b_1_, keyinput12, keyinput13, ~keyinput14, keyinput15, ~keyinput16, keyinput17), And(a_0_, ~b_0_, ~a_1_, b_1_, keyinput12, keyinput13, keyinput14, ~keyinput15, ~keyinput16, ~keyinput17), And(~a_0_, b_0_, a_1_, ~b_1_, ~keyinput12, keyinput13, keyinput14, ~keyinput15, ~keyinput16, ~keyinput17), And(~a_0_, b_0_, ~a_1_, b_1_, ~keyinput12, keyinput13, keyinput14, keyinput15, keyinput16, keyinput17))
+INFO - Apr-21-2024   12:02:00 --   new_n659 - Or(And(~a_0_, ~b_0_, ~a_1_, ~b_1_, ~keyinput18, keyinput19, keyinput20, ~keyinput21, ~keyinput22, ~keyinput23), And(a_0_, ~b_0_, ~a_1_, ~b_1_, keyinput18, keyinput19, keyinput20, ~keyinput21, ~keyinput22, ~keyinput23), And(~a_0_, ~b_0_, a_1_, b_1_, ~keyinput18, ~keyinput19, ~keyinput20, ~keyinput21, ~keyinput22, ~keyinput23), And(a_0_, ~b_0_, a_1_, b_1_, ~keyinput18, ~keyinput19, keyinput20, ~keyinput21, keyinput22, ~keyinput23), And(~a_0_, b_0_, ~a_1_, ~b_1_, keyinput18, keyinput19, keyinput20, keyinput21, keyinput22, keyinput23), And(a_0_, b_0_, ~a_1_, ~b_1_, ~keyinput18, ~keyinput19, keyinput20, ~keyinput21, ~keyinput22, keyinput23), And(a_0_, b_0_, a_1_, ~b_1_, ~keyinput18, ~keyinput19, ~keyinput20, ~keyinput21, keyinput22, keyinput23), And(a_0_, b_0_, ~a_1_, b_1_, keyinput18, keyinput19, ~keyinput20, ~keyinput21, keyinput22, keyinput23), And(~a_0_, b_0_, a_1_, b_1_, ~keyinput18, keyinput19, keyinput20, keyinput21, ~keyinput22, keyinput23), And(a_0_, b_0_, a_1_, b_1_, ~keyinput18, keyinput19, keyinput20, ~keyinput21, ~keyinput22, ~keyinput23))
+INFO - Apr-21-2024   12:02:00 --   new_n660 - Or(And(~a_0_, ~b_0_, ~a_1_, ~b_1_, ~keyinput24, keyinput25, keyinput26, ~keyinput27, ~keyinput28, ~keyinput29), And(a_0_, ~b_0_, ~a_1_, ~b_1_, keyinput24, keyinput25, keyinput26, ~keyinput27, ~keyinput28, ~keyinput29), And(~a_0_, ~b_0_, a_1_, b_1_, ~keyinput24, ~keyinput25, ~keyinput26, ~keyinput27, ~keyinput28, ~keyinput29), And(a_0_, ~b_0_, a_1_, b_1_, ~keyinput24, ~keyinput25, keyinput26, ~keyinput27, keyinput28, ~keyinput29), And(~a_0_, b_0_, ~a_1_, ~b_1_, keyinput24, keyinput25, keyinput26, keyinput27, keyinput28, keyinput29), And(a_0_, b_0_, a_1_, ~b_1_, ~keyinput24, ~keyinput25, ~keyinput26, ~keyinput27, keyinput28, keyinput29), And(a_0_, b_0_, ~a_1_, b_1_, keyinput24, keyinput25, ~keyinput26, ~keyinput27, keyinput28, keyinput29), And(~a_0_, b_0_, a_1_, b_1_, ~keyinput24, keyinput25, keyinput26, keyinput27, ~keyinput28, keyinput29))
+INFO - Apr-21-2024   12:02:00 --   f_1_ - Or(And(~a_0_, ~b_0_, a_1_, ~b_1_, ~keyinput30, ~keyinput31, ~keyinput32, ~keyinput33, keyinput34, keyinput35), And(a_0_, ~b_0_, a_1_, ~b_1_, ~keyinput30, keyinput31, ~keyinput32, ~keyinput33, ~keyinput34, keyinput35), And(~a_0_, ~b_0_, ~a_1_, b_1_, keyinput30, keyinput31, ~keyinput32, keyinput33, ~keyinput34, keyinput35), And(a_0_, ~b_0_, ~a_1_, b_1_, keyinput30, keyinput31, keyinput32, ~keyinput33, ~keyinput34, ~keyinput35), And(a_0_, b_0_, ~a_1_, ~b_1_, ~keyinput30, ~keyinput31, keyinput32, ~keyinput33, ~keyinput34, keyinput35), And(~a_0_, b_0_, a_1_, ~b_1_, ~keyinput30, keyinput31, keyinput32, ~keyinput33, ~keyinput34, ~keyinput35), And(~a_0_, b_0_, ~a_1_, b_1_, ~keyinput30, keyinput31, keyinput32, keyinput33, keyinput34, keyinput35), And(a_0_, b_0_, a_1_, b_1_, ~keyinput30, keyinput31, keyinput32, ~keyinput33, ~keyinput34, ~keyinput35))
+INFO - Apr-21-2024   12:02:00 --   new_n662 - Or(And(a_0_, b_0_, a_1_, ~b_1_, ~keyinput36, ~keyinput37, ~keyinput38, ~keyinput39, keyinput40, keyinput41), And(a_0_, b_0_, ~a_1_, b_1_, keyinput36, keyinput37, ~keyinput38, ~keyinput39, keyinput40, keyinput41), And(a_0_, b_0_, a_1_, b_1_, ~keyinput36, keyinput37, keyinput38, ~keyinput39, ~keyinput40, ~keyinput41))
+INFO - Apr-21-2024   12:02:00 --   new_n663 - Or(And(~a_0_, ~b_0_, ~a_1_, ~b_1_, ~keyinput42, keyinput43, keyinput44, ~keyinput45, ~keyinput46, ~keyinput47), And(a_0_, ~b_0_, ~a_1_, ~b_1_, keyinput42, keyinput43, keyinput44, ~keyinput45, ~keyinput46, ~keyinput47), And(~a_0_, ~b_0_, a_1_, ~b_1_, ~keyinput42, ~keyinput43, ~keyinput44, ~keyinput45, keyinput46, keyinput47), And(a_0_, ~b_0_, a_1_, ~b_1_, ~keyinput42, keyinput43, ~keyinput44, ~keyinput45, ~keyinput46, keyinput47), And(~a_0_, ~b_0_, ~a_1_, b_1_, keyinput42, keyinput43, ~keyinput44, keyinput45, ~keyinput46, keyinput47), And(a_0_, ~b_0_, ~a_1_, b_1_, keyinput42, keyinput43, keyinput44, ~keyinput45, ~keyinput46, ~keyinput47), And(~a_0_, ~b_0_, a_1_, b_1_, ~keyinput42, ~keyinput43, ~keyinput44, ~keyinput45, ~keyinput46, ~keyinput47), And(a_0_, ~b_0_, a_1_, b_1_, ~keyinput42, ~keyinput43, keyinput44, ~keyinput45, keyinput46, ~keyinput47), And(~a_0_, b_0_, ~a_1_, ~b_1_, keyinput42, keyinput43, keyinput44, keyinput45, keyinput46, keyinput47), And(a_0_, b_0_, ~a_1_, ~b_1_, ~keyinput42, ~keyinput43, keyinput44, ~keyinput45, ~keyinput46, keyinput47), And(~a_0_, b_0_, a_1_, ~b_1_, ~keyinput42, keyinput43, keyinput44, ~keyinput45, ~keyinput46, ~keyinput47), And(~a_0_, b_0_, ~a_1_, b_1_, ~keyinput42, keyinput43, keyinput44, keyinput45, keyinput46, keyinput47), And(~a_0_, b_0_, a_1_, b_1_, ~keyinput42, keyinput43, keyinput44, keyinput45, ~keyinput46, keyinput47))
+INFO - Apr-21-2024   12:02:00 --   new_n664 - Or(And(~a_0_, ~b_0_, ~a_1_, ~b_1_, ~keyinput48, keyinput49, keyinput50, ~keyinput51, ~keyinput52, ~keyinput53), And(~a_0_, ~b_0_, ~a_1_, b_1_, keyinput48, keyinput49, keyinput50, ~keyinput51, ~keyinput52, ~keyinput53), And(~a_0_, b_0_, ~a_1_, ~b_1_, ~keyinput48, ~keyinput49, ~keyinput50, ~keyinput51, keyinput52, keyinput53), And(~a_0_, b_0_, ~a_1_, b_1_, ~keyinput48, keyinput49, ~keyinput50, ~keyinput51, ~keyinput52, keyinput53), And(~a_0_, ~b_0_, a_1_, ~b_1_, keyinput48, keyinput49, ~keyinput50, keyinput51, ~keyinput52, keyinput53), And(~a_0_, b_0_, a_1_, ~b_1_, ~keyinput48, ~keyinput49, ~keyinput50, ~keyinput51, ~keyinput52, ~keyinput53), And(a_0_, ~b_0_, ~a_1_, ~b_1_, keyinput48, keyinput49, keyinput50, keyinput51, keyinput52, keyinput53), And(a_0_, ~b_0_, ~a_1_, b_1_, ~keyinput48, ~keyinput49, keyinput50, ~keyinput51, ~keyinput52, keyinput53), And(a_0_, b_0_, ~a_1_, ~b_1_, ~keyinput48, keyinput49, keyinput50, ~keyinput51, ~keyinput52, ~keyinput53), And(a_0_, ~b_0_, a_1_, ~b_1_, ~keyinput48, keyinput49, keyinput50, keyinput51, keyinput52, keyinput53))
+INFO - Apr-21-2024   12:02:00 --   new_n665 - Or(And(~a_0_, ~b_0_, a_1_, b_1_, keyinput54, keyinput55, keyinput56, ~keyinput57, ~keyinput58, ~keyinput59), And(~a_0_, b_0_, a_1_, b_1_, ~keyinput54, ~keyinput55, keyinput56, ~keyinput57, keyinput58, ~keyinput59), And(a_0_, b_0_, ~a_1_, b_1_, ~keyinput54, ~keyinput55, ~keyinput56, ~keyinput57, keyinput58, keyinput59), And(a_0_, ~b_0_, a_1_, b_1_, keyinput54, keyinput55, ~keyinput56, ~keyinput57, keyinput58, keyinput59), And(a_0_, b_0_, a_1_, ~b_1_, ~keyinput54, keyinput55, keyinput56, keyinput57, ~keyinput58, keyinput59), And(a_0_, b_0_, a_1_, b_1_, ~keyinput54, keyinput55, keyinput56, ~keyinput57, ~keyinput58, ~keyinput59))
+INFO - Apr-21-2024   12:02:00 -- Time taken to encrypt file: 0.7912492752075195 seconds
+
+-e 
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/EPFL_Combinational/bench/arithmetic/adder.bench ./benchmarks/EPFL_Combinational/bench/arithmetic/adder_encrypted.bench 1000
+args 
+iteration:    1; variables: 5837 clauses: 14916 assignments: 1  propagations: 314283
+iteration:    2; variables: 11429 clauses: 16221 assignments: 5050  propagations: 607277
+no more dips.
+
+Finished! 
+iteration=2
+key=110111111111111111111011111111001001111111101111011000110011
+checking key 110111111111111111111011111111001001111111101111011000110011
+
+incorrect key
+f_0_:0;  f_1_:0.434;  f_2_:0.412;  f_3_:0.17;  f_4_:0.076;  f_5_:0.03;  f_6_:0.014;  f_7_:0.012;  f_8_:0.002;  f_9_:0.002;  f_10_:0;  f_11_:0;  f_12_:0;  f_13_:0;  f_14_:0;  f_15_:0;  f_16_:0;  f_17_:0;  f_18_:0;  f_19_:0;  f_20_:0;  f_21_:0;  f_22_:0;  f_23_:0;  f_24_:0;  f_25_:0;  f_26_:0;  f_27_:0;  f_28_:0;  f_29_:0;  f_30_:0;  f_31_:0;  f_32_:0;  f_33_:0;  f_34_:0;  f_35_:0;  f_36_:0;  f_37_:0;  f_38_:0;  f_39_:0;  f_40_:0;  f_41_:0;  f_42_:0;  f_43_:0;  f_44_:0;  f_45_:0;  f_46_:0;  f_47_:0;  f_48_:0;  f_49_:0;  f_50_:0;  f_51_:0;  f_52_:0;  f_53_:0;  f_54_:0;  f_55_:0;  f_56_:0;  f_57_:0;  f_58_:0;  f_59_:0;  f_60_:0;  f_61_:0;  f_62_:0;  f_63_:0;  f_64_:0;  f_65_:0;  f_66_:0;  f_67_:0;  f_68_:0;  f_69_:0;  f_70_:0;  f_71_:0;  f_72_:0;  f_73_:0;  f_74_:0;  f_75_:0;  f_76_:0;  f_77_:0;  f_78_:0;  f_79_:0;  f_80_:0;  f_81_:0;  f_82_:0;  f_83_:0;  f_84_:0;  f_85_:0;  f_86_:0;  f_87_:0;  f_88_:0;  f_89_:0;  f_90_:0;  f_91_:0;  f_92_:0;  f_93_:0;  f_94_:0;  f_95_:0;  f_96_:0;  f_97_:0;  f_98_:0;  f_99_:0;  f_100_:0;  f_101_:0;  f_102_:0;  f_103_:0;  f_104_:0;  f_105_:0;  f_106_:0;  f_107_:0;  f_108_:0;  f_109_:0;  f_110_:0;  f_111_:0;  f_112_:0;  f_113_:0;  f_114_:0;  f_115_:0;  f_116_:0;  f_117_:0;  f_118_:0;  f_119_:0;  f_120_:0;  f_121_:0;  f_122_:0;  f_123_:0;  f_124_:0;  f_125_:0;  f_126_:0;  f_127_:0;  cOut:0;  
+key-err: 0.00893023
+
+time: 0.47399
+0.45user 0.01system 0:00.52elapsed 89%CPU (0avgtext+0avgdata 37264maxresident)k
+0inputs+0outputs (0major+7999minor)pagefaults 0swaps
+-e Done 
+ 
+ 
+
+
+Done with ./benchmarks/EPFL_Combinational/bench/arithmetic/adder.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/EPFL_Combinational/bench/arithmetic/bar.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/EPFL_Combinational/bench/arithmetic/bar.bench ########################################## 
+ ################################################################################################### 
+ n = 15, log2(n) = 4, k = 4
+ ------------------ Finding key 10  28  13  18  6  14  31  0  4  16  30  24  17  2  8  ------------------ 
+ ------------------ Using k=4  ------------------ 
+INFO - Apr-21-2024   12:02:01 --  locked version of ./benchmarks/EPFL_Combinational/bench/arithmetic/bar.bench
+INFO - Apr-21-2024   12:02:01 --  number of keys: 15
+INFO - Apr-21-2024   12:02:01 --  keys: [10, 28, 13, 18, 6, 14, 31, 0, 4, 16, 30, 24, 17, 2, 8]
+INFO - Apr-21-2024   12:02:01 --  number of bits per key (keyinputs#): 5
+INFO - Apr-21-2024   12:02:01 --  key0 = 01010
+INFO - Apr-21-2024   12:02:01 --  key1 = 11100
+INFO - Apr-21-2024   12:02:01 --  key2 = 01101
+INFO - Apr-21-2024   12:02:01 --  key3 = 10010
+INFO - Apr-21-2024   12:02:01 --  key4 = 00110
+INFO - Apr-21-2024   12:02:01 --  key5 = 01110
+INFO - Apr-21-2024   12:02:01 --  key6 = 11111
+INFO - Apr-21-2024   12:02:01 --  key7 = 00000
+INFO - Apr-21-2024   12:02:01 --  key8 = 00100
+INFO - Apr-21-2024   12:02:01 --  key9 = 10000
+INFO - Apr-21-2024   12:02:01 --  key10 = 11110
+INFO - Apr-21-2024   12:02:01 --  key11 = 11000
+INFO - Apr-21-2024   12:02:01 --  key12 = 10001
+INFO - Apr-21-2024   12:02:01 --  key13 = 00010
+INFO - Apr-21-2024   12:02:01 --  key14 = 01000
+INFO - Apr-21-2024   12:02:01 --  k (gate is locked at k bits): 4
+INFO - Apr-21-2024   12:02:01 -- Time taken to parser file= 0.042180776596069336
+
+INFO - Apr-21-2024   12:02:01 -- bar.bench contains 135 inputs,     128 outputs,     and 5647 gates
+
+INFO - Apr-21-2024   12:02:02 -- Time taken to get gates with k inputs = 0.7149794101715088
+
+INFO - Apr-21-2024   12:02:02 -- Cutting gates to encrypt to 10, from 256
+INFO - Apr-21-2024   12:02:02 -- Time taken to encrypt up to k inputs: 0.7256801128387451 seconds
+INFO - Apr-21-2024   12:02:02 --   new_n277 - Or(And(~shift_1_, ~a_77_, ~shift_0_, ~a_78_, ~keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4), And(~shift_1_, a_77_, ~shift_0_, ~a_78_, keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4), And(~shift_1_, ~a_77_, ~shift_0_, a_78_, ~keyinput0, keyinput1, keyinput2, ~keyinput3, keyinput4), And(~shift_1_, a_77_, ~shift_0_, a_78_, keyinput0, ~keyinput1, ~keyinput2, keyinput3, ~keyinput4), And(~shift_1_, ~a_77_, shift_0_, ~a_78_, ~keyinput0, ~keyinput1, keyinput2, keyinput3, ~keyinput4), And(~shift_1_, a_77_, shift_0_, ~a_78_, ~keyinput0, keyinput1, keyinput2, keyinput3, ~keyinput4), And(~shift_1_, ~a_77_, shift_0_, a_78_, keyinput0, keyinput1, keyinput2, keyinput3, keyinput4), And(~shift_1_, a_77_, shift_0_, a_78_, ~keyinput0, ~keyinput1, ~keyinput2, ~keyinput3, ~keyinput4), And(shift_1_, ~a_77_, ~shift_0_, ~a_78_, ~keyinput0, ~keyinput1, keyinput2, ~keyinput3, ~keyinput4), And(shift_1_, a_77_, ~shift_0_, ~a_78_, keyinput0, ~keyinput1, ~keyinput2, ~keyinput3, ~keyinput4), And(shift_1_, ~a_77_, shift_0_, ~a_78_, keyinput0, ~keyinput1, ~keyinput2, ~keyinput3, keyinput4), And(shift_1_, ~a_77_, shift_0_, a_78_, ~keyinput0, keyinput1, ~keyinput2, ~keyinput3, ~keyinput4))
+INFO - Apr-21-2024   12:02:02 --   new_n284 - Or(And(~shift_1_, ~shift_0_, ~a_80_, ~a_79_, ~keyinput5, keyinput6, ~keyinput7, keyinput8, ~keyinput9), And(~shift_1_, shift_0_, ~a_80_, ~a_79_, ~keyinput5, keyinput6, keyinput7, ~keyinput8, keyinput9), And(~shift_1_, shift_0_, a_80_, ~a_79_, keyinput5, ~keyinput6, ~keyinput7, keyinput8, ~keyinput9), And(shift_1_, ~shift_0_, ~a_80_, ~a_79_, ~keyinput5, ~keyinput6, keyinput7, keyinput8, ~keyinput9), And(shift_1_, ~shift_0_, a_80_, ~a_79_, ~keyinput5, keyinput6, keyinput7, keyinput8, ~keyinput9), And(shift_1_, shift_0_, ~a_80_, ~a_79_, keyinput5, keyinput6, keyinput7, keyinput8, keyinput9), And(shift_1_, shift_0_, a_80_, ~a_79_, ~keyinput5, ~keyinput6, ~keyinput7, ~keyinput8, ~keyinput9), And(~shift_1_, ~shift_0_, ~a_80_, a_79_, ~keyinput5, ~keyinput6, keyinput7, ~keyinput8, ~keyinput9), And(shift_1_, ~shift_0_, ~a_80_, a_79_, keyinput5, ~keyinput6, ~keyinput7, ~keyinput8, keyinput9), And(shift_1_, ~shift_0_, a_80_, a_79_, ~keyinput5, ~keyinput6, ~keyinput7, keyinput8, ~keyinput9), And(shift_1_, shift_0_, ~a_80_, a_79_, ~keyinput5, keyinput6, ~keyinput7, ~keyinput8, ~keyinput9), And(shift_1_, shift_0_, a_80_, a_79_, ~keyinput5, keyinput6, ~keyinput7, keyinput8, ~keyinput9))
+INFO - Apr-21-2024   12:02:02 --   new_n296 - Or(And(~shift_1_, ~shift_0_, ~a_73_, ~a_74_, ~keyinput10, keyinput11, ~keyinput12, keyinput13, ~keyinput14), And(~shift_1_, ~shift_0_, a_73_, ~a_74_, keyinput10, keyinput11, keyinput12, ~keyinput13, ~keyinput14), And(~shift_1_, shift_0_, ~a_73_, ~a_74_, ~keyinput10, keyinput11, keyinput12, ~keyinput13, keyinput14), And(~shift_1_, shift_0_, a_73_, ~a_74_, keyinput10, ~keyinput11, ~keyinput12, keyinput13, ~keyinput14), And(~shift_1_, ~shift_0_, ~a_73_, a_74_, ~keyinput10, ~keyinput11, keyinput12, keyinput13, ~keyinput14), And(~shift_1_, ~shift_0_, a_73_, a_74_, ~keyinput10, keyinput11, keyinput12, keyinput13, ~keyinput14), And(~shift_1_, shift_0_, ~a_73_, a_74_, keyinput10, keyinput11, keyinput12, keyinput13, keyinput14), And(~shift_1_, shift_0_, a_73_, a_74_, ~keyinput10, ~keyinput11, ~keyinput12, ~keyinput13, ~keyinput14), And(shift_1_, ~shift_0_, ~a_73_, ~a_74_, ~keyinput10, ~keyinput11, keyinput12, ~keyinput13, ~keyinput14), And(shift_1_, ~shift_0_, a_73_, ~a_74_, keyinput10, ~keyinput11, ~keyinput12, ~keyinput13, ~keyinput14), And(shift_1_, shift_0_, ~a_73_, ~a_74_, keyinput10, keyinput11, keyinput12, keyinput13, ~keyinput14), And(shift_1_, shift_0_, ~a_73_, a_74_, ~keyinput10, keyinput11, ~keyinput12, ~keyinput13, ~keyinput14))
+INFO - Apr-21-2024   12:02:02 --   new_n303 - Or(And(~shift_1_, ~shift_0_, ~a_76_, ~a_75_, ~keyinput15, keyinput16, ~keyinput17, keyinput18, ~keyinput19), And(~shift_1_, ~shift_0_, ~a_76_, a_75_, ~keyinput15, keyinput16, keyinput17, ~keyinput18, keyinput19), And(~shift_1_, shift_0_, ~a_76_, ~a_75_, ~keyinput15, ~keyinput16, keyinput17, keyinput18, ~keyinput19), And(~shift_1_, shift_0_, a_76_, ~a_75_, ~keyinput15, keyinput16, keyinput17, keyinput18, ~keyinput19), And(shift_1_, ~shift_0_, ~a_76_, ~a_75_, ~keyinput15, ~keyinput16, keyinput17, ~keyinput18, ~keyinput19), And(shift_1_, ~shift_0_, a_76_, ~a_75_, keyinput15, ~keyinput16, ~keyinput17, ~keyinput18, ~keyinput19), And(shift_1_, ~shift_0_, ~a_76_, a_75_, keyinput15, keyinput16, keyinput17, keyinput18, ~keyinput19), And(shift_1_, ~shift_0_, a_76_, a_75_, keyinput15, keyinput16, ~keyinput17, ~keyinput18, ~keyinput19), And(shift_1_, shift_0_, ~a_76_, ~a_75_, keyinput15, ~keyinput16, ~keyinput17, ~keyinput18, keyinput19), And(shift_1_, shift_0_, a_76_, ~a_75_, ~keyinput15, ~keyinput16, ~keyinput17, keyinput18, ~keyinput19), And(shift_1_, shift_0_, ~a_76_, a_75_, ~keyinput15, keyinput16, ~keyinput17, ~keyinput18, ~keyinput19), And(shift_1_, shift_0_, a_76_, a_75_, ~keyinput15, keyinput16, ~keyinput17, keyinput18, ~keyinput19))
+INFO - Apr-21-2024   12:02:02 --   new_n316 - Or(And(~shift_1_, ~shift_0_, ~a_65_, ~a_66_, ~keyinput20, keyinput21, ~keyinput22, keyinput23, ~keyinput24), And(~shift_1_, ~shift_0_, a_65_, ~a_66_, keyinput20, keyinput21, keyinput22, ~keyinput23, ~keyinput24), And(~shift_1_, shift_0_, ~a_65_, ~a_66_, ~keyinput20, keyinput21, keyinput22, ~keyinput23, keyinput24), And(~shift_1_, shift_0_, a_65_, ~a_66_, keyinput20, ~keyinput21, ~keyinput22, keyinput23, ~keyinput24), And(~shift_1_, ~shift_0_, ~a_65_, a_66_, ~keyinput20, ~keyinput21, keyinput22, keyinput23, ~keyinput24), And(~shift_1_, ~shift_0_, a_65_, a_66_, ~keyinput20, keyinput21, keyinput22, keyinput23, ~keyinput24), And(~shift_1_, shift_0_, ~a_65_, a_66_, keyinput20, keyinput21, keyinput22, keyinput23, keyinput24), And(~shift_1_, shift_0_, a_65_, a_66_, ~keyinput20, ~keyinput21, ~keyinput22, ~keyinput23, ~keyinput24), And(shift_1_, ~shift_0_, ~a_65_, ~a_66_, ~keyinput20, ~keyinput21, keyinput22, ~keyinput23, ~keyinput24), And(shift_1_, ~shift_0_, a_65_, ~a_66_, keyinput20, ~keyinput21, ~keyinput22, ~keyinput23, ~keyinput24), And(shift_1_, shift_0_, ~a_65_, ~a_66_, keyinput20, keyinput21, keyinput22, keyinput23, ~keyinput24), And(shift_1_, shift_0_, ~a_65_, a_66_, ~keyinput20, keyinput21, ~keyinput22, ~keyinput23, ~keyinput24))
+INFO - Apr-21-2024   12:02:02 --   new_n323 - Or(And(~shift_1_, ~shift_0_, ~a_68_, ~a_67_, ~keyinput25, keyinput26, ~keyinput27, keyinput28, ~keyinput29), And(~shift_1_, ~shift_0_, ~a_68_, a_67_, keyinput25, keyinput26, keyinput27, ~keyinput28, ~keyinput29), And(~shift_1_, shift_0_, ~a_68_, ~a_67_, ~keyinput25, ~keyinput26, keyinput27, keyinput28, ~keyinput29), And(~shift_1_, shift_0_, a_68_, ~a_67_, keyinput25, keyinput26, keyinput27, keyinput28, keyinput29), And(shift_1_, ~shift_0_, ~a_68_, ~a_67_, ~keyinput25, ~keyinput26, keyinput27, ~keyinput28, ~keyinput29), And(shift_1_, ~shift_0_, ~a_68_, a_67_, keyinput25, ~keyinput26, ~keyinput27, ~keyinput28, ~keyinput29), And(shift_1_, ~shift_0_, a_68_, ~a_67_, keyinput25, keyinput26, keyinput27, keyinput28, ~keyinput29), And(shift_1_, ~shift_0_, a_68_, a_67_, keyinput25, keyinput26, ~keyinput27, ~keyinput28, ~keyinput29), And(shift_1_, shift_0_, ~a_68_, ~a_67_, keyinput25, ~keyinput26, ~keyinput27, ~keyinput28, keyinput29), And(shift_1_, shift_0_, ~a_68_, a_67_, ~keyinput25, ~keyinput26, ~keyinput27, keyinput28, ~keyinput29), And(shift_1_, shift_0_, a_68_, ~a_67_, ~keyinput25, keyinput26, ~keyinput27, ~keyinput28, ~keyinput29), And(shift_1_, shift_0_, a_68_, a_67_, ~keyinput25, keyinput26, ~keyinput27, keyinput28, ~keyinput29))
+INFO - Apr-21-2024   12:02:02 --   new_n335 - Or(And(~shift_1_, ~shift_0_, ~a_69_, ~a_70_, ~keyinput30, keyinput31, ~keyinput32, keyinput33, ~keyinput34), And(~shift_1_, ~shift_0_, ~a_69_, a_70_, keyinput30, keyinput31, keyinput32, ~keyinput33, ~keyinput34), And(~shift_1_, ~shift_0_, a_69_, ~a_70_, ~keyinput30, keyinput31, keyinput32, ~keyinput33, keyinput34), And(~shift_1_, ~shift_0_, a_69_, a_70_, keyinput30, ~keyinput31, ~keyinput32, keyinput33, ~keyinput34), And(~shift_1_, shift_0_, ~a_69_, ~a_70_, ~keyinput30, ~keyinput31, keyinput32, keyinput33, ~keyinput34), And(~shift_1_, shift_0_, ~a_69_, a_70_, ~keyinput30, keyinput31, keyinput32, keyinput33, ~keyinput34), And(~shift_1_, shift_0_, a_69_, ~a_70_, keyinput30, keyinput31, keyinput32, keyinput33, keyinput34), And(~shift_1_, shift_0_, a_69_, a_70_, ~keyinput30, ~keyinput31, ~keyinput32, ~keyinput33, ~keyinput34), And(shift_1_, ~shift_0_, ~a_69_, ~a_70_, ~keyinput30, ~keyinput31, keyinput32, ~keyinput33, ~keyinput34), And(shift_1_, ~shift_0_, a_69_, ~a_70_, keyinput30, keyinput31, keyinput32, keyinput33, ~keyinput34), And(shift_1_, shift_0_, ~a_69_, ~a_70_, keyinput30, ~keyinput31, ~keyinput32, ~keyinput33, keyinput34), And(shift_1_, shift_0_, ~a_69_, a_70_, ~keyinput30, ~keyinput31, ~keyinput32, keyinput33, ~keyinput34))
+INFO - Apr-21-2024   12:02:02 --   new_n342 - Or(And(~shift_1_, ~shift_0_, ~a_72_, ~a_71_, ~keyinput35, keyinput36, ~keyinput37, keyinput38, ~keyinput39), And(~shift_1_, shift_0_, ~a_72_, ~a_71_, ~keyinput35, keyinput36, keyinput37, ~keyinput38, keyinput39), And(~shift_1_, shift_0_, a_72_, ~a_71_, keyinput35, ~keyinput36, ~keyinput37, keyinput38, ~keyinput39), And(~shift_1_, ~shift_0_, ~a_72_, a_71_, ~keyinput35, ~keyinput36, keyinput37, keyinput38, ~keyinput39), And(shift_1_, ~shift_0_, ~a_72_, ~a_71_, ~keyinput35, ~keyinput36, keyinput37, ~keyinput38, ~keyinput39), And(shift_1_, ~shift_0_, a_72_, ~a_71_, keyinput35, ~keyinput36, ~keyinput37, ~keyinput38, ~keyinput39), And(shift_1_, shift_0_, ~a_72_, ~a_71_, keyinput35, keyinput36, keyinput37, keyinput38, ~keyinput39), And(shift_1_, shift_0_, a_72_, ~a_71_, keyinput35, keyinput36, ~keyinput37, ~keyinput38, ~keyinput39), And(shift_1_, ~shift_0_, ~a_72_, a_71_, keyinput35, ~keyinput36, ~keyinput37, ~keyinput38, keyinput39), And(shift_1_, ~shift_0_, a_72_, a_71_, ~keyinput35, ~keyinput36, ~keyinput37, keyinput38, ~keyinput39), And(shift_1_, shift_0_, ~a_72_, a_71_, ~keyinput35, keyinput36, ~keyinput37, ~keyinput38, ~keyinput39), And(shift_1_, shift_0_, a_72_, a_71_, ~keyinput35, keyinput36, ~keyinput37, keyinput38, ~keyinput39))
+INFO - Apr-21-2024   12:02:02 --   new_n360 - Or(And(~shift_1_, ~shift_0_, ~a_93_, ~a_94_, ~keyinput40, keyinput41, ~keyinput42, keyinput43, ~keyinput44), And(~shift_1_, ~shift_0_, ~a_93_, a_94_, keyinput40, keyinput41, keyinput42, ~keyinput43, ~keyinput44), And(~shift_1_, ~shift_0_, a_93_, ~a_94_, ~keyinput40, keyinput41, keyinput42, ~keyinput43, keyinput44), And(~shift_1_, ~shift_0_, a_93_, a_94_, keyinput40, ~keyinput41, ~keyinput42, keyinput43, ~keyinput44), And(~shift_1_, shift_0_, ~a_93_, ~a_94_, ~keyinput40, ~keyinput41, keyinput42, keyinput43, ~keyinput44), And(~shift_1_, shift_0_, ~a_93_, a_94_, ~keyinput40, keyinput41, keyinput42, keyinput43, ~keyinput44), And(~shift_1_, shift_0_, a_93_, ~a_94_, keyinput40, keyinput41, keyinput42, keyinput43, keyinput44), And(~shift_1_, shift_0_, a_93_, a_94_, ~keyinput40, ~keyinput41, ~keyinput42, ~keyinput43, ~keyinput44), And(shift_1_, ~shift_0_, ~a_93_, ~a_94_, ~keyinput40, ~keyinput41, keyinput42, ~keyinput43, ~keyinput44), And(shift_1_, ~shift_0_, a_93_, ~a_94_, keyinput40, keyinput41, keyinput42, keyinput43, ~keyinput44), And(shift_1_, shift_0_, ~a_93_, ~a_94_, keyinput40, ~keyinput41, ~keyinput42, ~keyinput43, keyinput44), And(shift_1_, shift_0_, ~a_93_, a_94_, ~keyinput40, ~keyinput41, ~keyinput42, keyinput43, ~keyinput44))
+INFO - Apr-21-2024   12:02:02 --   new_n367 - Or(And(~shift_1_, ~shift_0_, ~a_96_, ~a_95_, ~keyinput45, keyinput46, ~keyinput47, keyinput48, ~keyinput49), And(~shift_1_, ~shift_0_, ~a_96_, a_95_, keyinput45, keyinput46, keyinput47, ~keyinput48, ~keyinput49), And(~shift_1_, shift_0_, ~a_96_, ~a_95_, ~keyinput45, keyinput46, keyinput47, ~keyinput48, keyinput49), And(shift_1_, ~shift_0_, ~a_96_, ~a_95_, ~keyinput45, ~keyinput46, keyinput47, keyinput48, ~keyinput49), And(shift_1_, ~shift_0_, ~a_96_, a_95_, ~keyinput45, keyinput46, keyinput47, keyinput48, ~keyinput49), And(shift_1_, shift_0_, ~a_96_, ~a_95_, keyinput45, keyinput46, keyinput47, keyinput48, keyinput49), And(shift_1_, shift_0_, ~a_96_, a_95_, ~keyinput45, ~keyinput46, ~keyinput47, ~keyinput48, ~keyinput49), And(~shift_1_, shift_0_, a_96_, ~a_95_, keyinput45, keyinput46, keyinput47, keyinput48, ~keyinput49), And(shift_1_, ~shift_0_, a_96_, ~a_95_, keyinput45, ~keyinput46, ~keyinput47, ~keyinput48, keyinput49), And(shift_1_, ~shift_0_, a_96_, a_95_, ~keyinput45, ~keyinput46, ~keyinput47, keyinput48, ~keyinput49), And(shift_1_, shift_0_, a_96_, ~a_95_, ~keyinput45, keyinput46, ~keyinput47, ~keyinput48, ~keyinput49), And(shift_1_, shift_0_, a_96_, a_95_, ~keyinput45, keyinput46, ~keyinput47, keyinput48, ~keyinput49))
+INFO - Apr-21-2024   12:02:02 -- Time taken to encrypt file: 0.8370895385742188 seconds
+
+-e 
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/EPFL_Combinational/bench/arithmetic/bar.bench ./benchmarks/EPFL_Combinational/bench/arithmetic/bar_encrypted.bench 1000
+args 
+iteration:    1; variables: 13099 clauses: 34901 assignments: 1  propagations: 126063
+iteration:    2; variables: 26093 clauses: 36956 assignments: 12253  propagations: 870665
+no more dips.
+constraints are not satisfiable
+Finished! 
+iteration=2
+key=11111111111111111111010000101010001111101111111111
+checking key 11111111111111111111010000101010001111101111111111
+
+incorrect key
+result_0_:0.086;  result_1_:0;  result_2_:0;  result_3_:0;  result_4_:0.078;  result_5_:0;  result_6_:0;  result_7_:0;  result_8_:0.068;  result_9_:0;  result_10_:0;  result_11_:0;  result_12_:0.1;  result_13_:0;  result_14_:0;  result_15_:0;  result_16_:0.086;  result_17_:0;  result_18_:0;  result_19_:0;  result_20_:0.068;  result_21_:0;  result_22_:0;  result_23_:0;  result_24_:0.074;  result_25_:0;  result_26_:0;  result_27_:0;  result_28_:0.076;  result_29_:0;  result_30_:0;  result_31_:0;  result_32_:0.062;  result_33_:0;  result_34_:0;  result_35_:0;  result_36_:0.064;  result_37_:0;  result_38_:0;  result_39_:0;  result_40_:0.096;  result_41_:0;  result_42_:0;  result_43_:0;  result_44_:0.078;  result_45_:0;  result_46_:0;  result_47_:0;  result_48_:0.086;  result_49_:0;  result_50_:0;  result_51_:0;  result_52_:0.072;  result_53_:0;  result_54_:0;  result_55_:0;  result_56_:0.064;  result_57_:0;  result_58_:0;  result_59_:0;  result_60_:0.076;  result_61_:0;  result_62_:0;  result_63_:0;  result_64_:0.086;  result_65_:0;  result_66_:0;  result_67_:0;  result_68_:0.074;  result_69_:0;  result_70_:0;  result_71_:0;  result_72_:0.08;  result_73_:0;  result_74_:0;  result_75_:0;  result_76_:0.068;  result_77_:0;  result_78_:0;  result_79_:0;  result_80_:0.078;  result_81_:0;  result_82_:0;  result_83_:0;  result_84_:0.066;  result_85_:0;  result_86_:0;  result_87_:0;  result_88_:0.084;  result_89_:0;  result_90_:0;  result_91_:0;  result_92_:0.072;  result_93_:0;  result_94_:0;  result_95_:0;  result_96_:0.06;  result_97_:0;  result_98_:0;  result_99_:0;  result_100_:0.048;  result_101_:0;  result_102_:0;  result_103_:0;  result_104_:0.068;  result_105_:0;  result_106_:0;  result_107_:0;  result_108_:0.064;  result_109_:0;  result_110_:0;  result_111_:0;  result_112_:0.074;  result_113_:0;  result_114_:0;  result_115_:0;  result_116_:0.094;  result_117_:0;  result_118_:0;  result_119_:0;  result_120_:0.07;  result_121_:0;  result_122_:0;  result_123_:0;  result_124_:0.064;  result_125_:0;  result_126_:0;  result_127_:0;  
+key-err: 0.018625
+
+time: 1.33895
+1.14user 0.22system 0:01.45elapsed 93%CPU (0avgtext+0avgdata 74912maxresident)k
+0inputs+0outputs (1major+18143minor)pagefaults 0swaps
+-e Done 
+ 
+ 
+
+
+Done with ./benchmarks/EPFL_Combinational/bench/arithmetic/bar.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/EPFL_Combinational/bench/arithmetic/div.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/EPFL_Combinational/bench/arithmetic/div.bench ########################################## 
+ ################################################################################################### 
+ n = 15, log2(n) = 4, k = 4
+ ------------------ Finding key 2  11  15  20  21  4  8  24  5  30  25  1  3  20  9  ------------------ 
+ ------------------ Using k=4  ------------------ 
+INFO - Apr-21-2024   12:02:04 --  locked version of ./benchmarks/EPFL_Combinational/bench/arithmetic/div.bench
+INFO - Apr-21-2024   12:02:04 --  number of keys: 15
+INFO - Apr-21-2024   12:02:04 --  keys: [2, 11, 15, 20, 21, 4, 8, 24, 5, 30, 25, 1, 3, 20, 9]
+INFO - Apr-21-2024   12:02:04 --  number of bits per key (keyinputs#): 5
+INFO - Apr-21-2024   12:02:04 --  key0 = 00010
+INFO - Apr-21-2024   12:02:04 --  key1 = 01011
+INFO - Apr-21-2024   12:02:04 --  key2 = 01111
+INFO - Apr-21-2024   12:02:04 --  key3 = 10100
+INFO - Apr-21-2024   12:02:04 --  key4 = 10101
+INFO - Apr-21-2024   12:02:04 --  key5 = 00100
+INFO - Apr-21-2024   12:02:04 --  key6 = 01000
+INFO - Apr-21-2024   12:02:04 --  key7 = 11000
+INFO - Apr-21-2024   12:02:04 --  key8 = 00101
+INFO - Apr-21-2024   12:02:04 --  key9 = 11110
+INFO - Apr-21-2024   12:02:04 --  key10 = 11001
+INFO - Apr-21-2024   12:02:04 --  key11 = 00001
+INFO - Apr-21-2024   12:02:04 --  key12 = 00011
+INFO - Apr-21-2024   12:02:04 --  key13 = 10100
+INFO - Apr-21-2024   12:02:04 --  key14 = 01001
+INFO - Apr-21-2024   12:02:04 --  k (gate is locked at k bits): 4
+INFO - Apr-21-2024   12:02:05 -- Time taken to parser file= 0.8140444755554199
+
+INFO - Apr-21-2024   12:02:05 -- div.bench contains 128 inputs,     128 outputs,     and 101826 gates
+
+INFO - Apr-21-2024   12:03:05 -- Time taken to get gates with k inputs = 60.00768852233887
+
+INFO - Apr-21-2024   12:03:05 -- Cutting gates to encrypt to 10, from 50
+INFO - Apr-21-2024   12:03:05 -- Time taken to encrypt up to k inputs: 60.02902841567993 seconds
+INFO - Apr-21-2024   12:03:05 -- all gates start with AND, increasing k to 5 
+INFO - Apr-21-2024   12:04:05 -- Time taken to get gates with k inputs = 60.003358125686646
+
+INFO - Apr-21-2024   12:04:05 -- Time taken to encrypt up to k inputs: 60.00573134422302 seconds
+INFO - Apr-21-2024   12:04:05 -- all gates start with AND, increasing k to 6 
+INFO - Apr-21-2024   12:05:05 -- Time taken to get gates with k inputs = 60.01157760620117
+
+INFO - Apr-21-2024   12:05:05 -- Cutting gates to encrypt to 10, from 33
+INFO - Apr-21-2024   12:05:05 -- Time taken to encrypt up to k inputs: 60.027703523635864 seconds
+INFO - Apr-21-2024   12:05:05 --   new_n470 - And(~b_2_, ~b_3_, ~b_4_, ~b_5_, ~b_6_, ~b_7_, ~keyinput0, ~keyinput1, ~keyinput2, keyinput3, ~keyinput4)
+INFO - Apr-21-2024   12:05:05 --   new_n605 - And(~b_3_, ~b_8_, ~b_4_, ~b_5_, ~b_6_, ~b_7_, ~keyinput5, ~keyinput6, ~keyinput7, keyinput8, ~keyinput9)
+INFO - Apr-21-2024   12:05:05 --   new_n656 - And(b_0_, ~b_3_, ~b_4_, ~b_5_, ~b_6_, ~b_7_, ~keyinput10, keyinput11, keyinput12, keyinput13, keyinput14)
+INFO - Apr-21-2024   12:05:05 --   new_n774 - And(b_0_, ~b_8_, ~b_4_, ~b_5_, ~b_6_, ~b_7_, ~keyinput15, keyinput16, keyinput17, keyinput18, keyinput19)
+INFO - Apr-21-2024   12:05:05 --   new_n782 - And(b_0_, ~b_4_, ~b_5_, ~b_6_, ~b_7_, ~keyinput20, keyinput21, keyinput22, keyinput23, keyinput24, ~a_60_)
+INFO - Apr-21-2024   12:05:05 --   new_n877 - Or(And(~b_0_, ~b_1_, ~b_61_, ~b_62_, ~b_63_, ~keyinput25, ~keyinput26, ~keyinput27, keyinput28, ~keyinput29, ~a_59_), And(~b_0_, ~b_1_, ~b_61_, ~b_62_, ~b_63_, ~keyinput25, keyinput26, ~keyinput27, keyinput28, keyinput29, a_59_), And(~b_0_, b_1_, ~b_61_, ~b_62_, ~b_63_, ~keyinput25, keyinput26, keyinput27, keyinput28, keyinput29, ~a_59_), And(~b_0_, b_1_, ~b_61_, ~b_62_, ~b_63_, keyinput25, ~keyinput26, keyinput27, ~keyinput28, ~keyinput29, a_59_), And(b_0_, ~b_1_, ~b_61_, ~b_62_, ~b_63_, ~keyinput25, keyinput26, keyinput27, keyinput28, keyinput29, ~a_59_), And(b_0_, ~b_1_, ~b_61_, ~b_62_, ~b_63_, keyinput25, ~keyinput26, keyinput27, ~keyinput28, ~keyinput29, a_59_), And(b_0_, b_1_, ~b_61_, ~b_62_, ~b_63_, ~keyinput25, ~keyinput26, keyinput27, ~keyinput28, ~keyinput29, a_59_))
+INFO - Apr-21-2024   12:05:05 --   new_n878 - Or(And(~b_0_, b_1_, ~b_61_, ~b_62_, ~b_63_, ~keyinput30, keyinput31, keyinput32, keyinput33, keyinput34, ~a_59_), And(~b_0_, b_1_, ~b_61_, ~b_62_, ~b_63_, keyinput30, ~keyinput31, keyinput32, ~keyinput33, ~keyinput34, a_59_), And(b_0_, ~b_1_, ~b_61_, ~b_62_, ~b_63_, ~keyinput30, keyinput31, keyinput32, keyinput33, keyinput34, ~a_59_), And(b_0_, b_1_, ~b_61_, ~b_62_, ~b_63_, ~keyinput30, ~keyinput31, keyinput32, ~keyinput33, ~keyinput34, a_59_))
+INFO - Apr-21-2024   12:05:05 --   new_n916 - And(b_0_, ~b_8_, ~b_5_, ~b_6_, ~b_7_, ~keyinput35, keyinput36, keyinput37, keyinput38, keyinput39, ~a_59_)
+INFO - Apr-21-2024   12:05:05 --   new_n985 - And(~b_8_, ~b_9_, ~b_10_, ~b_11_, ~b_6_, ~b_7_, ~keyinput40, ~keyinput41, ~keyinput42, keyinput43, ~keyinput44)
+INFO - Apr-21-2024   12:05:05 --   new_n1134 - And(~b_8_, ~b_9_, ~b_10_, ~b_11_, ~b_7_, ~b_12_, ~keyinput45, ~keyinput46, ~keyinput47, keyinput48, ~keyinput49)
+INFO - Apr-21-2024   12:05:06 -- Time taken to encrypt file: 181.17196989059448 seconds
+
+-e 
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/EPFL_Combinational/bench/arithmetic/div.bench ./benchmarks/EPFL_Combinational/bench/arithmetic/div_encrypted.bench 1000
+args 
+iteration:    1; variables: 204312 clauses: 523421 assignments: 1  propagations: 264734617
+iteration:    2; variables: 408526 clauses: 953500 assignments: 29665  propagations: 269591718
+iteration:    3; variables: 612740 clauses: 1386370 assignments: 59127  propagations: 271096636
+iteration:    4; variables: 816954 clauses: 1819428 assignments: 88583  propagations: 272476626
+iteration:    5; variables: 1021168 clauses: 2252526 assignments: 117779  propagations: 349391291
+c
+c Try to adapt solver strategies
+c 
+c Nothing extreme in this problem, continue with glucose default strategies.
+c
+
+interrupted
+trying to extract last key
+last key: 00010000100111101111011111101100100011110001000010
+checking key 00010000100111101111011111101100100011110001000010
+could not verify key correctness due to exceeding SAT propgation budget
+quotient_0_:0;  quotient_1_:0;  quotient_2_:0;  quotient_3_:0;  quotient_4_:0;  quotient_5_:0;  quotient_6_:0;  quotient_7_:0;  quotient_8_:0;  quotient_9_:0;  quotient_10_:0;  quotient_11_:0;  quotient_12_:0;  quotient_13_:0;  quotient_14_:0;  quotient_15_:0;  quotient_16_:0;  quotient_17_:0;  quotient_18_:0;  quotient_19_:0;  quotient_20_:0;  quotient_21_:0;  quotient_22_:0;  quotient_23_:0;  quotient_24_:0;  quotient_25_:0;  quotient_26_:0;  quotient_27_:0;  quotient_28_:0;  quotient_29_:0;  quotient_30_:0;  quotient_31_:0;  quotient_32_:0;  quotient_33_:0;  quotient_34_:0;  quotient_35_:0;  quotient_36_:0;  quotient_37_:0;  quotient_38_:0;  quotient_39_:0;  quotient_40_:0;  quotient_41_:0;  quotient_42_:0;  quotient_43_:0;  quotient_44_:0;  quotient_45_:0;  quotient_46_:0;  quotient_47_:0;  quotient_48_:0;  quotient_49_:0;  quotient_50_:0;  quotient_51_:0;  quotient_52_:0;  quotient_53_:0;  quotient_54_:0;  quotient_55_:0;  quotient_56_:0;  quotient_57_:0;  quotient_58_:0;  quotient_59_:0;  quotient_60_:0;  quotient_61_:0;  quotient_62_:0;  quotient_63_:0;  remainder_0_:0;  remainder_1_:0;  remainder_2_:0;  remainder_3_:0;  remainder_4_:0;  remainder_5_:0;  remainder_6_:0;  remainder_7_:0;  remainder_8_:0;  remainder_9_:0;  remainder_10_:0;  remainder_11_:0;  remainder_12_:0;  remainder_13_:0;  remainder_14_:0;  remainder_15_:0;  remainder_16_:0;  remainder_17_:0;  remainder_18_:0;  remainder_19_:0;  remainder_20_:0;  remainder_21_:0;  remainder_22_:0;  remainder_23_:0;  remainder_24_:0;  remainder_25_:0;  remainder_26_:0;  remainder_27_:0;  remainder_28_:0;  remainder_29_:0;  remainder_30_:0;  remainder_31_:0;  remainder_32_:0;  remainder_33_:0;  remainder_34_:0;  remainder_35_:0;  remainder_36_:0;  remainder_37_:0;  remainder_38_:0;  remainder_39_:0;  remainder_40_:0;  remainder_41_:0;  remainder_42_:0;  remainder_43_:0;  remainder_44_:0;  remainder_45_:0;  remainder_46_:0;  remainder_47_:0;  remainder_48_:0;  remainder_49_:0;  remainder_50_:0;  remainder_51_:0;  remainder_52_:0;  remainder_53_:0;  remainder_54_:0;  remainder_55_:0;  remainder_56_:0;  remainder_57_:0;  remainder_58_:0;  remainder_59_:0;  remainder_60_:0;  remainder_61_:0;  remainder_62_:0;  remainder_63_:0;  
+key-err: 0
+Command exited with non-zero status 1
+86249.12user 26.11system 23:57:57elapsed 99%CPU (0avgtext+0avgdata 1950296maxresident)k
+0inputs+0outputs (1major+1676474minor)pagefaults 0swaps
+
+Done with ./benchmarks/EPFL_Combinational/bench/arithmetic/div.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/EPFL_Combinational/bench/arithmetic/hyp.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/EPFL_Combinational/bench/arithmetic/hyp.bench ########################################## 
+ ################################################################################################### 
+ n = 15, log2(n) = 4, k = 4
+ ------------------ Finding key 59  58  19  21  34  6  6  56  37  33  25  7  31  53  0  ------------------ 
+ ------------------ Using k=4  ------------------ 
+INFO - Apr-22-2024   12:03:08 --  locked version of ./benchmarks/EPFL_Combinational/bench/arithmetic/hyp.bench
+INFO - Apr-22-2024   12:03:08 --  number of keys: 15
+INFO - Apr-22-2024   12:03:08 --  keys: [59, 58, 19, 21, 34, 6, 6, 56, 37, 33, 25, 7, 31, 53, 0]
+INFO - Apr-22-2024   12:03:08 --  number of bits per key (keyinputs#): 6
+INFO - Apr-22-2024   12:03:08 --  key0 = 111011
+INFO - Apr-22-2024   12:03:08 --  key1 = 111010
+INFO - Apr-22-2024   12:03:08 --  key2 = 010011
+INFO - Apr-22-2024   12:03:08 --  key3 = 010101
+INFO - Apr-22-2024   12:03:08 --  key4 = 100010
+INFO - Apr-22-2024   12:03:08 --  key5 = 000110
+INFO - Apr-22-2024   12:03:08 --  key6 = 000110
+INFO - Apr-22-2024   12:03:08 --  key7 = 111000
+INFO - Apr-22-2024   12:03:08 --  key8 = 100101
+INFO - Apr-22-2024   12:03:08 --  key9 = 100001
+INFO - Apr-22-2024   12:03:08 --  key10 = 011001
+INFO - Apr-22-2024   12:03:08 --  key11 = 000111
+INFO - Apr-22-2024   12:03:08 --  key12 = 011111
+INFO - Apr-22-2024   12:03:08 --  key13 = 110101
+INFO - Apr-22-2024   12:03:08 --  key14 = 000000
+INFO - Apr-22-2024   12:03:08 --  k (gate is locked at k bits): 4
+INFO - Apr-22-2024   12:03:12 -- Time taken to parser file= 3.373880624771118
+
+INFO - Apr-22-2024   12:03:12 -- hyp.bench contains 256 inputs,     128 outputs,     and 420513 gates
+
+INFO - Apr-22-2024   12:04:12 -- Time taken to get gates with k inputs = 60.00575566291809
+
+INFO - Apr-22-2024   12:04:12 -- Cutting gates to encrypt to 10, from 18032
+INFO - Apr-22-2024   12:04:12 -- Time taken to encrypt up to k inputs: 60.07069373130798 seconds
+INFO - Apr-22-2024   12:04:12 --   new_n588 - Or(And(b_125_, ~b_124_, ~b_127_, b_126_, ~keyinput0, ~keyinput1, ~keyinput2, keyinput3, keyinput4, ~keyinput5), And(b_125_, b_124_, ~b_127_, b_126_, keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, ~keyinput5), And(b_125_, ~b_124_, b_127_, ~b_126_, ~keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5), And(b_125_, b_124_, b_127_, ~b_126_, ~keyinput0, ~keyinput1, ~keyinput2, keyinput3, keyinput4, keyinput5), And(~b_125_, b_124_, b_127_, b_126_, keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4, keyinput5), And(b_125_, ~b_124_, b_127_, b_126_, ~keyinput0, ~keyinput1, ~keyinput2, ~keyinput3, ~keyinput4, ~keyinput5), And(b_125_, b_124_, b_127_, b_126_, keyinput0, keyinput1, keyinput2, ~keyinput3, keyinput4, keyinput5))
+INFO - Apr-22-2024   12:04:12 --   new_n593 - And(b_124_, b_127_, b_126_, b_123_, keyinput6, keyinput7, keyinput8, ~keyinput9, keyinput10, keyinput11)
+INFO - Apr-22-2024   12:04:12 --   new_n594 - Or(And(~b_124_, ~b_127_, ~b_126_, ~b_123_, keyinput12, keyinput13, keyinput14, ~keyinput15, keyinput16, keyinput17), And(b_124_, ~b_127_, ~b_126_, ~b_123_, keyinput12, keyinput13, keyinput14, ~keyinput15, keyinput16, ~keyinput17), And(~b_124_, ~b_127_, ~b_126_, b_123_, ~keyinput12, keyinput13, ~keyinput14, ~keyinput15, keyinput16, keyinput17), And(b_124_, ~b_127_, ~b_126_, b_123_, ~keyinput12, keyinput13, ~keyinput14, keyinput15, ~keyinput16, keyinput17), And(~b_124_, ~b_127_, b_126_, ~b_123_, keyinput12, ~keyinput13, ~keyinput14, ~keyinput15, keyinput16, ~keyinput17), And(b_124_, ~b_127_, b_126_, ~b_123_, ~keyinput12, ~keyinput13, ~keyinput14, keyinput15, keyinput16, ~keyinput17), And(~b_124_, ~b_127_, b_126_, b_123_, ~keyinput12, ~keyinput13, ~keyinput14, keyinput15, keyinput16, ~keyinput17), And(b_124_, ~b_127_, b_126_, b_123_, keyinput12, keyinput13, keyinput14, ~keyinput15, ~keyinput16, ~keyinput17), And(~b_124_, b_127_, ~b_126_, ~b_123_, keyinput12, ~keyinput13, ~keyinput14, keyinput15, ~keyinput16, keyinput17), And(b_124_, b_127_, ~b_126_, ~b_123_, keyinput12, ~keyinput13, ~keyinput14, ~keyinput15, ~keyinput16, keyinput17), And(~b_124_, b_127_, ~b_126_, b_123_, ~keyinput12, keyinput13, keyinput14, ~keyinput15, ~keyinput16, keyinput17), And(b_124_, b_127_, ~b_126_, b_123_, ~keyinput12, ~keyinput13, ~keyinput14, keyinput15, keyinput16, keyinput17), And(~b_124_, b_127_, b_126_, ~b_123_, ~keyinput12, keyinput13, keyinput14, keyinput15, keyinput16, keyinput17), And(b_124_, b_127_, b_126_, ~b_123_, keyinput12, keyinput13, ~keyinput14, keyinput15, ~keyinput16, keyinput17), And(~b_124_, b_127_, b_126_, b_123_, ~keyinput12, ~keyinput13, ~keyinput14, ~keyinput15, ~keyinput16, ~keyinput17))
+INFO - Apr-22-2024   12:04:12 --   new_n599 - Or(And(~b_124_, ~b_127_, ~b_126_, ~b_123_, keyinput18, keyinput19, keyinput20, ~keyinput21, keyinput22, keyinput23), And(b_124_, ~b_127_, ~b_126_, ~b_123_, keyinput18, keyinput19, keyinput20, ~keyinput21, keyinput22, ~keyinput23), And(~b_124_, b_127_, ~b_126_, ~b_123_, ~keyinput18, keyinput19, ~keyinput20, ~keyinput21, keyinput22, keyinput23), And(b_124_, b_127_, ~b_126_, ~b_123_, ~keyinput18, keyinput19, ~keyinput20, keyinput21, ~keyinput22, keyinput23), And(~b_124_, ~b_127_, b_126_, ~b_123_, keyinput18, ~keyinput19, ~keyinput20, ~keyinput21, keyinput22, ~keyinput23), And(~b_124_, b_127_, b_126_, ~b_123_, ~keyinput18, ~keyinput19, ~keyinput20, keyinput21, keyinput22, ~keyinput23), And(~b_124_, ~b_127_, ~b_126_, b_123_, keyinput18, ~keyinput19, ~keyinput20, keyinput21, ~keyinput22, keyinput23), And(b_124_, ~b_127_, ~b_126_, b_123_, keyinput18, ~keyinput19, ~keyinput20, ~keyinput21, ~keyinput22, keyinput23), And(~b_124_, ~b_127_, b_126_, b_123_, ~keyinput18, keyinput19, keyinput20, keyinput21, keyinput22, keyinput23))
+INFO - Apr-22-2024   12:04:12 --   new_n600 - Or(And(b_124_, ~b_127_, b_126_, ~b_123_, ~keyinput24, ~keyinput25, ~keyinput26, keyinput27, keyinput28, ~keyinput29), And(b_124_, b_127_, b_126_, ~b_123_, keyinput24, keyinput25, keyinput26, ~keyinput27, ~keyinput28, ~keyinput29), And(~b_124_, b_127_, ~b_126_, b_123_, ~keyinput24, keyinput25, keyinput26, ~keyinput27, ~keyinput28, keyinput29), And(b_124_, b_127_, ~b_126_, b_123_, ~keyinput24, ~keyinput25, ~keyinput26, keyinput27, keyinput28, keyinput29), And(b_124_, ~b_127_, b_126_, b_123_, keyinput24, keyinput25, ~keyinput26, keyinput27, ~keyinput28, keyinput29), And(~b_124_, b_127_, b_126_, b_123_, ~keyinput24, ~keyinput25, ~keyinput26, ~keyinput27, ~keyinput28, ~keyinput29), And(b_124_, b_127_, b_126_, b_123_, keyinput24, keyinput25, keyinput26, ~keyinput27, keyinput28, keyinput29))
+INFO - Apr-22-2024   12:04:12 --   new_n601 - Or(And(b_124_, ~b_127_, b_126_, ~b_123_, ~keyinput30, ~keyinput31, ~keyinput32, keyinput33, keyinput34, ~keyinput35), And(b_124_, ~b_127_, b_126_, b_123_, keyinput30, keyinput31, keyinput32, ~keyinput33, ~keyinput34, ~keyinput35), And(~b_124_, b_127_, ~b_126_, b_123_, ~keyinput30, keyinput31, keyinput32, ~keyinput33, ~keyinput34, keyinput35), And(b_124_, b_127_, ~b_126_, b_123_, ~keyinput30, ~keyinput31, ~keyinput32, keyinput33, keyinput34, keyinput35), And(b_124_, b_127_, b_126_, ~b_123_, keyinput30, keyinput31, ~keyinput32, keyinput33, ~keyinput34, keyinput35), And(~b_124_, b_127_, b_126_, b_123_, ~keyinput30, ~keyinput31, ~keyinput32, ~keyinput33, ~keyinput34, ~keyinput35))
+INFO - Apr-22-2024   12:04:12 --   new_n602 - Or(And(~b_124_, ~b_127_, ~b_126_, ~b_123_, keyinput36, keyinput37, keyinput38, ~keyinput39, keyinput40, keyinput41), And(b_124_, ~b_127_, ~b_126_, ~b_123_, keyinput36, keyinput37, keyinput38, ~keyinput39, keyinput40, ~keyinput41), And(~b_124_, ~b_127_, ~b_126_, b_123_, ~keyinput36, keyinput37, ~keyinput38, ~keyinput39, keyinput40, keyinput41), And(b_124_, ~b_127_, ~b_126_, b_123_, ~keyinput36, keyinput37, ~keyinput38, keyinput39, ~keyinput40, keyinput41), And(~b_124_, ~b_127_, b_126_, ~b_123_, keyinput36, ~keyinput37, ~keyinput38, ~keyinput39, keyinput40, ~keyinput41), And(~b_124_, ~b_127_, b_126_, b_123_, ~keyinput36, ~keyinput37, ~keyinput38, keyinput39, keyinput40, ~keyinput41), And(~b_124_, b_127_, ~b_126_, ~b_123_, keyinput36, ~keyinput37, ~keyinput38, keyinput39, ~keyinput40, keyinput41), And(b_124_, b_127_, ~b_126_, ~b_123_, keyinput36, ~keyinput37, ~keyinput38, ~keyinput39, ~keyinput40, keyinput41), And(~b_124_, b_127_, b_126_, ~b_123_, ~keyinput36, keyinput37, keyinput38, keyinput39, keyinput40, keyinput41), And(b_124_, b_127_, b_126_, b_123_, keyinput36, keyinput37, keyinput38, ~keyinput39, keyinput40, keyinput41))
+INFO - Apr-22-2024   12:04:12 --   new_n605 - Or(And(b_125_, b_124_, ~b_126_, ~b_123_, ~keyinput42, keyinput43, ~keyinput44, keyinput45, ~keyinput46, keyinput47), And(b_125_, b_124_, ~b_126_, b_123_, keyinput42, keyinput43, keyinput44, ~keyinput45, ~keyinput46, ~keyinput47), And(b_125_, b_124_, b_126_, ~b_123_, ~keyinput42, ~keyinput43, ~keyinput44, keyinput45, keyinput46, keyinput47), And(b_125_, ~b_124_, b_126_, b_123_, ~keyinput42, ~keyinput43, ~keyinput44, ~keyinput45, ~keyinput46, ~keyinput47), And(b_125_, b_124_, b_126_, b_123_, keyinput42, keyinput43, keyinput44, ~keyinput45, keyinput46, keyinput47))
+INFO - Apr-22-2024   12:04:12 --   new_n606 - Or(And(~b_125_, ~b_124_, ~b_126_, ~b_123_, keyinput48, keyinput49, keyinput50, ~keyinput51, keyinput52, keyinput53), And(~b_125_, b_124_, ~b_126_, ~b_123_, keyinput48, keyinput49, keyinput50, ~keyinput51, keyinput52, ~keyinput53), And(b_125_, ~b_124_, ~b_126_, ~b_123_, ~keyinput48, keyinput49, ~keyinput50, ~keyinput51, keyinput52, keyinput53), And(~b_125_, ~b_124_, ~b_126_, b_123_, keyinput48, ~keyinput49, ~keyinput50, ~keyinput51, keyinput52, ~keyinput53), And(~b_125_, b_124_, ~b_126_, b_123_, ~keyinput48, ~keyinput49, ~keyinput50, keyinput51, keyinput52, ~keyinput53), And(b_125_, ~b_124_, ~b_126_, b_123_, ~keyinput48, ~keyinput49, ~keyinput50, keyinput51, keyinput52, ~keyinput53), And(~b_125_, ~b_124_, b_126_, ~b_123_, keyinput48, ~keyinput49, ~keyinput50, keyinput51, ~keyinput52, keyinput53), And(~b_125_, b_124_, b_126_, ~b_123_, keyinput48, ~keyinput49, ~keyinput50, ~keyinput51, ~keyinput52, keyinput53), And(b_125_, ~b_124_, b_126_, ~b_123_, ~keyinput48, keyinput49, keyinput50, ~keyinput51, ~keyinput52, keyinput53), And(~b_125_, ~b_124_, b_126_, b_123_, ~keyinput48, keyinput49, keyinput50, keyinput51, keyinput52, keyinput53), And(~b_125_, b_124_, b_126_, b_123_, keyinput48, keyinput49, ~keyinput50, keyinput51, ~keyinput52, keyinput53))
+INFO - Apr-22-2024   12:04:12 --   new_n613 - Or(And(~b_125_, b_124_, b_127_, ~b_126_, keyinput54, ~keyinput55, ~keyinput56, ~keyinput57, ~keyinput58, keyinput59), And(b_125_, b_124_, b_127_, ~b_126_, ~keyinput54, ~keyinput55, ~keyinput56, keyinput57, keyinput58, keyinput59), And(b_125_, b_124_, b_127_, b_126_, keyinput54, keyinput55, keyinput56, ~keyinput57, keyinput58, keyinput59))
+INFO - Apr-22-2024   12:04:12 -- Time taken to encrypt file: 63.98502206802368 seconds
+
+-e 
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/EPFL_Combinational/bench/arithmetic/hyp.bench ./benchmarks/EPFL_Combinational/bench/arithmetic/hyp_encrypted.bench 1000
+args 
+iteration:    1; variables: 842392 clauses: 2114531 assignments: 1  propagations: 48180858
+c
+c Try to adapt solver strategies
+c 
+c Nothing extreme in this problem, continue with glucose default strategies.
+c
+iteration:    2; variables: 1684538 clauses: 2808060 assignments: 567277  propagations: 723028950
+no more dips.
+constraints are not satisfiable
+Finished! 
+iteration=2
+key=110101000100000110111111111111000110111011000111110101100001
+checking key 110101000100000110111111111111000110111011000111110101100001
+could not verify key correctness due to exceeding SAT propgation budget
+hypotenuse_0_:0.498;  hypotenuse_1_:0.444;  hypotenuse_2_:0.442;  hypotenuse_3_:0.456;  hypotenuse_4_:0.442;  hypotenuse_5_:0.468;  hypotenuse_6_:0.398;  hypotenuse_7_:0.45;  hypotenuse_8_:0.46;  hypotenuse_9_:0.482;  hypotenuse_10_:0.456;  hypotenuse_11_:0.468;  hypotenuse_12_:0.454;  hypotenuse_13_:0.458;  hypotenuse_14_:0.492;  hypotenuse_15_:0.482;  hypotenuse_16_:0.5;  hypotenuse_17_:0.486;  hypotenuse_18_:0.444;  hypotenuse_19_:0.46;  hypotenuse_20_:0.482;  hypotenuse_21_:0.496;  hypotenuse_22_:0.434;  hypotenuse_23_:0.468;  hypotenuse_24_:0.486;  hypotenuse_25_:0.484;  hypotenuse_26_:0.48;  hypotenuse_27_:0.46;  hypotenuse_28_:0.444;  hypotenuse_29_:0.498;  hypotenuse_30_:0.482;  hypotenuse_31_:0.408;  hypotenuse_32_:0.444;  hypotenuse_33_:0.47;  hypotenuse_34_:0.444;  hypotenuse_35_:0.496;  hypotenuse_36_:0.448;  hypotenuse_37_:0.512;  hypotenuse_38_:0.468;  hypotenuse_39_:0.498;  hypotenuse_40_:0.458;  hypotenuse_41_:0.49;  hypotenuse_42_:0.472;  hypotenuse_43_:0.452;  hypotenuse_44_:0.438;  hypotenuse_45_:0.422;  hypotenuse_46_:0.448;  hypotenuse_47_:0.444;  hypotenuse_48_:0.434;  hypotenuse_49_:0.474;  hypotenuse_50_:0.464;  hypotenuse_51_:0.458;  hypotenuse_52_:0.45;  hypotenuse_53_:0.502;  hypotenuse_54_:0.446;  hypotenuse_55_:0.458;  hypotenuse_56_:0.47;  hypotenuse_57_:0.46;  hypotenuse_58_:0.43;  hypotenuse_59_:0.492;  hypotenuse_60_:0.464;  hypotenuse_61_:0.498;  hypotenuse_62_:0.428;  hypotenuse_63_:0.468;  hypotenuse_64_:0.494;  hypotenuse_65_:0.444;  hypotenuse_66_:0.468;  hypotenuse_67_:0.47;  hypotenuse_68_:0.484;  hypotenuse_69_:0.464;  hypotenuse_70_:0.474;  hypotenuse_71_:0.468;  hypotenuse_72_:0.464;  hypotenuse_73_:0.496;  hypotenuse_74_:0.452;  hypotenuse_75_:0.46;  hypotenuse_76_:0.454;  hypotenuse_77_:0.484;  hypotenuse_78_:0.5;  hypotenuse_79_:0.458;  hypotenuse_80_:0.466;  hypotenuse_81_:0.472;  hypotenuse_82_:0.5;  hypotenuse_83_:0.486;  hypotenuse_84_:0.496;  hypotenuse_85_:0.48;  hypotenuse_86_:0.464;  hypotenuse_87_:0.44;  hypotenuse_88_:0.466;  hypotenuse_89_:0.498;  hypotenuse_90_:0.48;  hypotenuse_91_:0.462;  hypotenuse_92_:0.492;  hypotenuse_93_:0.448;  hypotenuse_94_:0.49;  hypotenuse_95_:0.458;  hypotenuse_96_:0.45;  hypotenuse_97_:0.494;  hypotenuse_98_:0.486;  hypotenuse_99_:0.506;  hypotenuse_100_:0.484;  hypotenuse_101_:0.432;  hypotenuse_102_:0.482;  hypotenuse_103_:0.508;  hypotenuse_104_:0.48;  hypotenuse_105_:0.458;  hypotenuse_106_:0.502;  hypotenuse_107_:0.462;  hypotenuse_108_:0.5;  hypotenuse_109_:0.474;  hypotenuse_110_:0.456;  hypotenuse_111_:0.436;  hypotenuse_112_:0.42;  hypotenuse_113_:0.448;  hypotenuse_114_:0.44;  hypotenuse_115_:0.46;  hypotenuse_116_:0.474;  hypotenuse_117_:0.454;  hypotenuse_118_:0.444;  hypotenuse_119_:0.432;  hypotenuse_120_:0.446;  hypotenuse_121_:0.474;  hypotenuse_122_:0.506;  hypotenuse_123_:0.484;  hypotenuse_124_:0.528;  hypotenuse_125_:0.498;  hypotenuse_126_:0.328;  hypotenuse_127_:0.172;  
+key-err: 0.464156
+
+time: 332.916
+328.63user 6.37system 5:36.88elapsed 99%CPU (0avgtext+0avgdata 4624696maxresident)k
+0inputs+0outputs (0major+735486minor)pagefaults 0swaps
+-e Done 
+ 
+ 
+
+
+Done with ./benchmarks/EPFL_Combinational/bench/arithmetic/hyp.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/EPFL_Combinational/bench/arithmetic/log2.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/EPFL_Combinational/bench/arithmetic/log2.bench ########################################## 
+ ################################################################################################### 
+ n = 15, log2(n) = 4, k = 4
+ ------------------ Finding key 3  3  0  0  0  3  0  1  1  2  3  3  1  1  1  ------------------ 
+ ------------------ Using k=4  ------------------ 
+INFO - Apr-22-2024   12:09:51 --  locked version of ./benchmarks/EPFL_Combinational/bench/arithmetic/log2.bench
+INFO - Apr-22-2024   12:09:51 --  number of keys: 15
+INFO - Apr-22-2024   12:09:51 --  keys: [3, 3, 0, 0, 0, 3, 0, 1, 1, 2, 3, 3, 1, 1, 1]
+INFO - Apr-22-2024   12:09:51 --  number of bits per key (keyinputs#): 2
+INFO - Apr-22-2024   12:09:51 --  key0 = 11
+INFO - Apr-22-2024   12:09:51 --  key1 = 11
+INFO - Apr-22-2024   12:09:51 --  key2 = 00
+INFO - Apr-22-2024   12:09:51 --  key3 = 00
+INFO - Apr-22-2024   12:09:51 --  key4 = 00
+INFO - Apr-22-2024   12:09:51 --  key5 = 11
+INFO - Apr-22-2024   12:09:51 --  key6 = 00
+INFO - Apr-22-2024   12:09:51 --  key7 = 01
+INFO - Apr-22-2024   12:09:51 --  key8 = 01
+INFO - Apr-22-2024   12:09:51 --  key9 = 10
+INFO - Apr-22-2024   12:09:51 --  key10 = 11
+INFO - Apr-22-2024   12:09:51 --  key11 = 11
+INFO - Apr-22-2024   12:09:51 --  key12 = 01
+INFO - Apr-22-2024   12:09:51 --  key13 = 01
+INFO - Apr-22-2024   12:09:51 --  key14 = 01
+INFO - Apr-22-2024   12:09:51 --  k (gate is locked at k bits): 4
+INFO - Apr-22-2024   12:09:51 -- Time taken to parser file= 0.2723231315612793
+
+INFO - Apr-22-2024   12:09:51 -- log2.bench contains 32 inputs,     32 outputs,     and 54494 gates
+
+INFO - Apr-22-2024   12:10:51 -- Time taken to get gates with k inputs = 60.00956416130066
+
+INFO - Apr-22-2024   12:10:51 -- Cutting gates to encrypt to 10, from 117
+INFO - Apr-22-2024   12:10:51 -- Time taken to encrypt up to k inputs: 60.0125470161438 seconds
+INFO - Apr-22-2024   12:10:51 --   new_n109 - Or(And(~a_4_, ~a_5_, ~a_2_, a_3_, keyinput0, keyinput1), And(~a_4_, ~a_5_, a_2_, ~a_3_, ~keyinput0, ~keyinput1), And(a_4_, a_5_, ~a_2_, a_3_, ~keyinput0, keyinput1), And(a_4_, a_5_, a_2_, ~a_3_, ~keyinput0, keyinput1))
+INFO - Apr-22-2024   12:10:51 --   new_n110 - Or(And(~a_4_, ~a_5_, ~a_2_, ~a_3_, keyinput2, keyinput3), And(~a_4_, ~a_5_, a_2_, a_3_, ~keyinput2, ~keyinput3), And(a_4_, ~a_5_, ~a_2_, ~a_3_, ~keyinput2, ~keyinput3), And(a_4_, ~a_5_, ~a_2_, a_3_, keyinput2, keyinput3), And(a_4_, ~a_5_, a_2_, ~a_3_, ~keyinput2, ~keyinput3), And(a_4_, ~a_5_, a_2_, a_3_, ~keyinput2, keyinput3), And(~a_4_, a_5_, ~a_2_, ~a_3_, ~keyinput2, keyinput3), And(~a_4_, a_5_, ~a_2_, a_3_, keyinput2, ~keyinput3), And(~a_4_, a_5_, a_2_, ~a_3_, keyinput2, keyinput3), And(~a_4_, a_5_, a_2_, a_3_, keyinput2, keyinput3), And(a_4_, a_5_, ~a_2_, ~a_3_, ~keyinput2, keyinput3), And(a_4_, a_5_, a_2_, a_3_, keyinput2, keyinput3))
+INFO - Apr-22-2024   12:10:51 --   new_n114 - And(~a_24_, ~a_25_, ~a_23_, ~a_26_, keyinput4, keyinput5)
+INFO - Apr-22-2024   12:10:51 --   new_n118 - And(a_27_, a_28_, a_29_, a_30_, keyinput6, keyinput7)
+INFO - Apr-22-2024   12:10:51 --   new_n122 - And(a_27_, ~a_28_, a_29_, a_30_, ~keyinput8, keyinput9)
+INFO - Apr-22-2024   12:10:51 --   new_n124 - And(~a_24_, ~a_25_, a_23_, ~a_26_, ~keyinput10, keyinput11)
+INFO - Apr-22-2024   12:10:51 --   new_n129 - And(a_27_, ~a_28_, ~a_29_, a_30_, ~keyinput12, ~keyinput13)
+INFO - Apr-22-2024   12:10:51 --   new_n132 - And(a_24_, a_25_, ~a_23_, ~a_26_, ~keyinput14, ~keyinput15)
+INFO - Apr-22-2024   12:10:51 --   new_n136 - And(~a_24_, a_25_, a_23_, ~a_26_, keyinput16, ~keyinput17)
+INFO - Apr-22-2024   12:10:51 --   new_n137 - And(a_27_, a_28_, ~a_29_, a_30_, keyinput18, keyinput19)
+INFO - Apr-22-2024   12:10:51 -- Time taken to encrypt file: 60.35689687728882 seconds
+
+-e 
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/EPFL_Combinational/bench/arithmetic/log2.bench ./benchmarks/EPFL_Combinational/bench/arithmetic/log2_encrypted.bench 1000
+args 
+iteration:    1; variables: 109262 clauses: 282843 assignments: 1  propagations: 1736933
+iteration:    2; variables: 218486 clauses: 467798 assignments: 40945  propagations: 2564321
+iteration:    3; variables: 327710 clauses: 648192 assignments: 81661  propagations: 5476474
+iteration:    4; variables: 436934 clauses: 821416 assignments: 127943  propagations: 18671700
+iteration:    5; variables: 546158 clauses: 963744 assignments: 177131  propagations: 20188464
+iteration:    6; variables: 655382 clauses: 1126708 assignments: 228021  propagations: 37179249
+iteration:    7; variables: 764606 clauses: 1297438 assignments: 273437  propagations: 40194240
+iteration:    8; variables: 873830 clauses: 1480860 assignments: 316447  propagations: 67544767
+no more dips.
+constraints are not satisfiable
+Finished! 
+iteration=8
+key=00111111010100001011
+checking key 00111111010100001011
+
+incorrect key
+result_0_:0.104;  result_1_:0.108;  result_2_:0.102;  result_3_:0.134;  result_4_:0.108;  result_5_:0.08;  result_6_:0.126;  result_7_:0.1;  result_8_:0.136;  result_9_:0.118;  result_10_:0.078;  result_11_:0.036;  result_12_:0.022;  result_13_:0.018;  result_14_:0.008;  result_15_:0.002;  result_16_:0.002;  result_17_:0;  result_18_:0;  result_19_:0;  result_20_:0;  result_21_:0;  result_22_:0;  result_23_:0;  result_24_:0;  result_25_:0;  result_26_:0;  result_27_:0;  result_28_:0;  result_29_:0;  result_30_:0;  result_31_:0;  
+key-err: 0.0400625
+
+time: 28.5374
+28.47user 0.29system 0:28.99elapsed 99%CPU (0avgtext+0avgdata 809120maxresident)k
+0inputs+0outputs (0major+76752minor)pagefaults 0swaps
+-e Done 
+ 
+ 
+
+
+Done with ./benchmarks/EPFL_Combinational/bench/arithmetic/log2.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/EPFL_Combinational/bench/arithmetic/max.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/EPFL_Combinational/bench/arithmetic/max.bench ########################################## 
+ ################################################################################################### 
+ n = 15, log2(n) = 4, k = 4
+ ------------------ Finding key 37  38  57  36  169  87  48  162  150  168  52  5  1  24  44  ------------------ 
+ ------------------ Using k=4  ------------------ 
+INFO - Apr-22-2024   12:11:21 --  locked version of ./benchmarks/EPFL_Combinational/bench/arithmetic/max.bench
+INFO - Apr-22-2024   12:11:21 --  number of keys: 15
+INFO - Apr-22-2024   12:11:21 --  keys: [37, 38, 57, 36, 169, 87, 48, 162, 150, 168, 52, 5, 1, 24, 44]
+INFO - Apr-22-2024   12:11:21 --  number of bits per key (keyinputs#): 8
+INFO - Apr-22-2024   12:11:21 --  key0 = 00100101
+INFO - Apr-22-2024   12:11:21 --  key1 = 00100110
+INFO - Apr-22-2024   12:11:21 --  key2 = 00111001
+INFO - Apr-22-2024   12:11:21 --  key3 = 00100100
+INFO - Apr-22-2024   12:11:21 --  key4 = 10101001
+INFO - Apr-22-2024   12:11:21 --  key5 = 01010111
+INFO - Apr-22-2024   12:11:21 --  key6 = 00110000
+INFO - Apr-22-2024   12:11:21 --  key7 = 10100010
+INFO - Apr-22-2024   12:11:21 --  key8 = 10010110
+INFO - Apr-22-2024   12:11:21 --  key9 = 10101000
+INFO - Apr-22-2024   12:11:21 --  key10 = 00110100
+INFO - Apr-22-2024   12:11:21 --  key11 = 00000101
+INFO - Apr-22-2024   12:11:21 --  key12 = 00000001
+INFO - Apr-22-2024   12:11:21 --  key13 = 00011000
+INFO - Apr-22-2024   12:11:21 --  key14 = 00101100
+INFO - Apr-22-2024   12:11:21 --  k (gate is locked at k bits): 4
+INFO - Apr-22-2024   12:11:21 -- Time taken to parser file= 0.030946731567382812
+
+INFO - Apr-22-2024   12:11:21 -- max.bench contains 512 inputs,     130 outputs,     and 5767 gates
+
+INFO - Apr-22-2024   12:11:27 -- Time taken to get gates with k inputs = 6.152663707733154
+
+INFO - Apr-22-2024   12:11:27 -- Cutting gates to encrypt to 10, from 289
+INFO - Apr-22-2024   12:11:27 -- Time taken to encrypt up to k inputs: 6.165704011917114 seconds
+INFO - Apr-22-2024   12:11:27 --   new_n1158 - Or(And(~in2_119_, ~in3_119_, ~in2_118_, ~in3_118_, ~keyinput0, ~keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, ~keyinput6, keyinput7), And(in2_119_, ~in3_119_, ~in2_118_, ~in3_118_, ~keyinput0, ~keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, keyinput6, ~keyinput7), And(~in2_119_, ~in3_119_, in2_118_, ~in3_118_, keyinput0, ~keyinput1, keyinput2, ~keyinput3, keyinput4, ~keyinput5, ~keyinput6, keyinput7), And(in2_119_, ~in3_119_, in2_118_, ~in3_118_, ~keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4, keyinput5, keyinput6, keyinput7), And(~in2_119_, ~in3_119_, in2_118_, in3_118_, ~keyinput0, ~keyinput1, keyinput2, keyinput3, ~keyinput4, ~keyinput5, ~keyinput6, ~keyinput7), And(in2_119_, ~in3_119_, in2_118_, in3_118_, keyinput0, ~keyinput1, keyinput2, ~keyinput3, ~keyinput4, ~keyinput5, keyinput6, ~keyinput7), And(in2_119_, in3_119_, ~in2_118_, ~in3_118_, keyinput0, ~keyinput1, keyinput2, ~keyinput3, keyinput4, ~keyinput5, ~keyinput6, ~keyinput7), And(in2_119_, in3_119_, in2_118_, ~in3_118_, ~keyinput0, ~keyinput1, ~keyinput2, keyinput3, keyinput4, ~keyinput5, ~keyinput6, ~keyinput7), And(in2_119_, in3_119_, in2_118_, in3_118_, ~keyinput0, ~keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, ~keyinput6, keyinput7))
+INFO - Apr-22-2024   12:11:27 --   new_n1162 - Or(And(~in2_117_, ~in3_117_, in2_116_, ~in3_116_, ~keyinput8, ~keyinput9, keyinput10, ~keyinput11, ~keyinput12, keyinput13, keyinput14, ~keyinput15), And(in2_117_, ~in3_117_, in2_116_, ~in3_116_, keyinput8, ~keyinput9, keyinput10, ~keyinput11, keyinput12, ~keyinput13, ~keyinput14, ~keyinput15), And(in2_117_, in3_117_, in2_116_, ~in3_116_, ~keyinput8, ~keyinput9, ~keyinput10, ~keyinput11, ~keyinput12, keyinput13, ~keyinput14, keyinput15))
+INFO - Apr-22-2024   12:11:27 --   new_n1163 - Or(And(~in2_117_, ~in3_117_, ~in2_116_, ~in3_116_, ~keyinput16, ~keyinput17, keyinput18, ~keyinput19, ~keyinput20, keyinput21, ~keyinput22, keyinput23), And(~in2_117_, in3_117_, ~in2_116_, ~in3_116_, ~keyinput16, ~keyinput17, keyinput18, keyinput19, keyinput20, ~keyinput21, ~keyinput22, keyinput23), And(~in2_117_, in3_117_, in2_116_, ~in3_116_, ~keyinput16, ~keyinput17, keyinput18, ~keyinput19, ~keyinput20, keyinput21, ~keyinput22, ~keyinput23), And(~in2_117_, ~in3_117_, ~in2_116_, in3_116_, keyinput16, ~keyinput17, keyinput18, ~keyinput19, keyinput20, ~keyinput21, ~keyinput22, keyinput23), And(~in2_117_, ~in3_117_, in2_116_, in3_116_, ~keyinput16, keyinput17, ~keyinput18, keyinput19, ~keyinput20, keyinput21, keyinput22, keyinput23), And(~in2_117_, in3_117_, ~in2_116_, in3_116_, ~keyinput16, ~keyinput17, keyinput18, keyinput19, ~keyinput20, ~keyinput21, ~keyinput22, ~keyinput23), And(~in2_117_, in3_117_, in2_116_, in3_116_, keyinput16, ~keyinput17, keyinput18, ~keyinput19, ~keyinput20, ~keyinput21, keyinput22, ~keyinput23), And(in2_117_, ~in3_117_, ~in2_116_, ~in3_116_, keyinput16, ~keyinput17, ~keyinput18, keyinput19, ~keyinput20, keyinput21, keyinput22, ~keyinput23), And(in2_117_, in3_117_, ~in2_116_, ~in3_116_, ~keyinput16, ~keyinput17, keyinput18, keyinput19, ~keyinput20, keyinput21, ~keyinput22, ~keyinput23), And(in2_117_, ~in3_117_, ~in2_116_, in3_116_, ~keyinput16, ~keyinput17, ~keyinput18, ~keyinput19, ~keyinput20, ~keyinput21, ~keyinput22, keyinput23), And(in2_117_, ~in3_117_, in2_116_, in3_116_, ~keyinput16, ~keyinput17, ~keyinput18, keyinput19, keyinput20, ~keyinput21, ~keyinput22, ~keyinput23), And(in2_117_, in3_117_, ~in2_116_, in3_116_, ~keyinput16, ~keyinput17, keyinput18, ~keyinput19, keyinput20, keyinput21, ~keyinput22, ~keyinput23), And(in2_117_, in3_117_, in2_116_, in3_116_, ~keyinput16, ~keyinput17, keyinput18, ~keyinput19, ~keyinput20, keyinput21, ~keyinput22, keyinput23))
+INFO - Apr-22-2024   12:11:27 --   new_n1166 - Or(And(~in2_117_, ~in3_117_, ~in2_116_, ~in3_116_, ~keyinput24, ~keyinput25, keyinput26, ~keyinput27, ~keyinput28, keyinput29, ~keyinput30, keyinput31), And(~in2_117_, in3_117_, ~in2_116_, ~in3_116_, ~keyinput24, ~keyinput25, keyinput26, keyinput27, keyinput28, ~keyinput29, ~keyinput30, keyinput31), And(~in2_117_, in3_117_, in2_116_, ~in3_116_, ~keyinput24, ~keyinput25, keyinput26, ~keyinput27, ~keyinput28, keyinput29, ~keyinput30, ~keyinput31), And(~in2_117_, ~in3_117_, ~in2_116_, in3_116_, keyinput24, ~keyinput25, keyinput26, ~keyinput27, keyinput28, ~keyinput29, ~keyinput30, keyinput31), And(~in2_117_, ~in3_117_, in2_116_, in3_116_, ~keyinput24, keyinput25, ~keyinput26, keyinput27, ~keyinput28, keyinput29, keyinput30, keyinput31), And(~in2_117_, in3_117_, ~in2_116_, in3_116_, ~keyinput24, ~keyinput25, keyinput26, keyinput27, ~keyinput28, ~keyinput29, ~keyinput30, ~keyinput31), And(~in2_117_, in3_117_, in2_116_, in3_116_, keyinput24, ~keyinput25, keyinput26, ~keyinput27, ~keyinput28, ~keyinput29, keyinput30, ~keyinput31), And(in2_117_, in3_117_, ~in2_116_, ~in3_116_, ~keyinput24, ~keyinput25, keyinput26, keyinput27, ~keyinput28, keyinput29, ~keyinput30, ~keyinput31), And(in2_117_, in3_117_, ~in2_116_, in3_116_, ~keyinput24, ~keyinput25, keyinput26, ~keyinput27, keyinput28, keyinput29, ~keyinput30, ~keyinput31), And(in2_117_, in3_117_, in2_116_, in3_116_, ~keyinput24, ~keyinput25, keyinput26, ~keyinput27, ~keyinput28, keyinput29, ~keyinput30, keyinput31))
+INFO - Apr-22-2024   12:11:27 --   new_n1167 - Or(And(~in2_117_, ~in3_117_, in2_116_, ~in3_116_, ~keyinput32, ~keyinput33, keyinput34, ~keyinput35, ~keyinput36, keyinput37, keyinput38, ~keyinput39), And(in2_117_, ~in3_117_, ~in2_116_, ~in3_116_, keyinput32, ~keyinput33, ~keyinput34, keyinput35, ~keyinput36, keyinput37, keyinput38, ~keyinput39), And(in2_117_, ~in3_117_, in2_116_, ~in3_116_, keyinput32, ~keyinput33, keyinput34, ~keyinput35, keyinput36, ~keyinput37, ~keyinput38, ~keyinput39), And(in2_117_, in3_117_, in2_116_, ~in3_116_, ~keyinput32, ~keyinput33, ~keyinput34, ~keyinput35, ~keyinput36, keyinput37, ~keyinput38, keyinput39), And(in2_117_, ~in3_117_, ~in2_116_, in3_116_, ~keyinput32, ~keyinput33, ~keyinput34, ~keyinput35, ~keyinput36, ~keyinput37, ~keyinput38, keyinput39), And(in2_117_, ~in3_117_, in2_116_, in3_116_, ~keyinput32, ~keyinput33, ~keyinput34, keyinput35, keyinput36, ~keyinput37, ~keyinput38, ~keyinput39))
+INFO - Apr-22-2024   12:11:27 --   new_n1171 - Or(And(~in2_119_, ~in3_119_, in2_118_, ~in3_118_, ~keyinput40, ~keyinput41, keyinput42, keyinput43, keyinput44, ~keyinput45, ~keyinput46, keyinput47), And(in2_119_, ~in3_119_, in2_118_, ~in3_118_, ~keyinput40, ~keyinput41, keyinput42, keyinput43, ~keyinput44, keyinput45, ~keyinput46, ~keyinput47), And(in2_119_, in3_119_, in2_118_, ~in3_118_, ~keyinput40, ~keyinput41, ~keyinput42, ~keyinput43, ~keyinput44, keyinput45, ~keyinput46, keyinput47))
+INFO - Apr-22-2024   12:11:27 --   new_n1172 - Or(And(~in2_119_, ~in3_119_, ~in2_118_, ~in3_118_, ~keyinput48, ~keyinput49, keyinput50, ~keyinput51, ~keyinput52, keyinput53, ~keyinput54, keyinput55), And(~in2_119_, in3_119_, ~in2_118_, ~in3_118_, ~keyinput48, ~keyinput49, keyinput50, ~keyinput51, ~keyinput52, keyinput53, keyinput54, ~keyinput55), And(~in2_119_, in3_119_, in2_118_, ~in3_118_, ~keyinput48, ~keyinput49, keyinput50, ~keyinput51, ~keyinput52, keyinput53, ~keyinput54, ~keyinput55), And(~in2_119_, ~in3_119_, ~in2_118_, in3_118_, keyinput48, ~keyinput49, keyinput50, ~keyinput51, keyinput52, ~keyinput53, ~keyinput54, keyinput55), And(~in2_119_, in3_119_, ~in2_118_, in3_118_, ~keyinput48, keyinput49, ~keyinput50, keyinput51, ~keyinput52, keyinput53, keyinput54, keyinput55), And(~in2_119_, ~in3_119_, in2_118_, in3_118_, ~keyinput48, ~keyinput49, keyinput50, keyinput51, ~keyinput52, ~keyinput53, ~keyinput54, ~keyinput55), And(~in2_119_, in3_119_, in2_118_, in3_118_, keyinput48, ~keyinput49, keyinput50, ~keyinput51, ~keyinput52, ~keyinput53, keyinput54, ~keyinput55), And(in2_119_, ~in3_119_, ~in2_118_, ~in3_118_, keyinput48, ~keyinput49, ~keyinput50, keyinput51, ~keyinput52, keyinput53, keyinput54, ~keyinput55), And(in2_119_, in3_119_, ~in2_118_, ~in3_118_, keyinput48, ~keyinput49, keyinput50, ~keyinput51, keyinput52, ~keyinput53, ~keyinput54, ~keyinput55), And(in2_119_, ~in3_119_, ~in2_118_, in3_118_, ~keyinput48, ~keyinput49, ~keyinput50, ~keyinput51, ~keyinput52, ~keyinput53, ~keyinput54, keyinput55), And(in2_119_, in3_119_, ~in2_118_, in3_118_, ~keyinput48, ~keyinput49, ~keyinput50, keyinput51, keyinput52, ~keyinput53, ~keyinput54, ~keyinput55), And(in2_119_, ~in3_119_, in2_118_, in3_118_, ~keyinput48, ~keyinput49, keyinput50, ~keyinput51, keyinput52, keyinput53, ~keyinput54, ~keyinput55), And(in2_119_, in3_119_, in2_118_, in3_118_, ~keyinput48, ~keyinput49, keyinput50, ~keyinput51, ~keyinput52, keyinput53, ~keyinput54, keyinput55))
+INFO - Apr-22-2024   12:11:27 --   new_n1179 - Or(And(~in2_115_, ~in3_115_, ~in2_114_, ~in3_114_, ~keyinput56, ~keyinput57, keyinput58, ~keyinput59, ~keyinput60, keyinput61, ~keyinput62, keyinput63), And(in2_115_, ~in3_115_, ~in2_114_, ~in3_114_, keyinput56, ~keyinput57, keyinput58, ~keyinput59, keyinput60, ~keyinput61, ~keyinput62, keyinput63), And(in2_115_, in3_115_, ~in2_114_, ~in3_114_, ~keyinput56, keyinput57, ~keyinput58, keyinput59, ~keyinput60, keyinput61, keyinput62, keyinput63), And(~in2_115_, ~in3_115_, in2_114_, ~in3_114_, keyinput56, ~keyinput57, ~keyinput58, keyinput59, ~keyinput60, keyinput61, keyinput62, ~keyinput63), And(~in2_115_, ~in3_115_, in2_114_, in3_114_, ~keyinput56, ~keyinput57, keyinput58, keyinput59, ~keyinput60, keyinput61, ~keyinput62, ~keyinput63), And(in2_115_, ~in3_115_, in2_114_, ~in3_114_, ~keyinput56, ~keyinput57, ~keyinput58, ~keyinput59, ~keyinput60, ~keyinput61, ~keyinput62, keyinput63), And(in2_115_, in3_115_, in2_114_, ~in3_114_, ~keyinput56, ~keyinput57, ~keyinput58, keyinput59, keyinput60, ~keyinput61, ~keyinput62, ~keyinput63), And(in2_115_, ~in3_115_, in2_114_, in3_114_, ~keyinput56, ~keyinput57, keyinput58, ~keyinput59, keyinput60, keyinput61, ~keyinput62, ~keyinput63), And(in2_115_, in3_115_, in2_114_, in3_114_, ~keyinput56, ~keyinput57, keyinput58, ~keyinput59, ~keyinput60, keyinput61, ~keyinput62, keyinput63))
+INFO - Apr-22-2024   12:11:27 --   new_n1188 - Or(And(~in2_111_, ~in3_111_, ~in2_110_, ~in3_110_, ~keyinput64, ~keyinput65, keyinput66, ~keyinput67, ~keyinput68, keyinput69, ~keyinput70, keyinput71), And(~in2_111_, ~in3_111_, in2_110_, ~in3_110_, keyinput64, ~keyinput65, keyinput66, ~keyinput67, keyinput68, ~keyinput69, ~keyinput70, keyinput71), And(~in2_111_, ~in3_111_, in2_110_, in3_110_, ~keyinput64, keyinput65, ~keyinput66, keyinput67, ~keyinput68, keyinput69, keyinput70, keyinput71), And(in2_111_, ~in3_111_, ~in2_110_, ~in3_110_, keyinput64, ~keyinput65, ~keyinput66, keyinput67, ~keyinput68, keyinput69, keyinput70, ~keyinput71), And(in2_111_, in3_111_, ~in2_110_, ~in3_110_, ~keyinput64, ~keyinput65, keyinput66, keyinput67, ~keyinput68, keyinput69, ~keyinput70, ~keyinput71), And(in2_111_, ~in3_111_, in2_110_, ~in3_110_, ~keyinput64, ~keyinput65, ~keyinput66, ~keyinput67, ~keyinput68, ~keyinput69, ~keyinput70, keyinput71), And(in2_111_, ~in3_111_, in2_110_, in3_110_, ~keyinput64, ~keyinput65, ~keyinput66, keyinput67, keyinput68, ~keyinput69, ~keyinput70, ~keyinput71), And(in2_111_, in3_111_, in2_110_, ~in3_110_, ~keyinput64, ~keyinput65, keyinput66, ~keyinput67, keyinput68, keyinput69, ~keyinput70, ~keyinput71), And(in2_111_, in3_111_, in2_110_, in3_110_, ~keyinput64, ~keyinput65, keyinput66, ~keyinput67, ~keyinput68, keyinput69, ~keyinput70, keyinput71))
+INFO - Apr-22-2024   12:11:27 --   new_n1192 - Or(And(~in2_109_, ~in3_109_, in2_108_, ~in3_108_, keyinput72, ~keyinput73, ~keyinput74, keyinput75, ~keyinput76, keyinput77, keyinput78, ~keyinput79), And(in2_109_, ~in3_109_, in2_108_, ~in3_108_, keyinput72, ~keyinput73, keyinput74, ~keyinput75, keyinput76, ~keyinput77, ~keyinput78, ~keyinput79), And(in2_109_, in3_109_, in2_108_, ~in3_108_, ~keyinput72, ~keyinput73, ~keyinput74, ~keyinput75, ~keyinput76, keyinput77, ~keyinput78, keyinput79))
+INFO - Apr-22-2024   12:11:27 -- Time taken to encrypt file: 6.237943649291992 seconds
+
+-e 
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/EPFL_Combinational/bench/arithmetic/max.bench ./benchmarks/EPFL_Combinational/bench/arithmetic/max_encrypted.bench 1000
+args 
+iteration:    1; variables: 13586 clauses: 33783 assignments: 1  propagations: 2483376
+iteration:    2; variables: 26632 clauses: 42896 assignments: 9101  propagations: 2646419
+iteration:    3; variables: 39678 clauses: 53608 assignments: 17493  propagations: 2809491
+iteration:    4; variables: 52724 clauses: 60632 assignments: 27397  propagations: 3362639
+no more dips.
+
+Finished! 
+iteration=4
+key=00100101111111111111111111011111000000011111101000100101001001010010010100000101
+checking key 00100101111111111111111111011111000000011111101000100101001001010010010100000101
+
+incorrect key
+result_0_:0;  result_1_:0;  result_2_:0;  result_3_:0;  result_4_:0;  result_5_:0;  result_6_:0;  result_7_:0;  result_8_:0;  result_9_:0;  result_10_:0;  result_11_:0;  result_12_:0;  result_13_:0;  result_14_:0;  result_15_:0;  result_16_:0;  result_17_:0;  result_18_:0;  result_19_:0;  result_20_:0;  result_21_:0;  result_22_:0;  result_23_:0;  result_24_:0;  result_25_:0;  result_26_:0;  result_27_:0;  result_28_:0;  result_29_:0;  result_30_:0;  result_31_:0;  result_32_:0;  result_33_:0;  result_34_:0;  result_35_:0;  result_36_:0;  result_37_:0;  result_38_:0;  result_39_:0;  result_40_:0;  result_41_:0;  result_42_:0;  result_43_:0;  result_44_:0;  result_45_:0;  result_46_:0;  result_47_:0;  result_48_:0;  result_49_:0;  result_50_:0;  result_51_:0;  result_52_:0;  result_53_:0;  result_54_:0;  result_55_:0;  result_56_:0;  result_57_:0;  result_58_:0;  result_59_:0;  result_60_:0;  result_61_:0;  result_62_:0;  result_63_:0;  result_64_:0;  result_65_:0;  result_66_:0;  result_67_:0;  result_68_:0;  result_69_:0;  result_70_:0;  result_71_:0;  result_72_:0;  result_73_:0;  result_74_:0;  result_75_:0;  result_76_:0;  result_77_:0;  result_78_:0;  result_79_:0;  result_80_:0;  result_81_:0;  result_82_:0;  result_83_:0;  result_84_:0;  result_85_:0;  result_86_:0;  result_87_:0;  result_88_:0;  result_89_:0;  result_90_:0;  result_91_:0;  result_92_:0;  result_93_:0;  result_94_:0;  result_95_:0;  result_96_:0;  result_97_:0;  result_98_:0;  result_99_:0;  result_100_:0;  result_101_:0;  result_102_:0;  result_103_:0;  result_104_:0;  result_105_:0;  result_106_:0;  result_107_:0;  result_108_:0;  result_109_:0;  result_110_:0;  result_111_:0;  result_112_:0;  result_113_:0;  result_114_:0;  result_115_:0;  result_116_:0;  result_117_:0;  result_118_:0;  result_119_:0;  result_120_:0;  result_121_:0;  result_122_:0;  result_123_:0;  result_124_:0;  result_125_:0;  result_126_:0;  result_127_:0;  address_0_:0;  address_1_:0;  
+key-err: 0
+
+time: 1.86593
+1.86user 0.00system 0:01.93elapsed 96%CPU (0avgtext+0avgdata 88476maxresident)k
+0inputs+0outputs (0major+20677minor)pagefaults 0swaps
+-e Done 
+ 
+ 
+
+
+Done with ./benchmarks/EPFL_Combinational/bench/arithmetic/max.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/EPFL_Combinational/bench/arithmetic/multiplier.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/EPFL_Combinational/bench/arithmetic/multiplier.bench ########################################## 
+ ################################################################################################### 
+ n = 15, log2(n) = 4, k = 4
+ ------------------ Finding key 25  11  29  0  25  16  17  22  30  29  30  24  24  26  13  ------------------ 
+ ------------------ Using k=4  ------------------ 
+INFO - Apr-22-2024   12:11:30 --  locked version of ./benchmarks/EPFL_Combinational/bench/arithmetic/multiplier.bench
+INFO - Apr-22-2024   12:11:30 --  number of keys: 15
+INFO - Apr-22-2024   12:11:30 --  keys: [25, 11, 29, 0, 25, 16, 17, 22, 30, 29, 30, 24, 24, 26, 13]
+INFO - Apr-22-2024   12:11:30 --  number of bits per key (keyinputs#): 5
+INFO - Apr-22-2024   12:11:30 --  key0 = 11001
+INFO - Apr-22-2024   12:11:30 --  key1 = 01011
+INFO - Apr-22-2024   12:11:30 --  key2 = 11101
+INFO - Apr-22-2024   12:11:30 --  key3 = 00000
+INFO - Apr-22-2024   12:11:30 --  key4 = 11001
+INFO - Apr-22-2024   12:11:30 --  key5 = 10000
+INFO - Apr-22-2024   12:11:30 --  key6 = 10001
+INFO - Apr-22-2024   12:11:30 --  key7 = 10110
+INFO - Apr-22-2024   12:11:30 --  key8 = 11110
+INFO - Apr-22-2024   12:11:30 --  key9 = 11101
+INFO - Apr-22-2024   12:11:30 --  key10 = 11110
+INFO - Apr-22-2024   12:11:30 --  key11 = 11000
+INFO - Apr-22-2024   12:11:30 --  key12 = 11000
+INFO - Apr-22-2024   12:11:30 --  key13 = 11010
+INFO - Apr-22-2024   12:11:30 --  key14 = 01101
+INFO - Apr-22-2024   12:11:30 --  k (gate is locked at k bits): 4
+INFO - Apr-22-2024   12:11:30 -- Time taken to parser file= 0.2663688659667969
+
+INFO - Apr-22-2024   12:11:30 -- multiplier.bench contains 128 inputs,     128 outputs,     and 50504 gates
+
+INFO - Apr-22-2024   12:12:30 -- Time taken to get gates with k inputs = 60.018187046051025
+
+INFO - Apr-22-2024   12:12:30 -- Cutting gates to encrypt to 10, from 2062
+INFO - Apr-22-2024   12:12:30 -- Time taken to encrypt up to k inputs: 60.03770136833191 seconds
+INFO - Apr-22-2024   12:12:30 --   new_n402 - Or(And(b_1_, a_0_, ~a_1_, ~a_2_, ~keyinput0, ~keyinput1, ~keyinput2, ~keyinput3, ~keyinput4), And(b_1_, a_0_, a_1_, a_2_, keyinput0, keyinput1, ~keyinput2, ~keyinput3, keyinput4))
+INFO - Apr-22-2024   12:12:30 --   new_n403 - Or(And(~b_1_, ~a_0_, ~a_1_, ~a_2_, keyinput5, keyinput6, ~keyinput7, ~keyinput8, keyinput9), And(b_1_, ~a_0_, ~a_1_, ~a_2_, ~keyinput5, keyinput6, ~keyinput7, keyinput8, keyinput9), And(~b_1_, a_0_, ~a_1_, ~a_2_, keyinput5, keyinput6, keyinput7, ~keyinput8, keyinput9), And(~b_1_, ~a_0_, a_1_, ~a_2_, keyinput5, keyinput6, ~keyinput7, ~keyinput8, keyinput9), And(b_1_, ~a_0_, a_1_, ~a_2_, keyinput5, ~keyinput6, ~keyinput7, ~keyinput8, ~keyinput9), And(~b_1_, a_0_, a_1_, ~a_2_, keyinput5, ~keyinput6, ~keyinput7, ~keyinput8, keyinput9), And(b_1_, a_0_, a_1_, ~a_2_, keyinput5, ~keyinput6, keyinput7, keyinput8, ~keyinput9), And(~b_1_, ~a_0_, ~a_1_, a_2_, keyinput5, keyinput6, keyinput7, keyinput8, ~keyinput9), And(b_1_, ~a_0_, ~a_1_, a_2_, keyinput5, keyinput6, keyinput7, ~keyinput8, keyinput9), And(~b_1_, a_0_, ~a_1_, a_2_, keyinput5, keyinput6, keyinput7, keyinput8, ~keyinput9), And(b_1_, a_0_, ~a_1_, a_2_, keyinput5, keyinput6, ~keyinput7, ~keyinput8, ~keyinput9), And(~b_1_, ~a_0_, a_1_, a_2_, keyinput5, keyinput6, ~keyinput7, ~keyinput8, ~keyinput9), And(b_1_, ~a_0_, a_1_, a_2_, keyinput5, keyinput6, ~keyinput7, keyinput8, ~keyinput9), And(~b_1_, a_0_, a_1_, a_2_, ~keyinput5, keyinput6, keyinput7, ~keyinput8, keyinput9))
+INFO - Apr-22-2024   12:12:30 --   new_n429 - Or(And(a_0_, ~a_1_, ~a_2_, b_2_, keyinput10, ~keyinput11, ~keyinput12, ~keyinput13, ~keyinput14), And(a_0_, a_1_, a_2_, b_2_, keyinput10, keyinput11, ~keyinput12, ~keyinput13, keyinput14))
+INFO - Apr-22-2024   12:12:30 --   new_n430 - Or(And(~a_0_, ~a_1_, ~a_2_, ~b_2_, keyinput15, keyinput16, ~keyinput17, ~keyinput18, keyinput19), And(a_0_, ~a_1_, ~a_2_, ~b_2_, ~keyinput15, keyinput16, ~keyinput17, keyinput18, keyinput19), And(~a_0_, a_1_, ~a_2_, ~b_2_, keyinput15, keyinput16, keyinput17, ~keyinput18, keyinput19), And(a_0_, a_1_, ~a_2_, ~b_2_, ~keyinput15, ~keyinput16, ~keyinput17, ~keyinput18, ~keyinput19), And(~a_0_, ~a_1_, ~a_2_, b_2_, keyinput15, keyinput16, ~keyinput17, ~keyinput18, keyinput19), And(~a_0_, a_1_, ~a_2_, b_2_, keyinput15, ~keyinput16, ~keyinput17, ~keyinput18, keyinput19), And(a_0_, a_1_, ~a_2_, b_2_, keyinput15, ~keyinput16, keyinput17, keyinput18, ~keyinput19), And(~a_0_, ~a_1_, a_2_, ~b_2_, keyinput15, keyinput16, keyinput17, keyinput18, ~keyinput19), And(a_0_, ~a_1_, a_2_, ~b_2_, keyinput15, keyinput16, keyinput17, ~keyinput18, keyinput19), And(~a_0_, a_1_, a_2_, ~b_2_, keyinput15, keyinput16, keyinput17, keyinput18, ~keyinput19), And(a_0_, a_1_, a_2_, ~b_2_, keyinput15, keyinput16, ~keyinput17, ~keyinput18, ~keyinput19), And(~a_0_, ~a_1_, a_2_, b_2_, keyinput15, keyinput16, ~keyinput17, ~keyinput18, ~keyinput19), And(a_0_, ~a_1_, a_2_, b_2_, keyinput15, keyinput16, ~keyinput17, keyinput18, ~keyinput19), And(~a_0_, a_1_, a_2_, b_2_, ~keyinput15, keyinput16, keyinput17, ~keyinput18, keyinput19))
+INFO - Apr-22-2024   12:12:30 --   new_n433 - And(~a_0_, ~a_1_, a_2_, b_0_, keyinput20, keyinput21, keyinput22, ~keyinput23, keyinput24)
+INFO - Apr-22-2024   12:12:30 --   new_n434 - Or(And(~a_0_, ~a_1_, ~a_2_, ~b_0_, keyinput25, keyinput26, ~keyinput27, ~keyinput28, keyinput29), And(~a_0_, ~a_1_, a_2_, ~b_0_, ~keyinput25, keyinput26, ~keyinput27, keyinput28, keyinput29), And(a_0_, ~a_1_, ~a_2_, ~b_0_, keyinput25, keyinput26, keyinput27, ~keyinput28, keyinput29), And(a_0_, ~a_1_, a_2_, ~b_0_, ~keyinput25, ~keyinput26, ~keyinput27, ~keyinput28, ~keyinput29), And(~a_0_, a_1_, ~a_2_, ~b_0_, keyinput25, keyinput26, ~keyinput27, ~keyinput28, keyinput29), And(~a_0_, a_1_, a_2_, ~b_0_, keyinput25, ~keyinput26, ~keyinput27, ~keyinput28, ~keyinput29), And(a_0_, a_1_, ~a_2_, ~b_0_, keyinput25, ~keyinput26, ~keyinput27, ~keyinput28, keyinput29), And(a_0_, a_1_, a_2_, ~b_0_, keyinput25, ~keyinput26, keyinput27, keyinput28, ~keyinput29), And(~a_0_, ~a_1_, ~a_2_, b_0_, keyinput25, keyinput26, keyinput27, keyinput28, ~keyinput29), And(a_0_, ~a_1_, ~a_2_, b_0_, keyinput25, keyinput26, keyinput27, keyinput28, ~keyinput29), And(a_0_, ~a_1_, a_2_, b_0_, keyinput25, keyinput26, ~keyinput27, ~keyinput28, ~keyinput29), And(~a_0_, a_1_, ~a_2_, b_0_, keyinput25, keyinput26, ~keyinput27, ~keyinput28, ~keyinput29), And(~a_0_, a_1_, a_2_, b_0_, keyinput25, keyinput26, ~keyinput27, keyinput28, ~keyinput29), And(a_0_, a_1_, ~a_2_, b_0_, ~keyinput25, keyinput26, keyinput27, ~keyinput28, keyinput29), And(a_0_, a_1_, a_2_, b_0_, keyinput25, keyinput26, ~keyinput27, ~keyinput28, keyinput29))
+INFO - Apr-22-2024   12:12:30 --   new_n470 - Or(And(a_0_, ~a_1_, ~a_2_, b_3_, ~keyinput30, ~keyinput31, ~keyinput32, ~keyinput33, ~keyinput34), And(a_0_, a_1_, a_2_, b_3_, keyinput30, keyinput31, ~keyinput32, ~keyinput33, keyinput34))
+INFO - Apr-22-2024   12:12:30 --   new_n471 - Or(And(~a_0_, ~a_1_, ~a_2_, ~b_3_, keyinput35, keyinput36, ~keyinput37, ~keyinput38, keyinput39), And(a_0_, ~a_1_, ~a_2_, ~b_3_, ~keyinput35, keyinput36, ~keyinput37, keyinput38, keyinput39), And(~a_0_, ~a_1_, ~a_2_, b_3_, keyinput35, keyinput36, keyinput37, ~keyinput38, keyinput39), And(~a_0_, a_1_, ~a_2_, ~b_3_, keyinput35, keyinput36, ~keyinput37, ~keyinput38, keyinput39), And(a_0_, a_1_, ~a_2_, ~b_3_, keyinput35, ~keyinput36, ~keyinput37, ~keyinput38, ~keyinput39), And(~a_0_, a_1_, ~a_2_, b_3_, keyinput35, ~keyinput36, ~keyinput37, ~keyinput38, keyinput39), And(a_0_, a_1_, ~a_2_, b_3_, keyinput35, ~keyinput36, keyinput37, keyinput38, ~keyinput39), And(~a_0_, ~a_1_, a_2_, ~b_3_, keyinput35, keyinput36, keyinput37, keyinput38, ~keyinput39), And(a_0_, ~a_1_, a_2_, ~b_3_, keyinput35, keyinput36, keyinput37, ~keyinput38, keyinput39), And(~a_0_, ~a_1_, a_2_, b_3_, keyinput35, keyinput36, keyinput37, keyinput38, ~keyinput39), And(a_0_, ~a_1_, a_2_, b_3_, keyinput35, keyinput36, ~keyinput37, ~keyinput38, ~keyinput39), And(~a_0_, a_1_, a_2_, ~b_3_, keyinput35, keyinput36, ~keyinput37, ~keyinput38, ~keyinput39), And(a_0_, a_1_, a_2_, ~b_3_, keyinput35, keyinput36, ~keyinput37, keyinput38, ~keyinput39), And(~a_0_, a_1_, a_2_, b_3_, ~keyinput35, keyinput36, keyinput37, ~keyinput38, keyinput39))
+INFO - Apr-22-2024   12:12:30 --   new_n472 - And(b_1_, ~a_0_, ~a_1_, a_2_, keyinput40, keyinput41, keyinput42, ~keyinput43, keyinput44)
+INFO - Apr-22-2024   12:12:30 --   new_n473 - Or(And(~b_1_, ~a_0_, ~a_1_, ~a_2_, keyinput45, keyinput46, ~keyinput47, ~keyinput48, keyinput49), And(b_1_, ~a_0_, ~a_1_, ~a_2_, ~keyinput45, keyinput46, ~keyinput47, keyinput48, keyinput49), And(~b_1_, a_0_, ~a_1_, ~a_2_, keyinput45, keyinput46, keyinput47, ~keyinput48, keyinput49), And(b_1_, a_0_, ~a_1_, ~a_2_, ~keyinput45, ~keyinput46, ~keyinput47, ~keyinput48, ~keyinput49), And(~b_1_, ~a_0_, a_1_, ~a_2_, keyinput45, keyinput46, ~keyinput47, ~keyinput48, keyinput49), And(b_1_, ~a_0_, a_1_, ~a_2_, keyinput45, ~keyinput46, ~keyinput47, ~keyinput48, ~keyinput49), And(~b_1_, a_0_, a_1_, ~a_2_, keyinput45, ~keyinput46, ~keyinput47, ~keyinput48, keyinput49), And(b_1_, a_0_, a_1_, ~a_2_, keyinput45, ~keyinput46, keyinput47, keyinput48, ~keyinput49), And(~b_1_, ~a_0_, ~a_1_, a_2_, keyinput45, keyinput46, keyinput47, keyinput48, ~keyinput49), And(~b_1_, a_0_, ~a_1_, a_2_, keyinput45, keyinput46, keyinput47, keyinput48, ~keyinput49), And(b_1_, a_0_, ~a_1_, a_2_, keyinput45, keyinput46, ~keyinput47, ~keyinput48, ~keyinput49), And(~b_1_, ~a_0_, a_1_, a_2_, keyinput45, keyinput46, ~keyinput47, ~keyinput48, ~keyinput49), And(b_1_, ~a_0_, a_1_, a_2_, keyinput45, keyinput46, ~keyinput47, keyinput48, ~keyinput49), And(~b_1_, a_0_, a_1_, a_2_, ~keyinput45, keyinput46, keyinput47, ~keyinput48, keyinput49), And(b_1_, a_0_, a_1_, a_2_, keyinput45, keyinput46, ~keyinput47, ~keyinput48, keyinput49))
+INFO - Apr-22-2024   12:12:30 -- Time taken to encrypt file: 60.39993739128113 seconds
+
+-e 
+ 
+ 
+
+Running the neos solver on the encrypted file ex 

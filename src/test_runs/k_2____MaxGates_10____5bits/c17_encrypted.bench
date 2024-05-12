@@ -1,0 +1,68 @@
+# locked version of ./benchmarks/iscas85/c17.bench
+# number of keys: 3
+# keys: [13, 12, 24]
+# number of bits per key (keyinputs#): 5
+# key0 = 01101
+# key1 = 01100
+# key2 = 11000
+# k (gate is locked at k bits): 2
+#  G10gat - Or(And(~G1gat, ~G3gat, ~keyinput0, keyinput1, keyinput2, ~keyinput3, keyinput4), And(~G1gat, G3gat, ~keyinput0, keyinput1, keyinput2, ~keyinput3, ~keyinput4), And(G1gat, ~G3gat, keyinput0, keyinput1, ~keyinput2, ~keyinput3, ~keyinput4))
+#  G11gat - Or(And(~G3gat, ~G6gat, ~keyinput5, keyinput6, keyinput7, ~keyinput8, keyinput9), And(G3gat, ~G6gat, ~keyinput5, keyinput6, keyinput7, ~keyinput8, ~keyinput9), And(~G3gat, G6gat, keyinput5, keyinput6, ~keyinput7, ~keyinput8, ~keyinput9))
+
+INPUT( G1gat )
+INPUT( G2gat )
+INPUT( G3gat )
+INPUT( G6gat )
+INPUT( G7gat )
+INPUT( keyinput0 )
+INPUT( keyinput1 )
+INPUT( keyinput2 )
+INPUT( keyinput3 )
+INPUT( keyinput4 )
+INPUT( keyinput5 )
+INPUT( keyinput6 )
+INPUT( keyinput7 )
+INPUT( keyinput8 )
+INPUT( keyinput9 )
+
+OUTPUT( G22gat )
+OUTPUT( G23gat )
+
+
+G10gat = or( and_4, and_9, and_14 )
+G11gat = or( and_20, and_25, and_30 )
+G16gat = nand( G2gat, G11gat )
+G19gat = nand( G11gat, G7gat )
+G22gat = nand( G10gat, G16gat )
+G23gat = nand( G16gat, G19gat )
+not_0 = not( G1gat )
+not_1 = not( G3gat )
+not_2 = not( keyinput0 )
+not_3 = not( keyinput3 )
+and_4 = and( not_0, not_1, not_2, keyinput1, keyinput2, not_3, keyinput4 )
+not_5 = not( G1gat )
+not_6 = not( keyinput0 )
+not_7 = not( keyinput3 )
+not_8 = not( keyinput4 )
+and_9 = and( not_5, G3gat, not_6, keyinput1, keyinput2, not_7, not_8 )
+not_10 = not( G3gat )
+not_11 = not( keyinput2 )
+not_12 = not( keyinput3 )
+not_13 = not( keyinput4 )
+and_14 = and( G1gat, not_10, keyinput0, keyinput1, not_11, not_12, not_13 )
+not_16 = not( G3gat )
+not_17 = not( G6gat )
+not_18 = not( keyinput5 )
+not_19 = not( keyinput8 )
+and_20 = and( not_16, not_17, not_18, keyinput6, keyinput7, not_19, keyinput9 )
+not_21 = not( G6gat )
+not_22 = not( keyinput5 )
+not_23 = not( keyinput8 )
+not_24 = not( keyinput9 )
+and_25 = and( G3gat, not_21, not_22, keyinput6, keyinput7, not_23, not_24 )
+not_26 = not( G3gat )
+not_27 = not( keyinput7 )
+not_28 = not( keyinput8 )
+not_29 = not( keyinput9 )
+and_30 = and( not_26, G6gat, keyinput5, keyinput6, not_27, not_28, not_29 )
+

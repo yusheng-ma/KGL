@@ -1,0 +1,60 @@
+# locked version of ./benchmarks/iscas85/c17.bench
+# number of keys: 3
+# keys: [31, 11, 7]
+# number of bits per key (keyinputs#): 5
+# key0 = 11111
+# key1 = 01011
+# key2 = 00111
+# k (gate is locked at k bits): 2
+#  G10gat - Or(And(~G1gat, ~G3gat, keyinput0, keyinput1, keyinput2, keyinput3, keyinput4), And(~G1gat, G3gat, ~keyinput0, keyinput1, ~keyinput2, keyinput3, keyinput4), And(G1gat, ~G3gat, ~keyinput0, ~keyinput1, keyinput2, keyinput3, keyinput4))
+#  G11gat - Or(And(~G3gat, ~G6gat, keyinput5, keyinput6, keyinput7, keyinput8, keyinput9), And(G3gat, ~G6gat, ~keyinput5, keyinput6, ~keyinput7, keyinput8, keyinput9), And(~G3gat, G6gat, ~keyinput5, ~keyinput6, keyinput7, keyinput8, keyinput9))
+
+INPUT( G1gat )
+INPUT( G2gat )
+INPUT( G3gat )
+INPUT( G6gat )
+INPUT( G7gat )
+INPUT( keyinput0 )
+INPUT( keyinput1 )
+INPUT( keyinput2 )
+INPUT( keyinput3 )
+INPUT( keyinput4 )
+INPUT( keyinput5 )
+INPUT( keyinput6 )
+INPUT( keyinput7 )
+INPUT( keyinput8 )
+INPUT( keyinput9 )
+
+OUTPUT( G22gat )
+OUTPUT( G23gat )
+
+
+G10gat = or( and_2, and_6, and_10 )
+G11gat = or( and_14, and_18, and_22 )
+G16gat = nand( G2gat, G11gat )
+G19gat = nand( G11gat, G7gat )
+G22gat = nand( G10gat, G16gat )
+G23gat = nand( G16gat, G19gat )
+not_0 = not( G1gat )
+not_1 = not( G3gat )
+and_2 = and( not_0, not_1, keyinput0, keyinput1, keyinput2, keyinput3, keyinput4 )
+not_3 = not( G1gat )
+not_4 = not( keyinput0 )
+not_5 = not( keyinput2 )
+and_6 = and( not_3, G3gat, not_4, keyinput1, not_5, keyinput3, keyinput4 )
+not_7 = not( G3gat )
+not_8 = not( keyinput0 )
+not_9 = not( keyinput1 )
+and_10 = and( G1gat, not_7, not_8, not_9, keyinput2, keyinput3, keyinput4 )
+not_12 = not( G3gat )
+not_13 = not( G6gat )
+and_14 = and( not_12, not_13, keyinput5, keyinput6, keyinput7, keyinput8, keyinput9 )
+not_15 = not( G6gat )
+not_16 = not( keyinput5 )
+not_17 = not( keyinput7 )
+and_18 = and( G3gat, not_15, not_16, keyinput6, not_17, keyinput8, keyinput9 )
+not_19 = not( G3gat )
+not_20 = not( keyinput5 )
+not_21 = not( keyinput6 )
+and_22 = and( not_19, G6gat, not_20, not_21, keyinput7, keyinput8, keyinput9 )
+

@@ -1,0 +1,772 @@
+Testing files in directory: ./benchmarks/iscas85 
+
+
+Log file: ./test_runs/iscas85____2024-04-15   21-32.log 
+
+Executing ./current_script with file: ./benchmarks/iscas85/c1355.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c1355.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 4317  2421  1176  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-15-2024   21:32:24 --  locked version of ./benchmarks/iscas85/c1355.bench
+INFO - Apr-15-2024   21:32:24 --  number of keys: 3
+INFO - Apr-15-2024   21:32:24 --  keys: [4317, 2421, 1176]
+INFO - Apr-15-2024   21:32:24 --  number of bits per key (keyinputs#): 13
+INFO - Apr-15-2024   21:32:24 --  key0 = 1000011011101
+INFO - Apr-15-2024   21:32:24 --  key1 = 0100101110101
+INFO - Apr-15-2024   21:32:24 --  key2 = 0010010011000
+INFO - Apr-15-2024   21:32:24 --  k (gate is locked at k bits): 2
+INFO - Apr-15-2024   21:32:24 -- Time taken to parser file= 0.0043926239013671875
+
+INFO - Apr-15-2024   21:32:24 -- Time taken to get gates with k inputs = 0.028615474700927734
+
+INFO - Apr-15-2024   21:32:24 -- Cutting gates to encrypt to 10, from 136
+INFO - Apr-15-2024   21:32:24 -- Time taken to encrypt up to k inputs: 0.030872583389282227 seconds
+INFO - Apr-15-2024   21:32:24 --   G242gat - And(G225gat, G233gat, keyinput0, ~keyinput1, ~keyinput2, ~keyinput3, ~keyinput4, keyinput5, keyinput6, ~keyinput7, keyinput8, keyinput9, keyinput10, ~keyinput11, keyinput12)
+INFO - Apr-15-2024   21:32:24 --   G245gat - And(G233gat, G226gat, keyinput13, ~keyinput14, ~keyinput15, ~keyinput16, ~keyinput17, keyinput18, keyinput19, ~keyinput20, keyinput21, keyinput22, keyinput23, ~keyinput24, keyinput25)
+INFO - Apr-15-2024   21:32:24 --   G248gat - And(G233gat, G227gat, keyinput26, ~keyinput27, ~keyinput28, ~keyinput29, ~keyinput30, keyinput31, keyinput32, ~keyinput33, keyinput34, keyinput35, keyinput36, ~keyinput37, keyinput38)
+INFO - Apr-15-2024   21:32:24 --   G251gat - And(G233gat, G228gat, keyinput39, ~keyinput40, ~keyinput41, ~keyinput42, ~keyinput43, keyinput44, keyinput45, ~keyinput46, keyinput47, keyinput48, keyinput49, ~keyinput50, keyinput51)
+INFO - Apr-15-2024   21:32:24 --   G254gat - And(G233gat, G229gat, keyinput52, ~keyinput53, ~keyinput54, ~keyinput55, ~keyinput56, keyinput57, keyinput58, ~keyinput59, keyinput60, keyinput61, keyinput62, ~keyinput63, keyinput64)
+INFO - Apr-15-2024   21:32:24 --   G257gat - And(G233gat, G230gat, keyinput65, ~keyinput66, ~keyinput67, ~keyinput68, ~keyinput69, keyinput70, keyinput71, ~keyinput72, keyinput73, keyinput74, keyinput75, ~keyinput76, keyinput77)
+INFO - Apr-15-2024   21:32:24 --   G260gat - And(G233gat, G231gat, keyinput78, ~keyinput79, ~keyinput80, ~keyinput81, ~keyinput82, keyinput83, keyinput84, ~keyinput85, keyinput86, keyinput87, keyinput88, ~keyinput89, keyinput90)
+INFO - Apr-15-2024   21:32:24 --   G263gat - And(G233gat, G232gat, keyinput91, ~keyinput92, ~keyinput93, ~keyinput94, ~keyinput95, keyinput96, keyinput97, ~keyinput98, keyinput99, keyinput100, keyinput101, ~keyinput102, keyinput103)
+INFO - Apr-15-2024   21:32:24 --   G266gat - Or(And(~G1gat, ~G8gat, keyinput104, ~keyinput105, ~keyinput106, ~keyinput107, ~keyinput108, keyinput109, keyinput110, ~keyinput111, keyinput112, keyinput113, keyinput114, ~keyinput115, keyinput116), And(G1gat, ~G8gat, ~keyinput104, keyinput105, ~keyinput106, ~keyinput107, keyinput108, ~keyinput109, keyinput110, keyinput111, keyinput112, ~keyinput113, keyinput114, ~keyinput115, keyinput116), And(~G1gat, G8gat, ~keyinput104, ~keyinput105, keyinput106, ~keyinput107, ~keyinput108, keyinput109, ~keyinput110, ~keyinput111, keyinput112, keyinput113, ~keyinput114, ~keyinput115, ~keyinput116))
+INFO - Apr-15-2024   21:32:24 --   G269gat - Or(And(~G15gat, ~G22gat, keyinput117, ~keyinput118, ~keyinput119, ~keyinput120, ~keyinput121, keyinput122, keyinput123, ~keyinput124, keyinput125, keyinput126, keyinput127, ~keyinput128, keyinput129), And(G15gat, ~G22gat, ~keyinput117, keyinput118, ~keyinput119, ~keyinput120, keyinput121, ~keyinput122, keyinput123, keyinput124, keyinput125, ~keyinput126, keyinput127, ~keyinput128, keyinput129), And(~G15gat, G22gat, ~keyinput117, ~keyinput118, keyinput119, ~keyinput120, ~keyinput121, keyinput122, ~keyinput123, ~keyinput124, keyinput125, keyinput126, ~keyinput127, ~keyinput128, ~keyinput129))
+INFO - Apr-15-2024   21:32:24 -- Time taken to encrypt file: 0.05050778388977051 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c1355.bench ./benchmarks/iscas85/c1355_encrypted.bench 1000
+args 
+iteration:    1; variables: 1635 clauses: 4177 assignments: 1  propagations: 3231
+iteration:    2; variables: 3003 clauses: 5790 assignments: 781  propagations: 33103
+iteration:    3; variables: 4371 clauses: 7602 assignments: 1500  propagations: 51493
+iteration:    4; variables: 5739 clauses: 8432 assignments: 2560  propagations: 60338
+iteration:    5; variables: 7107 clauses: 9486 assignments: 3530  propagations: 68647
+no more dips.
+
+Finished! 
+iteration=5
+key=1000011011101100001101110110000110111011000011011101100001101110110000110111011000011011101100001101110100100100110000010010011000
+checking key 1000011011101100001101110110000110111011000011011101100001101110110000110111011000011011101100001101110100100100110000010010011000
+
+incorrect key
+G1324gat:0.002;  G1325gat:0.006;  G1326gat:0.002;  G1327gat:0;  G1328gat:0.002;  G1329gat:0.008;  G1330gat:0.004;  G1331gat:0.002;  G1332gat:0.002;  G1333gat:0.002;  G1334gat:0.01;  G1335gat:0.002;  G1336gat:0.002;  G1337gat:0.004;  G1338gat:0;  G1339gat:0.004;  G1340gat:0.006;  G1341gat:0;  G1342gat:0.006;  G1343gat:0.006;  G1344gat:0.002;  G1345gat:0.006;  G1346gat:0.002;  G1347gat:0;  G1348gat:0.002;  G1349gat:0;  G1350gat:0.002;  G1351gat:0.002;  G1352gat:0.01;  G1353gat:0.002;  G1354gat:0.01;  G1355gat:0;  
+key-err: 0.003375
+
+time: 0.0656103
+
+real	0m0.195s
+user	0m0.040s
+sys	0m0.024s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas85/c1355.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c17.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c17.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 1  1  0  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-15-2024   21:32:25 --  locked version of ./benchmarks/iscas85/c17.bench
+INFO - Apr-15-2024   21:32:25 --  number of keys: 3
+INFO - Apr-15-2024   21:32:25 --  keys: [1, 1, 0]
+INFO - Apr-15-2024   21:32:25 --  number of bits per key (keyinputs#): 1
+INFO - Apr-15-2024   21:32:25 --  key0 = 1
+INFO - Apr-15-2024   21:32:25 --  key1 = 1
+INFO - Apr-15-2024   21:32:25 --  key2 = 0
+INFO - Apr-15-2024   21:32:25 --  k (gate is locked at k bits): 2
+INFO - Apr-15-2024   21:32:25 -- Time taken to parser file= 0.002523183822631836
+
+INFO - Apr-15-2024   21:32:25 -- Time taken to get gates with k inputs = 7.939338684082031e-05
+
+INFO - Apr-15-2024   21:32:25 -- Time taken to encrypt up to k inputs: 0.0005397796630859375 seconds
+INFO - Apr-15-2024   21:32:25 --   G10gat - Or(And(~G1gat, ~G3gat, keyinput0), And(G1gat, ~G3gat, keyinput0), And(~G1gat, G3gat, ~keyinput0))
+INFO - Apr-15-2024   21:32:25 --   G11gat - Or(And(~G3gat, ~G6gat, keyinput1), And(G3gat, ~G6gat, keyinput1), And(~G3gat, G6gat, ~keyinput1))
+INFO - Apr-15-2024   21:32:25 -- Time taken to encrypt file: 0.014435052871704102 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c17.bench ./benchmarks/iscas85/c17_encrypted.bench 1000
+args 
+iteration:    1; variables: 57 clauses: 139 assignments: 1  propagations: 57
+iteration:    2; variables: 109 clauses: 186 assignments: 37  propagations: 284
+no more dips.
+
+Finished! 
+iteration=2
+key=01
+checking key 01
+
+incorrect key
+G22gat:0.25;  G23gat:0.1875;  
+key-err: 0.21875
+
+time: 0.0149964
+
+real	0m0.141s
+user	0m0.011s
+sys	0m0.000s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas85/c17.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c1908.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c1908.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 156  1284  1537  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-15-2024   21:32:25 --  locked version of ./benchmarks/iscas85/c1908.bench
+INFO - Apr-15-2024   21:32:25 --  number of keys: 3
+INFO - Apr-15-2024   21:32:25 --  keys: [156, 1284, 1537]
+INFO - Apr-15-2024   21:32:25 --  number of bits per key (keyinputs#): 11
+INFO - Apr-15-2024   21:32:25 --  key0 = 00010011100
+INFO - Apr-15-2024   21:32:25 --  key1 = 10100000100
+INFO - Apr-15-2024   21:32:25 --  key2 = 11000000001
+INFO - Apr-15-2024   21:32:25 --  k (gate is locked at k bits): 2
+INFO - Apr-15-2024   21:32:25 -- Time taken to parser file= 0.004960060119628906
+
+INFO - Apr-15-2024   21:32:25 -- Time taken to get gates with k inputs = 0.03159141540527344
+
+INFO - Apr-15-2024   21:32:25 -- Cutting gates to encrypt to 10, from 100
+INFO - Apr-15-2024   21:32:25 -- Time taken to encrypt up to k inputs: 0.03441452980041504 seconds
+INFO - Apr-15-2024   21:32:25 --   G231 - Or(And(~G224, ~G898, ~keyinput0, ~keyinput1, ~keyinput2, keyinput3, ~keyinput4, ~keyinput5, keyinput6, keyinput7, keyinput8, ~keyinput9, ~keyinput10), And(~G224, G898, keyinput0, ~keyinput1, keyinput2, ~keyinput3, ~keyinput4, ~keyinput5, ~keyinput6, ~keyinput7, keyinput8, ~keyinput9, ~keyinput10), And(G224, ~G898, keyinput0, keyinput1, ~keyinput2, ~keyinput3, ~keyinput4, ~keyinput5, ~keyinput6, ~keyinput7, ~keyinput8, ~keyinput9, keyinput10))
+INFO - Apr-15-2024   21:32:25 --   G233 - Or(And(~G227, ~G900, ~keyinput11, ~keyinput12, ~keyinput13, keyinput14, ~keyinput15, ~keyinput16, keyinput17, keyinput18, keyinput19, ~keyinput20, ~keyinput21), And(G227, ~G900, keyinput11, ~keyinput12, keyinput13, ~keyinput14, ~keyinput15, ~keyinput16, ~keyinput17, ~keyinput18, keyinput19, ~keyinput20, ~keyinput21), And(~G227, G900, keyinput11, keyinput12, ~keyinput13, ~keyinput14, ~keyinput15, ~keyinput16, ~keyinput17, ~keyinput18, ~keyinput19, ~keyinput20, keyinput21))
+INFO - Apr-15-2024   21:32:25 --   G50 - Or(And(~G952, ~G953, ~keyinput22, ~keyinput23, ~keyinput24, keyinput25, ~keyinput26, ~keyinput27, keyinput28, keyinput29, keyinput30, ~keyinput31, ~keyinput32), And(G952, ~G953, keyinput22, keyinput23, ~keyinput24, ~keyinput25, ~keyinput26, ~keyinput27, ~keyinput28, ~keyinput29, ~keyinput30, ~keyinput31, keyinput32), And(G952, G953, ~keyinput22, ~keyinput23, ~keyinput24, keyinput25, ~keyinput26, ~keyinput27, keyinput28, keyinput29, keyinput30, ~keyinput31, ~keyinput32))
+INFO - Apr-15-2024   21:32:25 --   G52 - Or(And(~G952, ~G953, ~keyinput33, ~keyinput34, ~keyinput35, keyinput36, ~keyinput37, ~keyinput38, keyinput39, keyinput40, keyinput41, ~keyinput42, ~keyinput43), And(G952, ~G953, keyinput33, keyinput34, ~keyinput35, ~keyinput36, ~keyinput37, ~keyinput38, ~keyinput39, ~keyinput40, ~keyinput41, ~keyinput42, keyinput43), And(G952, G953, ~keyinput33, ~keyinput34, ~keyinput35, keyinput36, ~keyinput37, ~keyinput38, keyinput39, keyinput40, keyinput41, ~keyinput42, ~keyinput43))
+INFO - Apr-15-2024   21:32:25 --   G56 - Or(And(~G952, ~G953, ~keyinput44, ~keyinput45, ~keyinput46, keyinput47, ~keyinput48, ~keyinput49, keyinput50, keyinput51, keyinput52, ~keyinput53, ~keyinput54), And(G952, ~G953, keyinput44, keyinput45, ~keyinput46, ~keyinput47, ~keyinput48, ~keyinput49, ~keyinput50, ~keyinput51, ~keyinput52, ~keyinput53, keyinput54), And(G952, G953, ~keyinput44, ~keyinput45, ~keyinput46, keyinput47, ~keyinput48, ~keyinput49, keyinput50, keyinput51, keyinput52, ~keyinput53, ~keyinput54))
+INFO - Apr-15-2024   21:32:25 --   G58 - Or(And(~G952, ~G953, ~keyinput55, ~keyinput56, ~keyinput57, keyinput58, ~keyinput59, ~keyinput60, keyinput61, keyinput62, keyinput63, ~keyinput64, ~keyinput65), And(G952, ~G953, keyinput55, keyinput56, ~keyinput57, ~keyinput58, ~keyinput59, ~keyinput60, ~keyinput61, ~keyinput62, ~keyinput63, ~keyinput64, keyinput65), And(G952, G953, ~keyinput55, ~keyinput56, ~keyinput57, keyinput58, ~keyinput59, ~keyinput60, keyinput61, keyinput62, keyinput63, ~keyinput64, ~keyinput65))
+INFO - Apr-15-2024   21:32:25 --   G62 - Or(And(~G952, ~G953, ~keyinput66, ~keyinput67, ~keyinput68, keyinput69, ~keyinput70, ~keyinput71, keyinput72, keyinput73, keyinput74, ~keyinput75, ~keyinput76), And(G952, ~G953, keyinput66, keyinput67, ~keyinput68, ~keyinput69, ~keyinput70, ~keyinput71, ~keyinput72, ~keyinput73, ~keyinput74, ~keyinput75, keyinput76), And(G952, G953, ~keyinput66, ~keyinput67, ~keyinput68, keyinput69, ~keyinput70, ~keyinput71, keyinput72, keyinput73, keyinput74, ~keyinput75, ~keyinput76))
+INFO - Apr-15-2024   21:32:25 --   G64 - Or(And(~G952, ~G953, ~keyinput77, ~keyinput78, ~keyinput79, keyinput80, ~keyinput81, ~keyinput82, keyinput83, keyinput84, keyinput85, ~keyinput86, ~keyinput87), And(G952, ~G953, keyinput77, keyinput78, ~keyinput79, ~keyinput80, ~keyinput81, ~keyinput82, ~keyinput83, ~keyinput84, ~keyinput85, ~keyinput86, keyinput87), And(G952, G953, ~keyinput77, ~keyinput78, ~keyinput79, keyinput80, ~keyinput81, ~keyinput82, keyinput83, keyinput84, keyinput85, ~keyinput86, ~keyinput87))
+INFO - Apr-15-2024   21:32:25 --   G318 - And(G224, ~G953, keyinput88, keyinput89, ~keyinput90, ~keyinput91, ~keyinput92, ~keyinput93, ~keyinput94, ~keyinput95, ~keyinput96, ~keyinput97, keyinput98)
+INFO - Apr-15-2024   21:32:25 --   G352 - And(G227, ~G953, keyinput99, ~keyinput100, keyinput101, ~keyinput102, ~keyinput103, ~keyinput104, ~keyinput105, ~keyinput106, keyinput107, ~keyinput108, ~keyinput109)
+INFO - Apr-15-2024   21:32:25 -- Time taken to encrypt file: 0.0565335750579834 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c1908.bench ./benchmarks/iscas85/c1908_encrypted.bench 1000
+args 
+iteration:    1; variables: 2532 clauses: 6502 assignments: 1  propagations: 19793
+iteration:    2; variables: 4838 clauses: 7913 assignments: 1759  propagations: 27732
+iteration:    3; variables: 7144 clauses: 9317 assignments: 3521  propagations: 38067
+iteration:    4; variables: 9450 clauses: 11021 assignments: 5183  propagations: 48689
+iteration:    5; variables: 11756 clauses: 12733 assignments: 6841  propagations: 260472
+no more dips.
+constraints are not satisfiable
+Finished! 
+iteration=5
+key=11111111111110000000011100000000111000000001110000000011100000000111000000001110000000011100000000110100000100
+checking key 11111111111110000000011100000000111000000001110000000011100000000111000000001110000000011100000000110100000100
+
+incorrect key
+G3:0;  G6:0;  G9:0;  G12:0;  G30:0;  G45:0;  G48:0;  G15:0;  G18:0;  G21:0;  G24:0;  G27:0;  G33:0;  G36:0;  G39:0;  G42:0;  G75:0;  G51:0.244;  G54:0.264;  G60:0.24;  G63:0.262;  G66:0.262;  G69:0.406;  G72:0.222;  G57:0.258;  
+key-err: 0.08632
+
+time: 0.084498
+
+real	0m0.212s
+user	0m0.056s
+sys	0m0.027s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas85/c1908.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c2670.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c2670.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 125507175278437250895833  100700975961267269019909  77874937357292186400211  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-15-2024   21:32:25 --  locked version of ./benchmarks/iscas85/c2670.bench
+INFO - Apr-15-2024   21:32:25 --  number of keys: 3
+INFO - Apr-15-2024   21:32:25 --  keys: [125507175278437250895833, 100700975961267269019909, 77874937357292186400211]
+INFO - Apr-15-2024   21:32:25 --  number of bits per key (keyinputs#): 77
+INFO - Apr-15-2024   21:32:25 --  key0 = 11010100100111100000111110010011001100011100110010100010011000000111111011001
+INFO - Apr-15-2024   21:32:25 --  key1 = 10101010100110000001011000110110001000010001010110110000011000010100100000101
+INFO - Apr-15-2024   21:32:25 --  key2 = 10000011111011001101111011011001011110101101100011101111011000111010111010011
+INFO - Apr-15-2024   21:32:25 --  k (gate is locked at k bits): 2
+INFO - Apr-15-2024   21:32:25 -- Time taken to parser file= 0.0072748661041259766
+
+INFO - Apr-15-2024   21:32:25 -- Time taken to get gates with k inputs = 0.019129514694213867
+
+INFO - Apr-15-2024   21:32:25 -- Cutting gates to encrypt to 10, from 98
+INFO - Apr-15-2024   21:32:25 -- Time taken to encrypt up to k inputs: 0.02384328842163086 seconds
+INFO - Apr-15-2024   21:32:25 --   G546 - And(G1, G3, keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4, keyinput5, ~keyinput6, ~keyinput7, keyinput8, ~keyinput9, ~keyinput10, keyinput11, keyinput12, keyinput13, keyinput14, ~keyinput15, ~keyinput16, ~keyinput17, ~keyinput18, ~keyinput19, keyinput20, keyinput21, keyinput22, keyinput23, keyinput24, ~keyinput25, ~keyinput26, keyinput27, ~keyinput28, ~keyinput29, keyinput30, keyinput31, ~keyinput32, ~keyinput33, keyinput34, keyinput35, ~keyinput36, ~keyinput37, ~keyinput38, keyinput39, keyinput40, keyinput41, ~keyinput42, ~keyinput43, keyinput44, keyinput45, ~keyinput46, ~keyinput47, keyinput48, ~keyinput49, keyinput50, ~keyinput51, ~keyinput52, ~keyinput53, keyinput54, ~keyinput55, ~keyinput56, keyinput57, keyinput58, ~keyinput59, ~keyinput60, ~keyinput61, ~keyinput62, ~keyinput63, ~keyinput64, keyinput65, keyinput66, keyinput67, keyinput68, keyinput69, keyinput70, ~keyinput71, keyinput72, keyinput73, ~keyinput74, ~keyinput75, keyinput76)
+INFO - Apr-15-2024   21:32:25 --   G547 - Or(And(~G1, ~G3, keyinput77, keyinput78, ~keyinput79, keyinput80, ~keyinput81, keyinput82, ~keyinput83, ~keyinput84, keyinput85, ~keyinput86, ~keyinput87, keyinput88, keyinput89, keyinput90, keyinput91, ~keyinput92, ~keyinput93, ~keyinput94, ~keyinput95, ~keyinput96, keyinput97, keyinput98, keyinput99, keyinput100, keyinput101, ~keyinput102, ~keyinput103, keyinput104, ~keyinput105, ~keyinput106, keyinput107, keyinput108, ~keyinput109, ~keyinput110, keyinput111, keyinput112, ~keyinput113, ~keyinput114, ~keyinput115, keyinput116, keyinput117, keyinput118, ~keyinput119, ~keyinput120, keyinput121, keyinput122, ~keyinput123, ~keyinput124, keyinput125, ~keyinput126, keyinput127, ~keyinput128, ~keyinput129, ~keyinput130, keyinput131, ~keyinput132, ~keyinput133, keyinput134, keyinput135, ~keyinput136, ~keyinput137, ~keyinput138, ~keyinput139, ~keyinput140, ~keyinput141, keyinput142, keyinput143, keyinput144, keyinput145, keyinput146, keyinput147, ~keyinput148, keyinput149, keyinput150, ~keyinput151, ~keyinput152, keyinput153), And(~G1, G3, keyinput77, ~keyinput78, keyinput79, ~keyinput80, keyinput81, ~keyinput82, keyinput83, ~keyinput84, keyinput85, ~keyinput86, ~keyinput87, keyinput88, keyinput89, ~keyinput90, ~keyinput91, ~keyinput92, ~keyinput93, ~keyinput94, ~keyinput95, keyinput96, ~keyinput97, keyinput98, keyinput99, ~keyinput100, ~keyinput101, ~keyinput102, keyinput103, keyinput104, ~keyinput105, keyinput106, keyinput107, ~keyinput108, ~keyinput109, ~keyinput110, keyinput111, ~keyinput112, ~keyinput113, ~keyinput114, ~keyinput115, keyinput116, ~keyinput117, ~keyinput118, ~keyinput119, keyinput120, ~keyinput121, keyinput122, ~keyinput123, keyinput124, keyinput125, ~keyinput126, keyinput127, keyinput128, ~keyinput129, ~keyinput130, ~keyinput131, ~keyinput132, ~keyinput133, keyinput134, keyinput135, ~keyinput136, ~keyinput137, ~keyinput138, ~keyinput139, keyinput140, ~keyinput141, keyinput142, ~keyinput143, ~keyinput144, keyinput145, ~keyinput146, ~keyinput147, ~keyinput148, ~keyinput149, ~keyinput150, keyinput151, ~keyinput152, keyinput153), And(G1, ~G3, keyinput77, ~keyinput78, ~keyinput79, ~keyinput80, ~keyinput81, ~keyinput82, keyinput83, keyinput84, keyinput85, keyinput86, keyinput87, ~keyinput88, keyinput89, keyinput90, ~keyinput91, ~keyinput92, keyinput93, keyinput94, ~keyinput95, keyinput96, keyinput97, keyinput98, keyinput99, ~keyinput100, keyinput101, keyinput102, ~keyinput103, keyinput104, keyinput105, ~keyinput106, ~keyinput107, keyinput108, ~keyinput109, keyinput110, keyinput111, keyinput112, keyinput113, ~keyinput114, keyinput115, ~keyinput116, keyinput117, keyinput118, ~keyinput119, keyinput120, keyinput121, ~keyinput122, ~keyinput123, ~keyinput124, keyinput125, keyinput126, keyinput127, ~keyinput128, keyinput129, keyinput130, keyinput131, keyinput132, ~keyinput133, keyinput134, keyinput135, ~keyinput136, ~keyinput137, ~keyinput138, keyinput139, keyinput140, keyinput141, ~keyinput142, keyinput143, ~keyinput144, keyinput145, keyinput146, keyinput147, ~keyinput148, keyinput149, ~keyinput150, ~keyinput151, keyinput152, keyinput153))
+INFO - Apr-15-2024   21:32:25 --   G882 - And(G11, G868, keyinput154, keyinput155, ~keyinput156, keyinput157, ~keyinput158, keyinput159, ~keyinput160, ~keyinput161, keyinput162, ~keyinput163, ~keyinput164, keyinput165, keyinput166, keyinput167, keyinput168, ~keyinput169, ~keyinput170, ~keyinput171, ~keyinput172, ~keyinput173, keyinput174, keyinput175, keyinput176, keyinput177, keyinput178, ~keyinput179, ~keyinput180, keyinput181, ~keyinput182, ~keyinput183, keyinput184, keyinput185, ~keyinput186, ~keyinput187, keyinput188, keyinput189, ~keyinput190, ~keyinput191, ~keyinput192, keyinput193, keyinput194, keyinput195, ~keyinput196, ~keyinput197, keyinput198, keyinput199, ~keyinput200, ~keyinput201, keyinput202, ~keyinput203, keyinput204, ~keyinput205, ~keyinput206, ~keyinput207, keyinput208, ~keyinput209, ~keyinput210, keyinput211, keyinput212, ~keyinput213, ~keyinput214, ~keyinput215, ~keyinput216, ~keyinput217, ~keyinput218, keyinput219, keyinput220, keyinput221, keyinput222, keyinput223, keyinput224, ~keyinput225, keyinput226, keyinput227, ~keyinput228, ~keyinput229, keyinput230)
+INFO - Apr-15-2024   21:32:25 --   G1955 - And(G7, G661, keyinput231, keyinput232, ~keyinput233, keyinput234, ~keyinput235, keyinput236, ~keyinput237, ~keyinput238, keyinput239, ~keyinput240, ~keyinput241, keyinput242, keyinput243, keyinput244, keyinput245, ~keyinput246, ~keyinput247, ~keyinput248, ~keyinput249, ~keyinput250, keyinput251, keyinput252, keyinput253, keyinput254, keyinput255, ~keyinput256, ~keyinput257, keyinput258, ~keyinput259, ~keyinput260, keyinput261, keyinput262, ~keyinput263, ~keyinput264, keyinput265, keyinput266, ~keyinput267, ~keyinput268, ~keyinput269, keyinput270, keyinput271, keyinput272, ~keyinput273, ~keyinput274, keyinput275, keyinput276, ~keyinput277, ~keyinput278, keyinput279, ~keyinput280, keyinput281, ~keyinput282, ~keyinput283, ~keyinput284, keyinput285, ~keyinput286, ~keyinput287, keyinput288, keyinput289, ~keyinput290, ~keyinput291, ~keyinput292, ~keyinput293, ~keyinput294, ~keyinput295, keyinput296, keyinput297, keyinput298, keyinput299, keyinput300, keyinput301, ~keyinput302, keyinput303, keyinput304, ~keyinput305, ~keyinput306, keyinput307)
+INFO - Apr-15-2024   21:32:25 --   G1475 - Or(And(~G2430, ~G2427, keyinput308, keyinput309, ~keyinput310, keyinput311, ~keyinput312, keyinput313, ~keyinput314, ~keyinput315, keyinput316, ~keyinput317, ~keyinput318, keyinput319, keyinput320, keyinput321, keyinput322, ~keyinput323, ~keyinput324, ~keyinput325, ~keyinput326, ~keyinput327, keyinput328, keyinput329, keyinput330, keyinput331, keyinput332, ~keyinput333, ~keyinput334, keyinput335, ~keyinput336, ~keyinput337, keyinput338, keyinput339, ~keyinput340, ~keyinput341, keyinput342, keyinput343, ~keyinput344, ~keyinput345, ~keyinput346, keyinput347, keyinput348, keyinput349, ~keyinput350, ~keyinput351, keyinput352, keyinput353, ~keyinput354, ~keyinput355, keyinput356, ~keyinput357, keyinput358, ~keyinput359, ~keyinput360, ~keyinput361, keyinput362, ~keyinput363, ~keyinput364, keyinput365, keyinput366, ~keyinput367, ~keyinput368, ~keyinput369, ~keyinput370, ~keyinput371, ~keyinput372, keyinput373, keyinput374, keyinput375, keyinput376, keyinput377, keyinput378, ~keyinput379, keyinput380, keyinput381, ~keyinput382, ~keyinput383, keyinput384), And(~G2430, G2427, keyinput308, ~keyinput309, ~keyinput310, ~keyinput311, ~keyinput312, ~keyinput313, keyinput314, keyinput315, keyinput316, keyinput317, keyinput318, ~keyinput319, keyinput320, keyinput321, ~keyinput322, ~keyinput323, keyinput324, keyinput325, ~keyinput326, keyinput327, keyinput328, keyinput329, keyinput330, ~keyinput331, keyinput332, keyinput333, ~keyinput334, keyinput335, keyinput336, ~keyinput337, ~keyinput338, keyinput339, ~keyinput340, keyinput341, keyinput342, keyinput343, keyinput344, ~keyinput345, keyinput346, ~keyinput347, keyinput348, keyinput349, ~keyinput350, keyinput351, keyinput352, ~keyinput353, ~keyinput354, ~keyinput355, keyinput356, keyinput357, keyinput358, ~keyinput359, keyinput360, keyinput361, keyinput362, keyinput363, ~keyinput364, keyinput365, keyinput366, ~keyinput367, ~keyinput368, ~keyinput369, keyinput370, keyinput371, keyinput372, ~keyinput373, keyinput374, ~keyinput375, keyinput376, keyinput377, keyinput378, ~keyinput379, keyinput380, ~keyinput381, ~keyinput382, keyinput383, keyinput384), And(G2430, G2427, keyinput308, keyinput309, ~keyinput310, keyinput311, ~keyinput312, keyinput313, ~keyinput314, ~keyinput315, keyinput316, ~keyinput317, ~keyinput318, keyinput319, keyinput320, keyinput321, keyinput322, ~keyinput323, ~keyinput324, ~keyinput325, ~keyinput326, ~keyinput327, keyinput328, keyinput329, keyinput330, keyinput331, keyinput332, ~keyinput333, ~keyinput334, keyinput335, ~keyinput336, ~keyinput337, keyinput338, keyinput339, ~keyinput340, ~keyinput341, keyinput342, keyinput343, ~keyinput344, ~keyinput345, ~keyinput346, keyinput347, keyinput348, keyinput349, ~keyinput350, ~keyinput351, keyinput352, keyinput353, ~keyinput354, ~keyinput355, keyinput356, ~keyinput357, keyinput358, ~keyinput359, ~keyinput360, ~keyinput361, keyinput362, ~keyinput363, ~keyinput364, keyinput365, keyinput366, ~keyinput367, ~keyinput368, ~keyinput369, ~keyinput370, ~keyinput371, ~keyinput372, keyinput373, keyinput374, keyinput375, keyinput376, keyinput377, keyinput378, ~keyinput379, keyinput380, keyinput381, ~keyinput382, ~keyinput383, keyinput384))
+INFO - Apr-15-2024   21:32:25 --   G1476 - Or(And(~G2430, ~G2427, keyinput385, keyinput386, ~keyinput387, keyinput388, ~keyinput389, keyinput390, ~keyinput391, ~keyinput392, keyinput393, ~keyinput394, ~keyinput395, keyinput396, keyinput397, keyinput398, keyinput399, ~keyinput400, ~keyinput401, ~keyinput402, ~keyinput403, ~keyinput404, keyinput405, keyinput406, keyinput407, keyinput408, keyinput409, ~keyinput410, ~keyinput411, keyinput412, ~keyinput413, ~keyinput414, keyinput415, keyinput416, ~keyinput417, ~keyinput418, keyinput419, keyinput420, ~keyinput421, ~keyinput422, ~keyinput423, keyinput424, keyinput425, keyinput426, ~keyinput427, ~keyinput428, keyinput429, keyinput430, ~keyinput431, ~keyinput432, keyinput433, ~keyinput434, keyinput435, ~keyinput436, ~keyinput437, ~keyinput438, keyinput439, ~keyinput440, ~keyinput441, keyinput442, keyinput443, ~keyinput444, ~keyinput445, ~keyinput446, ~keyinput447, ~keyinput448, ~keyinput449, keyinput450, keyinput451, keyinput452, keyinput453, keyinput454, keyinput455, ~keyinput456, keyinput457, keyinput458, ~keyinput459, ~keyinput460, keyinput461), And(G2430, ~G2427, keyinput385, ~keyinput386, keyinput387, ~keyinput388, keyinput389, ~keyinput390, keyinput391, ~keyinput392, keyinput393, ~keyinput394, ~keyinput395, keyinput396, keyinput397, ~keyinput398, ~keyinput399, ~keyinput400, ~keyinput401, ~keyinput402, ~keyinput403, keyinput404, ~keyinput405, keyinput406, keyinput407, ~keyinput408, ~keyinput409, ~keyinput410, keyinput411, keyinput412, ~keyinput413, keyinput414, keyinput415, ~keyinput416, ~keyinput417, ~keyinput418, keyinput419, ~keyinput420, ~keyinput421, ~keyinput422, ~keyinput423, keyinput424, ~keyinput425, ~keyinput426, ~keyinput427, keyinput428, ~keyinput429, keyinput430, ~keyinput431, keyinput432, keyinput433, ~keyinput434, keyinput435, keyinput436, ~keyinput437, ~keyinput438, ~keyinput439, ~keyinput440, ~keyinput441, keyinput442, keyinput443, ~keyinput444, ~keyinput445, ~keyinput446, ~keyinput447, keyinput448, ~keyinput449, keyinput450, ~keyinput451, ~keyinput452, keyinput453, ~keyinput454, ~keyinput455, ~keyinput456, ~keyinput457, ~keyinput458, keyinput459, ~keyinput460, keyinput461), And(G2430, G2427, keyinput385, keyinput386, ~keyinput387, keyinput388, ~keyinput389, keyinput390, ~keyinput391, ~keyinput392, keyinput393, ~keyinput394, ~keyinput395, keyinput396, keyinput397, keyinput398, keyinput399, ~keyinput400, ~keyinput401, ~keyinput402, ~keyinput403, ~keyinput404, keyinput405, keyinput406, keyinput407, keyinput408, keyinput409, ~keyinput410, ~keyinput411, keyinput412, ~keyinput413, ~keyinput414, keyinput415, keyinput416, ~keyinput417, ~keyinput418, keyinput419, keyinput420, ~keyinput421, ~keyinput422, ~keyinput423, keyinput424, keyinput425, keyinput426, ~keyinput427, ~keyinput428, keyinput429, keyinput430, ~keyinput431, ~keyinput432, keyinput433, ~keyinput434, keyinput435, ~keyinput436, ~keyinput437, ~keyinput438, keyinput439, ~keyinput440, ~keyinput441, keyinput442, keyinput443, ~keyinput444, ~keyinput445, ~keyinput446, ~keyinput447, ~keyinput448, ~keyinput449, keyinput450, keyinput451, keyinput452, keyinput453, keyinput454, keyinput455, ~keyinput456, keyinput457, keyinput458, ~keyinput459, ~keyinput460, keyinput461))
+INFO - Apr-15-2024   21:32:25 --   G1484 - Or(And(~G2438, ~G2435, keyinput462, keyinput463, ~keyinput464, keyinput465, ~keyinput466, keyinput467, ~keyinput468, ~keyinput469, keyinput470, ~keyinput471, ~keyinput472, keyinput473, keyinput474, keyinput475, keyinput476, ~keyinput477, ~keyinput478, ~keyinput479, ~keyinput480, ~keyinput481, keyinput482, keyinput483, keyinput484, keyinput485, keyinput486, ~keyinput487, ~keyinput488, keyinput489, ~keyinput490, ~keyinput491, keyinput492, keyinput493, ~keyinput494, ~keyinput495, keyinput496, keyinput497, ~keyinput498, ~keyinput499, ~keyinput500, keyinput501, keyinput502, keyinput503, ~keyinput504, ~keyinput505, keyinput506, keyinput507, ~keyinput508, ~keyinput509, keyinput510, ~keyinput511, keyinput512, ~keyinput513, ~keyinput514, ~keyinput515, keyinput516, ~keyinput517, ~keyinput518, keyinput519, keyinput520, ~keyinput521, ~keyinput522, ~keyinput523, ~keyinput524, ~keyinput525, ~keyinput526, keyinput527, keyinput528, keyinput529, keyinput530, keyinput531, keyinput532, ~keyinput533, keyinput534, keyinput535, ~keyinput536, ~keyinput537, keyinput538), And(~G2438, G2435, keyinput462, ~keyinput463, keyinput464, ~keyinput465, keyinput466, ~keyinput467, keyinput468, ~keyinput469, keyinput470, ~keyinput471, ~keyinput472, keyinput473, keyinput474, ~keyinput475, ~keyinput476, ~keyinput477, ~keyinput478, ~keyinput479, ~keyinput480, keyinput481, ~keyinput482, keyinput483, keyinput484, ~keyinput485, ~keyinput486, ~keyinput487, keyinput488, keyinput489, ~keyinput490, keyinput491, keyinput492, ~keyinput493, ~keyinput494, ~keyinput495, keyinput496, ~keyinput497, ~keyinput498, ~keyinput499, ~keyinput500, keyinput501, ~keyinput502, ~keyinput503, ~keyinput504, keyinput505, ~keyinput506, keyinput507, ~keyinput508, keyinput509, keyinput510, ~keyinput511, keyinput512, keyinput513, ~keyinput514, ~keyinput515, ~keyinput516, ~keyinput517, ~keyinput518, keyinput519, keyinput520, ~keyinput521, ~keyinput522, ~keyinput523, ~keyinput524, keyinput525, ~keyinput526, keyinput527, ~keyinput528, ~keyinput529, keyinput530, ~keyinput531, ~keyinput532, ~keyinput533, ~keyinput534, ~keyinput535, keyinput536, ~keyinput537, keyinput538), And(G2438, G2435, keyinput462, keyinput463, ~keyinput464, keyinput465, ~keyinput466, keyinput467, ~keyinput468, ~keyinput469, keyinput470, ~keyinput471, ~keyinput472, keyinput473, keyinput474, keyinput475, keyinput476, ~keyinput477, ~keyinput478, ~keyinput479, ~keyinput480, ~keyinput481, keyinput482, keyinput483, keyinput484, keyinput485, keyinput486, ~keyinput487, ~keyinput488, keyinput489, ~keyinput490, ~keyinput491, keyinput492, keyinput493, ~keyinput494, ~keyinput495, keyinput496, keyinput497, ~keyinput498, ~keyinput499, ~keyinput500, keyinput501, keyinput502, keyinput503, ~keyinput504, ~keyinput505, keyinput506, keyinput507, ~keyinput508, ~keyinput509, keyinput510, ~keyinput511, keyinput512, ~keyinput513, ~keyinput514, ~keyinput515, keyinput516, ~keyinput517, ~keyinput518, keyinput519, keyinput520, ~keyinput521, ~keyinput522, ~keyinput523, ~keyinput524, ~keyinput525, ~keyinput526, keyinput527, keyinput528, keyinput529, keyinput530, keyinput531, keyinput532, ~keyinput533, keyinput534, keyinput535, ~keyinput536, ~keyinput537, keyinput538))
+INFO - Apr-15-2024   21:32:25 --   G1485 - Or(And(~G2438, ~G2435, keyinput539, keyinput540, ~keyinput541, keyinput542, ~keyinput543, keyinput544, ~keyinput545, ~keyinput546, keyinput547, ~keyinput548, ~keyinput549, keyinput550, keyinput551, keyinput552, keyinput553, ~keyinput554, ~keyinput555, ~keyinput556, ~keyinput557, ~keyinput558, keyinput559, keyinput560, keyinput561, keyinput562, keyinput563, ~keyinput564, ~keyinput565, keyinput566, ~keyinput567, ~keyinput568, keyinput569, keyinput570, ~keyinput571, ~keyinput572, keyinput573, keyinput574, ~keyinput575, ~keyinput576, ~keyinput577, keyinput578, keyinput579, keyinput580, ~keyinput581, ~keyinput582, keyinput583, keyinput584, ~keyinput585, ~keyinput586, keyinput587, ~keyinput588, keyinput589, ~keyinput590, ~keyinput591, ~keyinput592, keyinput593, ~keyinput594, ~keyinput595, keyinput596, keyinput597, ~keyinput598, ~keyinput599, ~keyinput600, ~keyinput601, ~keyinput602, ~keyinput603, keyinput604, keyinput605, keyinput606, keyinput607, keyinput608, keyinput609, ~keyinput610, keyinput611, keyinput612, ~keyinput613, ~keyinput614, keyinput615), And(G2438, ~G2435, keyinput539, ~keyinput540, ~keyinput541, ~keyinput542, ~keyinput543, ~keyinput544, keyinput545, keyinput546, keyinput547, keyinput548, keyinput549, ~keyinput550, keyinput551, keyinput552, ~keyinput553, ~keyinput554, keyinput555, keyinput556, ~keyinput557, keyinput558, keyinput559, keyinput560, keyinput561, ~keyinput562, keyinput563, keyinput564, ~keyinput565, keyinput566, keyinput567, ~keyinput568, ~keyinput569, keyinput570, ~keyinput571, keyinput572, keyinput573, keyinput574, keyinput575, ~keyinput576, keyinput577, ~keyinput578, keyinput579, keyinput580, ~keyinput581, keyinput582, keyinput583, ~keyinput584, ~keyinput585, ~keyinput586, keyinput587, keyinput588, keyinput589, ~keyinput590, keyinput591, keyinput592, keyinput593, keyinput594, ~keyinput595, keyinput596, keyinput597, ~keyinput598, ~keyinput599, ~keyinput600, keyinput601, keyinput602, keyinput603, ~keyinput604, keyinput605, ~keyinput606, keyinput607, keyinput608, keyinput609, ~keyinput610, keyinput611, ~keyinput612, ~keyinput613, keyinput614, keyinput615), And(G2438, G2435, keyinput539, keyinput540, ~keyinput541, keyinput542, ~keyinput543, keyinput544, ~keyinput545, ~keyinput546, keyinput547, ~keyinput548, ~keyinput549, keyinput550, keyinput551, keyinput552, keyinput553, ~keyinput554, ~keyinput555, ~keyinput556, ~keyinput557, ~keyinput558, keyinput559, keyinput560, keyinput561, keyinput562, keyinput563, ~keyinput564, ~keyinput565, keyinput566, ~keyinput567, ~keyinput568, keyinput569, keyinput570, ~keyinput571, ~keyinput572, keyinput573, keyinput574, ~keyinput575, ~keyinput576, ~keyinput577, keyinput578, keyinput579, keyinput580, ~keyinput581, ~keyinput582, keyinput583, keyinput584, ~keyinput585, ~keyinput586, keyinput587, ~keyinput588, keyinput589, ~keyinput590, ~keyinput591, ~keyinput592, keyinput593, ~keyinput594, ~keyinput595, keyinput596, keyinput597, ~keyinput598, ~keyinput599, ~keyinput600, ~keyinput601, ~keyinput602, ~keyinput603, keyinput604, keyinput605, keyinput606, keyinput607, keyinput608, keyinput609, ~keyinput610, keyinput611, keyinput612, ~keyinput613, ~keyinput614, keyinput615))
+INFO - Apr-15-2024   21:32:25 --   G1493 - Or(And(~G2446, ~G2443, keyinput616, keyinput617, ~keyinput618, keyinput619, ~keyinput620, keyinput621, ~keyinput622, ~keyinput623, keyinput624, ~keyinput625, ~keyinput626, keyinput627, keyinput628, keyinput629, keyinput630, ~keyinput631, ~keyinput632, ~keyinput633, ~keyinput634, ~keyinput635, keyinput636, keyinput637, keyinput638, keyinput639, keyinput640, ~keyinput641, ~keyinput642, keyinput643, ~keyinput644, ~keyinput645, keyinput646, keyinput647, ~keyinput648, ~keyinput649, keyinput650, keyinput651, ~keyinput652, ~keyinput653, ~keyinput654, keyinput655, keyinput656, keyinput657, ~keyinput658, ~keyinput659, keyinput660, keyinput661, ~keyinput662, ~keyinput663, keyinput664, ~keyinput665, keyinput666, ~keyinput667, ~keyinput668, ~keyinput669, keyinput670, ~keyinput671, ~keyinput672, keyinput673, keyinput674, ~keyinput675, ~keyinput676, ~keyinput677, ~keyinput678, ~keyinput679, ~keyinput680, keyinput681, keyinput682, keyinput683, keyinput684, keyinput685, keyinput686, ~keyinput687, keyinput688, keyinput689, ~keyinput690, ~keyinput691, keyinput692), And(~G2446, G2443, keyinput616, ~keyinput617, ~keyinput618, ~keyinput619, ~keyinput620, ~keyinput621, keyinput622, keyinput623, keyinput624, keyinput625, keyinput626, ~keyinput627, keyinput628, keyinput629, ~keyinput630, ~keyinput631, keyinput632, keyinput633, ~keyinput634, keyinput635, keyinput636, keyinput637, keyinput638, ~keyinput639, keyinput640, keyinput641, ~keyinput642, keyinput643, keyinput644, ~keyinput645, ~keyinput646, keyinput647, ~keyinput648, keyinput649, keyinput650, keyinput651, keyinput652, ~keyinput653, keyinput654, ~keyinput655, keyinput656, keyinput657, ~keyinput658, keyinput659, keyinput660, ~keyinput661, ~keyinput662, ~keyinput663, keyinput664, keyinput665, keyinput666, ~keyinput667, keyinput668, keyinput669, keyinput670, keyinput671, ~keyinput672, keyinput673, keyinput674, ~keyinput675, ~keyinput676, ~keyinput677, keyinput678, keyinput679, keyinput680, ~keyinput681, keyinput682, ~keyinput683, keyinput684, keyinput685, keyinput686, ~keyinput687, keyinput688, ~keyinput689, ~keyinput690, keyinput691, keyinput692), And(G2446, G2443, keyinput616, keyinput617, ~keyinput618, keyinput619, ~keyinput620, keyinput621, ~keyinput622, ~keyinput623, keyinput624, ~keyinput625, ~keyinput626, keyinput627, keyinput628, keyinput629, keyinput630, ~keyinput631, ~keyinput632, ~keyinput633, ~keyinput634, ~keyinput635, keyinput636, keyinput637, keyinput638, keyinput639, keyinput640, ~keyinput641, ~keyinput642, keyinput643, ~keyinput644, ~keyinput645, keyinput646, keyinput647, ~keyinput648, ~keyinput649, keyinput650, keyinput651, ~keyinput652, ~keyinput653, ~keyinput654, keyinput655, keyinput656, keyinput657, ~keyinput658, ~keyinput659, keyinput660, keyinput661, ~keyinput662, ~keyinput663, keyinput664, ~keyinput665, keyinput666, ~keyinput667, ~keyinput668, ~keyinput669, keyinput670, ~keyinput671, ~keyinput672, keyinput673, keyinput674, ~keyinput675, ~keyinput676, ~keyinput677, ~keyinput678, ~keyinput679, ~keyinput680, keyinput681, keyinput682, keyinput683, keyinput684, keyinput685, keyinput686, ~keyinput687, keyinput688, keyinput689, ~keyinput690, ~keyinput691, keyinput692))
+INFO - Apr-15-2024   21:32:25 --   G1494 - Or(And(~G2446, ~G2443, keyinput693, keyinput694, ~keyinput695, keyinput696, ~keyinput697, keyinput698, ~keyinput699, ~keyinput700, keyinput701, ~keyinput702, ~keyinput703, keyinput704, keyinput705, keyinput706, keyinput707, ~keyinput708, ~keyinput709, ~keyinput710, ~keyinput711, ~keyinput712, keyinput713, keyinput714, keyinput715, keyinput716, keyinput717, ~keyinput718, ~keyinput719, keyinput720, ~keyinput721, ~keyinput722, keyinput723, keyinput724, ~keyinput725, ~keyinput726, keyinput727, keyinput728, ~keyinput729, ~keyinput730, ~keyinput731, keyinput732, keyinput733, keyinput734, ~keyinput735, ~keyinput736, keyinput737, keyinput738, ~keyinput739, ~keyinput740, keyinput741, ~keyinput742, keyinput743, ~keyinput744, ~keyinput745, ~keyinput746, keyinput747, ~keyinput748, ~keyinput749, keyinput750, keyinput751, ~keyinput752, ~keyinput753, ~keyinput754, ~keyinput755, ~keyinput756, ~keyinput757, keyinput758, keyinput759, keyinput760, keyinput761, keyinput762, keyinput763, ~keyinput764, keyinput765, keyinput766, ~keyinput767, ~keyinput768, keyinput769), And(G2446, ~G2443, keyinput693, ~keyinput694, keyinput695, ~keyinput696, keyinput697, ~keyinput698, keyinput699, ~keyinput700, keyinput701, ~keyinput702, ~keyinput703, keyinput704, keyinput705, ~keyinput706, ~keyinput707, ~keyinput708, ~keyinput709, ~keyinput710, ~keyinput711, keyinput712, ~keyinput713, keyinput714, keyinput715, ~keyinput716, ~keyinput717, ~keyinput718, keyinput719, keyinput720, ~keyinput721, keyinput722, keyinput723, ~keyinput724, ~keyinput725, ~keyinput726, keyinput727, ~keyinput728, ~keyinput729, ~keyinput730, ~keyinput731, keyinput732, ~keyinput733, ~keyinput734, ~keyinput735, keyinput736, ~keyinput737, keyinput738, ~keyinput739, keyinput740, keyinput741, ~keyinput742, keyinput743, keyinput744, ~keyinput745, ~keyinput746, ~keyinput747, ~keyinput748, ~keyinput749, keyinput750, keyinput751, ~keyinput752, ~keyinput753, ~keyinput754, ~keyinput755, keyinput756, ~keyinput757, keyinput758, ~keyinput759, ~keyinput760, keyinput761, ~keyinput762, ~keyinput763, ~keyinput764, ~keyinput765, ~keyinput766, keyinput767, ~keyinput768, keyinput769), And(G2446, G2443, keyinput693, keyinput694, ~keyinput695, keyinput696, ~keyinput697, keyinput698, ~keyinput699, ~keyinput700, keyinput701, ~keyinput702, ~keyinput703, keyinput704, keyinput705, keyinput706, keyinput707, ~keyinput708, ~keyinput709, ~keyinput710, ~keyinput711, ~keyinput712, keyinput713, keyinput714, keyinput715, keyinput716, keyinput717, ~keyinput718, ~keyinput719, keyinput720, ~keyinput721, ~keyinput722, keyinput723, keyinput724, ~keyinput725, ~keyinput726, keyinput727, keyinput728, ~keyinput729, ~keyinput730, ~keyinput731, keyinput732, keyinput733, keyinput734, ~keyinput735, ~keyinput736, keyinput737, keyinput738, ~keyinput739, ~keyinput740, keyinput741, ~keyinput742, keyinput743, ~keyinput744, ~keyinput745, ~keyinput746, keyinput747, ~keyinput748, ~keyinput749, keyinput750, keyinput751, ~keyinput752, ~keyinput753, ~keyinput754, ~keyinput755, ~keyinput756, ~keyinput757, keyinput758, keyinput759, keyinput760, keyinput761, keyinput762, keyinput763, ~keyinput764, keyinput765, keyinput766, ~keyinput767, ~keyinput768, keyinput769))
+INFO - Apr-15-2024   21:32:25 -- Time taken to encrypt file: 0.05656003952026367 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+neos: src/base/circuit.cpp:248: ckt::id ckt::circuit::add_wire(const string&, ckt::wtype, ckt::id, bool): Assertion `false' failed.
+./test_bench_file.sh: line 63:  4676 Aborted                 ./../Tools/neos/bin/neos -d ex $file $file_generated $iteration_limit
+
+real	0m0.118s
+user	0m0.010s
+sys	0m0.000s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas85/c2670.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c3540.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c3540.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 43156  2045  41592  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-15-2024   21:32:26 --  locked version of ./benchmarks/iscas85/c3540.bench
+INFO - Apr-15-2024   21:32:26 --  number of keys: 3
+INFO - Apr-15-2024   21:32:26 --  keys: [43156, 2045, 41592]
+INFO - Apr-15-2024   21:32:26 --  number of bits per key (keyinputs#): 16
+INFO - Apr-15-2024   21:32:26 --  key0 = 1010100010010100
+INFO - Apr-15-2024   21:32:26 --  key1 = 0000011111111101
+INFO - Apr-15-2024   21:32:26 --  key2 = 1010001001111000
+INFO - Apr-15-2024   21:32:26 --  k (gate is locked at k bits): 2
+INFO - Apr-15-2024   21:32:26 -- Time taken to parser file= 0.0074956417083740234
+
+INFO - Apr-15-2024   21:32:26 -- Time taken to get gates with k inputs = 0.08068323135375977
+
+INFO - Apr-15-2024   21:32:26 -- Cutting gates to encrypt to 10, from 145
+INFO - Apr-15-2024   21:32:26 -- Time taken to encrypt up to k inputs: 0.08308148384094238 seconds
+INFO - Apr-15-2024   21:32:26 --   G587 - Or(And(~G257, G264, ~keyinput0, ~keyinput1, ~keyinput2, ~keyinput3, ~keyinput4, keyinput5, keyinput6, keyinput7, keyinput8, keyinput9, keyinput10, keyinput11, keyinput12, keyinput13, ~keyinput14, keyinput15), And(G257, ~G264, keyinput0, ~keyinput1, keyinput2, ~keyinput3, ~keyinput4, ~keyinput5, keyinput6, ~keyinput7, ~keyinput8, keyinput9, keyinput10, keyinput11, keyinput12, ~keyinput13, ~keyinput14, ~keyinput15), And(G257, G264, keyinput0, ~keyinput1, keyinput2, ~keyinput3, keyinput4, ~keyinput5, ~keyinput6, ~keyinput7, keyinput8, ~keyinput9, ~keyinput10, keyinput11, ~keyinput12, keyinput13, ~keyinput14, ~keyinput15))
+INFO - Apr-15-2024   21:32:26 --   G731 - And(G13, G20, keyinput16, ~keyinput17, keyinput18, ~keyinput19, keyinput20, ~keyinput21, ~keyinput22, ~keyinput23, keyinput24, ~keyinput25, ~keyinput26, keyinput27, ~keyinput28, keyinput29, ~keyinput30, ~keyinput31)
+INFO - Apr-15-2024   21:32:26 --   G788 - And(G33, G41, keyinput32, ~keyinput33, keyinput34, ~keyinput35, keyinput36, ~keyinput37, ~keyinput38, ~keyinput39, keyinput40, ~keyinput41, ~keyinput42, keyinput43, ~keyinput44, keyinput45, ~keyinput46, ~keyinput47)
+INFO - Apr-15-2024   21:32:26 --   G798 - Or(And(G41, ~G45, ~keyinput48, ~keyinput49, ~keyinput50, ~keyinput51, ~keyinput52, keyinput53, keyinput54, keyinput55, keyinput56, keyinput57, keyinput58, keyinput59, keyinput60, keyinput61, ~keyinput62, keyinput63), And(~G41, G45, keyinput48, ~keyinput49, keyinput50, ~keyinput51, ~keyinput52, ~keyinput53, keyinput54, ~keyinput55, ~keyinput56, keyinput57, keyinput58, keyinput59, keyinput60, ~keyinput61, ~keyinput62, ~keyinput63), And(G41, G45, keyinput48, ~keyinput49, keyinput50, ~keyinput51, keyinput52, ~keyinput53, ~keyinput54, ~keyinput55, keyinput56, ~keyinput57, ~keyinput58, keyinput59, ~keyinput60, keyinput61, ~keyinput62, ~keyinput63))
+INFO - Apr-15-2024   21:32:26 --   G1049 - And(G20, G200, keyinput64, ~keyinput65, keyinput66, ~keyinput67, keyinput68, ~keyinput69, ~keyinput70, ~keyinput71, keyinput72, ~keyinput73, ~keyinput74, keyinput75, ~keyinput76, keyinput77, ~keyinput78, ~keyinput79)
+INFO - Apr-15-2024   21:32:26 --   G1050 - Or(And(~G20, ~G200, keyinput80, ~keyinput81, keyinput82, ~keyinput83, keyinput84, ~keyinput85, ~keyinput86, ~keyinput87, keyinput88, ~keyinput89, ~keyinput90, keyinput91, ~keyinput92, keyinput93, ~keyinput94, ~keyinput95), And(G20, ~G200, ~keyinput80, ~keyinput81, ~keyinput82, ~keyinput83, ~keyinput84, keyinput85, keyinput86, keyinput87, keyinput88, keyinput89, keyinput90, keyinput91, keyinput92, keyinput93, ~keyinput94, keyinput95), And(~G20, G200, keyinput80, ~keyinput81, keyinput82, ~keyinput83, ~keyinput84, ~keyinput85, keyinput86, ~keyinput87, ~keyinput88, keyinput89, keyinput90, keyinput91, keyinput92, ~keyinput93, ~keyinput94, ~keyinput95))
+INFO - Apr-15-2024   21:32:26 --   G1051 - And(G20, G179, keyinput96, ~keyinput97, keyinput98, ~keyinput99, keyinput100, ~keyinput101, ~keyinput102, ~keyinput103, keyinput104, ~keyinput105, ~keyinput106, keyinput107, ~keyinput108, keyinput109, ~keyinput110, ~keyinput111)
+INFO - Apr-15-2024   21:32:26 --   G1699 - Or(And(G33, ~G1698, ~keyinput112, ~keyinput113, ~keyinput114, ~keyinput115, ~keyinput116, keyinput117, keyinput118, keyinput119, keyinput120, keyinput121, keyinput122, keyinput123, keyinput124, keyinput125, ~keyinput126, keyinput127), And(~G33, G1698, keyinput112, ~keyinput113, keyinput114, ~keyinput115, ~keyinput116, ~keyinput117, keyinput118, ~keyinput119, ~keyinput120, keyinput121, keyinput122, keyinput123, keyinput124, ~keyinput125, ~keyinput126, ~keyinput127), And(G33, G1698, keyinput112, ~keyinput113, keyinput114, ~keyinput115, keyinput116, ~keyinput117, ~keyinput118, ~keyinput119, keyinput120, ~keyinput121, ~keyinput122, keyinput123, ~keyinput124, keyinput125, ~keyinput126, ~keyinput127))
+INFO - Apr-15-2024   21:32:26 --   G1826 - Or(And(~G13, ~G1, keyinput128, ~keyinput129, keyinput130, ~keyinput131, keyinput132, ~keyinput133, ~keyinput134, ~keyinput135, keyinput136, ~keyinput137, ~keyinput138, keyinput139, ~keyinput140, keyinput141, ~keyinput142, ~keyinput143), And(~G13, G1, ~keyinput128, ~keyinput129, ~keyinput130, ~keyinput131, ~keyinput132, keyinput133, keyinput134, keyinput135, keyinput136, keyinput137, keyinput138, keyinput139, keyinput140, keyinput141, ~keyinput142, keyinput143), And(G13, ~G1, keyinput128, ~keyinput129, keyinput130, ~keyinput131, ~keyinput132, ~keyinput133, keyinput134, ~keyinput135, ~keyinput136, keyinput137, keyinput138, keyinput139, keyinput140, ~keyinput141, ~keyinput142, ~keyinput143))
+INFO - Apr-15-2024   21:32:26 --   G759 - Or(And(~G20, ~G33, keyinput144, ~keyinput145, keyinput146, ~keyinput147, keyinput148, ~keyinput149, ~keyinput150, ~keyinput151, keyinput152, ~keyinput153, ~keyinput154, keyinput155, ~keyinput156, keyinput157, ~keyinput158, ~keyinput159), And(G20, ~G33, ~keyinput144, ~keyinput145, ~keyinput146, ~keyinput147, ~keyinput148, keyinput149, keyinput150, keyinput151, keyinput152, keyinput153, keyinput154, keyinput155, keyinput156, keyinput157, ~keyinput158, keyinput159), And(G20, G33, keyinput144, ~keyinput145, keyinput146, ~keyinput147, keyinput148, ~keyinput149, ~keyinput150, ~keyinput151, keyinput152, ~keyinput153, ~keyinput154, keyinput155, ~keyinput156, keyinput157, ~keyinput158, ~keyinput159))
+INFO - Apr-15-2024   21:32:26 -- Time taken to encrypt file: 0.10715627670288086 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c3540.bench ./benchmarks/iscas85/c3540_encrypted.bench 1000
+args 
+iteration:    1; variables: 4184 clauses: 10983 assignments: 2  propagations: 18065
+iteration:    2; variables: 8022 clauses: 15454 assignments: 2008  propagations: 50147
+iteration:    3; variables: 11860 clauses: 19818 assignments: 4116  propagations: 106414
+no more dips.
+constraints are not satisfiable
+Finished! 
+iteration=3
+key=1111111111101111101010001001010001010111011010111010100010010100101010001001010010100010011110000101011101101011101000100111100010100010011110000000011111111101
+checking key 1111111111101111101010001001010001010111011010111010100010010100101010001001010010100010011110000101011101101011101000100111100010100010011110000000011111111101
+
+incorrect key
+G353:0;  G355:0;  G361:0.048;  G358:0;  G351:0;  G372:0.056;  G369:0.192;  G399:0.18;  G364:0.078;  G396:0.09;  G384:0.2;  G367:0.078;  G387:0.204;  G393:0.19;  G390:0.2;  G378:0.236;  G375:0.218;  G381:0.226;  G407:0.102;  G409:0.092;  G405:0.278;  G402:0.26;  
+key-err: 0.133091
+
+time: 0.115194
+
+real	0m0.249s
+user	0m0.117s
+sys	0m0.000s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas85/c3540.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c432.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c432.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 3453  365  3437  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-15-2024   21:32:26 --  locked version of ./benchmarks/iscas85/c432.bench
+INFO - Apr-15-2024   21:32:26 --  number of keys: 3
+INFO - Apr-15-2024   21:32:26 --  keys: [3453, 365, 3437]
+INFO - Apr-15-2024   21:32:26 --  number of bits per key (keyinputs#): 12
+INFO - Apr-15-2024   21:32:26 --  key0 = 110101111101
+INFO - Apr-15-2024   21:32:26 --  key1 = 000101101101
+INFO - Apr-15-2024   21:32:26 --  key2 = 110101101101
+INFO - Apr-15-2024   21:32:26 --  k (gate is locked at k bits): 2
+INFO - Apr-15-2024   21:32:26 -- Time taken to parser file= 0.0030031204223632812
+
+INFO - Apr-15-2024   21:32:26 -- Time taken to get gates with k inputs = 0.0037114620208740234
+
+INFO - Apr-15-2024   21:32:26 -- Cutting gates to encrypt to 10, from 27
+INFO - Apr-15-2024   21:32:26 -- Time taken to encrypt up to k inputs: 0.005304574966430664 seconds
+INFO - Apr-15-2024   21:32:26 --   G154gat - Or(And(~G1gat, ~G4gat, keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4, keyinput5, keyinput6, keyinput7, keyinput8, keyinput9, ~keyinput10, keyinput11), And(G1gat, ~G4gat, ~keyinput0, ~keyinput1, ~keyinput2, keyinput3, ~keyinput4, keyinput5, keyinput6, ~keyinput7, keyinput8, keyinput9, ~keyinput10, keyinput11), And(G1gat, G4gat, keyinput0, keyinput1, ~keyinput2, keyinput3, ~keyinput4, keyinput5, keyinput6, keyinput7, keyinput8, keyinput9, ~keyinput10, keyinput11))
+INFO - Apr-15-2024   21:32:26 --   G157gat - And(G4gat, ~G8gat, ~keyinput12, ~keyinput13, ~keyinput14, keyinput15, ~keyinput16, keyinput17, keyinput18, ~keyinput19, keyinput20, keyinput21, ~keyinput22, keyinput23)
+INFO - Apr-15-2024   21:32:26 --   G158gat - And(G4gat, ~G14gat, ~keyinput24, ~keyinput25, ~keyinput26, keyinput27, ~keyinput28, keyinput29, keyinput30, ~keyinput31, keyinput32, keyinput33, ~keyinput34, keyinput35)
+INFO - Apr-15-2024   21:32:26 --   G159gat - Or(And(~G11gat, ~G17gat, keyinput36, keyinput37, ~keyinput38, keyinput39, ~keyinput40, keyinput41, keyinput42, keyinput43, keyinput44, keyinput45, ~keyinput46, keyinput47), And(G11gat, ~G17gat, ~keyinput36, ~keyinput37, ~keyinput38, keyinput39, ~keyinput40, keyinput41, keyinput42, ~keyinput43, keyinput44, keyinput45, ~keyinput46, keyinput47), And(G11gat, G17gat, keyinput36, keyinput37, ~keyinput38, keyinput39, ~keyinput40, keyinput41, keyinput42, keyinput43, keyinput44, keyinput45, ~keyinput46, keyinput47))
+INFO - Apr-15-2024   21:32:26 --   G162gat - Or(And(~G24gat, ~G30gat, keyinput48, keyinput49, ~keyinput50, keyinput51, ~keyinput52, keyinput53, keyinput54, keyinput55, keyinput56, keyinput57, ~keyinput58, keyinput59), And(G24gat, ~G30gat, ~keyinput48, ~keyinput49, ~keyinput50, keyinput51, ~keyinput52, keyinput53, keyinput54, ~keyinput55, keyinput56, keyinput57, ~keyinput58, keyinput59), And(G24gat, G30gat, keyinput48, keyinput49, ~keyinput50, keyinput51, ~keyinput52, keyinput53, keyinput54, keyinput55, keyinput56, keyinput57, ~keyinput58, keyinput59))
+INFO - Apr-15-2024   21:32:26 --   G165gat - Or(And(~G37gat, ~G43gat, keyinput60, keyinput61, ~keyinput62, keyinput63, ~keyinput64, keyinput65, keyinput66, keyinput67, keyinput68, keyinput69, ~keyinput70, keyinput71), And(G37gat, ~G43gat, ~keyinput60, ~keyinput61, ~keyinput62, keyinput63, ~keyinput64, keyinput65, keyinput66, ~keyinput67, keyinput68, keyinput69, ~keyinput70, keyinput71), And(G37gat, G43gat, keyinput60, keyinput61, ~keyinput62, keyinput63, ~keyinput64, keyinput65, keyinput66, keyinput67, keyinput68, keyinput69, ~keyinput70, keyinput71))
+INFO - Apr-15-2024   21:32:26 --   G168gat - Or(And(~G50gat, ~G56gat, keyinput72, keyinput73, ~keyinput74, keyinput75, ~keyinput76, keyinput77, keyinput78, keyinput79, keyinput80, keyinput81, ~keyinput82, keyinput83), And(G50gat, ~G56gat, ~keyinput72, ~keyinput73, ~keyinput74, keyinput75, ~keyinput76, keyinput77, keyinput78, ~keyinput79, keyinput80, keyinput81, ~keyinput82, keyinput83), And(G50gat, G56gat, keyinput72, keyinput73, ~keyinput74, keyinput75, ~keyinput76, keyinput77, keyinput78, keyinput79, keyinput80, keyinput81, ~keyinput82, keyinput83))
+INFO - Apr-15-2024   21:32:26 --   G171gat - Or(And(~G63gat, ~G69gat, keyinput84, keyinput85, ~keyinput86, keyinput87, ~keyinput88, keyinput89, keyinput90, keyinput91, keyinput92, keyinput93, ~keyinput94, keyinput95), And(G63gat, ~G69gat, ~keyinput84, ~keyinput85, ~keyinput86, keyinput87, ~keyinput88, keyinput89, keyinput90, ~keyinput91, keyinput92, keyinput93, ~keyinput94, keyinput95), And(G63gat, G69gat, keyinput84, keyinput85, ~keyinput86, keyinput87, ~keyinput88, keyinput89, keyinput90, keyinput91, keyinput92, keyinput93, ~keyinput94, keyinput95))
+INFO - Apr-15-2024   21:32:26 --   G174gat - Or(And(~G76gat, ~G82gat, keyinput96, keyinput97, ~keyinput98, keyinput99, ~keyinput100, keyinput101, keyinput102, keyinput103, keyinput104, keyinput105, ~keyinput106, keyinput107), And(G76gat, ~G82gat, ~keyinput96, ~keyinput97, ~keyinput98, keyinput99, ~keyinput100, keyinput101, keyinput102, ~keyinput103, keyinput104, keyinput105, ~keyinput106, keyinput107), And(G76gat, G82gat, keyinput96, keyinput97, ~keyinput98, keyinput99, ~keyinput100, keyinput101, keyinput102, keyinput103, keyinput104, keyinput105, ~keyinput106, keyinput107))
+INFO - Apr-15-2024   21:32:26 --   G177gat - Or(And(~G89gat, ~G95gat, keyinput108, keyinput109, ~keyinput110, keyinput111, ~keyinput112, keyinput113, keyinput114, keyinput115, keyinput116, keyinput117, ~keyinput118, keyinput119), And(G89gat, ~G95gat, ~keyinput108, ~keyinput109, ~keyinput110, keyinput111, ~keyinput112, keyinput113, keyinput114, ~keyinput115, keyinput116, keyinput117, ~keyinput118, keyinput119), And(G89gat, G95gat, keyinput108, keyinput109, ~keyinput110, keyinput111, ~keyinput112, keyinput113, keyinput114, keyinput115, keyinput116, keyinput117, ~keyinput118, keyinput119))
+INFO - Apr-15-2024   21:32:26 -- Time taken to encrypt file: 0.023972511291503906 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c432.bench ./benchmarks/iscas85/c432_encrypted.bench 1000
+args 
+iteration:    1; variables: 921 clauses: 2384 assignments: 1  propagations: 6976
+iteration:    2; variables: 1575 clauses: 3279 assignments: 361  propagations: 11271
+iteration:    3; variables: 2229 clauses: 4337 assignments: 659  propagations: 16028
+no more dips.
+
+Finished! 
+iteration=3
+key=110101111101000101101101000101101101000101101101000101101101110101111101000101101101000101101101000101101101000101101101
+checking key 110101111101000101101101000101101101000101101101000101101101110101111101000101101101000101101101000101101101000101101101
+
+incorrect key
+G223gat:0.082;  G329gat:0.138;  G370gat:0.172;  G421gat:0.26;  G430gat:0.166;  G431gat:0.166;  G432gat:0.15;  
+key-err: 0.162
+
+time: 0.0304991
+
+real	0m0.159s
+user	0m0.012s
+sys	0m0.016s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas85/c432.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c499.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c499.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 2213  874  4869  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-15-2024   21:32:27 --  locked version of ./benchmarks/iscas85/c499.bench
+INFO - Apr-15-2024   21:32:27 --  number of keys: 3
+INFO - Apr-15-2024   21:32:27 --  keys: [2213, 874, 4869]
+INFO - Apr-15-2024   21:32:27 --  number of bits per key (keyinputs#): 13
+INFO - Apr-15-2024   21:32:27 --  key0 = 0100010100101
+INFO - Apr-15-2024   21:32:27 --  key1 = 0001101101010
+INFO - Apr-15-2024   21:32:27 --  key2 = 1001100000101
+INFO - Apr-15-2024   21:32:27 --  k (gate is locked at k bits): 2
+INFO - Apr-15-2024   21:32:27 -- Time taken to parser file= 0.003444194793701172
+
+INFO - Apr-15-2024   21:32:27 -- Time taken to get gates with k inputs = 0.0043735504150390625
+
+INFO - Apr-15-2024   21:32:27 -- Cutting gates to encrypt to 10, from 40
+INFO - Apr-15-2024   21:32:27 -- Time taken to encrypt up to k inputs: 0.006635189056396484 seconds
+INFO - Apr-15-2024   21:32:27 --   Gxa0 - Or(And(Gid0, ~Gid1, ~keyinput0, ~keyinput1, ~keyinput2, keyinput3, keyinput4, ~keyinput5, keyinput6, keyinput7, ~keyinput8, keyinput9, ~keyinput10, keyinput11, ~keyinput12), And(~Gid0, Gid1, keyinput0, ~keyinput1, ~keyinput2, keyinput3, keyinput4, ~keyinput5, ~keyinput6, ~keyinput7, ~keyinput8, ~keyinput9, keyinput10, ~keyinput11, keyinput12))
+INFO - Apr-15-2024   21:32:27 --   Gxa1 - Or(And(~Gid2, Gid3, ~keyinput13, ~keyinput14, ~keyinput15, keyinput16, keyinput17, ~keyinput18, keyinput19, keyinput20, ~keyinput21, keyinput22, ~keyinput23, keyinput24, ~keyinput25), And(Gid2, ~Gid3, keyinput13, ~keyinput14, ~keyinput15, keyinput16, keyinput17, ~keyinput18, ~keyinput19, ~keyinput20, ~keyinput21, ~keyinput22, keyinput23, ~keyinput24, keyinput25))
+INFO - Apr-15-2024   21:32:27 --   Gxa2 - Or(And(Gid4, ~Gid5, ~keyinput26, ~keyinput27, ~keyinput28, keyinput29, keyinput30, ~keyinput31, keyinput32, keyinput33, ~keyinput34, keyinput35, ~keyinput36, keyinput37, ~keyinput38), And(~Gid4, Gid5, keyinput26, ~keyinput27, ~keyinput28, keyinput29, keyinput30, ~keyinput31, ~keyinput32, ~keyinput33, ~keyinput34, ~keyinput35, keyinput36, ~keyinput37, keyinput38))
+INFO - Apr-15-2024   21:32:27 --   Gxa3 - Or(And(~Gid6, Gid7, ~keyinput39, ~keyinput40, ~keyinput41, keyinput42, keyinput43, ~keyinput44, keyinput45, keyinput46, ~keyinput47, keyinput48, ~keyinput49, keyinput50, ~keyinput51), And(Gid6, ~Gid7, keyinput39, ~keyinput40, ~keyinput41, keyinput42, keyinput43, ~keyinput44, ~keyinput45, ~keyinput46, ~keyinput47, ~keyinput48, keyinput49, ~keyinput50, keyinput51))
+INFO - Apr-15-2024   21:32:27 --   Gxa4 - Or(And(~Gid8, Gid9, ~keyinput52, ~keyinput53, ~keyinput54, keyinput55, keyinput56, ~keyinput57, keyinput58, keyinput59, ~keyinput60, keyinput61, ~keyinput62, keyinput63, ~keyinput64), And(Gid8, ~Gid9, keyinput52, ~keyinput53, ~keyinput54, keyinput55, keyinput56, ~keyinput57, ~keyinput58, ~keyinput59, ~keyinput60, ~keyinput61, keyinput62, ~keyinput63, keyinput64))
+INFO - Apr-15-2024   21:32:27 --   Gxa5 - Or(And(Gid10, ~Gid11, ~keyinput65, ~keyinput66, ~keyinput67, keyinput68, keyinput69, ~keyinput70, keyinput71, keyinput72, ~keyinput73, keyinput74, ~keyinput75, keyinput76, ~keyinput77), And(~Gid10, Gid11, keyinput65, ~keyinput66, ~keyinput67, keyinput68, keyinput69, ~keyinput70, ~keyinput71, ~keyinput72, ~keyinput73, ~keyinput74, keyinput75, ~keyinput76, keyinput77))
+INFO - Apr-15-2024   21:32:27 --   Gxa6 - Or(And(Gid12, ~Gid13, ~keyinput78, ~keyinput79, ~keyinput80, keyinput81, keyinput82, ~keyinput83, keyinput84, keyinput85, ~keyinput86, keyinput87, ~keyinput88, keyinput89, ~keyinput90), And(~Gid12, Gid13, keyinput78, ~keyinput79, ~keyinput80, keyinput81, keyinput82, ~keyinput83, ~keyinput84, ~keyinput85, ~keyinput86, ~keyinput87, keyinput88, ~keyinput89, keyinput90))
+INFO - Apr-15-2024   21:32:27 --   Gxa7 - Or(And(~Gid14, Gid15, ~keyinput91, ~keyinput92, ~keyinput93, keyinput94, keyinput95, ~keyinput96, keyinput97, keyinput98, ~keyinput99, keyinput100, ~keyinput101, keyinput102, ~keyinput103), And(Gid14, ~Gid15, keyinput91, ~keyinput92, ~keyinput93, keyinput94, keyinput95, ~keyinput96, ~keyinput97, ~keyinput98, ~keyinput99, ~keyinput100, keyinput101, ~keyinput102, keyinput103))
+INFO - Apr-15-2024   21:32:27 --   Gxa8 - Or(And(Gid16, ~Gid17, ~keyinput104, ~keyinput105, ~keyinput106, keyinput107, keyinput108, ~keyinput109, keyinput110, keyinput111, ~keyinput112, keyinput113, ~keyinput114, keyinput115, ~keyinput116), And(~Gid16, Gid17, keyinput104, ~keyinput105, ~keyinput106, keyinput107, keyinput108, ~keyinput109, ~keyinput110, ~keyinput111, ~keyinput112, ~keyinput113, keyinput114, ~keyinput115, keyinput116))
+INFO - Apr-15-2024   21:32:27 --   Gxa9 - Or(And(~Gid18, Gid19, ~keyinput117, ~keyinput118, ~keyinput119, keyinput120, keyinput121, ~keyinput122, keyinput123, keyinput124, ~keyinput125, keyinput126, ~keyinput127, keyinput128, ~keyinput129), And(Gid18, ~Gid19, keyinput117, ~keyinput118, ~keyinput119, keyinput120, keyinput121, ~keyinput122, ~keyinput123, ~keyinput124, ~keyinput125, ~keyinput126, keyinput127, ~keyinput128, keyinput129))
+INFO - Apr-15-2024   21:32:27 -- Time taken to encrypt file: 0.027117013931274414 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c499.bench ./benchmarks/iscas85/c499_encrypted.bench 1000
+args 
+iteration:    1; variables: 1119 clauses: 2889 assignments: 1  propagations: 2331
+iteration:    2; variables: 1971 clauses: 4120 assignments: 497  propagations: 7952
+iteration:    3; variables: 2823 clauses: 5426 assignments: 923  propagations: 14479
+iteration:    4; variables: 3675 clauses: 6920 assignments: 1236  propagations: 23058
+iteration:    5; variables: 4527 clauses: 8386 assignments: 1552  propagations: 31533
+iteration:    6; variables: 5379 clauses: 9748 assignments: 1966  propagations: 49047
+iteration:    7; variables: 6231 clauses: 11138 assignments: 2382  propagations: 63208
+no more dips.
+
+Finished! 
+iteration=7
+key=1001100000101101110000010100011011010000001101101010100110000010110011000001011001100000101100110000010100011011010100001101101010
+checking key 1001100000101101110000010100011011010000001101101010100110000010110011000001011001100000101100110000010100011011010100001101101010
+
+incorrect key
+God0:0.004;  God1:0.006;  God2:0.01;  God3:0.004;  God4:0.006;  God5:0.01;  God6:0.004;  God7:0.01;  God8:0.004;  God9:0.016;  God10:0.01;  God11:0.004;  God12:0.002;  God13:0.012;  God14:0.012;  God15:0.012;  God16:0.004;  God17:0;  God18:0.008;  God19:0.014;  God20:0.004;  God21:0.012;  God22:0.008;  God23:0.002;  God24:0.01;  God25:0.002;  God26:0.01;  God27:0.008;  God28:0.016;  God29:0.006;  God30:0.006;  God31:0.012;  
+key-err: 0.00775
+
+time: 0.0654099
+
+real	0m0.204s
+user	0m0.063s
+sys	0m0.000s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas85/c499.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c5315.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c5315.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 85866829528055825  34653276599482008  384663315185894205  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-15-2024   21:32:27 --  locked version of ./benchmarks/iscas85/c5315.bench
+INFO - Apr-15-2024   21:32:27 --  number of keys: 3
+INFO - Apr-15-2024   21:32:27 --  keys: [85866829528055825, 34653276599482008, 384663315185894205]
+INFO - Apr-15-2024   21:32:27 --  number of bits per key (keyinputs#): 59
+INFO - Apr-15-2024   21:32:27 --  key0 = 00100110001000011110110110100110000000000100100000000010001
+INFO - Apr-15-2024   21:32:27 --  key1 = 00001111011000111001111100010110010000000111111011010011000
+INFO - Apr-15-2024   21:32:27 --  key2 = 10101010110100110010011111101000011110001111000001100111101
+INFO - Apr-15-2024   21:32:27 --  k (gate is locked at k bits): 2
+INFO - Apr-15-2024   21:32:27 -- Time taken to parser file= 0.009819269180297852
+
+INFO - Apr-15-2024   21:32:27 -- Time taken to get gates with k inputs = 0.046582698822021484
+
+INFO - Apr-15-2024   21:32:27 -- Cutting gates to encrypt to 10, from 190
+INFO - Apr-15-2024   21:32:27 -- Time taken to encrypt up to k inputs: 0.05126762390136719 seconds
+INFO - Apr-15-2024   21:32:27 --   G4114 - And(G135, G4115, ~keyinput0, ~keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, keyinput6, ~keyinput7, ~keyinput8, ~keyinput9, keyinput10, ~keyinput11, ~keyinput12, ~keyinput13, ~keyinput14, keyinput15, keyinput16, keyinput17, keyinput18, ~keyinput19, keyinput20, keyinput21, ~keyinput22, keyinput23, keyinput24, ~keyinput25, keyinput26, ~keyinput27, ~keyinput28, keyinput29, keyinput30, ~keyinput31, ~keyinput32, ~keyinput33, ~keyinput34, ~keyinput35, ~keyinput36, ~keyinput37, ~keyinput38, ~keyinput39, ~keyinput40, keyinput41, ~keyinput42, ~keyinput43, keyinput44, ~keyinput45, ~keyinput46, ~keyinput47, ~keyinput48, ~keyinput49, ~keyinput50, ~keyinput51, ~keyinput52, ~keyinput53, keyinput54, ~keyinput55, ~keyinput56, ~keyinput57, keyinput58)
+INFO - Apr-15-2024   21:32:27 --   G601 - And(G552, G562, ~keyinput59, ~keyinput60, keyinput61, ~keyinput62, ~keyinput63, keyinput64, keyinput65, ~keyinput66, ~keyinput67, ~keyinput68, keyinput69, ~keyinput70, ~keyinput71, ~keyinput72, ~keyinput73, keyinput74, keyinput75, keyinput76, keyinput77, ~keyinput78, keyinput79, keyinput80, ~keyinput81, keyinput82, keyinput83, ~keyinput84, keyinput85, ~keyinput86, ~keyinput87, keyinput88, keyinput89, ~keyinput90, ~keyinput91, ~keyinput92, ~keyinput93, ~keyinput94, ~keyinput95, ~keyinput96, ~keyinput97, ~keyinput98, ~keyinput99, keyinput100, ~keyinput101, ~keyinput102, keyinput103, ~keyinput104, ~keyinput105, ~keyinput106, ~keyinput107, ~keyinput108, ~keyinput109, ~keyinput110, ~keyinput111, ~keyinput112, keyinput113, ~keyinput114, ~keyinput115, ~keyinput116, keyinput117)
+INFO - Apr-15-2024   21:32:27 --   G633 - Or(And(~G373, ~G1, ~keyinput118, ~keyinput119, keyinput120, ~keyinput121, ~keyinput122, keyinput123, keyinput124, ~keyinput125, ~keyinput126, ~keyinput127, keyinput128, ~keyinput129, ~keyinput130, ~keyinput131, ~keyinput132, keyinput133, keyinput134, keyinput135, keyinput136, ~keyinput137, keyinput138, keyinput139, ~keyinput140, keyinput141, keyinput142, ~keyinput143, keyinput144, ~keyinput145, ~keyinput146, keyinput147, keyinput148, ~keyinput149, ~keyinput150, ~keyinput151, ~keyinput152, ~keyinput153, ~keyinput154, ~keyinput155, ~keyinput156, ~keyinput157, ~keyinput158, keyinput159, ~keyinput160, ~keyinput161, keyinput162, ~keyinput163, ~keyinput164, ~keyinput165, ~keyinput166, ~keyinput167, ~keyinput168, ~keyinput169, ~keyinput170, ~keyinput171, keyinput172, ~keyinput173, ~keyinput174, ~keyinput175, keyinput176), And(G373, ~G1, ~keyinput118, ~keyinput119, ~keyinput120, ~keyinput121, keyinput122, keyinput123, keyinput124, keyinput125, ~keyinput126, keyinput127, keyinput128, ~keyinput129, ~keyinput130, ~keyinput131, keyinput132, keyinput133, keyinput134, ~keyinput135, ~keyinput136, keyinput137, keyinput138, keyinput139, keyinput140, keyinput141, ~keyinput142, ~keyinput143, ~keyinput144, keyinput145, ~keyinput146, keyinput147, keyinput148, ~keyinput149, ~keyinput150, keyinput151, ~keyinput152, ~keyinput153, ~keyinput154, ~keyinput155, ~keyinput156, ~keyinput157, ~keyinput158, keyinput159, keyinput160, keyinput161, keyinput162, keyinput163, keyinput164, ~keyinput165, keyinput166, keyinput167, ~keyinput168, keyinput169, ~keyinput170, ~keyinput171, keyinput172, keyinput173, ~keyinput174, ~keyinput175, ~keyinput176), And(~G373, G1, keyinput118, ~keyinput119, keyinput120, ~keyinput121, keyinput122, ~keyinput123, keyinput124, ~keyinput125, keyinput126, keyinput127, ~keyinput128, keyinput129, ~keyinput130, ~keyinput131, keyinput132, keyinput133, ~keyinput134, ~keyinput135, keyinput136, ~keyinput137, ~keyinput138, keyinput139, keyinput140, keyinput141, keyinput142, keyinput143, keyinput144, ~keyinput145, keyinput146, ~keyinput147, ~keyinput148, ~keyinput149, ~keyinput150, keyinput151, keyinput152, keyinput153, keyinput154, ~keyinput155, ~keyinput156, ~keyinput157, keyinput158, keyinput159, keyinput160, keyinput161, ~keyinput162, ~keyinput163, ~keyinput164, ~keyinput165, ~keyinput166, keyinput167, keyinput168, ~keyinput169, ~keyinput170, keyinput171, keyinput172, keyinput173, keyinput174, ~keyinput175, keyinput176))
+INFO - Apr-15-2024   21:32:27 --   G810 - And(G141, G145, ~keyinput177, ~keyinput178, keyinput179, ~keyinput180, ~keyinput181, keyinput182, keyinput183, ~keyinput184, ~keyinput185, ~keyinput186, keyinput187, ~keyinput188, ~keyinput189, ~keyinput190, ~keyinput191, keyinput192, keyinput193, keyinput194, keyinput195, ~keyinput196, keyinput197, keyinput198, ~keyinput199, keyinput200, keyinput201, ~keyinput202, keyinput203, ~keyinput204, ~keyinput205, keyinput206, keyinput207, ~keyinput208, ~keyinput209, ~keyinput210, ~keyinput211, ~keyinput212, ~keyinput213, ~keyinput214, ~keyinput215, ~keyinput216, ~keyinput217, keyinput218, ~keyinput219, ~keyinput220, keyinput221, ~keyinput222, ~keyinput223, ~keyinput224, ~keyinput225, ~keyinput226, ~keyinput227, ~keyinput228, ~keyinput229, ~keyinput230, keyinput231, ~keyinput232, ~keyinput233, ~keyinput234, keyinput235)
+INFO - Apr-15-2024   21:32:27 --   G816 - Or(And(~G135, ~G4115, ~keyinput236, ~keyinput237, keyinput238, ~keyinput239, ~keyinput240, keyinput241, keyinput242, ~keyinput243, ~keyinput244, ~keyinput245, keyinput246, ~keyinput247, ~keyinput248, ~keyinput249, ~keyinput250, keyinput251, keyinput252, keyinput253, keyinput254, ~keyinput255, keyinput256, keyinput257, ~keyinput258, keyinput259, keyinput260, ~keyinput261, keyinput262, ~keyinput263, ~keyinput264, keyinput265, keyinput266, ~keyinput267, ~keyinput268, ~keyinput269, ~keyinput270, ~keyinput271, ~keyinput272, ~keyinput273, ~keyinput274, ~keyinput275, ~keyinput276, keyinput277, ~keyinput278, ~keyinput279, keyinput280, ~keyinput281, ~keyinput282, ~keyinput283, ~keyinput284, ~keyinput285, ~keyinput286, ~keyinput287, ~keyinput288, ~keyinput289, keyinput290, ~keyinput291, ~keyinput292, ~keyinput293, keyinput294), And(G135, ~G4115, ~keyinput236, ~keyinput237, ~keyinput238, ~keyinput239, keyinput240, keyinput241, keyinput242, keyinput243, ~keyinput244, keyinput245, keyinput246, ~keyinput247, ~keyinput248, ~keyinput249, keyinput250, keyinput251, keyinput252, ~keyinput253, ~keyinput254, keyinput255, keyinput256, keyinput257, keyinput258, keyinput259, ~keyinput260, ~keyinput261, ~keyinput262, keyinput263, ~keyinput264, keyinput265, keyinput266, ~keyinput267, ~keyinput268, keyinput269, ~keyinput270, ~keyinput271, ~keyinput272, ~keyinput273, ~keyinput274, ~keyinput275, ~keyinput276, keyinput277, keyinput278, keyinput279, keyinput280, keyinput281, keyinput282, ~keyinput283, keyinput284, keyinput285, ~keyinput286, keyinput287, ~keyinput288, ~keyinput289, keyinput290, keyinput291, ~keyinput292, ~keyinput293, ~keyinput294), And(~G135, G4115, keyinput236, ~keyinput237, keyinput238, ~keyinput239, keyinput240, ~keyinput241, keyinput242, ~keyinput243, keyinput244, keyinput245, ~keyinput246, keyinput247, ~keyinput248, ~keyinput249, keyinput250, keyinput251, ~keyinput252, ~keyinput253, keyinput254, ~keyinput255, ~keyinput256, keyinput257, keyinput258, keyinput259, keyinput260, keyinput261, keyinput262, ~keyinput263, keyinput264, ~keyinput265, ~keyinput266, ~keyinput267, ~keyinput268, keyinput269, keyinput270, keyinput271, keyinput272, ~keyinput273, ~keyinput274, ~keyinput275, keyinput276, keyinput277, keyinput278, keyinput279, ~keyinput280, ~keyinput281, ~keyinput282, ~keyinput283, ~keyinput284, keyinput285, keyinput286, ~keyinput287, ~keyinput288, keyinput289, keyinput290, keyinput291, keyinput292, ~keyinput293, keyinput294))
+INFO - Apr-15-2024   21:32:27 --   G844 - And(~G2824, G27, keyinput295, ~keyinput296, keyinput297, ~keyinput298, keyinput299, ~keyinput300, keyinput301, ~keyinput302, keyinput303, keyinput304, ~keyinput305, keyinput306, ~keyinput307, ~keyinput308, keyinput309, keyinput310, ~keyinput311, ~keyinput312, keyinput313, ~keyinput314, ~keyinput315, keyinput316, keyinput317, keyinput318, keyinput319, keyinput320, keyinput321, ~keyinput322, keyinput323, ~keyinput324, ~keyinput325, ~keyinput326, ~keyinput327, keyinput328, keyinput329, keyinput330, keyinput331, ~keyinput332, ~keyinput333, ~keyinput334, keyinput335, keyinput336, keyinput337, keyinput338, ~keyinput339, ~keyinput340, ~keyinput341, ~keyinput342, ~keyinput343, keyinput344, keyinput345, ~keyinput346, ~keyinput347, keyinput348, keyinput349, keyinput350, keyinput351, ~keyinput352, keyinput353)
+INFO - Apr-15-2024   21:32:27 --   G846 - And(G386, G556, ~keyinput354, ~keyinput355, keyinput356, ~keyinput357, ~keyinput358, keyinput359, keyinput360, ~keyinput361, ~keyinput362, ~keyinput363, keyinput364, ~keyinput365, ~keyinput366, ~keyinput367, ~keyinput368, keyinput369, keyinput370, keyinput371, keyinput372, ~keyinput373, keyinput374, keyinput375, ~keyinput376, keyinput377, keyinput378, ~keyinput379, keyinput380, ~keyinput381, ~keyinput382, keyinput383, keyinput384, ~keyinput385, ~keyinput386, ~keyinput387, ~keyinput388, ~keyinput389, ~keyinput390, ~keyinput391, ~keyinput392, ~keyinput393, ~keyinput394, keyinput395, ~keyinput396, ~keyinput397, keyinput398, ~keyinput399, ~keyinput400, ~keyinput401, ~keyinput402, ~keyinput403, ~keyinput404, ~keyinput405, ~keyinput406, ~keyinput407, keyinput408, ~keyinput409, ~keyinput410, ~keyinput411, keyinput412)
+INFO - Apr-15-2024   21:32:27 --   G2822 - And(G27, G31, ~keyinput413, ~keyinput414, keyinput415, ~keyinput416, ~keyinput417, keyinput418, keyinput419, ~keyinput420, ~keyinput421, ~keyinput422, keyinput423, ~keyinput424, ~keyinput425, ~keyinput426, ~keyinput427, keyinput428, keyinput429, keyinput430, keyinput431, ~keyinput432, keyinput433, keyinput434, ~keyinput435, keyinput436, keyinput437, ~keyinput438, keyinput439, ~keyinput440, ~keyinput441, keyinput442, keyinput443, ~keyinput444, ~keyinput445, ~keyinput446, ~keyinput447, ~keyinput448, ~keyinput449, ~keyinput450, ~keyinput451, ~keyinput452, ~keyinput453, keyinput454, ~keyinput455, ~keyinput456, keyinput457, ~keyinput458, ~keyinput459, ~keyinput460, ~keyinput461, ~keyinput462, ~keyinput463, ~keyinput464, ~keyinput465, ~keyinput466, keyinput467, ~keyinput468, ~keyinput469, ~keyinput470, keyinput471)
+INFO - Apr-15-2024   21:32:27 --   G3176 - And(G27, G31, ~keyinput472, ~keyinput473, keyinput474, ~keyinput475, ~keyinput476, keyinput477, keyinput478, ~keyinput479, ~keyinput480, ~keyinput481, keyinput482, ~keyinput483, ~keyinput484, ~keyinput485, ~keyinput486, keyinput487, keyinput488, keyinput489, keyinput490, ~keyinput491, keyinput492, keyinput493, ~keyinput494, keyinput495, keyinput496, ~keyinput497, keyinput498, ~keyinput499, ~keyinput500, keyinput501, keyinput502, ~keyinput503, ~keyinput504, ~keyinput505, ~keyinput506, ~keyinput507, ~keyinput508, ~keyinput509, ~keyinput510, ~keyinput511, ~keyinput512, keyinput513, ~keyinput514, ~keyinput515, keyinput516, ~keyinput517, ~keyinput518, ~keyinput519, ~keyinput520, ~keyinput521, ~keyinput522, ~keyinput523, ~keyinput524, ~keyinput525, keyinput526, ~keyinput527, ~keyinput528, ~keyinput529, keyinput530)
+INFO - Apr-15-2024   21:32:27 --   G634 - And(G373, G1, ~keyinput531, ~keyinput532, keyinput533, ~keyinput534, ~keyinput535, keyinput536, keyinput537, ~keyinput538, ~keyinput539, ~keyinput540, keyinput541, ~keyinput542, ~keyinput543, ~keyinput544, ~keyinput545, keyinput546, keyinput547, keyinput548, keyinput549, ~keyinput550, keyinput551, keyinput552, ~keyinput553, keyinput554, keyinput555, ~keyinput556, keyinput557, ~keyinput558, ~keyinput559, keyinput560, keyinput561, ~keyinput562, ~keyinput563, ~keyinput564, ~keyinput565, ~keyinput566, ~keyinput567, ~keyinput568, ~keyinput569, ~keyinput570, ~keyinput571, keyinput572, ~keyinput573, ~keyinput574, keyinput575, ~keyinput576, ~keyinput577, ~keyinput578, ~keyinput579, ~keyinput580, ~keyinput581, ~keyinput582, ~keyinput583, ~keyinput584, keyinput585, ~keyinput586, ~keyinput587, ~keyinput588, keyinput589)
+INFO - Apr-15-2024   21:32:27 -- Time taken to encrypt file: 0.08324432373046875 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c5315.bench ./benchmarks/iscas85/c5315_encrypted.bench 1000
+args 
+iteration:    1; variables: 7129 clauses: 17738 assignments: 4  propagations: 44103
+iteration:    2; variables: 13025 clauses: 20627 assignments: 4827  propagations: 96737
+iteration:    3; variables: 18921 clauses: 23509 assignments: 9657  propagations: 277611
+iteration:    4; variables: 24817 clauses: 26377 assignments: 14486  propagations: 336226
+iteration:    5; variables: 30713 clauses: 29251 assignments: 19315  propagations: 394239
+iteration:    6; variables: 36609 clauses: 32255 assignments: 24135  propagations: 435879
+no more dips.
+
+Finished! 
+iteration=6
+key=11011001110111100001001001011001111111111011011111111101110001001100010000111101101101001100000000001001000000000100011111110111111110111110101111111111111111101111111111110111100100110001000011110110110100110000000000100100000000010001101010101101001100100111111010000111100011110000011001111011010101011010011001001111110100001111000111100000110011110100100110001000011110110110100110000000000100100000000010001001001100010000111101101101001100000000001001000000000100010010011000100001111011011010011000000000010010000000001000100100110001000011110110110100110000000000100100000000010001
+checking key 11011001110111100001001001011001111111111011011111111101110001001100010000111101101101001100000000001001000000000100011111110111111110111110101111111111111111101111111111110111100100110001000011110110110100110000000000100100000000010001101010101101001100100111111010000111100011110000011001111011010101011010011001001111110100001111000111100000110011110100100110001000011110110110100110000000000100100000000010001001001100010000111101101101001100000000001001000000000100010010011000100001111011011010011000000000010010000000001000100100110001000011110110110100110000000000100100000000010001
+
+incorrect key
+G144:0;  G298:0;  G973:0;  G594:0;  G599:0;  G600:0;  G601:0;  G602:0;  G603:0;  G604:0;  G611:0;  G612:0;  G810:0;  G848:0;  G849:0;  G850:0;  G851:0;  G634:0;  G815:0;  G845:0;  G847:0;  G926:0;  G923:0;  G921:0;  G892:0;  G887:0;  G606:0;  G656:0;  G809:0;  G993:0;  G978:0;  G949:0;  G939:0;  G889:0;  G593:0;  G636:0;  G704:0;  G717:0;  G820:0;  G639:0;  G673:0;  G707:0;  G715:0;  G598:0;  G610:0;  G588:0;  G615:0;  G626:0;  G632:0;  G1002:0;  G1004:0;  G591:0;  G618:0;  G621:0;  G629:0;  G822:0;  G838:0;  G861:0;  G623:0;  G722:0;  G832:0;  G834:0;  G836:0;  G859:0;  G871:0;  G873:0;  G875:0;  G877:0;  G998:0;  G1000:0;  G575:0;  G585:0;  G661:0;  G693:0;  G747:0;  G752:0;  G757:0;  G762:0;  G787:0;  G792:0;  G797:0;  G802:0;  G642:0;  G664:0;  G667:0;  G670:0;  G676:0;  G696:0;  G699:0;  G702:0;  G818:0.236;  G813:0;  G824:0;  G826:0;  G828:0;  G830:0;  G854:0;  G863:0;  G865:0;  G867:0;  G869:0;  G712:0;  G727:0;  G732:0;  G737:0;  G742:0;  G772:0;  G777:0;  G782:0;  G645:0;  G648:0;  G651:0;  G654:0;  G679:0;  G682:0;  G685:0;  G688:0;  G843:0;  G882:0;  G767:0;  G807:0;  G658:0;  G690:0;  
+key-err: 0.0019187
+
+time: 0.723848
+
+real	0m0.871s
+user	0m0.717s
+sys	0m0.010s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas85/c5315.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c6288.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c6288.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 670  803  365  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-15-2024   21:32:28 --  locked version of ./benchmarks/iscas85/c6288.bench
+INFO - Apr-15-2024   21:32:28 --  number of keys: 3
+INFO - Apr-15-2024   21:32:28 --  keys: [670, 803, 365]
+INFO - Apr-15-2024   21:32:28 --  number of bits per key (keyinputs#): 10
+INFO - Apr-15-2024   21:32:28 --  key0 = 1010011110
+INFO - Apr-15-2024   21:32:28 --  key1 = 1100100011
+INFO - Apr-15-2024   21:32:28 --  key2 = 0101101101
+INFO - Apr-15-2024   21:32:28 --  k (gate is locked at k bits): 2
+INFO - Apr-15-2024   21:32:28 -- Time taken to parser file= 0.011729240417480469
+
+INFO - Apr-15-2024   21:32:29 -- Time taken to get gates with k inputs = 0.3492107391357422
+
+INFO - Apr-15-2024   21:32:29 -- Cutting gates to encrypt to 10, from 316
+INFO - Apr-15-2024   21:32:29 -- Time taken to encrypt up to k inputs: 0.35276103019714355 seconds
+INFO - Apr-15-2024   21:32:29 -- all gates start with AND, increasing k to 3 and re-encrypting 10 gates
+INFO - Apr-15-2024   21:32:29 -- Time taken to get gates with k inputs = 0.37999892234802246
+
+INFO - Apr-15-2024   21:32:29 -- Could not find k to encrypt keys, trying k=4
+INFO - Apr-15-2024   21:32:29 -- Time taken to get gates with k inputs = 0.3486495018005371
+
+INFO - Apr-15-2024   21:32:29 -- Cutting gates to encrypt to 10, from 79
+INFO - Apr-15-2024   21:32:29 -- Time taken to encrypt up to k inputs: 0.732506275177002 seconds
+INFO - Apr-15-2024   21:32:29 --   G1446gat - Or(And(~G1gat, G273gat, ~G290gat, keyinput0, ~keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, keyinput6, keyinput7, keyinput8, ~keyinput9, G18gat), And(~G1gat, G273gat, G290gat, ~keyinput0, keyinput1, ~keyinput2, keyinput3, keyinput4, ~keyinput5, keyinput6, keyinput7, ~keyinput8, keyinput9, G18gat), And(G1gat, G273gat, ~G290gat, keyinput0, keyinput1, ~keyinput2, ~keyinput3, keyinput4, ~keyinput5, ~keyinput6, ~keyinput7, keyinput8, keyinput9, G18gat))
+INFO - Apr-15-2024   21:32:29 --   G1450gat - Or(And(G273gat, ~G290gat, keyinput10, ~keyinput11, keyinput12, ~keyinput13, ~keyinput14, keyinput15, keyinput16, keyinput17, keyinput18, ~keyinput19, ~G18gat, G35gat), And(G273gat, G290gat, keyinput10, keyinput11, ~keyinput12, ~keyinput13, keyinput14, ~keyinput15, ~keyinput16, ~keyinput17, keyinput18, keyinput19, ~G18gat, G35gat), And(G273gat, ~G290gat, ~keyinput10, keyinput11, ~keyinput12, keyinput13, keyinput14, ~keyinput15, keyinput16, keyinput17, ~keyinput18, keyinput19, G18gat, G35gat))
+INFO - Apr-15-2024   21:32:29 --   G1454gat - Or(And(G273gat, ~G290gat, keyinput20, ~keyinput21, keyinput22, ~keyinput23, ~keyinput24, keyinput25, keyinput26, keyinput27, keyinput28, ~keyinput29, ~G35gat, G52gat), And(G273gat, ~G290gat, ~keyinput20, keyinput21, ~keyinput22, keyinput23, keyinput24, ~keyinput25, keyinput26, keyinput27, ~keyinput28, keyinput29, G35gat, G52gat), And(G273gat, G290gat, keyinput20, keyinput21, ~keyinput22, ~keyinput23, keyinput24, ~keyinput25, ~keyinput26, ~keyinput27, keyinput28, keyinput29, ~G35gat, G52gat))
+INFO - Apr-15-2024   21:32:29 --   G1458gat - Or(And(G273gat, ~G290gat, keyinput30, ~keyinput31, keyinput32, ~keyinput33, ~keyinput34, keyinput35, keyinput36, keyinput37, keyinput38, ~keyinput39, ~G52gat, G69gat), And(G273gat, G290gat, keyinput30, keyinput31, ~keyinput32, ~keyinput33, keyinput34, ~keyinput35, ~keyinput36, ~keyinput37, keyinput38, keyinput39, ~G52gat, G69gat), And(G273gat, ~G290gat, ~keyinput30, keyinput31, ~keyinput32, keyinput33, keyinput34, ~keyinput35, keyinput36, keyinput37, ~keyinput38, keyinput39, G52gat, G69gat))
+INFO - Apr-15-2024   21:32:29 --   G1462gat - Or(And(G273gat, ~G290gat, keyinput40, ~keyinput41, keyinput42, ~keyinput43, ~keyinput44, keyinput45, keyinput46, keyinput47, keyinput48, ~keyinput49, ~G69gat, G86gat), And(G273gat, ~G290gat, ~keyinput40, keyinput41, ~keyinput42, keyinput43, keyinput44, ~keyinput45, keyinput46, keyinput47, ~keyinput48, keyinput49, G69gat, G86gat), And(G273gat, G290gat, keyinput40, keyinput41, ~keyinput42, ~keyinput43, keyinput44, ~keyinput45, ~keyinput46, ~keyinput47, keyinput48, keyinput49, ~G69gat, G86gat))
+INFO - Apr-15-2024   21:32:29 --   G1466gat - Or(And(G273gat, ~G290gat, keyinput50, ~keyinput51, keyinput52, ~keyinput53, ~keyinput54, keyinput55, keyinput56, keyinput57, keyinput58, ~keyinput59, ~G86gat, G103gat), And(G273gat, ~G290gat, keyinput50, keyinput51, ~keyinput52, ~keyinput53, keyinput54, ~keyinput55, ~keyinput56, ~keyinput57, keyinput58, keyinput59, G86gat, G103gat), And(G273gat, G290gat, ~keyinput50, keyinput51, ~keyinput52, keyinput53, keyinput54, ~keyinput55, keyinput56, keyinput57, ~keyinput58, keyinput59, ~G86gat, G103gat))
+INFO - Apr-15-2024   21:32:29 --   G1470gat - Or(And(G273gat, ~G290gat, keyinput60, ~keyinput61, keyinput62, ~keyinput63, ~keyinput64, keyinput65, keyinput66, keyinput67, keyinput68, ~keyinput69, ~G103gat, G120gat), And(G273gat, G290gat, ~keyinput60, keyinput61, ~keyinput62, keyinput63, keyinput64, ~keyinput65, keyinput66, keyinput67, ~keyinput68, keyinput69, ~G103gat, G120gat), And(G273gat, ~G290gat, keyinput60, keyinput61, ~keyinput62, ~keyinput63, keyinput64, ~keyinput65, ~keyinput66, ~keyinput67, keyinput68, keyinput69, G103gat, G120gat))
+INFO - Apr-15-2024   21:32:29 --   G1474gat - Or(And(G273gat, ~G290gat, ~keyinput70, keyinput71, ~keyinput72, keyinput73, keyinput74, ~keyinput75, keyinput76, keyinput77, ~keyinput78, keyinput79, ~G120gat, G137gat), And(G273gat, G290gat, keyinput70, keyinput71, ~keyinput72, ~keyinput73, keyinput74, ~keyinput75, ~keyinput76, ~keyinput77, keyinput78, keyinput79, ~G120gat, G137gat), And(G273gat, ~G290gat, keyinput70, keyinput71, ~keyinput72, ~keyinput73, keyinput74, ~keyinput75, ~keyinput76, ~keyinput77, keyinput78, keyinput79, G120gat, G137gat))
+INFO - Apr-15-2024   21:32:29 --   G1478gat - Or(And(G273gat, ~G290gat, ~keyinput80, keyinput81, ~keyinput82, keyinput83, keyinput84, ~keyinput85, keyinput86, keyinput87, ~keyinput88, keyinput89, ~G137gat, G154gat), And(G273gat, G290gat, keyinput80, keyinput81, ~keyinput82, ~keyinput83, keyinput84, ~keyinput85, ~keyinput86, ~keyinput87, keyinput88, keyinput89, ~G137gat, G154gat), And(G273gat, ~G290gat, keyinput80, keyinput81, ~keyinput82, ~keyinput83, keyinput84, ~keyinput85, ~keyinput86, ~keyinput87, keyinput88, keyinput89, G137gat, G154gat))
+INFO - Apr-15-2024   21:32:29 --   G1482gat - Or(And(G273gat, ~G290gat, ~keyinput90, keyinput91, ~keyinput92, keyinput93, keyinput94, ~keyinput95, keyinput96, keyinput97, ~keyinput98, keyinput99, ~G154gat, G171gat), And(G273gat, G290gat, keyinput90, keyinput91, ~keyinput92, ~keyinput93, keyinput94, ~keyinput95, ~keyinput96, ~keyinput97, keyinput98, keyinput99, ~G154gat, G171gat), And(G273gat, ~G290gat, keyinput90, keyinput91, ~keyinput92, ~keyinput93, keyinput94, ~keyinput95, ~keyinput96, ~keyinput97, keyinput98, keyinput99, G154gat, G171gat))
+INFO - Apr-15-2024   21:32:29 -- Time taken to encrypt file: 1.12125825881958 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c6288.bench ./benchmarks/iscas85/c6288_encrypted.bench 1000
+args 
+iteration:    1; variables: 5504 clauses: 16205 assignments: 1  propagations: 82221
+iteration:    2; variables: 10810 clauses: 23088 assignments: 2969  propagations: 512300
+no more dips.
+constraints are not satisfiable
+Finished! 
+iteration=2
+key=1010011110010110110101011011010101101101010110110101111111110101101100010110110111001000111100100011
+checking key 1010011110010110110101011011010101101101010110110101111111110101101100010110110111001000111100100011
+
+incorrect key
+G545gat:0;  G1581gat:0.122;  G1901gat:0.256;  G2223gat:0.27;  G2548gat:0.256;  G2877gat:0.262;  G3211gat:0.262;  G3552gat:0.274;  G3895gat:0.216;  G4241gat:0.188;  G4591gat:0.166;  G4946gat:0.076;  G5308gat:0.054;  G5672gat:0.018;  G5971gat:0.004;  G6123gat:0.004;  G6150gat:0.002;  G6160gat:0;  G6170gat:0;  G6180gat:0;  G6190gat:0;  G6200gat:0;  G6210gat:0;  G6220gat:0;  G6230gat:0;  G6240gat:0;  G6250gat:0;  G6260gat:0;  G6270gat:0;  G6280gat:0;  G6287gat:0;  G6288gat:0;  
+key-err: 0.0759375
+
+time: 0.258442
+
+real	0m0.448s
+user	0m0.251s
+sys	0m0.012s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas85/c6288.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c7552.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c7552.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 466916331652804343798  116302468975331589394  90894676935070235035  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-15-2024   21:32:30 --  locked version of ./benchmarks/iscas85/c7552.bench
+INFO - Apr-15-2024   21:32:30 --  number of keys: 3
+INFO - Apr-15-2024   21:32:30 --  keys: [466916331652804343798, 116302468975331589394, 90894676935070235035]
+INFO - Apr-15-2024   21:32:30 --  number of bits per key (keyinputs#): 69
+INFO - Apr-15-2024   21:32:30 --  key0 = 110010100111111000100000010011100111100111001111000010111011111110110
+INFO - Apr-15-2024   21:32:30 --  key1 = 001100100111000000101010111110101011000001111100001110011110100010010
+INFO - Apr-15-2024   21:32:30 --  key2 = 001001110110101101010110000110001011110000000110000001011100110011011
+INFO - Apr-15-2024   21:32:30 --  k (gate is locked at k bits): 2
+INFO - Apr-15-2024   21:32:30 -- Time taken to parser file= 0.020093441009521484
+
+INFO - Apr-15-2024   21:32:30 -- Time taken to get gates with k inputs = 0.13118362426757812
+
+INFO - Apr-15-2024   21:32:30 -- Cutting gates to encrypt to 10, from 265
+INFO - Apr-15-2024   21:32:30 -- Time taken to encrypt up to k inputs: 0.13625192642211914 seconds
+INFO - Apr-15-2024   21:32:30 --   G1184 - And(G134, G133, keyinput0, keyinput1, ~keyinput2, ~keyinput3, keyinput4, ~keyinput5, keyinput6, ~keyinput7, ~keyinput8, keyinput9, keyinput10, keyinput11, keyinput12, keyinput13, keyinput14, ~keyinput15, ~keyinput16, ~keyinput17, keyinput18, ~keyinput19, ~keyinput20, ~keyinput21, ~keyinput22, ~keyinput23, ~keyinput24, keyinput25, ~keyinput26, ~keyinput27, keyinput28, keyinput29, keyinput30, ~keyinput31, ~keyinput32, keyinput33, keyinput34, keyinput35, keyinput36, ~keyinput37, ~keyinput38, keyinput39, keyinput40, keyinput41, ~keyinput42, ~keyinput43, keyinput44, keyinput45, keyinput46, keyinput47, ~keyinput48, ~keyinput49, ~keyinput50, ~keyinput51, keyinput52, ~keyinput53, keyinput54, keyinput55, keyinput56, ~keyinput57, keyinput58, keyinput59, keyinput60, keyinput61, keyinput62, keyinput63, keyinput64, ~keyinput65, keyinput66, keyinput67, ~keyinput68)
+INFO - Apr-15-2024   21:32:30 --   G1206 - Or(And(~G12, ~G9, keyinput69, keyinput70, ~keyinput71, ~keyinput72, keyinput73, ~keyinput74, keyinput75, ~keyinput76, ~keyinput77, keyinput78, keyinput79, keyinput80, keyinput81, keyinput82, keyinput83, ~keyinput84, ~keyinput85, ~keyinput86, keyinput87, ~keyinput88, ~keyinput89, ~keyinput90, ~keyinput91, ~keyinput92, ~keyinput93, keyinput94, ~keyinput95, ~keyinput96, keyinput97, keyinput98, keyinput99, ~keyinput100, ~keyinput101, keyinput102, keyinput103, keyinput104, keyinput105, ~keyinput106, ~keyinput107, keyinput108, keyinput109, keyinput110, ~keyinput111, ~keyinput112, keyinput113, keyinput114, keyinput115, keyinput116, ~keyinput117, ~keyinput118, ~keyinput119, ~keyinput120, keyinput121, ~keyinput122, keyinput123, keyinput124, keyinput125, ~keyinput126, keyinput127, keyinput128, keyinput129, keyinput130, keyinput131, keyinput132, keyinput133, ~keyinput134, keyinput135, keyinput136, ~keyinput137), And(G12, ~G9, ~keyinput69, ~keyinput70, keyinput71, keyinput72, ~keyinput73, ~keyinput74, keyinput75, ~keyinput76, ~keyinput77, keyinput78, keyinput79, keyinput80, ~keyinput81, ~keyinput82, ~keyinput83, ~keyinput84, ~keyinput85, ~keyinput86, keyinput87, ~keyinput88, keyinput89, ~keyinput90, keyinput91, ~keyinput92, keyinput93, keyinput94, keyinput95, keyinput96, keyinput97, ~keyinput98, keyinput99, ~keyinput100, keyinput101, ~keyinput102, keyinput103, keyinput104, ~keyinput105, ~keyinput106, ~keyinput107, ~keyinput108, ~keyinput109, keyinput110, keyinput111, keyinput112, keyinput113, keyinput114, ~keyinput115, ~keyinput116, ~keyinput117, ~keyinput118, keyinput119, keyinput120, keyinput121, ~keyinput122, ~keyinput123, keyinput124, keyinput125, keyinput126, keyinput127, ~keyinput128, keyinput129, ~keyinput130, ~keyinput131, ~keyinput132, keyinput133, ~keyinput134, ~keyinput135, keyinput136, ~keyinput137), And(~G12, G9, ~keyinput69, ~keyinput70, keyinput71, ~keyinput72, ~keyinput73, keyinput74, keyinput75, keyinput76, ~keyinput77, keyinput78, keyinput79, ~keyinput80, keyinput81, ~keyinput82, keyinput83, keyinput84, ~keyinput85, keyinput86, ~keyinput87, keyinput88, ~keyinput89, keyinput90, keyinput91, ~keyinput92, ~keyinput93, ~keyinput94, ~keyinput95, keyinput96, keyinput97, ~keyinput98, ~keyinput99, ~keyinput100, keyinput101, ~keyinput102, keyinput103, keyinput104, keyinput105, keyinput106, ~keyinput107, ~keyinput108, ~keyinput109, ~keyinput110, ~keyinput111, ~keyinput112, ~keyinput113, keyinput114, keyinput115, ~keyinput116, ~keyinput117, ~keyinput118, ~keyinput119, ~keyinput120, ~keyinput121, keyinput122, ~keyinput123, keyinput124, keyinput125, keyinput126, ~keyinput127, ~keyinput128, keyinput129, keyinput130, ~keyinput131, ~keyinput132, keyinput133, keyinput134, ~keyinput135, keyinput136, keyinput137))
+INFO - Apr-15-2024   21:32:30 --   G1207 - Or(And(~G12, ~G9, keyinput138, keyinput139, ~keyinput140, ~keyinput141, keyinput142, ~keyinput143, keyinput144, ~keyinput145, ~keyinput146, keyinput147, keyinput148, keyinput149, keyinput150, keyinput151, keyinput152, ~keyinput153, ~keyinput154, ~keyinput155, keyinput156, ~keyinput157, ~keyinput158, ~keyinput159, ~keyinput160, ~keyinput161, ~keyinput162, keyinput163, ~keyinput164, ~keyinput165, keyinput166, keyinput167, keyinput168, ~keyinput169, ~keyinput170, keyinput171, keyinput172, keyinput173, keyinput174, ~keyinput175, ~keyinput176, keyinput177, keyinput178, keyinput179, ~keyinput180, ~keyinput181, keyinput182, keyinput183, keyinput184, keyinput185, ~keyinput186, ~keyinput187, ~keyinput188, ~keyinput189, keyinput190, ~keyinput191, keyinput192, keyinput193, keyinput194, ~keyinput195, keyinput196, keyinput197, keyinput198, keyinput199, keyinput200, keyinput201, keyinput202, ~keyinput203, keyinput204, keyinput205, ~keyinput206), And(G12, ~G9, ~keyinput138, ~keyinput139, keyinput140, keyinput141, ~keyinput142, ~keyinput143, keyinput144, ~keyinput145, ~keyinput146, keyinput147, keyinput148, keyinput149, ~keyinput150, ~keyinput151, ~keyinput152, ~keyinput153, ~keyinput154, ~keyinput155, keyinput156, ~keyinput157, keyinput158, ~keyinput159, keyinput160, ~keyinput161, keyinput162, keyinput163, keyinput164, keyinput165, keyinput166, ~keyinput167, keyinput168, ~keyinput169, keyinput170, ~keyinput171, keyinput172, keyinput173, ~keyinput174, ~keyinput175, ~keyinput176, ~keyinput177, ~keyinput178, keyinput179, keyinput180, keyinput181, keyinput182, keyinput183, ~keyinput184, ~keyinput185, ~keyinput186, ~keyinput187, keyinput188, keyinput189, keyinput190, ~keyinput191, ~keyinput192, keyinput193, keyinput194, keyinput195, keyinput196, ~keyinput197, keyinput198, ~keyinput199, ~keyinput200, ~keyinput201, keyinput202, ~keyinput203, ~keyinput204, keyinput205, ~keyinput206), And(~G12, G9, ~keyinput138, ~keyinput139, keyinput140, ~keyinput141, ~keyinput142, keyinput143, keyinput144, keyinput145, ~keyinput146, keyinput147, keyinput148, ~keyinput149, keyinput150, ~keyinput151, keyinput152, keyinput153, ~keyinput154, keyinput155, ~keyinput156, keyinput157, ~keyinput158, keyinput159, keyinput160, ~keyinput161, ~keyinput162, ~keyinput163, ~keyinput164, keyinput165, keyinput166, ~keyinput167, ~keyinput168, ~keyinput169, keyinput170, ~keyinput171, keyinput172, keyinput173, keyinput174, keyinput175, ~keyinput176, ~keyinput177, ~keyinput178, ~keyinput179, ~keyinput180, ~keyinput181, ~keyinput182, keyinput183, keyinput184, ~keyinput185, ~keyinput186, ~keyinput187, ~keyinput188, ~keyinput189, ~keyinput190, keyinput191, ~keyinput192, keyinput193, keyinput194, keyinput195, ~keyinput196, ~keyinput197, keyinput198, keyinput199, ~keyinput200, ~keyinput201, keyinput202, keyinput203, ~keyinput204, keyinput205, keyinput206))
+INFO - Apr-15-2024   21:32:30 --   G1518 - And(G4528, G1492, keyinput207, keyinput208, ~keyinput209, ~keyinput210, keyinput211, ~keyinput212, keyinput213, ~keyinput214, ~keyinput215, keyinput216, keyinput217, keyinput218, keyinput219, keyinput220, keyinput221, ~keyinput222, ~keyinput223, ~keyinput224, keyinput225, ~keyinput226, ~keyinput227, ~keyinput228, ~keyinput229, ~keyinput230, ~keyinput231, keyinput232, ~keyinput233, ~keyinput234, keyinput235, keyinput236, keyinput237, ~keyinput238, ~keyinput239, keyinput240, keyinput241, keyinput242, keyinput243, ~keyinput244, ~keyinput245, keyinput246, keyinput247, keyinput248, ~keyinput249, ~keyinput250, keyinput251, keyinput252, keyinput253, keyinput254, ~keyinput255, ~keyinput256, ~keyinput257, ~keyinput258, keyinput259, ~keyinput260, keyinput261, keyinput262, keyinput263, ~keyinput264, keyinput265, keyinput266, keyinput267, keyinput268, keyinput269, keyinput270, keyinput271, ~keyinput272, keyinput273, keyinput274, ~keyinput275)
+INFO - Apr-15-2024   21:32:30 --   G1541 - Or(And(~G4528, ~G1496, keyinput276, keyinput277, ~keyinput278, ~keyinput279, keyinput280, ~keyinput281, keyinput282, ~keyinput283, ~keyinput284, keyinput285, keyinput286, keyinput287, keyinput288, keyinput289, keyinput290, ~keyinput291, ~keyinput292, ~keyinput293, keyinput294, ~keyinput295, ~keyinput296, ~keyinput297, ~keyinput298, ~keyinput299, ~keyinput300, keyinput301, ~keyinput302, ~keyinput303, keyinput304, keyinput305, keyinput306, ~keyinput307, ~keyinput308, keyinput309, keyinput310, keyinput311, keyinput312, ~keyinput313, ~keyinput314, keyinput315, keyinput316, keyinput317, ~keyinput318, ~keyinput319, keyinput320, keyinput321, keyinput322, keyinput323, ~keyinput324, ~keyinput325, ~keyinput326, ~keyinput327, keyinput328, ~keyinput329, keyinput330, keyinput331, keyinput332, ~keyinput333, keyinput334, keyinput335, keyinput336, keyinput337, keyinput338, keyinput339, keyinput340, ~keyinput341, keyinput342, keyinput343, ~keyinput344), And(~G4528, G1496, ~keyinput276, ~keyinput277, keyinput278, keyinput279, ~keyinput280, ~keyinput281, keyinput282, ~keyinput283, ~keyinput284, keyinput285, keyinput286, keyinput287, ~keyinput288, ~keyinput289, ~keyinput290, ~keyinput291, ~keyinput292, ~keyinput293, keyinput294, ~keyinput295, keyinput296, ~keyinput297, keyinput298, ~keyinput299, keyinput300, keyinput301, keyinput302, keyinput303, keyinput304, ~keyinput305, keyinput306, ~keyinput307, keyinput308, ~keyinput309, keyinput310, keyinput311, ~keyinput312, ~keyinput313, ~keyinput314, ~keyinput315, ~keyinput316, keyinput317, keyinput318, keyinput319, keyinput320, keyinput321, ~keyinput322, ~keyinput323, ~keyinput324, ~keyinput325, keyinput326, keyinput327, keyinput328, ~keyinput329, ~keyinput330, keyinput331, keyinput332, keyinput333, keyinput334, ~keyinput335, keyinput336, ~keyinput337, ~keyinput338, ~keyinput339, keyinput340, ~keyinput341, ~keyinput342, keyinput343, ~keyinput344), And(G4528, ~G1496, ~keyinput276, ~keyinput277, keyinput278, ~keyinput279, ~keyinput280, keyinput281, keyinput282, keyinput283, ~keyinput284, keyinput285, keyinput286, ~keyinput287, keyinput288, ~keyinput289, keyinput290, keyinput291, ~keyinput292, keyinput293, ~keyinput294, keyinput295, ~keyinput296, keyinput297, keyinput298, ~keyinput299, ~keyinput300, ~keyinput301, ~keyinput302, keyinput303, keyinput304, ~keyinput305, ~keyinput306, ~keyinput307, keyinput308, ~keyinput309, keyinput310, keyinput311, keyinput312, keyinput313, ~keyinput314, ~keyinput315, ~keyinput316, ~keyinput317, ~keyinput318, ~keyinput319, ~keyinput320, keyinput321, keyinput322, ~keyinput323, ~keyinput324, ~keyinput325, ~keyinput326, ~keyinput327, ~keyinput328, keyinput329, ~keyinput330, keyinput331, keyinput332, keyinput333, ~keyinput334, ~keyinput335, keyinput336, keyinput337, ~keyinput338, ~keyinput339, keyinput340, keyinput341, ~keyinput342, keyinput343, keyinput344))
+INFO - Apr-15-2024   21:32:30 --   G402 - Or(And(~G57, G5, ~keyinput345, ~keyinput346, keyinput347, keyinput348, ~keyinput349, ~keyinput350, keyinput351, ~keyinput352, ~keyinput353, keyinput354, keyinput355, keyinput356, ~keyinput357, ~keyinput358, ~keyinput359, ~keyinput360, ~keyinput361, ~keyinput362, keyinput363, ~keyinput364, keyinput365, ~keyinput366, keyinput367, ~keyinput368, keyinput369, keyinput370, keyinput371, keyinput372, keyinput373, ~keyinput374, keyinput375, ~keyinput376, keyinput377, ~keyinput378, keyinput379, keyinput380, ~keyinput381, ~keyinput382, ~keyinput383, ~keyinput384, ~keyinput385, keyinput386, keyinput387, keyinput388, keyinput389, keyinput390, ~keyinput391, ~keyinput392, ~keyinput393, ~keyinput394, keyinput395, keyinput396, keyinput397, ~keyinput398, ~keyinput399, keyinput400, keyinput401, keyinput402, keyinput403, ~keyinput404, keyinput405, ~keyinput406, ~keyinput407, ~keyinput408, keyinput409, ~keyinput410, ~keyinput411, keyinput412, ~keyinput413), And(G57, ~G5, ~keyinput345, ~keyinput346, keyinput347, ~keyinput348, ~keyinput349, keyinput350, keyinput351, keyinput352, ~keyinput353, keyinput354, keyinput355, ~keyinput356, keyinput357, ~keyinput358, keyinput359, keyinput360, ~keyinput361, keyinput362, ~keyinput363, keyinput364, ~keyinput365, keyinput366, keyinput367, ~keyinput368, ~keyinput369, ~keyinput370, ~keyinput371, keyinput372, keyinput373, ~keyinput374, ~keyinput375, ~keyinput376, keyinput377, ~keyinput378, keyinput379, keyinput380, keyinput381, keyinput382, ~keyinput383, ~keyinput384, ~keyinput385, ~keyinput386, ~keyinput387, ~keyinput388, ~keyinput389, keyinput390, keyinput391, ~keyinput392, ~keyinput393, ~keyinput394, ~keyinput395, ~keyinput396, ~keyinput397, keyinput398, ~keyinput399, keyinput400, keyinput401, keyinput402, ~keyinput403, ~keyinput404, keyinput405, keyinput406, ~keyinput407, ~keyinput408, keyinput409, keyinput410, ~keyinput411, keyinput412, keyinput413), And(G57, G5, keyinput345, keyinput346, ~keyinput347, ~keyinput348, keyinput349, ~keyinput350, keyinput351, ~keyinput352, ~keyinput353, keyinput354, keyinput355, keyinput356, keyinput357, keyinput358, keyinput359, ~keyinput360, ~keyinput361, ~keyinput362, keyinput363, ~keyinput364, ~keyinput365, ~keyinput366, ~keyinput367, ~keyinput368, ~keyinput369, keyinput370, ~keyinput371, ~keyinput372, keyinput373, keyinput374, keyinput375, ~keyinput376, ~keyinput377, keyinput378, keyinput379, keyinput380, keyinput381, ~keyinput382, ~keyinput383, keyinput384, keyinput385, keyinput386, ~keyinput387, ~keyinput388, keyinput389, keyinput390, keyinput391, keyinput392, ~keyinput393, ~keyinput394, ~keyinput395, ~keyinput396, keyinput397, ~keyinput398, keyinput399, keyinput400, keyinput401, ~keyinput402, keyinput403, keyinput404, keyinput405, keyinput406, keyinput407, keyinput408, keyinput409, ~keyinput410, keyinput411, keyinput412, ~keyinput413))
+INFO - Apr-15-2024   21:32:30 --   G1519 - Or(And(~G4528, ~G1492, keyinput414, keyinput415, ~keyinput416, ~keyinput417, keyinput418, ~keyinput419, keyinput420, ~keyinput421, ~keyinput422, keyinput423, keyinput424, keyinput425, keyinput426, keyinput427, keyinput428, ~keyinput429, ~keyinput430, ~keyinput431, keyinput432, ~keyinput433, ~keyinput434, ~keyinput435, ~keyinput436, ~keyinput437, ~keyinput438, keyinput439, ~keyinput440, ~keyinput441, keyinput442, keyinput443, keyinput444, ~keyinput445, ~keyinput446, keyinput447, keyinput448, keyinput449, keyinput450, ~keyinput451, ~keyinput452, keyinput453, keyinput454, keyinput455, ~keyinput456, ~keyinput457, keyinput458, keyinput459, keyinput460, keyinput461, ~keyinput462, ~keyinput463, ~keyinput464, ~keyinput465, keyinput466, ~keyinput467, keyinput468, keyinput469, keyinput470, ~keyinput471, keyinput472, keyinput473, keyinput474, keyinput475, keyinput476, keyinput477, keyinput478, ~keyinput479, keyinput480, keyinput481, ~keyinput482), And(~G4528, G1492, ~keyinput414, ~keyinput415, keyinput416, keyinput417, ~keyinput418, ~keyinput419, keyinput420, ~keyinput421, ~keyinput422, keyinput423, keyinput424, keyinput425, ~keyinput426, ~keyinput427, ~keyinput428, ~keyinput429, ~keyinput430, ~keyinput431, keyinput432, ~keyinput433, keyinput434, ~keyinput435, keyinput436, ~keyinput437, keyinput438, keyinput439, keyinput440, keyinput441, keyinput442, ~keyinput443, keyinput444, ~keyinput445, keyinput446, ~keyinput447, keyinput448, keyinput449, ~keyinput450, ~keyinput451, ~keyinput452, ~keyinput453, ~keyinput454, keyinput455, keyinput456, keyinput457, keyinput458, keyinput459, ~keyinput460, ~keyinput461, ~keyinput462, ~keyinput463, keyinput464, keyinput465, keyinput466, ~keyinput467, ~keyinput468, keyinput469, keyinput470, keyinput471, keyinput472, ~keyinput473, keyinput474, ~keyinput475, ~keyinput476, ~keyinput477, keyinput478, ~keyinput479, ~keyinput480, keyinput481, ~keyinput482), And(G4528, ~G1492, ~keyinput414, ~keyinput415, keyinput416, ~keyinput417, ~keyinput418, keyinput419, keyinput420, keyinput421, ~keyinput422, keyinput423, keyinput424, ~keyinput425, keyinput426, ~keyinput427, keyinput428, keyinput429, ~keyinput430, keyinput431, ~keyinput432, keyinput433, ~keyinput434, keyinput435, keyinput436, ~keyinput437, ~keyinput438, ~keyinput439, ~keyinput440, keyinput441, keyinput442, ~keyinput443, ~keyinput444, ~keyinput445, keyinput446, ~keyinput447, keyinput448, keyinput449, keyinput450, keyinput451, ~keyinput452, ~keyinput453, ~keyinput454, ~keyinput455, ~keyinput456, ~keyinput457, ~keyinput458, keyinput459, keyinput460, ~keyinput461, ~keyinput462, ~keyinput463, ~keyinput464, ~keyinput465, ~keyinput466, keyinput467, ~keyinput468, keyinput469, keyinput470, keyinput471, ~keyinput472, ~keyinput473, keyinput474, keyinput475, ~keyinput476, ~keyinput477, keyinput478, keyinput479, ~keyinput480, keyinput481, keyinput482))
+INFO - Apr-15-2024   21:32:30 --   G2871 - And(G4528, ~G1455, ~keyinput483, ~keyinput484, keyinput485, ~keyinput486, ~keyinput487, keyinput488, keyinput489, keyinput490, ~keyinput491, keyinput492, keyinput493, ~keyinput494, keyinput495, ~keyinput496, keyinput497, keyinput498, ~keyinput499, keyinput500, ~keyinput501, keyinput502, ~keyinput503, keyinput504, keyinput505, ~keyinput506, ~keyinput507, ~keyinput508, ~keyinput509, keyinput510, keyinput511, ~keyinput512, ~keyinput513, ~keyinput514, keyinput515, ~keyinput516, keyinput517, keyinput518, keyinput519, keyinput520, ~keyinput521, ~keyinput522, ~keyinput523, ~keyinput524, ~keyinput525, ~keyinput526, ~keyinput527, keyinput528, keyinput529, ~keyinput530, ~keyinput531, ~keyinput532, ~keyinput533, ~keyinput534, ~keyinput535, keyinput536, ~keyinput537, keyinput538, keyinput539, keyinput540, ~keyinput541, ~keyinput542, keyinput543, keyinput544, ~keyinput545, ~keyinput546, keyinput547, keyinput548, ~keyinput549, keyinput550, keyinput551)
+INFO - Apr-15-2024   21:32:30 --   G2883 - Or(And(~G4528, ~G2204, keyinput552, keyinput553, ~keyinput554, ~keyinput555, keyinput556, ~keyinput557, keyinput558, ~keyinput559, ~keyinput560, keyinput561, keyinput562, keyinput563, keyinput564, keyinput565, keyinput566, ~keyinput567, ~keyinput568, ~keyinput569, keyinput570, ~keyinput571, ~keyinput572, ~keyinput573, ~keyinput574, ~keyinput575, ~keyinput576, keyinput577, ~keyinput578, ~keyinput579, keyinput580, keyinput581, keyinput582, ~keyinput583, ~keyinput584, keyinput585, keyinput586, keyinput587, keyinput588, ~keyinput589, ~keyinput590, keyinput591, keyinput592, keyinput593, ~keyinput594, ~keyinput595, keyinput596, keyinput597, keyinput598, keyinput599, ~keyinput600, ~keyinput601, ~keyinput602, ~keyinput603, keyinput604, ~keyinput605, keyinput606, keyinput607, keyinput608, ~keyinput609, keyinput610, keyinput611, keyinput612, keyinput613, keyinput614, keyinput615, keyinput616, ~keyinput617, keyinput618, keyinput619, ~keyinput620), And(~G4528, G2204, ~keyinput552, ~keyinput553, keyinput554, keyinput555, ~keyinput556, ~keyinput557, keyinput558, ~keyinput559, ~keyinput560, keyinput561, keyinput562, keyinput563, ~keyinput564, ~keyinput565, ~keyinput566, ~keyinput567, ~keyinput568, ~keyinput569, keyinput570, ~keyinput571, keyinput572, ~keyinput573, keyinput574, ~keyinput575, keyinput576, keyinput577, keyinput578, keyinput579, keyinput580, ~keyinput581, keyinput582, ~keyinput583, keyinput584, ~keyinput585, keyinput586, keyinput587, ~keyinput588, ~keyinput589, ~keyinput590, ~keyinput591, ~keyinput592, keyinput593, keyinput594, keyinput595, keyinput596, keyinput597, ~keyinput598, ~keyinput599, ~keyinput600, ~keyinput601, keyinput602, keyinput603, keyinput604, ~keyinput605, ~keyinput606, keyinput607, keyinput608, keyinput609, keyinput610, ~keyinput611, keyinput612, ~keyinput613, ~keyinput614, ~keyinput615, keyinput616, ~keyinput617, ~keyinput618, keyinput619, ~keyinput620), And(G4528, G2204, keyinput552, keyinput553, ~keyinput554, ~keyinput555, keyinput556, ~keyinput557, keyinput558, ~keyinput559, ~keyinput560, keyinput561, keyinput562, keyinput563, keyinput564, keyinput565, keyinput566, ~keyinput567, ~keyinput568, ~keyinput569, keyinput570, ~keyinput571, ~keyinput572, ~keyinput573, ~keyinput574, ~keyinput575, ~keyinput576, keyinput577, ~keyinput578, ~keyinput579, keyinput580, keyinput581, keyinput582, ~keyinput583, ~keyinput584, keyinput585, keyinput586, keyinput587, keyinput588, ~keyinput589, ~keyinput590, keyinput591, keyinput592, keyinput593, ~keyinput594, ~keyinput595, keyinput596, keyinput597, keyinput598, keyinput599, ~keyinput600, ~keyinput601, ~keyinput602, ~keyinput603, keyinput604, ~keyinput605, keyinput606, keyinput607, keyinput608, ~keyinput609, keyinput610, keyinput611, keyinput612, keyinput613, keyinput614, keyinput615, keyinput616, ~keyinput617, keyinput618, keyinput619, ~keyinput620))
+INFO - Apr-15-2024   21:32:30 --   G284 - Or(And(~G5, ~G1197, keyinput621, keyinput622, ~keyinput623, ~keyinput624, keyinput625, ~keyinput626, keyinput627, ~keyinput628, ~keyinput629, keyinput630, keyinput631, keyinput632, keyinput633, keyinput634, keyinput635, ~keyinput636, ~keyinput637, ~keyinput638, keyinput639, ~keyinput640, ~keyinput641, ~keyinput642, ~keyinput643, ~keyinput644, ~keyinput645, keyinput646, ~keyinput647, ~keyinput648, keyinput649, keyinput650, keyinput651, ~keyinput652, ~keyinput653, keyinput654, keyinput655, keyinput656, keyinput657, ~keyinput658, ~keyinput659, keyinput660, keyinput661, keyinput662, ~keyinput663, ~keyinput664, keyinput665, keyinput666, keyinput667, keyinput668, ~keyinput669, ~keyinput670, ~keyinput671, ~keyinput672, keyinput673, ~keyinput674, keyinput675, keyinput676, keyinput677, ~keyinput678, keyinput679, keyinput680, keyinput681, keyinput682, keyinput683, keyinput684, keyinput685, ~keyinput686, keyinput687, keyinput688, ~keyinput689), And(G5, ~G1197, ~keyinput621, ~keyinput622, keyinput623, ~keyinput624, ~keyinput625, keyinput626, keyinput627, keyinput628, ~keyinput629, keyinput630, keyinput631, ~keyinput632, keyinput633, ~keyinput634, keyinput635, keyinput636, ~keyinput637, keyinput638, ~keyinput639, keyinput640, ~keyinput641, keyinput642, keyinput643, ~keyinput644, ~keyinput645, ~keyinput646, ~keyinput647, keyinput648, keyinput649, ~keyinput650, ~keyinput651, ~keyinput652, keyinput653, ~keyinput654, keyinput655, keyinput656, keyinput657, keyinput658, ~keyinput659, ~keyinput660, ~keyinput661, ~keyinput662, ~keyinput663, ~keyinput664, ~keyinput665, keyinput666, keyinput667, ~keyinput668, ~keyinput669, ~keyinput670, ~keyinput671, ~keyinput672, ~keyinput673, keyinput674, ~keyinput675, keyinput676, keyinput677, keyinput678, ~keyinput679, ~keyinput680, keyinput681, keyinput682, ~keyinput683, ~keyinput684, keyinput685, keyinput686, ~keyinput687, keyinput688, keyinput689), And(G5, G1197, keyinput621, keyinput622, ~keyinput623, ~keyinput624, keyinput625, ~keyinput626, keyinput627, ~keyinput628, ~keyinput629, keyinput630, keyinput631, keyinput632, keyinput633, keyinput634, keyinput635, ~keyinput636, ~keyinput637, ~keyinput638, keyinput639, ~keyinput640, ~keyinput641, ~keyinput642, ~keyinput643, ~keyinput644, ~keyinput645, keyinput646, ~keyinput647, ~keyinput648, keyinput649, keyinput650, keyinput651, ~keyinput652, ~keyinput653, keyinput654, keyinput655, keyinput656, keyinput657, ~keyinput658, ~keyinput659, keyinput660, keyinput661, keyinput662, ~keyinput663, ~keyinput664, keyinput665, keyinput666, keyinput667, keyinput668, ~keyinput669, ~keyinput670, ~keyinput671, ~keyinput672, keyinput673, ~keyinput674, keyinput675, keyinput676, keyinput677, ~keyinput678, keyinput679, keyinput680, keyinput681, keyinput682, keyinput683, keyinput684, keyinput685, ~keyinput686, keyinput687, keyinput688, ~keyinput689))
+INFO - Apr-15-2024   21:32:30 -- Time taken to encrypt file: 0.18839693069458008 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c7552.bench ./benchmarks/iscas85/c7552_encrypted.bench 1000
+args 
+iteration:    1; variables: 10422 clauses: 26622 assignments: 10  propagations: 181457
+iteration:    2; variables: 19366 clauses: 35841 assignments: 5589  propagations: 601531
+iteration:    3; variables: 28310 clauses: 42393 assignments: 11939  propagations: 638109
+iteration:    4; variables: 37254 clauses: 48805 assignments: 18318  propagations: 1379780
+no more dips.
+
+Finished! 
+iteration=4
+key=110010100111111000100000010011100111100111001111000010111011111110110001001110110101101010110000110001011110000000110000001011100110011011001001110110101101010110000110001011110000000110000001011100110011011001101011000000111011111101100011000011000110000111100000100000001001001001110110101101010110000110001011110000000110000001011100110011011001001110110101101010110000110001011110000000110000001011100110011011001001110110101101010110000110001011110000000110000001011100110011011001001110110101101010110000110001011110000000110000001011100110011011110010100111111000100000010011100111100111001111000010111011111110110110010100111111000100000010011100111100111001111000010111011111110110
+checking key 110010100111111000100000010011100111100111001111000010111011111110110001001110110101101010110000110001011110000000110000001011100110011011001001110110101101010110000110001011110000000110000001011100110011011001101011000000111011111101100011000011000110000111100000100000001001001001110110101101010110000110001011110000000110000001011100110011011001001110110101101010110000110001011110000000110000001011100110011011001001110110101101010110000110001011110000000110000001011100110011011001001110110101101010110000110001011110000000110000001011100110011011110010100111111000100000010011100111100111001111000010111011111110110110010100111111000100000010011100111100111001111000010111011111110110
+
+incorrect key
+G2:0;  G3:0;  G450:0;  G448:0;  G444:0;  G442:0;  G440:0;  G438:0;  G496:0;  G494:0;  G492:0;  G490:0;  G488:0;  G486:0;  G484:0;  G482:0;  G480:0;  G560:0;  G542:0;  G558:0;  G556:0;  G554:0;  G552:0;  G550:0;  G548:0;  G546:0;  G544:0;  G540:0;  G538:0;  G536:0;  G534:0;  G532:0;  G530:0;  G528:0;  G526:0;  G524:0;  G279:0;  G436:0;  G478:0;  G522:0;  G402:0.474;  G404:0;  G406:0;  G408:0;  G410:0;  G432:0;  G446:0;  G284:0.248;  G286:0;  G289:0;  G292:0;  G341:0;  G281:0;  G453:0;  G278:0;  G373:0;  G246:0.378;  G258:0.164;  G264:0.164;  G270:0.378;  G388:0;  G391:0;  G394:0;  G397:0;  G376:0;  G379:0;  G382:0;  G385:0;  G412:0.11;  G414:0;  G416:0.102;  G249:0.164;  G295:0;  G324:0.12;  G252:0;  G276:0.378;  G310:0.372;  G313:0;  G316:0;  G319:0;  G327:0.13;  G330:0.116;  G333:0.122;  G336:0.134;  G418:0;  G273:0.378;  G298:0.15;  G301:0.152;  G304:0.172;  G307:0.24;  G344:0;  G422:0.244;  G469:0.244;  G419:0.488;  G471:0.488;  G359:0;  G362:0;  G365:0;  G368:0;  G347:0;  G350:0;  G353:0;  G356:0;  G321:0.294;  G338:0.306;  G370:0;  G399:0;  
+key-err: 0.0627103
+
+time: 1.2005
+
+real	0m1.365s
+user	0m1.175s
+sys	0m0.030s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas85/c7552.bench 
+
+
+
+
+Executing ./current_script with file: ./benchmarks/iscas85/c880.bench
+ ################################################################################################### 
+ ########################################## testing ./benchmarks/iscas85/c880.bench ########################################## 
+ ################################################################################################### 
+ n = 3, log2(n) = 2, k = 2
+ ------------------ Finding key 685945  958825  61001  ------------------ 
+ ------------------ Using k=2  ------------------ 
+INFO - Apr-15-2024   21:32:32 --  locked version of ./benchmarks/iscas85/c880.bench
+INFO - Apr-15-2024   21:32:32 --  number of keys: 3
+INFO - Apr-15-2024   21:32:32 --  keys: [685945, 958825, 61001]
+INFO - Apr-15-2024   21:32:32 --  number of bits per key (keyinputs#): 20
+INFO - Apr-15-2024   21:32:32 --  key0 = 10100111011101111001
+INFO - Apr-15-2024   21:32:32 --  key1 = 11101010000101101001
+INFO - Apr-15-2024   21:32:32 --  key2 = 00001110111001001001
+INFO - Apr-15-2024   21:32:32 --  k (gate is locked at k bits): 2
+INFO - Apr-15-2024   21:32:32 -- Time taken to parser file= 0.0037660598754882812
+
+INFO - Apr-15-2024   21:32:32 -- Time taken to get gates with k inputs = 0.012084722518920898
+
+INFO - Apr-15-2024   21:32:32 -- Cutting gates to encrypt to 10, from 55
+INFO - Apr-15-2024   21:32:32 -- Time taken to encrypt up to k inputs: 0.014552593231201172 seconds
+INFO - Apr-15-2024   21:32:32 --   G285gat - Or(And(~G29gat, ~G68gat, keyinput0, ~keyinput1, keyinput2, ~keyinput3, ~keyinput4, keyinput5, keyinput6, keyinput7, ~keyinput8, keyinput9, keyinput10, keyinput11, ~keyinput12, keyinput13, keyinput14, keyinput15, keyinput16, ~keyinput17, ~keyinput18, keyinput19), And(~G29gat, G68gat, keyinput0, keyinput1, keyinput2, ~keyinput3, keyinput4, ~keyinput5, keyinput6, ~keyinput7, ~keyinput8, ~keyinput9, ~keyinput10, keyinput11, ~keyinput12, keyinput13, keyinput14, ~keyinput15, keyinput16, ~keyinput17, ~keyinput18, keyinput19), And(G29gat, ~G68gat, ~keyinput0, ~keyinput1, ~keyinput2, ~keyinput3, keyinput4, keyinput5, keyinput6, ~keyinput7, keyinput8, keyinput9, keyinput10, ~keyinput11, ~keyinput12, keyinput13, ~keyinput14, ~keyinput15, keyinput16, ~keyinput17, ~keyinput18, keyinput19))
+INFO - Apr-15-2024   21:32:32 --   G297gat - And(G85gat, G86gat, keyinput20, ~keyinput21, keyinput22, ~keyinput23, ~keyinput24, keyinput25, keyinput26, keyinput27, ~keyinput28, keyinput29, keyinput30, keyinput31, ~keyinput32, keyinput33, keyinput34, keyinput35, keyinput36, ~keyinput37, ~keyinput38, keyinput39)
+INFO - Apr-15-2024   21:32:32 --   G298gat - Or(And(~G87gat, G88gat, keyinput40, keyinput41, keyinput42, ~keyinput43, keyinput44, ~keyinput45, keyinput46, ~keyinput47, ~keyinput48, ~keyinput49, ~keyinput50, keyinput51, ~keyinput52, keyinput53, keyinput54, ~keyinput55, keyinput56, ~keyinput57, ~keyinput58, keyinput59), And(G87gat, ~G88gat, ~keyinput40, ~keyinput41, ~keyinput42, ~keyinput43, keyinput44, keyinput45, keyinput46, ~keyinput47, keyinput48, keyinput49, keyinput50, ~keyinput51, ~keyinput52, keyinput53, ~keyinput54, ~keyinput55, keyinput56, ~keyinput57, ~keyinput58, keyinput59), And(G87gat, G88gat, keyinput40, ~keyinput41, keyinput42, ~keyinput43, ~keyinput44, keyinput45, keyinput46, keyinput47, ~keyinput48, keyinput49, keyinput50, keyinput51, ~keyinput52, keyinput53, keyinput54, keyinput55, keyinput56, ~keyinput57, ~keyinput58, keyinput59))
+INFO - Apr-15-2024   21:32:32 --   G301gat - Or(And(~G91gat, ~G96gat, keyinput60, ~keyinput61, keyinput62, ~keyinput63, ~keyinput64, keyinput65, keyinput66, keyinput67, ~keyinput68, keyinput69, keyinput70, keyinput71, ~keyinput72, keyinput73, keyinput74, keyinput75, keyinput76, ~keyinput77, ~keyinput78, keyinput79), And(G91gat, ~G96gat, keyinput60, keyinput61, keyinput62, ~keyinput63, keyinput64, ~keyinput65, keyinput66, ~keyinput67, ~keyinput68, ~keyinput69, ~keyinput70, keyinput71, ~keyinput72, keyinput73, keyinput74, ~keyinput75, keyinput76, ~keyinput77, ~keyinput78, keyinput79), And(~G91gat, G96gat, ~keyinput60, ~keyinput61, ~keyinput62, ~keyinput63, keyinput64, keyinput65, keyinput66, ~keyinput67, keyinput68, keyinput69, keyinput70, ~keyinput71, ~keyinput72, keyinput73, ~keyinput74, ~keyinput75, keyinput76, ~keyinput77, ~keyinput78, keyinput79))
+INFO - Apr-15-2024   21:32:32 --   G302gat - Or(And(G91gat, ~G96gat, keyinput80, keyinput81, keyinput82, ~keyinput83, keyinput84, ~keyinput85, keyinput86, ~keyinput87, ~keyinput88, ~keyinput89, ~keyinput90, keyinput91, ~keyinput92, keyinput93, keyinput94, ~keyinput95, keyinput96, ~keyinput97, ~keyinput98, keyinput99), And(~G91gat, G96gat, ~keyinput80, ~keyinput81, ~keyinput82, ~keyinput83, keyinput84, keyinput85, keyinput86, ~keyinput87, keyinput88, keyinput89, keyinput90, ~keyinput91, ~keyinput92, keyinput93, ~keyinput94, ~keyinput95, keyinput96, ~keyinput97, ~keyinput98, keyinput99), And(G91gat, G96gat, keyinput80, ~keyinput81, keyinput82, ~keyinput83, ~keyinput84, keyinput85, keyinput86, keyinput87, ~keyinput88, keyinput89, keyinput90, keyinput91, ~keyinput92, keyinput93, keyinput94, keyinput95, keyinput96, ~keyinput97, ~keyinput98, keyinput99))
+INFO - Apr-15-2024   21:32:32 --   G303gat - Or(And(~G101gat, ~G106gat, keyinput100, ~keyinput101, keyinput102, ~keyinput103, ~keyinput104, keyinput105, keyinput106, keyinput107, ~keyinput108, keyinput109, keyinput110, keyinput111, ~keyinput112, keyinput113, keyinput114, keyinput115, keyinput116, ~keyinput117, ~keyinput118, keyinput119), And(~G101gat, G106gat, keyinput100, keyinput101, keyinput102, ~keyinput103, keyinput104, ~keyinput105, keyinput106, ~keyinput107, ~keyinput108, ~keyinput109, ~keyinput110, keyinput111, ~keyinput112, keyinput113, keyinput114, ~keyinput115, keyinput116, ~keyinput117, ~keyinput118, keyinput119), And(G101gat, ~G106gat, ~keyinput100, ~keyinput101, ~keyinput102, ~keyinput103, keyinput104, keyinput105, keyinput106, ~keyinput107, keyinput108, keyinput109, keyinput110, ~keyinput111, ~keyinput112, keyinput113, ~keyinput114, ~keyinput115, keyinput116, ~keyinput117, ~keyinput118, keyinput119))
+INFO - Apr-15-2024   21:32:32 --   G304gat - Or(And(~G101gat, G106gat, keyinput120, keyinput121, keyinput122, ~keyinput123, keyinput124, ~keyinput125, keyinput126, ~keyinput127, ~keyinput128, ~keyinput129, ~keyinput130, keyinput131, ~keyinput132, keyinput133, keyinput134, ~keyinput135, keyinput136, ~keyinput137, ~keyinput138, keyinput139), And(G101gat, ~G106gat, ~keyinput120, ~keyinput121, ~keyinput122, ~keyinput123, keyinput124, keyinput125, keyinput126, ~keyinput127, keyinput128, keyinput129, keyinput130, ~keyinput131, ~keyinput132, keyinput133, ~keyinput134, ~keyinput135, keyinput136, ~keyinput137, ~keyinput138, keyinput139), And(G101gat, G106gat, keyinput120, ~keyinput121, keyinput122, ~keyinput123, ~keyinput124, keyinput125, keyinput126, keyinput127, ~keyinput128, keyinput129, keyinput130, keyinput131, ~keyinput132, keyinput133, keyinput134, keyinput135, keyinput136, ~keyinput137, ~keyinput138, keyinput139))
+INFO - Apr-15-2024   21:32:32 --   G305gat - Or(And(~G111gat, ~G116gat, keyinput140, ~keyinput141, keyinput142, ~keyinput143, ~keyinput144, keyinput145, keyinput146, keyinput147, ~keyinput148, keyinput149, keyinput150, keyinput151, ~keyinput152, keyinput153, keyinput154, keyinput155, keyinput156, ~keyinput157, ~keyinput158, keyinput159), And(~G111gat, G116gat, keyinput140, keyinput141, keyinput142, ~keyinput143, keyinput144, ~keyinput145, keyinput146, ~keyinput147, ~keyinput148, ~keyinput149, ~keyinput150, keyinput151, ~keyinput152, keyinput153, keyinput154, ~keyinput155, keyinput156, ~keyinput157, ~keyinput158, keyinput159), And(G111gat, ~G116gat, ~keyinput140, ~keyinput141, ~keyinput142, ~keyinput143, keyinput144, keyinput145, keyinput146, ~keyinput147, keyinput148, keyinput149, keyinput150, ~keyinput151, ~keyinput152, keyinput153, ~keyinput154, ~keyinput155, keyinput156, ~keyinput157, ~keyinput158, keyinput159))
+INFO - Apr-15-2024   21:32:32 --   G306gat - Or(And(~G111gat, G116gat, keyinput160, keyinput161, keyinput162, ~keyinput163, keyinput164, ~keyinput165, keyinput166, ~keyinput167, ~keyinput168, ~keyinput169, ~keyinput170, keyinput171, ~keyinput172, keyinput173, keyinput174, ~keyinput175, keyinput176, ~keyinput177, ~keyinput178, keyinput179), And(G111gat, ~G116gat, ~keyinput160, ~keyinput161, ~keyinput162, ~keyinput163, keyinput164, keyinput165, keyinput166, ~keyinput167, keyinput168, keyinput169, keyinput170, ~keyinput171, ~keyinput172, keyinput173, ~keyinput174, ~keyinput175, keyinput176, ~keyinput177, ~keyinput178, keyinput179), And(G111gat, G116gat, keyinput160, ~keyinput161, keyinput162, ~keyinput163, ~keyinput164, keyinput165, keyinput166, keyinput167, ~keyinput168, keyinput169, keyinput170, keyinput171, ~keyinput172, keyinput173, keyinput174, keyinput175, keyinput176, ~keyinput177, ~keyinput178, keyinput179))
+INFO - Apr-15-2024   21:32:32 --   G307gat - Or(And(~G121gat, ~G126gat, keyinput180, ~keyinput181, keyinput182, ~keyinput183, ~keyinput184, keyinput185, keyinput186, keyinput187, ~keyinput188, keyinput189, keyinput190, keyinput191, ~keyinput192, keyinput193, keyinput194, keyinput195, keyinput196, ~keyinput197, ~keyinput198, keyinput199), And(~G121gat, G126gat, keyinput180, keyinput181, keyinput182, ~keyinput183, keyinput184, ~keyinput185, keyinput186, ~keyinput187, ~keyinput188, ~keyinput189, ~keyinput190, keyinput191, ~keyinput192, keyinput193, keyinput194, ~keyinput195, keyinput196, ~keyinput197, ~keyinput198, keyinput199), And(G121gat, ~G126gat, ~keyinput180, ~keyinput181, ~keyinput182, ~keyinput183, keyinput184, keyinput185, keyinput186, ~keyinput187, keyinput188, keyinput189, keyinput190, ~keyinput191, ~keyinput192, keyinput193, ~keyinput194, ~keyinput195, keyinput196, ~keyinput197, ~keyinput198, keyinput199))
+INFO - Apr-15-2024   21:32:32 -- Time taken to encrypt file: 0.03681516647338867 seconds
+
+
+ 
+ 
+
+Running the neos solver on the encrypted file ex 
+called combinatonal attack... with arg ex
+./benchmarks/iscas85/c880.bench ./benchmarks/iscas85/c880_encrypted.bench 1000
+args 
+iteration:    1; variables: 1882 clauses: 4803 assignments: 2  propagations: 3217
+iteration:    2; variables: 3332 clauses: 6302 assignments: 904  propagations: 81016
+iteration:    3; variables: 4782 clauses: 7814 assignments: 1779  propagations: 94041
+iteration:    4; variables: 6232 clauses: 9326 assignments: 2653  propagations: 101530
+iteration:    5; variables: 7682 clauses: 10810 assignments: 3531  propagations: 110164
+iteration:    6; variables: 9132 clauses: 12336 assignments: 4389  propagations: 120927
+iteration:    7; variables: 10582 clauses: 13862 assignments: 5247  propagations: 134823
+no more dips.
+
+Finished! 
+iteration=7
+key=00001110111001001001101001110111011110011110101000010110100100001110111001001001000011101110010010011110101000010110100011101010000101101001111010100001011010011110101000010110100100001110111001001001
+checking key 00001110111001001001101001110111011110011110101000010110100100001110111001001001000011101110010010011110101000010110100011101010000101101001111010100001011010011110101000010110100100001110111001001001
+
+incorrect key
+G388gat:0;  G389gat:0;  G390gat:0;  G391gat:0;  G418gat:0;  G419gat:0;  G420gat:0;  G421gat:0;  G422gat:0;  G423gat:0.264;  G446gat:0;  G447gat:0;  G448gat:0.032;  G449gat:0;  G450gat:0.236;  G767gat:0.48;  G768gat:0;  G850gat:0;  G863gat:0;  G864gat:0;  G865gat:0;  G866gat:0;  G874gat:0;  G878gat:0;  G879gat:0;  G880gat:0;  
+key-err: 0.0389231
+
+time: 0.0728847
+
+real	0m0.206s
+user	0m0.052s
+sys	0m0.021s
+Done 
+ 
+ 
+
+
+Done with ./benchmarks/iscas85/c880.bench 
+
+
+
+
