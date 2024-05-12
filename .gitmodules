@@ -1,0 +1,12 @@
+[submodule "Tools/neos"]
+	path = Tools/neos
+	url = https://bitbucket.org/kavehshm/neos/
+[submodule "Tools/yosys"]
+	path = Tools/yosys
+	url = https://github.com/YosysHQ/yosys.git
+[submodule "Tools/abc"]
+	path = Tools/abc
+	url = https://github.com/berkeley-abc/abc.git
+[submodule "Tools/RANE"]
+	path = Tools/RANE
+	url = https://github.com/gatelabdavis/RANE.git
