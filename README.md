@@ -35,7 +35,7 @@ Example of a command:
   year={},
   volume={},
   number={},
-  pages={1-7},
+  pages={},
   doi={}
   }
 
