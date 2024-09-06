@@ -8,8 +8,8 @@ The file structure is organized as follows:
 
 - **Tools** - Tools used to test the algorithm:
   - **RANE** - Tool used to perform attacks on encrypted circuits.
-  - **neos** - Tool used to perform attacks on encrypted circuits.
-  - **abc** - Tool used to convert Verilog, BLIF, and bench files.
+  - **NEOS** - Tool used to perform attacks on encrypted circuits.
+  - **ABC** - Tool used to convert Verilog, BLIF, and bench files.
 
 - **src** - The source code for encrypting and testing the algorithm:
   - **test_runs** - Contains the previously run algorithms. The folder name matches the configuration run. 
@@ -38,9 +38,9 @@ Before running any help script, ensure the following steps are completed:
 
 1. **Install Dependencies**:
    - Using Linux, install the following tools:
-     - [neos](https://bitbucket.org/kavehshm/neos/)
-     - [yosys](https://github.com/YosysHQ/yosys.git)
-     - [abc](https://github.com/berkeley-abc/abc.git)
+     - [NEOS](https://bitbucket.org/kavehshm/neos/)
+     - [Yosys](https://github.com/YosysHQ/yosys.git)
+     - [ABC](https://github.com/berkeley-abc/abc.git)
      - [RANE](https://github.com/gatelabdavis/RANE.git)
    - Additionally, install [Python](https://www.python.org/downloads/) and [PyEDA](https://pyeda.readthedocs.io/en/latest/install.html).
 
@@ -76,9 +76,10 @@ Example of a command:
 ```
 @INPROCEEDINGS{KGL-Lock,
   author={Lopez, Kevin and Rezaei, Amin},
-  booktitle={}, 
-  title={}, 
-  year={},
+  booktitle={Proceedings of 30th Asia and South Pacific Design Automation Conference (ASP-DAC)}, 
+  title={K-Gate Lock: Multi-Key Logic Locking Using Input Encoding
+Against Oracle-Guided Attacks}, 
+  year={2025},
   volume={},
   number={},
   pages={},
