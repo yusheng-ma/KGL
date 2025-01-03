@@ -31,7 +31,7 @@ The K-Gate Lock logic locking scheme secures digital circuits by adding gates th
 3. **Key Integration**: Generate the truth table and assign key inputs to achieve the desired input combination. Use K-maps to simplify boolean expressions.
 4. **Encryption**: Integrate the locked gates into the original circuit, making the circuit dependent on the keys for correct functionality.
 
-For a deeper explanation, refer to the [paper](www.www).
+For a deeper explanation, refer to the [paper](https://github.com/cars-lab-repo/KGL/blob/main/paper/K-Gate%20Lock%20Multi-Key%20Logic%20Locking%20Using%20Input%20Encoding%20Against%20Oracle-Guided%20Attacks.pdf).
 
 ## Running the Algorithm
 Before running any help script, ensure the following steps are completed:
