@@ -81,7 +81,7 @@ Example of a command:
   year={2025},
   volume={},
   number={},
-  pages={},
+  pages={794-800},
   doi={10.1145/3658617.3697764}
   }
 ```
