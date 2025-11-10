@@ -1,0 +1,4 @@
+Tools/
+__pycache__/
+src/benchmarks/
+src/allpy.txt
